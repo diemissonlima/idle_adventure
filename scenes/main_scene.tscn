@@ -1,0 +1,219 @@
+[gd_scene load_steps=7 format=3 uid="uid://chee12681ksau"]
+
+[ext_resource type="Texture2D" uid="uid://ciir88k8isk6u" path="res://assets/backgrounds/1.png" id="1_5hms3"]
+[ext_resource type="Texture2D" uid="uid://dp4l60ef0vkwx" path="res://assets/itens/potion/Potion 1.png" id="2_2av4a"]
+[ext_resource type="Texture2D" uid="uid://bufxp71go2hq7" path="res://assets/backgrounds/EmptyPanel.png" id="2_27dyn"]
+[ext_resource type="FontFile" uid="uid://f3rv4yrfifht" path="res://assets/font/Oxanium-Bold.ttf" id="4_rkqi3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qrr8g"]
+font = ExtResource("4_rkqi3")
+font_size = 6
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_5x7cr"]
+font = ExtResource("4_rkqi3")
+font_size = 5
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
+
+[node name="MainScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VContainer1" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(140, 270)
+layout_mode = 0
+offset_right = 140.0
+offset_bottom = 270.0
+theme_override_constants/separation = 0
+
+[node name="Battlefield" type="TextureRect" parent="VContainer1"]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+texture = ExtResource("1_5hms3")
+expand_mode = 1
+
+[node name="BackgroundPotion" type="TextureRect" parent="VContainer1"]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+texture = ExtResource("2_27dyn")
+expand_mode = 1
+
+[node name="PotionContainer" type="HBoxContainer" parent="VContainer1/BackgroundPotion"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 13
+alignment = 1
+
+[node name="Potion" type="TextureRect" parent="VContainer1/BackgroundPotion/PotionContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+texture = ExtResource("2_2av4a")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Potion2" type="TextureRect" parent="VContainer1/BackgroundPotion/PotionContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+texture = ExtResource("2_2av4a")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Potion3" type="TextureRect" parent="VContainer1/BackgroundPotion/PotionContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+texture = ExtResource("2_2av4a")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Potion4" type="TextureRect" parent="VContainer1/BackgroundPotion/PotionContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+texture = ExtResource("2_2av4a")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Potion5" type="TextureRect" parent="VContainer1/BackgroundPotion/PotionContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+texture = ExtResource("2_2av4a")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BackgroundLog" type="TextureRect" parent="VContainer1"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+texture = ExtResource("2_27dyn")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="VContainer1/BackgroundLog"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 4.0
+offset_right = 36.0
+offset_bottom = 11.0
+text = "Game Log"
+label_settings = SubResource("LabelSettings_qrr8g")
+
+[node name="LogContainer" type="VBoxContainer" parent="VContainer1/BackgroundLog"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -56.0
+offset_top = 18.0
+offset_right = 57.0
+offset_bottom = 139.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+layout_mode = 2
+text = "Causou 15 de dano"
+label_settings = SubResource("LabelSettings_5x7cr")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+layout_mode = 2
+text = "Causou 15 de dano"
+label_settings = SubResource("LabelSettings_5x7cr")
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+layout_mode = 2
+text = "Causou 15 de dano"
+label_settings = SubResource("LabelSettings_5x7cr")
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+layout_mode = 2
+text = "Causou 15 de dano"
+label_settings = SubResource("LabelSettings_5x7cr")
+horizontal_alignment = 1
+
+[node name="Label5" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+layout_mode = 2
+text = "Causou 15 de dano"
+label_settings = SubResource("LabelSettings_5x7cr")
+horizontal_alignment = 1
+
+[node name="Label6" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+layout_mode = 2
+text = "Causou 15 de dano"
+label_settings = SubResource("LabelSettings_5x7cr")
+horizontal_alignment = 1
+
+[node name="Label7" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+layout_mode = 2
+text = "Causou 15 de dano"
+label_settings = SubResource("LabelSettings_5x7cr")
+horizontal_alignment = 1
+
+[node name="Label8" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+layout_mode = 2
+text = "Causou 15 de dano"
+label_settings = SubResource("LabelSettings_5x7cr")
+horizontal_alignment = 1
+
+[node name="Label9" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+layout_mode = 2
+text = "Causou 15 de dano"
+label_settings = SubResource("LabelSettings_5x7cr")
+horizontal_alignment = 1
+
+[node name="Label10" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+layout_mode = 2
+text = "Causou 15 de dano"
+label_settings = SubResource("LabelSettings_5x7cr")
+horizontal_alignment = 1
+
+[node name="Label11" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+layout_mode = 2
+text = "Causou 15 de dano"
+label_settings = SubResource("LabelSettings_5x7cr")
+horizontal_alignment = 1
+
+[node name="VContainer2" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(180, 270)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_right = 80.0
+offset_bottom = 270.0
+grow_horizontal = 2
+
+[node name="VContainer3" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(80, 270)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 80.0
+offset_right = 160.0
+offset_bottom = 270.0
+grow_horizontal = 2
+
+[node name="VContainer4" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(80, 270)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -80.0
+offset_top = -135.0
+offset_bottom = 135.0
+grow_horizontal = 0
+grow_vertical = 2

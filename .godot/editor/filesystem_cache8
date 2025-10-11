@@ -1,0 +1,49 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1760197033
+icon.svg::CompressedTexture2D::1437991343033267371::1760185917::1760185930::1::::<><>::
+::res://assets/::1760191991
+::res://assets/backgrounds/::1760191351
+1.png::CompressedTexture2D::5351960008828209546::1760190052::1760190052::1::::<><>::
+Cell.png::CompressedTexture2D::3755773594043204953::1760191186::1760191186::1::::<><>::
+EmptyPanel.png::CompressedTexture2D::3801944444170760276::1760191351::1760191351::1::::<><>::
+::res://assets/font/::1760192012
+Oxanium-Bold.ttf::FontFile::409818046884732869::1760192012::1760192012::1::::<><>::
+Oxanium-ExtraBold.ttf::FontFile::1557212382361150861::1760192012::1760192012::1::::<><>::
+Oxanium-ExtraLight.ttf::FontFile::9131719404345591166::1760192012::1760192012::1::::<><>::
+Oxanium-Light.ttf::FontFile::6864468917563616270::1760192012::1760192012::1::::<><>::
+Oxanium-Medium.ttf::FontFile::603992759496557389::1760192012::1760192012::1::::<><>::
+Oxanium-Regular.ttf::FontFile::8649974219081696382::1760192012::1760192012::1::::<><>::
+Oxanium-SemiBold.ttf::FontFile::4809827116573988245::1760192012::1760192012::1::::<><>::
+::res://assets/itens/::1760190537
+::res://assets/itens/potion/::1760190615
+01.png::CompressedTexture2D::702392935352550679::1760190565::1760190566::1::::<><>::
+02.png::CompressedTexture2D::7149541652724329586::1760190565::1760190566::1::::<><>::
+03.png::CompressedTexture2D::8668910730068990825::1760190565::1760190566::1::::<><>::
+04.png::CompressedTexture2D::632314335982817446::1760190565::1760190566::1::::<><>::
+05.png::CompressedTexture2D::6525817692137410352::1760190565::1760190566::1::::<><>::
+06.png::CompressedTexture2D::6061731027416376328::1760190565::1760190566::1::::<><>::
+07.png::CompressedTexture2D::1598617834846227582::1760190565::1760190566::1::::<><>::
+08.png::CompressedTexture2D::4818250895811061213::1760190565::1760190566::1::::<><>::
+09.png::CompressedTexture2D::3012147092054593665::1760190565::1760190566::1::::<><>::
+11.png::CompressedTexture2D::9197555865729273609::1760190565::1760190566::1::::<><>::
+12.png::CompressedTexture2D::527781607172492376::1760190565::1760190566::1::::<><>::
+13.png::CompressedTexture2D::1396114790911392785::1760190565::1760190566::1::::<><>::
+14.png::CompressedTexture2D::289433575556821396::1760190565::1760190565::1::::<><>::
+15.png::CompressedTexture2D::4780701265795159496::1760190565::1760190565::1::::<><>::
+16.png::CompressedTexture2D::7888999132713824882::1760190565::1760190565::1::::<><>::
+17.png::CompressedTexture2D::1517238703351267068::1760190565::1760190565::1::::<><>::
+18.png::CompressedTexture2D::5998528196169861364::1760190565::1760190565::1::::<><>::
+19.png::CompressedTexture2D::7218346682900539611::1760190565::1760190565::1::::<><>::
+Potion 1.png::CompressedTexture2D::8272686226573399811::1760190614::1760190615::1::::<><>::
+Potion 2.png::CompressedTexture2D::1502533094723486462::1760190614::1760190615::1::::<><>::
+Potion 3.png::CompressedTexture2D::131685240493498507::1760190614::1760190615::1::::<><>::
+Potion 4.png::CompressedTexture2D::1378802594959495064::1760190614::1760190615::1::::<><>::
+Potion 5.png::CompressedTexture2D::7286104462455980859::1760190614::1760190615::1::::<><>::
+Potion 6.png::CompressedTexture2D::8344264695156015855::1760190614::1760190615::1::::<><>::
+Potion 7.png::CompressedTexture2D::826675141748626137::1760190614::1760190615::1::::<><>::
+Potion 8.png::CompressedTexture2D::5740120312689601042::1760190614::1760190615::1::::<><>::
+Potion 9.png::CompressedTexture2D::6577422603319783990::1760190614::1760190615::1::::<><>::
+Potion 10.png::CompressedTexture2D::6818565952639016380::1760190614::1760190615::1::::<><>::
+Potion 11.png::CompressedTexture2D::2484920974495270941::1760190614::1760190615::1::::<><>::
+::res://scenes/::1760193996
+main_scene.tscn::PackedScene::5272711550035179436::1760193996::0::1::::<><>::uid://ciir88k8isk6u::::res://assets/backgrounds/1.png<>uid://dp4l60ef0vkwx::::res://assets/itens/potion/Potion 1.png<>uid://bufxp71go2hq7::::res://assets/backgrounds/EmptyPanel.png<>uid://f3rv4yrfifht::::res://assets/font/Oxanium-Bold.ttf
