@@ -1,9 +1,16 @@
-[gd_scene load_steps=7 format=3 uid="uid://chee12681ksau"]
+[gd_scene load_steps=18 format=3 uid="uid://chee12681ksau"]
 
 [ext_resource type="Texture2D" uid="uid://ciir88k8isk6u" path="res://assets/backgrounds/1.png" id="1_5hms3"]
 [ext_resource type="Texture2D" uid="uid://dp4l60ef0vkwx" path="res://assets/itens/potion/Potion 1.png" id="2_2av4a"]
 [ext_resource type="Texture2D" uid="uid://bufxp71go2hq7" path="res://assets/backgrounds/EmptyPanel.png" id="2_27dyn"]
 [ext_resource type="FontFile" uid="uid://f3rv4yrfifht" path="res://assets/font/Oxanium-Bold.ttf" id="4_rkqi3"]
+[ext_resource type="Texture2D" uid="uid://cgm2g3igfxnw1" path="res://assets/backgrounds/Panel.png" id="5_vfv32"]
+[ext_resource type="FontFile" uid="uid://iutw4od6mkk8" path="res://assets/font/Oxanium-Medium.ttf" id="6_r50xv"]
+[ext_resource type="Texture2D" uid="uid://btrlbo8is4j4t" path="res://assets/backgrounds/Cell.png" id="7_pxcdo"]
+[ext_resource type="Texture2D" uid="uid://cpbq6nb8esg6h" path="res://assets/backgrounds/Button Normal.png" id="8_tkobm"]
+[ext_resource type="Texture2D" uid="uid://cju0hbrm8tun5" path="res://assets/backgrounds/Button Active.png" id="9_c50tc"]
+[ext_resource type="Texture2D" uid="uid://dluvk35d70he5" path="res://assets/backgrounds/Separator.png" id="10_68jdv"]
+[ext_resource type="Texture2D" uid="uid://b1d7dwxtii10e" path="res://assets/backgrounds/Box.png" id="11_7htbn"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_qrr8g"]
 font = ExtResource("4_rkqi3")
@@ -17,6 +24,23 @@ font_size = 5
 outline_size = 2
 outline_color = Color(0, 0, 0, 1)
 
+[sub_resource type="LabelSettings" id="LabelSettings_x8rbt"]
+font = ExtResource("6_r50xv")
+font_size = 8
+font_color = Color(1, 1, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_at25e"]
+font = ExtResource("6_r50xv")
+font_size = 6
+
+[sub_resource type="LabelSettings" id="LabelSettings_4s0ga"]
+font = ExtResource("6_r50xv")
+font_size = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_j7u4c"]
+font = ExtResource("6_r50xv")
+font_size = 4
+
 [node name="MainScene" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -25,26 +49,26 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VContainer1" type="VBoxContainer" parent="."]
+[node name="VContainer" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(140, 270)
 layout_mode = 0
 offset_right = 140.0
 offset_bottom = 270.0
 theme_override_constants/separation = 0
 
-[node name="Battlefield" type="TextureRect" parent="VContainer1"]
+[node name="Battlefield" type="TextureRect" parent="VContainer"]
 custom_minimum_size = Vector2(0, 90)
 layout_mode = 2
 texture = ExtResource("1_5hms3")
 expand_mode = 1
 
-[node name="BackgroundPotion" type="TextureRect" parent="VContainer1"]
+[node name="BackgroundPotion" type="TextureRect" parent="VContainer"]
 custom_minimum_size = Vector2(140, 30)
 layout_mode = 2
 texture = ExtResource("2_27dyn")
 expand_mode = 1
 
-[node name="PotionContainer" type="HBoxContainer" parent="VContainer1/BackgroundPotion"]
+[node name="PotionContainer" type="HBoxContainer" parent="VContainer/BackgroundPotion"]
 custom_minimum_size = Vector2(0, 30)
 layout_mode = 1
 anchors_preset = 15
@@ -55,48 +79,48 @@ grow_vertical = 2
 theme_override_constants/separation = 13
 alignment = 1
 
-[node name="Potion" type="TextureRect" parent="VContainer1/BackgroundPotion/PotionContainer"]
+[node name="Potion" type="TextureRect" parent="VContainer/BackgroundPotion/PotionContainer"]
 custom_minimum_size = Vector2(16, 16)
 layout_mode = 2
 texture = ExtResource("2_2av4a")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Potion2" type="TextureRect" parent="VContainer1/BackgroundPotion/PotionContainer"]
+[node name="Potion2" type="TextureRect" parent="VContainer/BackgroundPotion/PotionContainer"]
 custom_minimum_size = Vector2(16, 16)
 layout_mode = 2
 texture = ExtResource("2_2av4a")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Potion3" type="TextureRect" parent="VContainer1/BackgroundPotion/PotionContainer"]
+[node name="Potion3" type="TextureRect" parent="VContainer/BackgroundPotion/PotionContainer"]
 custom_minimum_size = Vector2(16, 16)
 layout_mode = 2
 texture = ExtResource("2_2av4a")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Potion4" type="TextureRect" parent="VContainer1/BackgroundPotion/PotionContainer"]
+[node name="Potion4" type="TextureRect" parent="VContainer/BackgroundPotion/PotionContainer"]
 custom_minimum_size = Vector2(16, 16)
 layout_mode = 2
 texture = ExtResource("2_2av4a")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Potion5" type="TextureRect" parent="VContainer1/BackgroundPotion/PotionContainer"]
+[node name="Potion5" type="TextureRect" parent="VContainer/BackgroundPotion/PotionContainer"]
 custom_minimum_size = Vector2(16, 16)
 layout_mode = 2
 texture = ExtResource("2_2av4a")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="BackgroundLog" type="TextureRect" parent="VContainer1"]
+[node name="BackgroundLog" type="TextureRect" parent="VContainer"]
 custom_minimum_size = Vector2(0, 150)
 layout_mode = 2
 texture = ExtResource("2_27dyn")
 expand_mode = 1
 
-[node name="Label" type="Label" parent="VContainer1/BackgroundLog"]
+[node name="Label" type="Label" parent="VContainer/BackgroundLog"]
 layout_mode = 0
 offset_left = 8.0
 offset_top = 4.0
@@ -105,7 +129,7 @@ offset_bottom = 11.0
 text = "Game Log"
 label_settings = SubResource("LabelSettings_qrr8g")
 
-[node name="LogContainer" type="VBoxContainer" parent="VContainer1/BackgroundLog"]
+[node name="LogContainer" type="VBoxContainer" parent="VContainer/BackgroundLog"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -116,73 +140,73 @@ offset_right = 57.0
 offset_bottom = 139.0
 grow_horizontal = 2
 
-[node name="Label" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+[node name="Label" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
 layout_mode = 2
 text = "Causou 15 de dano"
 label_settings = SubResource("LabelSettings_5x7cr")
 horizontal_alignment = 1
 
-[node name="Label2" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+[node name="Label2" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
 layout_mode = 2
 text = "Causou 15 de dano"
 label_settings = SubResource("LabelSettings_5x7cr")
 horizontal_alignment = 1
 
-[node name="Label3" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+[node name="Label3" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
 layout_mode = 2
 text = "Causou 15 de dano"
 label_settings = SubResource("LabelSettings_5x7cr")
 horizontal_alignment = 1
 
-[node name="Label4" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+[node name="Label4" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
 layout_mode = 2
 text = "Causou 15 de dano"
 label_settings = SubResource("LabelSettings_5x7cr")
 horizontal_alignment = 1
 
-[node name="Label5" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+[node name="Label5" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
 layout_mode = 2
 text = "Causou 15 de dano"
 label_settings = SubResource("LabelSettings_5x7cr")
 horizontal_alignment = 1
 
-[node name="Label6" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+[node name="Label6" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
 layout_mode = 2
 text = "Causou 15 de dano"
 label_settings = SubResource("LabelSettings_5x7cr")
 horizontal_alignment = 1
 
-[node name="Label7" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+[node name="Label7" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
 layout_mode = 2
 text = "Causou 15 de dano"
 label_settings = SubResource("LabelSettings_5x7cr")
 horizontal_alignment = 1
 
-[node name="Label8" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+[node name="Label8" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
 layout_mode = 2
 text = "Causou 15 de dano"
 label_settings = SubResource("LabelSettings_5x7cr")
 horizontal_alignment = 1
 
-[node name="Label9" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+[node name="Label9" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
 layout_mode = 2
 text = "Causou 15 de dano"
 label_settings = SubResource("LabelSettings_5x7cr")
 horizontal_alignment = 1
 
-[node name="Label10" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+[node name="Label10" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
 layout_mode = 2
 text = "Causou 15 de dano"
 label_settings = SubResource("LabelSettings_5x7cr")
 horizontal_alignment = 1
 
-[node name="Label11" type="Label" parent="VContainer1/BackgroundLog/LogContainer"]
+[node name="Label11" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
 layout_mode = 2
 text = "Causou 15 de dano"
 label_settings = SubResource("LabelSettings_5x7cr")
 horizontal_alignment = 1
 
-[node name="VContainer2" type="VBoxContainer" parent="."]
+[node name="Container2" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(180, 270)
 layout_mode = 1
 anchors_preset = 5
@@ -193,7 +217,7 @@ offset_right = 80.0
 offset_bottom = 270.0
 grow_horizontal = 2
 
-[node name="VContainer3" type="VBoxContainer" parent="."]
+[node name="Container3" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(80, 270)
 layout_mode = 1
 anchors_preset = 5
@@ -203,8 +227,299 @@ offset_left = 80.0
 offset_right = 160.0
 offset_bottom = 270.0
 grow_horizontal = 2
+texture = ExtResource("5_vfv32")
+expand_mode = 1
 
-[node name="VContainer4" type="VBoxContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="Container3"]
+custom_minimum_size = Vector2(80, 270)
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 270.0
+theme_override_constants/separation = 3
+
+[node name="Label" type="Label" parent="Container3/VBoxContainer"]
+layout_mode = 2
+text = "Ações"
+label_settings = SubResource("LabelSettings_x8rbt")
+horizontal_alignment = 1
+
+[node name="Info" type="TextureRect" parent="Container3/VBoxContainer"]
+custom_minimum_size = Vector2(80, 30)
+layout_mode = 2
+texture = ExtResource("7_pxcdo")
+expand_mode = 1
+flip_h = true
+
+[node name="Separator" type="TextureRect" parent="Container3/VBoxContainer"]
+custom_minimum_size = Vector2(80, 1)
+layout_mode = 2
+texture = ExtResource("10_68jdv")
+expand_mode = 1
+
+[node name="Hunts" type="TextureButton" parent="Container3/VBoxContainer"]
+custom_minimum_size = Vector2(10, 15)
+layout_mode = 2
+texture_normal = ExtResource("8_tkobm")
+texture_pressed = ExtResource("8_tkobm")
+texture_hover = ExtResource("9_c50tc")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="Container3/VBoxContainer/Hunts"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -6.0
+offset_top = -2.5
+offset_right = 6.0
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Hunts"
+label_settings = SubResource("LabelSettings_at25e")
+
+[node name="Expeditions" type="TextureButton" parent="Container3/VBoxContainer"]
+custom_minimum_size = Vector2(30, 15)
+layout_mode = 2
+texture_normal = ExtResource("8_tkobm")
+texture_pressed = ExtResource("8_tkobm")
+texture_hover = ExtResource("9_c50tc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Container3/VBoxContainer/Expeditions"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -3.5
+offset_right = 17.0
+offset_bottom = 3.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Expeditions"
+label_settings = SubResource("LabelSettings_at25e")
+
+[node name="Separator2" type="TextureRect" parent="Container3/VBoxContainer"]
+custom_minimum_size = Vector2(80, 1)
+layout_mode = 2
+texture = ExtResource("10_68jdv")
+expand_mode = 1
+
+[node name="Label2" type="Label" parent="Container3/VBoxContainer"]
+layout_mode = 2
+text = "Gold Upgrades"
+label_settings = SubResource("LabelSettings_x8rbt")
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="Container3/VBoxContainer"]
+layout_mode = 2
+text = "These upgrades reset on Prestige."
+label_settings = SubResource("LabelSettings_4s0ga")
+
+[node name="TextureRect" type="TextureRect" parent="Container3/VBoxContainer"]
+custom_minimum_size = Vector2(80, 20)
+layout_mode = 2
+texture = ExtResource("11_7htbn")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container3/VBoxContainer/TextureRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -32.0
+offset_top = 5.0
+offset_right = 13.0
+offset_bottom = 10.0
+grow_horizontal = 2
+text = "Improve Clicks - Lvl 0"
+label_settings = SubResource("LabelSettings_4s0ga")
+
+[node name="Label2" type="Label" parent="Container3/VBoxContainer/TextureRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -32.0
+offset_top = 11.0
+offset_right = 13.0
+offset_bottom = 16.0
+grow_horizontal = 2
+text = "Cost: 10M"
+label_settings = SubResource("LabelSettings_4s0ga")
+horizontal_alignment = 1
+
+[node name="Max" type="TextureButton" parent="Container3/VBoxContainer/TextureRect"]
+custom_minimum_size = Vector2(20, 10)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -6.0
+offset_right = -3.0
+offset_bottom = 4.0
+grow_horizontal = 0
+grow_vertical = 2
+texture_normal = ExtResource("8_tkobm")
+texture_pressed = ExtResource("8_tkobm")
+texture_hover = ExtResource("9_c50tc")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="Container3/VBoxContainer/TextureRect/Max"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.5
+offset_top = -2.5
+offset_right = 4.5
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "MAX"
+label_settings = SubResource("LabelSettings_j7u4c")
+
+[node name="TextureRect2" type="TextureRect" parent="Container3/VBoxContainer"]
+custom_minimum_size = Vector2(80, 20)
+layout_mode = 2
+texture = ExtResource("11_7htbn")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container3/VBoxContainer/TextureRect2"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -32.0
+offset_top = 5.0
+offset_right = 13.0
+offset_bottom = 10.0
+grow_horizontal = 2
+text = "Improve Idle DPS - Lvl 0"
+label_settings = SubResource("LabelSettings_4s0ga")
+
+[node name="Label2" type="Label" parent="Container3/VBoxContainer/TextureRect2"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -32.0
+offset_top = 11.0
+offset_right = 13.0
+offset_bottom = 16.0
+grow_horizontal = 2
+text = "Cost: 10M"
+label_settings = SubResource("LabelSettings_4s0ga")
+horizontal_alignment = 1
+
+[node name="Max" type="TextureButton" parent="Container3/VBoxContainer/TextureRect2"]
+custom_minimum_size = Vector2(20, 10)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -6.0
+offset_right = -3.0
+offset_bottom = 4.0
+grow_horizontal = 0
+grow_vertical = 2
+texture_normal = ExtResource("8_tkobm")
+texture_pressed = ExtResource("8_tkobm")
+texture_hover = ExtResource("9_c50tc")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="Container3/VBoxContainer/TextureRect2/Max"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.5
+offset_top = -2.5
+offset_right = 4.5
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "MAX"
+label_settings = SubResource("LabelSettings_j7u4c")
+
+[node name="Separator3" type="TextureRect" parent="Container3/VBoxContainer"]
+custom_minimum_size = Vector2(80, 1)
+layout_mode = 2
+texture = ExtResource("10_68jdv")
+expand_mode = 1
+
+[node name="Label4" type="Label" parent="Container3/VBoxContainer"]
+layout_mode = 2
+text = "Prestige"
+label_settings = SubResource("LabelSettings_x8rbt")
+horizontal_alignment = 1
+
+[node name="Label5" type="Label" parent="Container3/VBoxContainer"]
+layout_mode = 2
+text = "Defeat the boss at Level 300 to Prestige or use a Mark of the Hunter from the Hunt Shop."
+label_settings = SubResource("LabelSettings_4s0ga")
+autowrap_mode = 2
+
+[node name="Info2" type="TextureRect" parent="Container3/VBoxContainer"]
+custom_minimum_size = Vector2(80, 75)
+layout_mode = 2
+texture = ExtResource("7_pxcdo")
+expand_mode = 1
+flip_h = true
+
+[node name="Button" type="Button" parent="Container3"]
+custom_minimum_size = Vector2(30, 15)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = -18.0
+offset_right = 36.0
+offset_bottom = -3.0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("6_r50xv")
+theme_override_font_sizes/font_size = 4
+text = "Prestige Now"
+
+[node name="Button2" type="Button" parent="Container3"]
+custom_minimum_size = Vector2(30, 15)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -43.0
+offset_top = -18.0
+offset_right = -1.0
+offset_bottom = -3.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("6_r50xv")
+theme_override_font_sizes/font_size = 4
+text = "Viwe Prestige Slot"
+
+[node name="Container4" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(80, 270)
 layout_mode = 1
 anchors_preset = 6
@@ -217,3 +532,24 @@ offset_top = -135.0
 offset_bottom = 135.0
 grow_horizontal = 0
 grow_vertical = 2
+texture = ExtResource("5_vfv32")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container4"]
+custom_minimum_size = Vector2(80, 270)
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 270.0
+
+[node name="Label" type="Label" parent="Container4/VBoxContainer"]
+layout_mode = 2
+text = "Upgrades"
+label_settings = SubResource("LabelSettings_x8rbt")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Container4/VBoxContainer"]
+layout_mode = 2
+text = "Upgrades that are 
+never lost on Prestige!"
+label_settings = SubResource("LabelSettings_4s0ga")
+horizontal_alignment = 1

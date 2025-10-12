@@ -1,6 +1,8 @@
 VBoxContainer
-GridContainer
-Label
 TextureRect
-Timer
+Button
+Label
+TextureButton
 HBoxContainer
+GridContainer
+Timer
