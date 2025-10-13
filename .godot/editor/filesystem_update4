@@ -1,1 +1,3 @@
 res://scenes/main_scene.tscn
+res://scroll_container.gd
+res://scenes/container_4.gd

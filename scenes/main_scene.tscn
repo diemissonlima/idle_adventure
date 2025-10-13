@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://chee12681ksau"]
+[gd_scene load_steps=39 format=3 uid="uid://chee12681ksau"]
 
 [ext_resource type="Texture2D" uid="uid://ciir88k8isk6u" path="res://assets/backgrounds/1.png" id="1_5hms3"]
 [ext_resource type="Texture2D" uid="uid://dp4l60ef0vkwx" path="res://assets/itens/potion/Potion 1.png" id="2_2av4a"]
@@ -6,15 +6,27 @@
 [ext_resource type="FontFile" uid="uid://f3rv4yrfifht" path="res://assets/font/Oxanium-Bold.ttf" id="4_rkqi3"]
 [ext_resource type="Texture2D" uid="uid://cgm2g3igfxnw1" path="res://assets/backgrounds/Panel.png" id="5_vfv32"]
 [ext_resource type="FontFile" uid="uid://iutw4od6mkk8" path="res://assets/font/Oxanium-Medium.ttf" id="6_r50xv"]
-[ext_resource type="Texture2D" uid="uid://btrlbo8is4j4t" path="res://assets/backgrounds/Cell.png" id="7_pxcdo"]
 [ext_resource type="Texture2D" uid="uid://cpbq6nb8esg6h" path="res://assets/backgrounds/Button Normal.png" id="8_tkobm"]
+[ext_resource type="Texture2D" uid="uid://ryyd4yrcsnio" path="res://assets/icons/strength icon.png" id="8_ygyk3"]
+[ext_resource type="Texture2D" uid="uid://cg724n8l7r5nq" path="res://assets/icons/escape icon.png" id="9_aj0nw"]
 [ext_resource type="Texture2D" uid="uid://cju0hbrm8tun5" path="res://assets/backgrounds/Button Active.png" id="9_c50tc"]
+[ext_resource type="Texture2D" uid="uid://cjr6rcnfhgc44" path="res://assets/icons/pouch icon.png" id="9_qo7ay"]
 [ext_resource type="Texture2D" uid="uid://dluvk35d70he5" path="res://assets/backgrounds/Separator.png" id="10_68jdv"]
+[ext_resource type="Texture2D" uid="uid://b1jc2c4vk8cxr" path="res://assets/icons/options icon.png" id="10_ud07j"]
 [ext_resource type="Texture2D" uid="uid://b1d7dwxtii10e" path="res://assets/backgrounds/Box.png" id="11_7htbn"]
+[ext_resource type="Texture2D" uid="uid://cc6yw0om5xoiv" path="res://assets/icons/energy icon.png" id="16_bswde"]
+[ext_resource type="Texture2D" uid="uid://cqgi215wq7mr8" path="res://assets/icons/three stars icon.png" id="16_iy1b3"]
+[ext_resource type="Texture2D" uid="uid://byv0ufsn4xaia" path="res://assets/icons/paralysis icon.png" id="17_xolln"]
+[ext_resource type="Texture2D" uid="uid://cls43brah2tkd" path="res://assets/icons/attack icon.png" id="18_8oaok"]
+[ext_resource type="Texture2D" uid="uid://dqwxpm8e55dly" path="res://assets/icons/agility icon.png" id="19_v0ctn"]
+[ext_resource type="Texture2D" uid="uid://dnkig6eqllbgc" path="res://assets/icons/magic icon.png" id="20_l4mtr"]
+[ext_resource type="Texture2D" uid="uid://cj0krfgq03g6m" path="res://assets/icons/two stars icon.png" id="21_t8il6"]
+[ext_resource type="Texture2D" uid="uid://cih1pevuq4n6e" path="res://assets/icons/bagpack icon.png" id="22_7to3c"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_qrr8g"]
 font = ExtResource("4_rkqi3")
 font_size = 6
+font_color = Color(1, 1, 0, 1)
 outline_size = 2
 outline_color = Color(0, 0, 0, 1)
 
@@ -24,10 +36,23 @@ font_size = 5
 outline_size = 2
 outline_color = Color(0, 0, 0, 1)
 
+[sub_resource type="LabelSettings" id="LabelSettings_7scff"]
+line_spacing = 0.0
+font = ExtResource("6_r50xv")
+font_size = 4
+
 [sub_resource type="LabelSettings" id="LabelSettings_x8rbt"]
 font = ExtResource("6_r50xv")
 font_size = 8
 font_color = Color(1, 1, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_cmpgq"]
+line_spacing = 0.0
+font = ExtResource("6_r50xv")
+font_size = 5
+font_color = Color(0, 1, 0, 1)
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_at25e"]
 font = ExtResource("6_r50xv")
@@ -41,6 +66,47 @@ font_size = 4
 font = ExtResource("6_r50xv")
 font_size = 4
 
+[sub_resource type="LabelSettings" id="LabelSettings_nnyfm"]
+font = ExtResource("6_r50xv")
+font_size = 6
+font_color = Color(1, 1, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_h1brv"]
+line_spacing = 1.0
+font = ExtResource("6_r50xv")
+font_size = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_e4drc"]
+line_spacing = 1.0
+font = ExtResource("6_r50xv")
+font_size = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_oe63t"]
+font = ExtResource("6_r50xv")
+font_size = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_g8uex"]
+line_spacing = 1.0
+font = ExtResource("6_r50xv")
+font_size = 4
+font_color = Color(0, 1, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_hfgnv"]
+font = ExtResource("6_r50xv")
+font_size = 4
+font_color = Color(1, 1, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ytyb8"]
+line_spacing = 1.0
+font = ExtResource("6_r50xv")
+font_size = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_dekxx"]
+font = ExtResource("6_r50xv")
+font_size = 4
+font_color = Color(0, 1, 0, 1)
+outline_color = Color(0, 0, 0, 1)
+
 [node name="MainScene" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -49,12 +115,21 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 1, 1, 0.196078)
+
 [node name="VContainer" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(140, 270)
 layout_mode = 0
 offset_right = 140.0
 offset_bottom = 270.0
-theme_override_constants/separation = 0
+theme_override_constants/separation = 1
 
 [node name="Battlefield" type="TextureRect" parent="VContainer"]
 custom_minimum_size = Vector2(0, 90)
@@ -115,7 +190,7 @@ expand_mode = 1
 stretch_mode = 5
 
 [node name="BackgroundLog" type="TextureRect" parent="VContainer"]
-custom_minimum_size = Vector2(0, 150)
+custom_minimum_size = Vector2(0, 148)
 layout_mode = 2
 texture = ExtResource("2_27dyn")
 expand_mode = 1
@@ -207,18 +282,164 @@ label_settings = SubResource("LabelSettings_5x7cr")
 horizontal_alignment = 1
 
 [node name="Container2" type="TextureRect" parent="."]
-custom_minimum_size = Vector2(180, 270)
+custom_minimum_size = Vector2(178, 270)
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -100.0
-offset_right = 80.0
+offset_left = -99.0
+offset_right = 79.0
 offset_bottom = 270.0
 grow_horizontal = 2
+texture = ExtResource("5_vfv32")
+expand_mode = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container2"]
+custom_minimum_size = Vector2(174, 10)
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 176.0
+offset_bottom = 16.0
+alignment = 1
+
+[node name="BtnMap" type="TextureButton" parent="Container2/HBoxContainer"]
+custom_minimum_size = Vector2(25, 14)
+layout_mode = 2
+texture_normal = ExtResource("8_tkobm")
+texture_pressed = ExtResource("8_tkobm")
+texture_hover = ExtResource("9_c50tc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Container2/HBoxContainer/BtnMap"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.5
+offset_top = -2.5
+offset_right = 4.5
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Map"
+label_settings = SubResource("LabelSettings_7scff")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BtnHero" type="TextureButton" parent="Container2/HBoxContainer"]
+custom_minimum_size = Vector2(25, 14)
+layout_mode = 2
+texture_normal = ExtResource("8_tkobm")
+texture_pressed = ExtResource("8_tkobm")
+texture_hover = ExtResource("9_c50tc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Container2/HBoxContainer/BtnHero"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.5
+offset_top = -2.5
+offset_right = 4.5
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Hero"
+label_settings = SubResource("LabelSettings_7scff")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BtnEquipment" type="TextureButton" parent="Container2/HBoxContainer"]
+custom_minimum_size = Vector2(25, 14)
+layout_mode = 2
+texture_normal = ExtResource("8_tkobm")
+texture_pressed = ExtResource("8_tkobm")
+texture_hover = ExtResource("9_c50tc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Container2/HBoxContainer/BtnEquipment"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.5
+offset_top = -2.5
+offset_right = 4.5
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Equipment"
+label_settings = SubResource("LabelSettings_7scff")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BtnInventory" type="TextureButton" parent="Container2/HBoxContainer"]
+custom_minimum_size = Vector2(25, 14)
+layout_mode = 2
+texture_normal = ExtResource("8_tkobm")
+texture_pressed = ExtResource("8_tkobm")
+texture_hover = ExtResource("9_c50tc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Container2/HBoxContainer/BtnInventory"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.5
+offset_top = -2.5
+offset_right = 4.5
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Inventory"
+label_settings = SubResource("LabelSettings_7scff")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BtnForge" type="TextureButton" parent="Container2/HBoxContainer"]
+custom_minimum_size = Vector2(25, 14)
+layout_mode = 2
+texture_normal = ExtResource("8_tkobm")
+texture_pressed = ExtResource("8_tkobm")
+texture_hover = ExtResource("9_c50tc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Container2/HBoxContainer/BtnForge"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.5
+offset_top = -2.5
+offset_right = 4.5
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Forge"
+label_settings = SubResource("LabelSettings_7scff")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Container3" type="TextureRect" parent="."]
-custom_minimum_size = Vector2(80, 270)
+custom_minimum_size = Vector2(80, 268)
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -239,16 +460,132 @@ theme_override_constants/separation = 3
 
 [node name="Label" type="Label" parent="Container3/VBoxContainer"]
 layout_mode = 2
-text = "Ações"
+text = "Actions"
 label_settings = SubResource("LabelSettings_x8rbt")
 horizontal_alignment = 1
 
 [node name="Info" type="TextureRect" parent="Container3/VBoxContainer"]
 custom_minimum_size = Vector2(80, 30)
 layout_mode = 2
-texture = ExtResource("7_pxcdo")
+texture = ExtResource("11_7htbn")
 expand_mode = 1
 flip_h = true
+
+[node name="IconClick" type="TextureRect" parent="Container3/VBoxContainer/Info"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 0
+offset_left = 6.0
+offset_top = 1.0
+offset_right = 18.0
+offset_bottom = 13.0
+texture = ExtResource("8_ygyk3")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container3/VBoxContainer/Info/IconClick"]
+custom_minimum_size = Vector2(12, 5)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 1.0
+offset_top = -2.0
+offset_right = 14.0
+offset_bottom = 4.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "13.5k"
+label_settings = SubResource("LabelSettings_cmpgq")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="IconGold" type="TextureRect" parent="Container3/VBoxContainer/Info"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 0
+offset_left = 44.0
+offset_top = 1.0
+offset_right = 56.0
+offset_bottom = 13.0
+texture = ExtResource("9_qo7ay")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container3/VBoxContainer/Info/IconGold"]
+custom_minimum_size = Vector2(12, 5)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 1.0
+offset_top = -2.0
+offset_right = 14.0
+offset_bottom = 4.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "13.5k"
+label_settings = SubResource("LabelSettings_cmpgq")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="IconScrap" type="TextureRect" parent="Container3/VBoxContainer/Info"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 0
+offset_left = 44.0
+offset_top = 16.0
+offset_right = 56.0
+offset_bottom = 28.0
+texture = ExtResource("10_ud07j")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container3/VBoxContainer/Info/IconScrap"]
+custom_minimum_size = Vector2(12, 5)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 1.0
+offset_top = -2.0
+offset_right = 14.0
+offset_bottom = 4.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "13.5k"
+label_settings = SubResource("LabelSettings_cmpgq")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="IconDPS" type="TextureRect" parent="Container3/VBoxContainer/Info"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 0
+offset_left = 6.0
+offset_top = 17.0
+offset_right = 18.0
+offset_bottom = 29.0
+texture = ExtResource("9_aj0nw")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container3/VBoxContainer/Info/IconDPS"]
+custom_minimum_size = Vector2(12, 5)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 1.0
+offset_top = -3.0
+offset_right = 14.0
+offset_bottom = 3.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "13.5k"
+label_settings = SubResource("LabelSettings_cmpgq")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Separator" type="TextureRect" parent="Container3/VBoxContainer"]
 custom_minimum_size = Vector2(80, 1)
@@ -322,6 +659,7 @@ horizontal_alignment = 1
 layout_mode = 2
 text = "These upgrades reset on Prestige."
 label_settings = SubResource("LabelSettings_4s0ga")
+horizontal_alignment = 1
 
 [node name="TextureRect" type="TextureRect" parent="Container3/VBoxContainer"]
 custom_minimum_size = Vector2(80, 20)
@@ -475,59 +813,225 @@ horizontal_alignment = 1
 
 [node name="Label5" type="Label" parent="Container3/VBoxContainer"]
 layout_mode = 2
-text = "Defeat the boss at Level 300 to Prestige or use a Mark of the Hunter from the Hunt Shop."
+text = "Defeat the boss at Level 300 to
+Prestige or use a Mark of the Hunter
+from the Hunt Shop."
 label_settings = SubResource("LabelSettings_4s0ga")
+horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="Info2" type="TextureRect" parent="Container3/VBoxContainer"]
 custom_minimum_size = Vector2(80, 75)
 layout_mode = 2
-texture = ExtResource("7_pxcdo")
+texture = ExtResource("11_7htbn")
 expand_mode = 1
 flip_h = true
 
-[node name="Button" type="Button" parent="Container3"]
-custom_minimum_size = Vector2(30, 15)
+[node name="Label" type="Label" parent="Container3/VBoxContainer/Info2"]
 layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_left = 2.0
-offset_top = -18.0
-offset_right = 36.0
-offset_bottom = -3.0
-grow_vertical = 0
-theme_override_fonts/font = ExtResource("6_r50xv")
-theme_override_font_sizes/font_size = 4
-text = "Prestige Now"
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -35.5
+offset_right = 40.0
+offset_bottom = -28.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Prestige Stats"
+label_settings = SubResource("LabelSettings_nnyfm")
+horizontal_alignment = 1
 
-[node name="Button2" type="Button" parent="Container3"]
-custom_minimum_size = Vector2(30, 15)
+[node name="IconPrestige" type="TextureRect" parent="Container3/VBoxContainer/Info2"]
+custom_minimum_size = Vector2(12, 12)
 layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -43.0
-offset_top = -18.0
-offset_right = -1.0
-offset_bottom = -3.0
-grow_horizontal = 0
-grow_vertical = 0
-theme_override_fonts/font = ExtResource("6_r50xv")
-theme_override_font_sizes/font_size = 4
-text = "Viwe Prestige Slot"
+offset_left = 5.0
+offset_top = 9.0
+offset_right = 17.0
+offset_bottom = 21.0
+texture = ExtResource("16_iy1b3")
+expand_mode = 1
 
-[node name="Container4" type="TextureRect" parent="."]
-custom_minimum_size = Vector2(80, 270)
+[node name="Label" type="Label" parent="Container3/VBoxContainer/Info2/IconPrestige"]
+custom_minimum_size = Vector2(12, 5)
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -80.0
+offset_left = 3.0
+offset_top = -5.5
+offset_right = 31.0
+offset_bottom = 5.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "5
+Prestige Count"
+label_settings = SubResource("LabelSettings_h1brv")
+vertical_alignment = 1
+
+[node name="IconClick" type="TextureRect" parent="Container3/VBoxContainer/Info2"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 1
+offset_left = 5.0
+offset_top = 22.0
+offset_right = 17.0
+offset_bottom = 34.0
+texture = ExtResource("8_ygyk3")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container3/VBoxContainer/Info2/IconClick"]
+custom_minimum_size = Vector2(12, 5)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 3.0
+offset_top = -5.5
+offset_right = 29.0
+offset_bottom = 5.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "+1.54k
+Click Damage"
+label_settings = SubResource("LabelSettings_e4drc")
+vertical_alignment = 1
+
+[node name="IconDPS" type="TextureRect" parent="Container3/VBoxContainer/Info2"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 1
+offset_left = 5.0
+offset_top = 35.0
+offset_right = 17.0
+offset_bottom = 47.0
+texture = ExtResource("9_aj0nw")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container3/VBoxContainer/Info2/IconDPS"]
+custom_minimum_size = Vector2(12, 5)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 3.0
+offset_top = -5.5
+offset_right = 29.0
+offset_bottom = 5.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "+1.54k
+DPS Damage"
+label_settings = SubResource("LabelSettings_e4drc")
+vertical_alignment = 1
+
+[node name="IconGold" type="TextureRect" parent="Container3/VBoxContainer/Info2"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 1
+offset_left = 5.0
+offset_top = 48.0
+offset_right = 17.0
+offset_bottom = 60.0
+texture = ExtResource("9_qo7ay")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container3/VBoxContainer/Info2/IconGold"]
+custom_minimum_size = Vector2(12, 5)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 3.0
+offset_top = -5.5
+offset_right = 29.0
+offset_bottom = 5.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "+100%
+Gold Gain"
+label_settings = SubResource("LabelSettings_e4drc")
+vertical_alignment = 1
+
+[node name="BtnPrestige" type="TextureRect" parent="Container3"]
+custom_minimum_size = Vector2(36, 10)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = -13.0
+offset_right = 39.0
+offset_bottom = -3.0
+grow_vertical = 0
+texture = ExtResource("9_c50tc")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container3/BtnPrestige"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -2.5
+offset_right = 13.0
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Prestige Now"
+label_settings = SubResource("LabelSettings_oe63t")
+
+[node name="BtnPrestigeSlot" type="TextureRect" parent="Container3"]
+custom_minimum_size = Vector2(36, 10)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -39.0
+offset_top = -13.0
+offset_right = -3.0
+offset_bottom = -3.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("9_c50tc")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container3/BtnPrestigeSlot"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -2.5
+offset_right = 13.0
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "View Prestige Slot"
+label_settings = SubResource("LabelSettings_oe63t")
+
+[node name="Container4" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(79, 270)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -79.0
 offset_top = -135.0
 offset_bottom = 135.0
 grow_horizontal = 0
@@ -536,9 +1040,9 @@ texture = ExtResource("5_vfv32")
 expand_mode = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Container4"]
-custom_minimum_size = Vector2(80, 270)
+custom_minimum_size = Vector2(79, 270)
 layout_mode = 0
-offset_right = 80.0
+offset_right = 79.0
 offset_bottom = 270.0
 
 [node name="Label" type="Label" parent="Container4/VBoxContainer"]
@@ -553,3 +1057,1018 @@ text = "Upgrades that are
 never lost on Prestige!"
 label_settings = SubResource("LabelSettings_4s0ga")
 horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Container4/VBoxContainer"]
+custom_minimum_size = Vector2(79, 240)
+layout_mode = 2
+vertical_scroll_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container4/VBoxContainer/ScrollContainer"]
+custom_minimum_size = Vector2(70, 40)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme_override_constants/separation = 3
+
+[node name="GoldMastery" type="TextureRect" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(70, 40)
+layout_mode = 2
+texture = ExtResource("11_7htbn")
+expand_mode = 1
+
+[node name="Icon" type="TextureRect" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 0
+offset_left = 3.0
+offset_top = 7.0
+offset_right = 15.0
+offset_bottom = 19.0
+texture = ExtResource("9_qo7ay")
+expand_mode = 1
+
+[node name="LevelLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery/Icon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -6.0
+offset_top = 2.0
+offset_right = 6.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Level: 
+26 / ∞"
+label_settings = SubResource("LabelSettings_g8uex")
+
+[node name="Title" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery"]
+custom_minimum_size = Vector2(25, 5)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -12.0
+offset_top = 2.0
+offset_right = 13.0
+offset_bottom = 7.0
+grow_horizontal = 2
+text = "Gold Mastery"
+label_settings = SubResource("LabelSettings_hfgnv")
+
+[node name="DescriptionLabel2" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 9.0
+offset_right = 69.0
+offset_bottom = 26.0
+text = "Increases the base 
+Gold dropped by monsters 
+by 69%."
+label_settings = SubResource("LabelSettings_ytyb8")
+
+[node name="CostLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = -8.0
+offset_right = 10.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "225.5m GOLD"
+label_settings = SubResource("LabelSettings_dekxx")
+
+[node name="BtnBuy" type="TextureButton" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery"]
+custom_minimum_size = Vector2(15, 10)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -19.0
+offset_top = -11.0
+offset_right = -4.0
+offset_bottom = -1.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("8_tkobm")
+texture_pressed = ExtResource("8_tkobm")
+texture_hover = ExtResource("9_c50tc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label3" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery/BtnBuy"]
+custom_minimum_size = Vector2(8, 5)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -2.5
+offset_right = 4.0
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Buy"
+label_settings = SubResource("LabelSettings_ytyb8")
+
+[node name="ScrapScavenger" type="TextureRect" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(70, 40)
+layout_mode = 2
+texture = ExtResource("11_7htbn")
+expand_mode = 1
+
+[node name="Icon" type="TextureRect" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/ScrapScavenger"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 0
+offset_left = 3.0
+offset_top = 7.0
+offset_right = 15.0
+offset_bottom = 19.0
+texture = ExtResource("10_ud07j")
+expand_mode = 1
+
+[node name="LevelLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/ScrapScavenger/Icon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -6.0
+offset_top = 2.0
+offset_right = 6.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Level: 
+26 / ∞"
+label_settings = SubResource("LabelSettings_g8uex")
+
+[node name="Title" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/ScrapScavenger"]
+custom_minimum_size = Vector2(25, 5)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -12.0
+offset_top = 2.0
+offset_right = 13.0
+offset_bottom = 7.0
+grow_horizontal = 2
+text = "Scrap Scavenger"
+label_settings = SubResource("LabelSettings_hfgnv")
+
+[node name="DescriptionLabel2" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/ScrapScavenger"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 12.0
+offset_right = 69.0
+offset_bottom = 23.0
+text = "Gain 52% more Scrap 
+from salvaging items."
+label_settings = SubResource("LabelSettings_ytyb8")
+
+[node name="CostLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/ScrapScavenger"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = -8.0
+offset_right = 10.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "225.5m GOLD"
+label_settings = SubResource("LabelSettings_dekxx")
+
+[node name="BtnBuy" type="TextureButton" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/ScrapScavenger"]
+custom_minimum_size = Vector2(15, 10)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -19.0
+offset_top = -11.0
+offset_right = -4.0
+offset_bottom = -1.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("8_tkobm")
+texture_pressed = ExtResource("8_tkobm")
+texture_hover = ExtResource("9_c50tc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label3" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/ScrapScavenger/BtnBuy"]
+custom_minimum_size = Vector2(8, 5)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -2.5
+offset_right = 4.0
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Buy"
+label_settings = SubResource("LabelSettings_ytyb8")
+
+[node name="CriticalPower" type="TextureRect" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(70, 40)
+layout_mode = 2
+texture = ExtResource("11_7htbn")
+expand_mode = 1
+
+[node name="Icon" type="TextureRect" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalPower"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 0
+offset_left = 3.0
+offset_top = 7.0
+offset_right = 15.0
+offset_bottom = 19.0
+texture = ExtResource("16_bswde")
+expand_mode = 1
+
+[node name="LevelLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalPower/Icon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -6.0
+offset_top = 2.0
+offset_right = 6.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Level: 
+26 / ∞"
+label_settings = SubResource("LabelSettings_g8uex")
+
+[node name="Title" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalPower"]
+custom_minimum_size = Vector2(25, 5)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -12.0
+offset_top = 2.0
+offset_right = 13.0
+offset_bottom = 7.0
+grow_horizontal = 2
+text = "Critical Power"
+label_settings = SubResource("LabelSettings_hfgnv")
+
+[node name="DescriptionLabel2" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalPower"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 12.0
+offset_right = 69.0
+offset_bottom = 23.0
+text = "Gain a 24% chance to 
+deal a critical hit."
+label_settings = SubResource("LabelSettings_ytyb8")
+
+[node name="CostLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalPower"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = -8.0
+offset_right = 10.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "225.5m GOLD"
+label_settings = SubResource("LabelSettings_dekxx")
+
+[node name="BtnBuy" type="TextureButton" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalPower"]
+custom_minimum_size = Vector2(15, 10)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -19.0
+offset_top = -11.0
+offset_right = -4.0
+offset_bottom = -1.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("8_tkobm")
+texture_pressed = ExtResource("8_tkobm")
+texture_hover = ExtResource("9_c50tc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label3" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalPower/BtnBuy"]
+custom_minimum_size = Vector2(8, 5)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -2.5
+offset_right = 4.0
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Buy"
+label_settings = SubResource("LabelSettings_ytyb8")
+
+[node name="CriticalDamage" type="TextureRect" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(70, 40)
+layout_mode = 2
+texture = ExtResource("11_7htbn")
+expand_mode = 1
+
+[node name="Icon" type="TextureRect" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalDamage"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 0
+offset_left = 3.0
+offset_top = 7.0
+offset_right = 15.0
+offset_bottom = 19.0
+texture = ExtResource("17_xolln")
+expand_mode = 1
+
+[node name="LevelLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalDamage/Icon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -6.0
+offset_top = 2.0
+offset_right = 6.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Level: 
+26 / ∞"
+label_settings = SubResource("LabelSettings_g8uex")
+
+[node name="Title" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalDamage"]
+custom_minimum_size = Vector2(25, 5)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -12.0
+offset_top = 2.0
+offset_right = 13.0
+offset_bottom = 7.0
+grow_horizontal = 2
+text = "Critical Damage"
+label_settings = SubResource("LabelSettings_hfgnv")
+
+[node name="DescriptionLabel2" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalDamage"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 10.0
+offset_right = 69.0
+offset_bottom = 27.0
+text = "Critical hits deal an 
+additional 220% damage.
+Base crit damage is 1.5x."
+label_settings = SubResource("LabelSettings_ytyb8")
+
+[node name="CostLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalDamage"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = -8.0
+offset_right = 10.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "225.5m GOLD"
+label_settings = SubResource("LabelSettings_dekxx")
+
+[node name="BtnBuy" type="TextureButton" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalDamage"]
+custom_minimum_size = Vector2(15, 10)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -19.0
+offset_top = -11.0
+offset_right = -4.0
+offset_bottom = -1.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("8_tkobm")
+texture_pressed = ExtResource("8_tkobm")
+texture_hover = ExtResource("9_c50tc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label3" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalDamage/BtnBuy"]
+custom_minimum_size = Vector2(8, 5)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -2.5
+offset_right = 4.0
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Buy"
+label_settings = SubResource("LabelSettings_ytyb8")
+
+[node name="BossHunter" type="TextureRect" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(70, 40)
+layout_mode = 2
+texture = ExtResource("11_7htbn")
+expand_mode = 1
+
+[node name="Icon" type="TextureRect" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/BossHunter"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 0
+offset_left = 3.0
+offset_top = 7.0
+offset_right = 15.0
+offset_bottom = 19.0
+texture = ExtResource("18_8oaok")
+expand_mode = 1
+
+[node name="LevelLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/BossHunter/Icon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -6.0
+offset_top = 2.0
+offset_right = 6.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Level: 
+26 / ∞"
+label_settings = SubResource("LabelSettings_g8uex")
+
+[node name="Title" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/BossHunter"]
+custom_minimum_size = Vector2(25, 5)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -12.0
+offset_top = 2.0
+offset_right = 13.0
+offset_bottom = 7.0
+grow_horizontal = 2
+text = "Boss Hunter"
+label_settings = SubResource("LabelSettings_hfgnv")
+horizontal_alignment = 1
+
+[node name="DescriptionLabel2" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/BossHunter"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 10.0
+offset_right = 69.0
+offset_bottom = 27.0
+text = "Deal 48% more damage to 
+Mini-Bosses, Bosses, 
+and Big Bosses."
+label_settings = SubResource("LabelSettings_ytyb8")
+
+[node name="CostLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/BossHunter"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = -8.0
+offset_right = 10.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "225.5m GOLD"
+label_settings = SubResource("LabelSettings_dekxx")
+
+[node name="BtnBuy" type="TextureButton" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/BossHunter"]
+custom_minimum_size = Vector2(15, 10)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -19.0
+offset_top = -11.0
+offset_right = -4.0
+offset_bottom = -1.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("8_tkobm")
+texture_pressed = ExtResource("8_tkobm")
+texture_hover = ExtResource("9_c50tc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label3" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/BossHunter/BtnBuy"]
+custom_minimum_size = Vector2(8, 5)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -2.5
+offset_right = 4.0
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Buy"
+label_settings = SubResource("LabelSettings_ytyb8")
+
+[node name="SwiftStrikes" type="TextureRect" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(70, 40)
+layout_mode = 2
+texture = ExtResource("11_7htbn")
+expand_mode = 1
+
+[node name="Icon" type="TextureRect" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/SwiftStrikes"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 0
+offset_left = 3.0
+offset_top = 7.0
+offset_right = 15.0
+offset_bottom = 19.0
+texture = ExtResource("19_v0ctn")
+expand_mode = 1
+
+[node name="LevelLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/SwiftStrikes/Icon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -6.0
+offset_top = 2.0
+offset_right = 6.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Level: 
+26 / ∞"
+label_settings = SubResource("LabelSettings_g8uex")
+
+[node name="Title" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/SwiftStrikes"]
+custom_minimum_size = Vector2(25, 5)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -12.0
+offset_top = 2.0
+offset_right = 13.0
+offset_bottom = 7.0
+grow_horizontal = 2
+text = "Swift Strikes"
+label_settings = SubResource("LabelSettings_hfgnv")
+horizontal_alignment = 1
+
+[node name="DescriptionLabel2" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/SwiftStrikes"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 10.0
+offset_right = 69.0
+offset_bottom = 27.0
+text = "Your attacks have a 5% 
+chance to hit an additional 
+time."
+label_settings = SubResource("LabelSettings_ytyb8")
+
+[node name="CostLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/SwiftStrikes"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = -8.0
+offset_right = 10.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "225.5m GOLD"
+label_settings = SubResource("LabelSettings_dekxx")
+
+[node name="BtnBuy" type="TextureButton" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/SwiftStrikes"]
+custom_minimum_size = Vector2(15, 10)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -19.0
+offset_top = -11.0
+offset_right = -4.0
+offset_bottom = -1.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("8_tkobm")
+texture_pressed = ExtResource("8_tkobm")
+texture_hover = ExtResource("9_c50tc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label3" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/SwiftStrikes/BtnBuy"]
+custom_minimum_size = Vector2(8, 5)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -2.5
+offset_right = 4.0
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Buy"
+label_settings = SubResource("LabelSettings_ytyb8")
+
+[node name="HuntersAcumen" type="TextureRect" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(70, 40)
+layout_mode = 2
+texture = ExtResource("11_7htbn")
+expand_mode = 1
+
+[node name="Icon" type="TextureRect" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/HuntersAcumen"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 0
+offset_left = 3.0
+offset_top = 7.0
+offset_right = 15.0
+offset_bottom = 19.0
+texture = ExtResource("20_l4mtr")
+expand_mode = 1
+
+[node name="LevelLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/HuntersAcumen/Icon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -6.0
+offset_top = 2.0
+offset_right = 6.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Level: 
+26 / ∞"
+label_settings = SubResource("LabelSettings_g8uex")
+
+[node name="Title" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/HuntersAcumen"]
+custom_minimum_size = Vector2(25, 5)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -12.0
+offset_top = 2.0
+offset_right = 13.0
+offset_bottom = 7.0
+grow_horizontal = 2
+text = "Hunter's Acumen"
+label_settings = SubResource("LabelSettings_hfgnv")
+horizontal_alignment = 1
+
+[node name="DescriptionLabel2" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/HuntersAcumen"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 10.0
+offset_right = 69.0
+offset_bottom = 27.0
+text = "Gain 3 additional Hunt 
+Token(s) from completing
+bounties."
+label_settings = SubResource("LabelSettings_ytyb8")
+
+[node name="CostLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/HuntersAcumen"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = -8.0
+offset_right = 10.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "225.5m GOLD"
+label_settings = SubResource("LabelSettings_dekxx")
+
+[node name="BtnBuy" type="TextureButton" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/HuntersAcumen"]
+custom_minimum_size = Vector2(15, 10)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -19.0
+offset_top = -11.0
+offset_right = -4.0
+offset_bottom = -1.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("8_tkobm")
+texture_pressed = ExtResource("8_tkobm")
+texture_hover = ExtResource("9_c50tc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label3" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/HuntersAcumen/BtnBuy"]
+custom_minimum_size = Vector2(8, 5)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -2.5
+offset_right = 4.0
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Buy"
+label_settings = SubResource("LabelSettings_ytyb8")
+
+[node name="PrestigeSurge" type="TextureRect" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(70, 40)
+layout_mode = 2
+texture = ExtResource("11_7htbn")
+expand_mode = 1
+
+[node name="Icon" type="TextureRect" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/PrestigeSurge"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 0
+offset_left = 3.0
+offset_top = 7.0
+offset_right = 15.0
+offset_bottom = 19.0
+texture = ExtResource("21_t8il6")
+expand_mode = 1
+
+[node name="LevelLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/PrestigeSurge/Icon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -6.0
+offset_top = 2.0
+offset_right = 6.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Level: 
+26 / ∞"
+label_settings = SubResource("LabelSettings_g8uex")
+
+[node name="Title" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/PrestigeSurge"]
+custom_minimum_size = Vector2(25, 5)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -12.0
+offset_top = 2.0
+offset_right = 13.0
+offset_bottom = 7.0
+grow_horizontal = 2
+text = "Prestige Surge"
+label_settings = SubResource("LabelSettings_hfgnv")
+horizontal_alignment = 1
+
+[node name="DescriptionLabel2" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/PrestigeSurge"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 8.0
+offset_right = 69.0
+offset_bottom = 31.0
+text = "Gain a flat 9.00K Click 
+Damage and 45.00K 
+DPS bonus for each 
+time you have prestiged."
+label_settings = SubResource("LabelSettings_ytyb8")
+
+[node name="CostLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/PrestigeSurge"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = -7.0
+offset_right = 10.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "225.5m GOLD"
+label_settings = SubResource("LabelSettings_dekxx")
+
+[node name="BtnBuy" type="TextureButton" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/PrestigeSurge"]
+custom_minimum_size = Vector2(15, 10)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -19.0
+offset_top = -11.0
+offset_right = -4.0
+offset_bottom = -1.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("8_tkobm")
+texture_pressed = ExtResource("8_tkobm")
+texture_hover = ExtResource("9_c50tc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label3" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/PrestigeSurge/BtnBuy"]
+custom_minimum_size = Vector2(8, 5)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -1.5
+offset_right = 4.0
+offset_bottom = 3.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Buy"
+label_settings = SubResource("LabelSettings_ytyb8")
+
+[node name="LegacyKeeper" type="TextureRect" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(70, 40)
+layout_mode = 2
+texture = ExtResource("11_7htbn")
+expand_mode = 1
+
+[node name="Icon" type="TextureRect" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/LegacyKeeper"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 0
+offset_left = 3.0
+offset_top = 7.0
+offset_right = 15.0
+offset_bottom = 19.0
+texture = ExtResource("22_7to3c")
+expand_mode = 1
+
+[node name="LevelLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/LegacyKeeper/Icon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -6.0
+offset_top = 2.0
+offset_right = 6.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Level: 
+26 / ∞"
+label_settings = SubResource("LabelSettings_g8uex")
+
+[node name="Title" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/LegacyKeeper"]
+custom_minimum_size = Vector2(25, 5)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -12.0
+offset_top = 2.0
+offset_right = 13.0
+offset_bottom = 7.0
+grow_horizontal = 2
+text = "Legacy Keeper"
+label_settings = SubResource("LabelSettings_hfgnv")
+horizontal_alignment = 1
+
+[node name="DescriptionLabel2" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/LegacyKeeper"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 11.0
+offset_right = 69.0
+offset_bottom = 28.0
+text = "Unlock 2 additional Legacy 
+Slot(s) to absorb items 
+during Prestige."
+label_settings = SubResource("LabelSettings_ytyb8")
+
+[node name="CostLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/LegacyKeeper"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = -7.0
+offset_right = 10.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "225.5m GOLD"
+label_settings = SubResource("LabelSettings_dekxx")
+
+[node name="BtnBuy" type="TextureButton" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/LegacyKeeper"]
+custom_minimum_size = Vector2(15, 10)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -19.0
+offset_top = -11.0
+offset_right = -4.0
+offset_bottom = -1.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("8_tkobm")
+texture_pressed = ExtResource("8_tkobm")
+texture_hover = ExtResource("9_c50tc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label3" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/LegacyKeeper/BtnBuy"]
+custom_minimum_size = Vector2(8, 5)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -1.5
+offset_right = 4.0
+offset_bottom = 3.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Buy"
+label_settings = SubResource("LabelSettings_ytyb8")

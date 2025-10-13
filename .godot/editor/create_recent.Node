@@ -1,8 +1,14 @@
-VBoxContainer
-TextureRect
-Button
+Marker2D
 Label
 TextureButton
+Button
 HBoxContainer
+TextureRect
+TabContainer
+VScrollBar
+VBoxContainer
+ScrollContainer
+ColorRect
+ColorPickerButton
 GridContainer
 Timer
