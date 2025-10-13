@@ -1,8 +1,9 @@
-[gd_scene load_steps=39 format=3 uid="uid://chee12681ksau"]
+[gd_scene load_steps=40 format=3 uid="uid://chee12681ksau"]
 
 [ext_resource type="Texture2D" uid="uid://ciir88k8isk6u" path="res://assets/backgrounds/1.png" id="1_5hms3"]
 [ext_resource type="Texture2D" uid="uid://dp4l60ef0vkwx" path="res://assets/itens/potion/Potion 1.png" id="2_2av4a"]
 [ext_resource type="Texture2D" uid="uid://bufxp71go2hq7" path="res://assets/backgrounds/EmptyPanel.png" id="2_27dyn"]
+[ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="2_f20an"]
 [ext_resource type="FontFile" uid="uid://f3rv4yrfifht" path="res://assets/font/Oxanium-Bold.ttf" id="4_rkqi3"]
 [ext_resource type="Texture2D" uid="uid://cgm2g3igfxnw1" path="res://assets/backgrounds/Panel.png" id="5_vfv32"]
 [ext_resource type="FontFile" uid="uid://iutw4od6mkk8" path="res://assets/font/Oxanium-Medium.ttf" id="6_r50xv"]
@@ -136,6 +137,11 @@ custom_minimum_size = Vector2(0, 90)
 layout_mode = 2
 texture = ExtResource("1_5hms3")
 expand_mode = 1
+
+[node name="Marker2D" type="Marker2D" parent="VContainer/Battlefield"]
+position = Vector2(69, 70)
+
+[node name="BaseEnemy" parent="VContainer/Battlefield/Marker2D" instance=ExtResource("2_f20an")]
 
 [node name="BackgroundPotion" type="TextureRect" parent="VContainer"]
 custom_minimum_size = Vector2(140, 30)
