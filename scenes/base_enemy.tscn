@@ -11,6 +11,7 @@
 [ext_resource type="FontFile" uid="uid://iutw4od6mkk8" path="res://assets/font/Oxanium-Medium.ttf" id="9_trvy0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yjes7"]
+size = Vector2(46, 59)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3sny4"]
 animations = [{
@@ -39,11 +40,13 @@ font_size = 5
 outline_size = 2
 outline_color = Color(0, 0, 0, 1)
 
-[node name="BaseEnemy" type="StaticBody2D"]
+[node name="BaseEnemy" type="StaticBody2D" node_paths=PackedStringArray("progress_bar") groups=["enemy"]]
 script = ExtResource("1_4oi7a")
+progress_bar = NodePath("ProgressBar")
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 visible = false
+position = Vector2(-1, -29.5)
 shape = SubResource("RectangleShape2D_yjes7")
 
 [node name="Animation" type="AnimatedSprite2D" parent="."]
@@ -61,12 +64,11 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -50.0
-offset_top = 1.0
+offset_top = 2.0
 offset_right = 50.0
-offset_bottom = 11.0
+offset_bottom = 14.0
 grow_horizontal = 2
 grow_vertical = 0
-value = 50.0
 nine_patch_stretch = true
 texture_under = ExtResource("6_o15yf")
 texture_over = ExtResource("7_apwcm")
@@ -79,11 +81,12 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -14.0
+offset_left = -0.5
 offset_top = -2.0
-offset_right = 14.0
+offset_right = 0.5
 offset_bottom = 4.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "1425 / 5000"
 label_settings = SubResource("LabelSettings_u1rnd")
+horizontal_alignment = 1
+vertical_alignment = 1

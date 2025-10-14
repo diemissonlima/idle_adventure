@@ -1,87 +1,87 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1760390769
-icon.svg::CompressedTexture2D::1437991343033267371::1760359394::1760359455::1::::<><>::
-::res://assets/::1760392153
-::res://assets/backgrounds/::1760359455
-1.png::CompressedTexture2D::5351960008828209546::1760359394::1760359455::1::::<><>::
-Box-1.png::CompressedTexture2D::4254995777177581488::1760359394::1760359455::1::::<><>::
-Box.png::CompressedTexture2D::4219473244612877726::1760359394::1760359455::1::::<><>::
-Button Active.png::CompressedTexture2D::5447359019961304720::1760359394::1760359455::1::::<><>::
-Button Normal.png::CompressedTexture2D::5828765917059848941::1760359394::1760359455::1::::<><>::
-Cell.png::CompressedTexture2D::3755773594043204953::1760359394::1760359455::1::::<><>::
-EmptyPanel.png::CompressedTexture2D::3801944444170760276::1760359394::1760359455::1::::<><>::
-Panel.png::CompressedTexture2D::5220398519123691010::1760359394::1760359455::1::::<><>::
-Separator.png::CompressedTexture2D::7973921318143996010::1760359394::1760359455::1::::<><>::
-::res://assets/enemies/::1760391545
-::res://assets/enemies/1/::1760391545
-1.png::CompressedTexture2D::6471405765035409580::1760391545::1760391545::1::::<><>::
-2.png::CompressedTexture2D::7874792418364671385::1760391545::1760391545::1::::<><>::
-3.png::CompressedTexture2D::3112412772644162032::1760391545::1760391545::1::::<><>::
-4.png::CompressedTexture2D::8580632898962418262::1760391545::1760391545::1::::<><>::
-::res://assets/font/::1760359455
-Oxanium-Bold.ttf::FontFile::409818046884732869::1760359394::1760359455::1::::<><>::
-Oxanium-ExtraBold.ttf::FontFile::1557212382361150861::1760359394::1760359455::1::::<><>::
-Oxanium-ExtraLight.ttf::FontFile::9131719404345591166::1760359394::1760359455::1::::<><>::
-Oxanium-Light.ttf::FontFile::6864468917563616270::1760359394::1760359455::1::::<><>::
-Oxanium-Medium.ttf::FontFile::603992759496557389::1760359394::1760359455::1::::<><>::
-Oxanium-Regular.ttf::FontFile::8649974219081696382::1760359394::1760359455::1::::<><>::
-Oxanium-SemiBold.ttf::FontFile::4809827116573988245::1760359394::1760359455::1::::<><>::
-::res://assets/icons/::1760383377
-agility icon.png::CompressedTexture2D::8329123819101100714::1760370759::1760370760::1::::<><>::
-attack icon.png::CompressedTexture2D::5583888320792661931::1760370637::1760370638::1::::<><>::
-bagpack icon.png::CompressedTexture2D::5350408432954920190::1760383376::1760383377::1::::<><>::
-energy icon.png::CompressedTexture2D::4978712595627673845::1760370450::1760370451::1::::<><>::
-escape icon.png::CompressedTexture2D::5261726398497599082::1760364173::1760364173::1::::<><>::
-magic icon.png::CompressedTexture2D::8092858881765055322::1760382479::1760382480::1::::<><>::
-options icon.png::CompressedTexture2D::4230079819304281903::1760364179::1760364179::1::::<><>::
-paralysis icon.png::CompressedTexture2D::4115858795591941816::1760370524::1760370524::1::::<><>::
-pouch icon.png::CompressedTexture2D::5441548092585581695::1760364207::1760364207::1::::<><>::
-strength icon.png::CompressedTexture2D::1244219534180352802::1760364182::1760364182::1::::<><>::
-three stars icon.png::CompressedTexture2D::5908784497470111955::1760366055::1760366056::1::::<><>::
-two stars icon.png::CompressedTexture2D::5456788205051096754::1760383094::1760383095::1::::<><>::
-::res://assets/itens/::1760359394
-::res://assets/itens/potion/::1760359455
-01.png::CompressedTexture2D::702392935352550679::1760359394::1760359455::1::::<><>::
-02.png::CompressedTexture2D::7149541652724329586::1760359394::1760359455::1::::<><>::
-03.png::CompressedTexture2D::8668910730068990825::1760359394::1760359455::1::::<><>::
-04.png::CompressedTexture2D::632314335982817446::1760359394::1760359455::1::::<><>::
-05.png::CompressedTexture2D::6525817692137410352::1760359394::1760359455::1::::<><>::
-06.png::CompressedTexture2D::6061731027416376328::1760359394::1760359455::1::::<><>::
-07.png::CompressedTexture2D::1598617834846227582::1760359394::1760359455::1::::<><>::
-08.png::CompressedTexture2D::4818250895811061213::1760359394::1760359455::1::::<><>::
-09.png::CompressedTexture2D::3012147092054593665::1760359394::1760359455::1::::<><>::
-11.png::CompressedTexture2D::9197555865729273609::1760359394::1760359455::1::::<><>::
-12.png::CompressedTexture2D::527781607172492376::1760359394::1760359455::1::::<><>::
-13.png::CompressedTexture2D::1396114790911392785::1760359394::1760359455::1::::<><>::
-14.png::CompressedTexture2D::289433575556821396::1760359394::1760359455::1::::<><>::
-15.png::CompressedTexture2D::4780701265795159496::1760359394::1760359455::1::::<><>::
-16.png::CompressedTexture2D::7888999132713824882::1760359394::1760359455::1::::<><>::
-17.png::CompressedTexture2D::1517238703351267068::1760359394::1760359455::1::::<><>::
-18.png::CompressedTexture2D::5998528196169861364::1760359394::1760359455::1::::<><>::
-19.png::CompressedTexture2D::7218346682900539611::1760359394::1760359455::1::::<><>::
-Potion 1.png::CompressedTexture2D::8272686226573399811::1760359394::1760359455::1::::<><>::
-Potion 2.png::CompressedTexture2D::1502533094723486462::1760359394::1760359455::1::::<><>::
-Potion 3.png::CompressedTexture2D::131685240493498507::1760359394::1760359455::1::::<><>::
-Potion 4.png::CompressedTexture2D::1378802594959495064::1760359394::1760359455::1::::<><>::
-Potion 5.png::CompressedTexture2D::7286104462455980859::1760359394::1760359455::1::::<><>::
-Potion 6.png::CompressedTexture2D::8344264695156015855::1760359394::1760359455::1::::<><>::
-Potion 7.png::CompressedTexture2D::826675141748626137::1760359394::1760359455::1::::<><>::
-Potion 8.png::CompressedTexture2D::5740120312689601042::1760359394::1760359455::1::::<><>::
-Potion 9.png::CompressedTexture2D::6577422603319783990::1760359394::1760359455::1::::<><>::
-Potion 10.png::CompressedTexture2D::6818565952639016380::1760359394::1760359455::1::::<><>::
-Potion 11.png::CompressedTexture2D::2484920974495270941::1760359394::1760359455::1::::<><>::
-::res://assets/maps/::1760387236
-map1.png::CompressedTexture2D::5393104755822848229::1760387065::1760387235::1::::<><>::
-map2.png::CompressedTexture2D::9045629263764141051::1760387065::1760387235::1::::<><>::
-map3.png::CompressedTexture2D::7325278686518629290::1760387065::1760387235::1::::<><>::
-map4.png::CompressedTexture2D::1972437875165672456::1760387065::1760387236::1::::<><>::
-world_map.png::CompressedTexture2D::653930701590880692::1760387065::1760387236::1::::<><>::
-::res://assets/progressbar/::1760392156
-ProgressBar01_Background.png::CompressedTexture2D::5681109640376303659::1760392156::1760392157::1::::<><>::
-ProgressBar01_Bar.png::CompressedTexture2D::4446741047019849478::1760392156::1760392157::1::::<><>::
-ProgressBar01_Border.png::CompressedTexture2D::1287557692921412421::1760392156::1760392157::1::::<><>::
-::res://scenes/::1760390698
-base_enemy.tscn::PackedScene::1592437894108702619::1760390698::0::1::::<><>::
-main_scene.tscn::PackedScene::5272711550035179436::1760386656::0::1::::<><>::uid://ciir88k8isk6u::::res://assets/backgrounds/1.png<>uid://dp4l60ef0vkwx::::res://assets/itens/potion/Potion 1.png<>uid://bufxp71go2hq7::::res://assets/backgrounds/EmptyPanel.png<>uid://f3rv4yrfifht::::res://assets/font/Oxanium-Bold.ttf<>uid://cgm2g3igfxnw1::::res://assets/backgrounds/Panel.png<>uid://iutw4od6mkk8::::res://assets/font/Oxanium-Medium.ttf<>uid://cpbq6nb8esg6h::::res://assets/backgrounds/Button Normal.png<>uid://ryyd4yrcsnio::::res://assets/icons/strength icon.png<>uid://cg724n8l7r5nq::::res://assets/icons/escape icon.png<>uid://cju0hbrm8tun5::::res://assets/backgrounds/Button Active.png<>uid://cjr6rcnfhgc44::::res://assets/icons/pouch icon.png<>uid://dluvk35d70he5::::res://assets/backgrounds/Separator.png<>uid://b1jc2c4vk8cxr::::res://assets/icons/options icon.png<>uid://b1d7dwxtii10e::::res://assets/backgrounds/Box.png<>uid://cc6yw0om5xoiv::::res://assets/icons/energy icon.png<>uid://cqgi215wq7mr8::::res://assets/icons/three stars icon.png<>uid://byv0ufsn4xaia::::res://assets/icons/paralysis icon.png<>uid://cls43brah2tkd::::res://assets/icons/attack icon.png<>uid://dqwxpm8e55dly::::res://assets/icons/agility icon.png<>uid://dnkig6eqllbgc::::res://assets/icons/magic icon.png<>uid://cj0krfgq03g6m::::res://assets/icons/two stars icon.png<>uid://cih1pevuq4n6e::::res://assets/icons/bagpack icon.png
-::res://scripts/::1760390773
-base_enemy.gd::GDScript::-1::1760390773::0::1::::<>StaticBody2D<>::
+::res://::1760398546
+icon.svg::CompressedTexture2D::1437991343033267371::1760398480::1760398550::1::::<><>::
+::res://assets/::1760398510
+::res://assets/backgrounds/::1760398509
+1.png::CompressedTexture2D::5351960008828209546::1760398479::1760398550::1::::<><>::
+Box-1.png::CompressedTexture2D::4254995777177581488::1760398479::1760398550::1::::<><>::
+Box.png::CompressedTexture2D::4219473244612877726::1760398479::1760398550::1::::<><>::
+Button Active.png::CompressedTexture2D::5447359019961304720::1760398479::1760398550::1::::<><>::
+Button Normal.png::CompressedTexture2D::5828765917059848941::1760398479::1760398550::1::::<><>::
+Cell.png::CompressedTexture2D::3755773594043204953::1760398479::1760398550::1::::<><>::
+EmptyPanel.png::CompressedTexture2D::3801944444170760276::1760398479::1760398550::1::::<><>::
+Panel.png::CompressedTexture2D::5220398519123691010::1760398479::1760398550::1::::<><>::
+Separator.png::CompressedTexture2D::7973921318143996010::1760398479::1760398550::1::::<><>::
+::res://assets/enemies/::1760398509
+::res://assets/enemies/1/::1760398509
+1.png::CompressedTexture2D::6471405765035409580::1760398479::1760398550::1::::<><>::
+2.png::CompressedTexture2D::7874792418364671385::1760398479::1760398550::1::::<><>::
+3.png::CompressedTexture2D::3112412772644162032::1760398479::1760398550::1::::<><>::
+4.png::CompressedTexture2D::8580632898962418262::1760398479::1760398550::1::::<><>::
+::res://assets/font/::1760398509
+Oxanium-Bold.ttf::FontFile::409818046884732869::1760398479::1760398550::1::::<><>::
+Oxanium-ExtraBold.ttf::FontFile::1557212382361150861::1760398479::1760398550::1::::<><>::
+Oxanium-ExtraLight.ttf::FontFile::9131719404345591166::1760398479::1760398550::1::::<><>::
+Oxanium-Light.ttf::FontFile::6864468917563616270::1760398479::1760398550::1::::<><>::
+Oxanium-Medium.ttf::FontFile::603992759496557389::1760398479::1760398550::1::::<><>::
+Oxanium-Regular.ttf::FontFile::8649974219081696382::1760398479::1760398550::1::::<><>::
+Oxanium-SemiBold.ttf::FontFile::4809827116573988245::1760398479::1760398550::1::::<><>::
+::res://assets/icons/::1760398509
+agility icon.png::CompressedTexture2D::8329123819101100714::1760398479::1760398551::1::::<><>::
+attack icon.png::CompressedTexture2D::5583888320792661931::1760398479::1760398550::1::::<><>::
+bagpack icon.png::CompressedTexture2D::5350408432954920190::1760398479::1760398551::1::::<><>::
+energy icon.png::CompressedTexture2D::4978712595627673845::1760398479::1760398551::1::::<><>::
+escape icon.png::CompressedTexture2D::5261726398497599082::1760398479::1760398551::1::::<><>::
+magic icon.png::CompressedTexture2D::8092858881765055322::1760398479::1760398551::1::::<><>::
+options icon.png::CompressedTexture2D::4230079819304281903::1760398479::1760398551::1::::<><>::
+paralysis icon.png::CompressedTexture2D::4115858795591941816::1760398479::1760398551::1::::<><>::
+pouch icon.png::CompressedTexture2D::5441548092585581695::1760398479::1760398551::1::::<><>::
+strength icon.png::CompressedTexture2D::1244219534180352802::1760398479::1760398551::1::::<><>::
+three stars icon.png::CompressedTexture2D::5908784497470111955::1760398479::1760398551::1::::<><>::
+two stars icon.png::CompressedTexture2D::5456788205051096754::1760398479::1760398551::1::::<><>::
+::res://assets/itens/::1760398509
+::res://assets/itens/potion/::1760398510
+01.png::CompressedTexture2D::702392935352550679::1760398479::1760398551::1::::<><>::
+02.png::CompressedTexture2D::7149541652724329586::1760398479::1760398551::1::::<><>::
+03.png::CompressedTexture2D::8668910730068990825::1760398479::1760398551::1::::<><>::
+04.png::CompressedTexture2D::632314335982817446::1760398480::1760398551::1::::<><>::
+05.png::CompressedTexture2D::6525817692137410352::1760398480::1760398551::1::::<><>::
+06.png::CompressedTexture2D::6061731027416376328::1760398480::1760398551::1::::<><>::
+07.png::CompressedTexture2D::1598617834846227582::1760398480::1760398551::1::::<><>::
+08.png::CompressedTexture2D::4818250895811061213::1760398480::1760398550::1::::<><>::
+09.png::CompressedTexture2D::3012147092054593665::1760398480::1760398550::1::::<><>::
+11.png::CompressedTexture2D::9197555865729273609::1760398480::1760398550::1::::<><>::
+12.png::CompressedTexture2D::527781607172492376::1760398480::1760398550::1::::<><>::
+13.png::CompressedTexture2D::1396114790911392785::1760398480::1760398550::1::::<><>::
+14.png::CompressedTexture2D::289433575556821396::1760398480::1760398550::1::::<><>::
+15.png::CompressedTexture2D::4780701265795159496::1760398480::1760398550::1::::<><>::
+16.png::CompressedTexture2D::7888999132713824882::1760398480::1760398550::1::::<><>::
+17.png::CompressedTexture2D::1517238703351267068::1760398480::1760398550::1::::<><>::
+18.png::CompressedTexture2D::5998528196169861364::1760398480::1760398550::1::::<><>::
+19.png::CompressedTexture2D::7218346682900539611::1760398480::1760398550::1::::<><>::
+Potion 1.png::CompressedTexture2D::8272686226573399811::1760398480::1760398550::1::::<><>::
+Potion 2.png::CompressedTexture2D::1502533094723486462::1760398480::1760398550::1::::<><>::
+Potion 3.png::CompressedTexture2D::131685240493498507::1760398480::1760398550::1::::<><>::
+Potion 4.png::CompressedTexture2D::1378802594959495064::1760398480::1760398550::1::::<><>::
+Potion 5.png::CompressedTexture2D::7286104462455980859::1760398480::1760398550::1::::<><>::
+Potion 6.png::CompressedTexture2D::8344264695156015855::1760398480::1760398550::1::::<><>::
+Potion 7.png::CompressedTexture2D::826675141748626137::1760398480::1760398550::1::::<><>::
+Potion 8.png::CompressedTexture2D::5740120312689601042::1760398480::1760398550::1::::<><>::
+Potion 9.png::CompressedTexture2D::6577422603319783990::1760398480::1760398550::1::::<><>::
+Potion 10.png::CompressedTexture2D::6818565952639016380::1760398480::1760398550::1::::<><>::
+Potion 11.png::CompressedTexture2D::2484920974495270941::1760398480::1760398550::1::::<><>::
+::res://assets/maps/::1760398510
+map1.png::CompressedTexture2D::5393104755822848229::1760398480::1760398551::1::::<><>::
+map2.png::CompressedTexture2D::9045629263764141051::1760398480::1760398551::1::::<><>::
+map3.png::CompressedTexture2D::7325278686518629290::1760398480::1760398551::1::::<><>::
+map4.png::CompressedTexture2D::1972437875165672456::1760398480::1760398551::1::::<><>::
+world_map.png::CompressedTexture2D::653930701590880692::1760398480::1760398551::1::::<><>::
+::res://assets/progressbar/::1760398510
+ProgressBar01_Background.png::CompressedTexture2D::5681109640376303659::1760398480::1760398550::1::::<><>::
+ProgressBar01_Bar.png::CompressedTexture2D::4446741047019849478::1760398480::1760398550::1::::<><>::
+ProgressBar01_Border.png::CompressedTexture2D::1287557692921412421::1760398480::1760398550::1::::<><>::
+::res://scenes/::1760398510
+base_enemy.tscn::PackedScene::1592437894108702619::1760398480::0::1::::<><>::res://scripts/base_enemy.gd<>uid://cyg2dwh3ts8mq::::res://assets/enemies/1/1.png<>uid://dkguxe1wfyu46::::res://assets/enemies/1/2.png<>uid://bklw8pc3sglk7::::res://assets/enemies/1/3.png<>uid://duir1gl6wo5di::::res://assets/enemies/1/4.png<>uid://cm68bs5obuhex::::res://assets/progressbar/ProgressBar01_Background.png<>uid://slx5fqdqchur::::res://assets/progressbar/ProgressBar01_Border.png<>uid://b4mbf7yv2bwvm::::res://assets/progressbar/ProgressBar01_Bar.png<>uid://iutw4od6mkk8::::res://assets/font/Oxanium-Medium.ttf
+main_scene.tscn::PackedScene::5272711550035179436::1760398480::0::1::::<><>::uid://ciir88k8isk6u::::res://assets/backgrounds/1.png<>uid://dp4l60ef0vkwx::::res://assets/itens/potion/Potion 1.png<>uid://bufxp71go2hq7::::res://assets/backgrounds/EmptyPanel.png<>uid://wxnhpxtp6xfn::::res://scenes/base_enemy.tscn<>uid://f3rv4yrfifht::::res://assets/font/Oxanium-Bold.ttf<>uid://cgm2g3igfxnw1::::res://assets/backgrounds/Panel.png<>uid://iutw4od6mkk8::::res://assets/font/Oxanium-Medium.ttf<>uid://cpbq6nb8esg6h::::res://assets/backgrounds/Button Normal.png<>uid://ryyd4yrcsnio::::res://assets/icons/strength icon.png<>uid://cg724n8l7r5nq::::res://assets/icons/escape icon.png<>uid://cju0hbrm8tun5::::res://assets/backgrounds/Button Active.png<>uid://cjr6rcnfhgc44::::res://assets/icons/pouch icon.png<>uid://dluvk35d70he5::::res://assets/backgrounds/Separator.png<>uid://b1jc2c4vk8cxr::::res://assets/icons/options icon.png<>uid://b1d7dwxtii10e::::res://assets/backgrounds/Box.png<>uid://cc6yw0om5xoiv::::res://assets/icons/energy icon.png<>uid://cqgi215wq7mr8::::res://assets/icons/three stars icon.png<>uid://byv0ufsn4xaia::::res://assets/icons/paralysis icon.png<>uid://cls43brah2tkd::::res://assets/icons/attack icon.png<>uid://dqwxpm8e55dly::::res://assets/icons/agility icon.png<>uid://dnkig6eqllbgc::::res://assets/icons/magic icon.png<>uid://cj0krfgq03g6m::::res://assets/icons/two stars icon.png<>uid://cih1pevuq4n6e::::res://assets/icons/bagpack icon.png
+::res://scripts/::1760398510
+base_enemy.gd::GDScript::-1::1760398480::0::1::::BaseEnemy<>StaticBody2D<>::
