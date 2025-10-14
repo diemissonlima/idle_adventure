@@ -109,7 +109,7 @@ font_size = 4
 font_color = Color(0, 1, 0, 1)
 outline_color = Color(0, 0, 0, 1)
 
-[node name="MainScene" type="Control" node_paths=PackedStringArray("attack_timer")]
+[node name="MainScene" type="Control" node_paths=PackedStringArray("attack_timer", "click_attack_label", "dps_attack_label", "gold_resource_label", "scrap_resource_label", "click_damage_cost_label", "click_damage_level_label", "dps_damage_cost_label", "dps_damage_level_label") groups=["main_scene"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -118,6 +118,15 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7f1vr")
 attack_timer = NodePath("AttackTimer")
+click_attack_label = NodePath("Container3/VBoxContainer/Info/IconClick/Label")
+dps_attack_label = NodePath("Container3/VBoxContainer/Info/IconDPS/Label")
+gold_resource_label = NodePath("Container3/VBoxContainer/Info/IconGold/Label")
+scrap_resource_label = NodePath("Container3/VBoxContainer/Info/IconScrap/Label")
+click_damage_cost_label = NodePath("Container3/VBoxContainer/ImproveClick/LabelCost")
+click_damage_level_label = NodePath("Container3/VBoxContainer/ImproveClick/LabelLevel")
+dps_damage_cost_label = NodePath("Container3/VBoxContainer/ImproveDPS/LabelCost")
+dps_damage_level_label = NodePath("Container3/VBoxContainer/ImproveDPS/LabelLevel")
+enemy_scene = ExtResource("2_f20an")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -498,15 +507,13 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 1.0
+offset_left = 3.0
 offset_top = -2.0
-offset_right = 14.0
+offset_right = 16.0
 offset_bottom = 4.0
 grow_horizontal = 0
 grow_vertical = 2
-text = "13.5k"
 label_settings = SubResource("LabelSettings_cmpgq")
-horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="IconGold" type="TextureRect" parent="Container3/VBoxContainer/Info"]
@@ -527,15 +534,14 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 1.0
+offset_left = 3.0
 offset_top = -2.0
-offset_right = 14.0
+offset_right = 16.0
 offset_bottom = 4.0
 grow_horizontal = 0
 grow_vertical = 2
 text = "13.5k"
 label_settings = SubResource("LabelSettings_cmpgq")
-horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="IconScrap" type="TextureRect" parent="Container3/VBoxContainer/Info"]
@@ -556,15 +562,14 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 1.0
+offset_left = 3.0
 offset_top = -2.0
-offset_right = 14.0
+offset_right = 16.0
 offset_bottom = 4.0
 grow_horizontal = 0
 grow_vertical = 2
 text = "13.5k"
 label_settings = SubResource("LabelSettings_cmpgq")
-horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="IconDPS" type="TextureRect" parent="Container3/VBoxContainer/Info"]
@@ -585,15 +590,14 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 1.0
+offset_left = 3.0
 offset_top = -3.0
-offset_right = 14.0
+offset_right = 16.0
 offset_bottom = 3.0
 grow_horizontal = 0
 grow_vertical = 2
 text = "13.5k"
 label_settings = SubResource("LabelSettings_cmpgq")
-horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Separator" type="TextureRect" parent="Container3/VBoxContainer"]
@@ -676,7 +680,7 @@ layout_mode = 2
 texture = ExtResource("11_7htbn")
 expand_mode = 1
 
-[node name="Label" type="Label" parent="Container3/VBoxContainer/ImproveClick"]
+[node name="LabelLevel" type="Label" parent="Container3/VBoxContainer/ImproveClick"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -689,7 +693,7 @@ grow_horizontal = 2
 text = "Improve Clicks - Lvl 0"
 label_settings = SubResource("LabelSettings_4s0ga")
 
-[node name="Label2" type="Label" parent="Container3/VBoxContainer/ImproveClick"]
+[node name="LabelCost" type="Label" parent="Container3/VBoxContainer/ImproveClick"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -736,7 +740,7 @@ offset_right = 4.5
 offset_bottom = 2.5
 grow_horizontal = 2
 grow_vertical = 2
-text = "MAX"
+text = "BUY"
 label_settings = SubResource("LabelSettings_j7u4c")
 
 [node name="ImproveDPS" type="TextureRect" parent="Container3/VBoxContainer"]
@@ -745,7 +749,7 @@ layout_mode = 2
 texture = ExtResource("11_7htbn")
 expand_mode = 1
 
-[node name="Label" type="Label" parent="Container3/VBoxContainer/ImproveDPS"]
+[node name="LabelLevel" type="Label" parent="Container3/VBoxContainer/ImproveDPS"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -758,7 +762,7 @@ grow_horizontal = 2
 text = "Improve Idle DPS - Lvl 0"
 label_settings = SubResource("LabelSettings_4s0ga")
 
-[node name="Label2" type="Label" parent="Container3/VBoxContainer/ImproveDPS"]
+[node name="LabelCost" type="Label" parent="Container3/VBoxContainer/ImproveDPS"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -805,7 +809,7 @@ offset_right = 4.5
 offset_bottom = 2.5
 grow_horizontal = 2
 grow_vertical = 2
-text = "MAX"
+text = "BUY"
 label_settings = SubResource("LabelSettings_j7u4c")
 
 [node name="Separator3" type="TextureRect" parent="Container3/VBoxContainer"]
@@ -2086,5 +2090,6 @@ label_settings = SubResource("LabelSettings_ytyb8")
 
 [connection signal="mouse_entered" from="VContainer/Battlefield" to="." method="_on_battlefield_mouse_entered"]
 [connection signal="mouse_exited" from="VContainer/Battlefield" to="." method="_on_battlefield_mouse_exited"]
+[connection signal="pressed" from="Container3/VBoxContainer/ImproveClick/MaxClick" to="." method="_on_max_click_pressed"]
 [connection signal="pressed" from="Container3/VBoxContainer/ImproveDPS/MaxDPS" to="." method="_on_max_dps_pressed"]
 [connection signal="timeout" from="AttackTimer" to="." method="_on_attack_timer_timeout"]

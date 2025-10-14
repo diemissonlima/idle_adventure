@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://wxnhpxtp6xfn"]
+[gd_scene load_steps=14 format=3 uid="uid://wxnhpxtp6xfn"]
 
 [ext_resource type="Script" path="res://scripts/base_enemy.gd" id="1_4oi7a"]
 [ext_resource type="Texture2D" uid="uid://cyg2dwh3ts8mq" path="res://assets/enemies/1/1.png" id="2_5tmd5"]
@@ -40,9 +40,20 @@ font_size = 5
 outline_size = 2
 outline_color = Color(0, 0, 0, 1)
 
-[node name="BaseEnemy" type="StaticBody2D" node_paths=PackedStringArray("progress_bar") groups=["enemy"]]
+[sub_resource type="LabelSettings" id="LabelSettings_0gijb"]
+line_spacing = 0.0
+font = ExtResource("9_trvy0")
+font_size = 6
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
+
+[node name="BaseEnemy" type="StaticBody2D" node_paths=PackedStringArray("enemy_name_label", "progress_bar") groups=["enemy"]]
 script = ExtResource("1_4oi7a")
+enemy_name_label = NodePath("EnemyName")
 progress_bar = NodePath("ProgressBar")
+enemy_name = "Golem"
+max_health = 10
+gold_range = Array[int]([10, 14])
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 visible = false
@@ -90,3 +101,15 @@ grow_vertical = 2
 label_settings = SubResource("LabelSettings_u1rnd")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="EnemyName" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -9.5
+offset_top = -66.0
+offset_right = 9.5
+offset_bottom = -59.0
+grow_horizontal = 2
+text = "Golem"
+label_settings = SubResource("LabelSettings_0gijb")

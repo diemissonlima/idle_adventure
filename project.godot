@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Player="*res://scripts/global_player.gd"
+World="*res://scripts/global_world.gd"
 
 [display]
 

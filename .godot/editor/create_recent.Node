@@ -1,7 +1,7 @@
-Timer
-Label
-TextureProgressBar
 Sprite2D
+Label
+Timer
+TextureProgressBar
 AnimatedSprite2D
 CollisionShape2D
 StaticBody2D
@@ -12,4 +12,3 @@ HBoxContainer
 TextureRect
 TabContainer
 VScrollBar
-VBoxContainer
