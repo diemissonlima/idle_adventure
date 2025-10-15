@@ -55,8 +55,8 @@ func _on_attack_timer_timeout() -> void:
 
 func _on_max_dps_pressed() -> void:
 	if Player.gold_resource >= World.dps_damage_cost:
-		World.dps_damage_level += 1
-		Player.dps_damage += 1 # aumenta o poder do dps
+		World.dps_damage_level += 1 # aumenta o level do dps damage
+		Player.dps_damage += 1 # aumenta o poder do dps damage
 		Player.gold_resource -= World.dps_damage_cost # deduz o custo do upgrade
 		World.dps_damage_cost += World.dps_damage_cost * 0.35 # calcula o novo custo do upgrade
 		

@@ -52,7 +52,6 @@ script = ExtResource("1_4oi7a")
 enemy_name_label = NodePath("EnemyName")
 progress_bar = NodePath("ProgressBar")
 enemy_name = "Golem"
-max_health = 10
 gold_range = Array[int]([10, 14])
 
 [node name="Collision" type="CollisionShape2D" parent="."]

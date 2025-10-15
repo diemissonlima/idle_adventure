@@ -7,8 +7,8 @@ class_name BaseEnemy
 
 @export_category("Variaveis")
 @export var enemy_name: String
-@export var max_health: int
-@export var health: int
+@export var max_health: float
+@export var health: float
 @export var gold_range: Array[int]
 @export_enum("Normal", "Elite", "Mini-Boss", "Boss") var enemy_type
 @export_enum(
@@ -19,26 +19,30 @@ class_name BaseEnemy
 func _ready() -> void:
 	increase_health()
 	init_bar()
-	
-	#print("==============================")
-	#print("TESTANDO ESCALONAMENTO DE VIDA ATÉ O LEVEL 500")
-	#print("==============================")
-#
-	#for lvl in range(1, 501):
-		#World.level = lvl
-		#increase_health2()
-#
-	#print("==============================")
-	#print("FIM DO TESTE")
-	#print("==============================")
+	# test_health()
+
+
+func test_health() -> void:
+	increase_health()
+	print("==============================")
+	print("TESTANDO ESCALONAMENTO DE VIDA ATÉ O LEVEL 500")
+	print("==============================")
+
+	for lvl in range(1, 101):
+		World.level = lvl
+		increase_health()
+
+	print("==============================")
+	print("FIM DO TESTE")
+	print("==============================")
 
 
 func init_bar() -> void:
-	health = max_health
-	
-	progress_bar.max_value = max_health
-	progress_bar.value = health
-	progress_bar.get_node("Label").text = str(health) + " / " + str(max_health)
+	progress_bar.max_value = round(max_health)
+	progress_bar.value = round(health)
+	progress_bar.get_node("Label").text = str(
+		World.format_number(round(health)) + " / " + World.format_number(round(max_health))
+		)
 	
 	enemy_name_label.text = enemy_name + " - Lvl " + str(World.level)
 
@@ -50,8 +54,8 @@ func increase_health() -> void:
 	# Defina os segmentos [start, end] (inclusive) e a taxa por nível (growth_rate)
 	var segments = [
 		{"start": 1,   "end": 99,   "rate": 0.15},
-		{"start": 100,  "end": 199,  "rate": 0.12},
-		{"start": 200,  "end": 299,  "rate": 0.09},
+		{"start": 100,  "end": 199,  "rate": 0.10},
+		{"start": 200,  "end": 299,  "rate": 0.08},
 		{"start": 300,  "end": 399,  "rate": 0.06},
 		{"start": 400,  "end": 499,  "rate": 0.03},
 		{"start": 500, "end": 999999, "rate": 0.01} # end grande para "infinito"
@@ -61,8 +65,7 @@ func increase_health() -> void:
 	if level <= 0:
 		if not "max_health" in self:
 			self.max_health = 0
-		max_health = int(round(base_health))
-		print("Level:", level, " | Max Health:", max_health)
+		max_health = float(base_health)
 		return
 
 	# Calcula o multiplicador acumulado por segmentos (usando pow por bloco)
@@ -83,8 +86,9 @@ func increase_health() -> void:
 	# Arredonda e atribui
 	if not "max_health" in self:
 		self.max_health = 0
-	max_health = int(round(new_max_health))
-
+	max_health = float(round(new_max_health))
+	health = max_health
+	
 	# print("Level:", level, " | Multiplier:", multiplier, " | Max Health:", max_health)
 
 
@@ -93,17 +97,19 @@ func take_damage(value: int) -> void:
 	update_bar()
 	
 	if health <= 0:
-		World.level += 1
 		kill()
 
 
 func update_bar() -> void:
-	progress_bar.value = health
-	progress_bar.get_node("Label").text = str(health) + " / " + str(max_health)
+	progress_bar.value = round(health)
+	progress_bar.get_node("Label").text = str(
+		World.format_number(round(health)) + " / " + World.format_number(round(max_health))
+		)
 
 
 func kill() -> void:
-	Player.improve_gold(gold_range)
+	Player.improve_gold()
+	World.level += 1
 	get_tree().call_group("main_scene", "spawn_new_enemy")
 	
 	queue_free()

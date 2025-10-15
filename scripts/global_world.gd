@@ -8,3 +8,22 @@ var dps_damage_cost: int = 25
 var dps_damage_level: int = 0
 var click_damage_cost: int = 25
 var click_damage_level: int = 0
+
+
+func format_number(value: float) -> String:
+	var suffixes = [
+		"", "K", "M", "B", "T", "a", "b", "c", "d", "e", "f", "g", "h", 
+		"i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", 
+		"x", "y", "z", "aa", "ab", "ac", "ad", "ae", "af", "ag", "ah", "ai", "aj", 
+		"ak", "al", "am", "an", "ao", "ap", "aq", "ar", "as", "at", "au", "av", 
+		"aw", "ax", "ay", "az", "ba", "bb", "bc", "bd", "be", "bf", "bg", "bh",
+		"bi", "bj", "bk", "bl", "bm", "bn", "bo", "bp", "bq", "br", "bs", "bt",
+		"bu", "bv", "bw", "bx", "by", "bz"
+	]
+
+	var index = 0
+	while value >= 1000.0 and index < suffixes.size() - 1:
+		value /= 1000.0
+		index += 1
+	
+	return String.num(value, 2) + suffixes[index]
