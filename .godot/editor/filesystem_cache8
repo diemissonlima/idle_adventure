@@ -1,90 +1,90 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1760577445
-icon.svg::CompressedTexture2D::1437991343033267371::1760577372::1760577453::1::::<><>::
-::res://assets/::1760577397
-::res://assets/backgrounds/::1760577396
-1.png::CompressedTexture2D::5351960008828209546::1760577372::1760577453::1::::<><>::
-Box-1.png::CompressedTexture2D::4254995777177581488::1760577372::1760577453::1::::<><>::
-Box.png::CompressedTexture2D::4219473244612877726::1760577372::1760577453::1::::<><>::
-Button Active.png::CompressedTexture2D::5447359019961304720::1760577372::1760577453::1::::<><>::
-Button Normal.png::CompressedTexture2D::5828765917059848941::1760577372::1760577453::1::::<><>::
-Cell.png::CompressedTexture2D::3755773594043204953::1760577372::1760577453::1::::<><>::
-EmptyPanel.png::CompressedTexture2D::3801944444170760276::1760577372::1760577453::1::::<><>::
-Panel.png::CompressedTexture2D::5220398519123691010::1760577372::1760577453::1::::<><>::
-Separator.png::CompressedTexture2D::7973921318143996010::1760577372::1760577454::1::::<><>::
-::res://assets/enemies/::1760577397
-::res://assets/enemies/1/::1760577397
-1.png::CompressedTexture2D::6471405765035409580::1760577372::1760577454::1::::<><>::
-2.png::CompressedTexture2D::7874792418364671385::1760577372::1760577454::1::::<><>::
-3.png::CompressedTexture2D::3112412772644162032::1760577372::1760577454::1::::<><>::
-4.png::CompressedTexture2D::8580632898962418262::1760577372::1760577454::1::::<><>::
-::res://assets/font/::1760577397
-Oxanium-Bold.ttf::FontFile::409818046884732869::1760577372::1760577452::1::::<><>::
-Oxanium-ExtraBold.ttf::FontFile::1557212382361150861::1760577372::1760577452::1::::<><>::
-Oxanium-ExtraLight.ttf::FontFile::9131719404345591166::1760577372::1760577452::1::::<><>::
-Oxanium-Light.ttf::FontFile::6864468917563616270::1760577372::1760577452::1::::<><>::
-Oxanium-Medium.ttf::FontFile::603992759496557389::1760577372::1760577452::1::::<><>::
-Oxanium-Regular.ttf::FontFile::8649974219081696382::1760577372::1760577452::1::::<><>::
-Oxanium-SemiBold.ttf::FontFile::4809827116573988245::1760577372::1760577452::1::::<><>::
-::res://assets/icons/::1760577397
-agility icon.png::CompressedTexture2D::8329123819101100714::1760577372::1760577454::1::::<><>::
-attack icon.png::CompressedTexture2D::5583888320792661931::1760577372::1760577454::1::::<><>::
-bagpack icon.png::CompressedTexture2D::5350408432954920190::1760577372::1760577454::1::::<><>::
-energy icon.png::CompressedTexture2D::4978712595627673845::1760577372::1760577454::1::::<><>::
-escape icon.png::CompressedTexture2D::5261726398497599082::1760577372::1760577454::1::::<><>::
-magic icon.png::CompressedTexture2D::8092858881765055322::1760577372::1760577454::1::::<><>::
-options icon.png::CompressedTexture2D::4230079819304281903::1760577372::1760577454::1::::<><>::
-paralysis icon.png::CompressedTexture2D::4115858795591941816::1760577372::1760577454::1::::<><>::
-pouch icon.png::CompressedTexture2D::5441548092585581695::1760577372::1760577454::1::::<><>::
-strength icon.png::CompressedTexture2D::1244219534180352802::1760577372::1760577454::1::::<><>::
-three stars icon.png::CompressedTexture2D::5908784497470111955::1760577372::1760577455::1::::<><>::
-two stars icon.png::CompressedTexture2D::5456788205051096754::1760577372::1760577455::1::::<><>::
-::res://assets/itens/::1760577397
-::res://assets/itens/potion/::1760577397
-01.png::CompressedTexture2D::702392935352550679::1760577372::1760577454::1::::<><>::
-02.png::CompressedTexture2D::7149541652724329586::1760577372::1760577454::1::::<><>::
-03.png::CompressedTexture2D::8668910730068990825::1760577372::1760577454::1::::<><>::
-04.png::CompressedTexture2D::632314335982817446::1760577372::1760577454::1::::<><>::
-05.png::CompressedTexture2D::6525817692137410352::1760577372::1760577454::1::::<><>::
-06.png::CompressedTexture2D::6061731027416376328::1760577372::1760577454::1::::<><>::
-07.png::CompressedTexture2D::1598617834846227582::1760577372::1760577454::1::::<><>::
-08.png::CompressedTexture2D::4818250895811061213::1760577372::1760577453::1::::<><>::
-09.png::CompressedTexture2D::3012147092054593665::1760577372::1760577453::1::::<><>::
-11.png::CompressedTexture2D::9197555865729273609::1760577372::1760577453::1::::<><>::
-12.png::CompressedTexture2D::527781607172492376::1760577372::1760577453::1::::<><>::
-13.png::CompressedTexture2D::1396114790911392785::1760577372::1760577453::1::::<><>::
-14.png::CompressedTexture2D::289433575556821396::1760577372::1760577453::1::::<><>::
-15.png::CompressedTexture2D::4780701265795159496::1760577372::1760577453::1::::<><>::
-16.png::CompressedTexture2D::7888999132713824882::1760577372::1760577453::1::::<><>::
-17.png::CompressedTexture2D::1517238703351267068::1760577372::1760577453::1::::<><>::
-18.png::CompressedTexture2D::5998528196169861364::1760577372::1760577453::1::::<><>::
-19.png::CompressedTexture2D::7218346682900539611::1760577372::1760577453::1::::<><>::
-Potion 1.png::CompressedTexture2D::8272686226573399811::1760577372::1760577453::1::::<><>::
-Potion 2.png::CompressedTexture2D::1502533094723486462::1760577372::1760577453::1::::<><>::
-Potion 3.png::CompressedTexture2D::131685240493498507::1760577372::1760577453::1::::<><>::
-Potion 4.png::CompressedTexture2D::1378802594959495064::1760577372::1760577453::1::::<><>::
-Potion 5.png::CompressedTexture2D::7286104462455980859::1760577372::1760577453::1::::<><>::
-Potion 6.png::CompressedTexture2D::8344264695156015855::1760577372::1760577453::1::::<><>::
-Potion 7.png::CompressedTexture2D::826675141748626137::1760577372::1760577453::1::::<><>::
-Potion 8.png::CompressedTexture2D::5740120312689601042::1760577372::1760577453::1::::<><>::
-Potion 9.png::CompressedTexture2D::6577422603319783990::1760577372::1760577453::1::::<><>::
-Potion 10.png::CompressedTexture2D::6818565952639016380::1760577372::1760577453::1::::<><>::
-Potion 11.png::CompressedTexture2D::2484920974495270941::1760577372::1760577453::1::::<><>::
-::res://assets/maps/::1760577397
-map1.png::CompressedTexture2D::5393104755822848229::1760577372::1760577454::1::::<><>::
-map2.png::CompressedTexture2D::9045629263764141051::1760577372::1760577454::1::::<><>::
-map3.png::CompressedTexture2D::7325278686518629290::1760577372::1760577454::1::::<><>::
-map4.png::CompressedTexture2D::1972437875165672456::1760577372::1760577454::1::::<><>::
-world_map.png::CompressedTexture2D::653930701590880692::1760577372::1760577454::1::::<><>::
-::res://assets/progressbar/::1760577397
-ProgressBar01_Background.png::CompressedTexture2D::5681109640376303659::1760577372::1760577453::1::::<><>::
-ProgressBar01_Bar.png::CompressedTexture2D::4446741047019849478::1760577372::1760577453::1::::<><>::
-ProgressBar01_Border.png::CompressedTexture2D::1287557692921412421::1760577372::1760577453::1::::<><>::
-::res://scenes/::1760577397
-base_enemy.tscn::PackedScene::1592437894108702619::1760577372::0::1::::<><>::res://scripts/base_enemy.gd<>uid://cyg2dwh3ts8mq::::res://assets/enemies/1/1.png<>uid://dkguxe1wfyu46::::res://assets/enemies/1/2.png<>uid://bklw8pc3sglk7::::res://assets/enemies/1/3.png<>uid://duir1gl6wo5di::::res://assets/enemies/1/4.png<>uid://cm68bs5obuhex::::res://assets/progressbar/ProgressBar01_Background.png<>uid://slx5fqdqchur::::res://assets/progressbar/ProgressBar01_Border.png<>uid://b4mbf7yv2bwvm::::res://assets/progressbar/ProgressBar01_Bar.png<>uid://iutw4od6mkk8::::res://assets/font/Oxanium-Medium.ttf
-main_scene.tscn::PackedScene::5272711550035179436::1760577372::0::1::::<><>::uid://ciir88k8isk6u::::res://assets/backgrounds/1.png<>res://scripts/main_scene.gd<>uid://dp4l60ef0vkwx::::res://assets/itens/potion/Potion 1.png<>uid://bufxp71go2hq7::::res://assets/backgrounds/EmptyPanel.png<>uid://wxnhpxtp6xfn::::res://scenes/base_enemy.tscn<>uid://f3rv4yrfifht::::res://assets/font/Oxanium-Bold.ttf<>uid://cgm2g3igfxnw1::::res://assets/backgrounds/Panel.png<>uid://iutw4od6mkk8::::res://assets/font/Oxanium-Medium.ttf<>uid://cpbq6nb8esg6h::::res://assets/backgrounds/Button Normal.png<>uid://ryyd4yrcsnio::::res://assets/icons/strength icon.png<>uid://cg724n8l7r5nq::::res://assets/icons/escape icon.png<>uid://cju0hbrm8tun5::::res://assets/backgrounds/Button Active.png<>uid://cjr6rcnfhgc44::::res://assets/icons/pouch icon.png<>uid://dluvk35d70he5::::res://assets/backgrounds/Separator.png<>uid://b1jc2c4vk8cxr::::res://assets/icons/options icon.png<>uid://b1d7dwxtii10e::::res://assets/backgrounds/Box.png<>uid://cc6yw0om5xoiv::::res://assets/icons/energy icon.png<>uid://cqgi215wq7mr8::::res://assets/icons/three stars icon.png<>uid://byv0ufsn4xaia::::res://assets/icons/paralysis icon.png<>uid://cls43brah2tkd::::res://assets/icons/attack icon.png<>uid://dqwxpm8e55dly::::res://assets/icons/agility icon.png<>uid://dnkig6eqllbgc::::res://assets/icons/magic icon.png<>uid://cj0krfgq03g6m::::res://assets/icons/two stars icon.png<>uid://cih1pevuq4n6e::::res://assets/icons/bagpack icon.png
-::res://scripts/::1760577397
-base_enemy.gd::GDScript::-1::1760577372::0::1::::BaseEnemy<>StaticBody2D<>::
-global_player.gd::GDScript::-1::1760577372::0::1::::GlobalPlayer<>Node<>::
-global_world.gd::GDScript::-1::1760577372::0::1::::GlobalWorld<>Node<>::
-main_scene.gd::GDScript::-1::1760577372::0::1::::MainScene<>Control<>::
+::res://::1760617827
+icon.svg::CompressedTexture2D::1437991343033267371::1760617659::1760617830::1::::<><>::
+::res://assets/::1760617659
+::res://assets/backgrounds/::1760617658
+1.png::CompressedTexture2D::5351960008828209546::1760617658::1760617830::1::::<><>::
+Box-1.png::CompressedTexture2D::4254995777177581488::1760617658::1760617830::1::::<><>::
+Box.png::CompressedTexture2D::4219473244612877726::1760617658::1760617830::1::::<><>::
+Button Active.png::CompressedTexture2D::5447359019961304720::1760617658::1760617830::1::::<><>::
+Button Normal.png::CompressedTexture2D::5828765917059848941::1760617658::1760617830::1::::<><>::
+Cell.png::CompressedTexture2D::3755773594043204953::1760617658::1760617830::1::::<><>::
+EmptyPanel.png::CompressedTexture2D::3801944444170760276::1760617658::1760617830::1::::<><>::
+Panel.png::CompressedTexture2D::5220398519123691010::1760617658::1760617830::1::::<><>::
+Separator.png::CompressedTexture2D::7973921318143996010::1760617658::1760617830::1::::<><>::
+::res://assets/enemies/::1760617658
+::res://assets/enemies/1/::1760617658
+1.png::CompressedTexture2D::6471405765035409580::1760617658::1760617830::1::::<><>::
+2.png::CompressedTexture2D::7874792418364671385::1760617658::1760617830::1::::<><>::
+3.png::CompressedTexture2D::3112412772644162032::1760617658::1760617830::1::::<><>::
+4.png::CompressedTexture2D::8580632898962418262::1760617658::1760617830::1::::<><>::
+::res://assets/font/::1760617658
+Oxanium-Bold.ttf::FontFile::409818046884732869::1760617658::1760617829::1::::<><>::
+Oxanium-ExtraBold.ttf::FontFile::1557212382361150861::1760617658::1760617829::1::::<><>::
+Oxanium-ExtraLight.ttf::FontFile::9131719404345591166::1760617658::1760617829::1::::<><>::
+Oxanium-Light.ttf::FontFile::6864468917563616270::1760617658::1760617829::1::::<><>::
+Oxanium-Medium.ttf::FontFile::603992759496557389::1760617658::1760617829::1::::<><>::
+Oxanium-Regular.ttf::FontFile::8649974219081696382::1760617658::1760617829::1::::<><>::
+Oxanium-SemiBold.ttf::FontFile::4809827116573988245::1760617658::1760617829::1::::<><>::
+::res://assets/icons/::1760617658
+agility icon.png::CompressedTexture2D::8329123819101100714::1760617658::1760617831::1::::<><>::
+attack icon.png::CompressedTexture2D::5583888320792661931::1760617658::1760617831::1::::<><>::
+bagpack icon.png::CompressedTexture2D::5350408432954920190::1760617658::1760617831::1::::<><>::
+energy icon.png::CompressedTexture2D::4978712595627673845::1760617658::1760617831::1::::<><>::
+escape icon.png::CompressedTexture2D::5261726398497599082::1760617658::1760617831::1::::<><>::
+magic icon.png::CompressedTexture2D::8092858881765055322::1760617658::1760617831::1::::<><>::
+options icon.png::CompressedTexture2D::4230079819304281903::1760617658::1760617831::1::::<><>::
+paralysis icon.png::CompressedTexture2D::4115858795591941816::1760617658::1760617831::1::::<><>::
+pouch icon.png::CompressedTexture2D::5441548092585581695::1760617658::1760617832::1::::<><>::
+strength icon.png::CompressedTexture2D::1244219534180352802::1760617658::1760617832::1::::<><>::
+three stars icon.png::CompressedTexture2D::5908784497470111955::1760617658::1760617832::1::::<><>::
+two stars icon.png::CompressedTexture2D::5456788205051096754::1760617658::1760617832::1::::<><>::
+::res://assets/itens/::1760617658
+::res://assets/itens/potion/::1760617659
+01.png::CompressedTexture2D::702392935352550679::1760617658::1760617832::1::::<><>::
+02.png::CompressedTexture2D::7149541652724329586::1760617658::1760617832::1::::<><>::
+03.png::CompressedTexture2D::8668910730068990825::1760617658::1760617832::1::::<><>::
+04.png::CompressedTexture2D::632314335982817446::1760617658::1760617832::1::::<><>::
+05.png::CompressedTexture2D::6525817692137410352::1760617658::1760617832::1::::<><>::
+06.png::CompressedTexture2D::6061731027416376328::1760617658::1760617832::1::::<><>::
+07.png::CompressedTexture2D::1598617834846227582::1760617658::1760617832::1::::<><>::
+08.png::CompressedTexture2D::4818250895811061213::1760617658::1760617829::1::::<><>::
+09.png::CompressedTexture2D::3012147092054593665::1760617658::1760617829::1::::<><>::
+11.png::CompressedTexture2D::9197555865729273609::1760617658::1760617829::1::::<><>::
+12.png::CompressedTexture2D::527781607172492376::1760617658::1760617829::1::::<><>::
+13.png::CompressedTexture2D::1396114790911392785::1760617658::1760617829::1::::<><>::
+14.png::CompressedTexture2D::289433575556821396::1760617658::1760617829::1::::<><>::
+15.png::CompressedTexture2D::4780701265795159496::1760617658::1760617829::1::::<><>::
+16.png::CompressedTexture2D::7888999132713824882::1760617658::1760617829::1::::<><>::
+17.png::CompressedTexture2D::1517238703351267068::1760617658::1760617829::1::::<><>::
+18.png::CompressedTexture2D::5998528196169861364::1760617658::1760617829::1::::<><>::
+19.png::CompressedTexture2D::7218346682900539611::1760617658::1760617829::1::::<><>::
+Potion 1.png::CompressedTexture2D::8272686226573399811::1760617658::1760617829::1::::<><>::
+Potion 2.png::CompressedTexture2D::1502533094723486462::1760617658::1760617829::1::::<><>::
+Potion 3.png::CompressedTexture2D::131685240493498507::1760617658::1760617829::1::::<><>::
+Potion 4.png::CompressedTexture2D::1378802594959495064::1760617658::1760617829::1::::<><>::
+Potion 5.png::CompressedTexture2D::7286104462455980859::1760617658::1760617829::1::::<><>::
+Potion 6.png::CompressedTexture2D::8344264695156015855::1760617658::1760617829::1::::<><>::
+Potion 7.png::CompressedTexture2D::826675141748626137::1760617658::1760617829::1::::<><>::
+Potion 8.png::CompressedTexture2D::5740120312689601042::1760617658::1760617829::1::::<><>::
+Potion 9.png::CompressedTexture2D::6577422603319783990::1760617659::1760617829::1::::<><>::
+Potion 10.png::CompressedTexture2D::6818565952639016380::1760617658::1760617829::1::::<><>::
+Potion 11.png::CompressedTexture2D::2484920974495270941::1760617658::1760617829::1::::<><>::
+::res://assets/maps/::1760617659
+map1.png::CompressedTexture2D::5393104755822848229::1760617659::1760617830::1::::<><>::
+map2.png::CompressedTexture2D::9045629263764141051::1760617659::1760617830::1::::<><>::
+map3.png::CompressedTexture2D::7325278686518629290::1760617659::1760617830::1::::<><>::
+map4.png::CompressedTexture2D::1972437875165672456::1760617659::1760617831::1::::<><>::
+world_map.png::CompressedTexture2D::653930701590880692::1760617659::1760617831::1::::<><>::
+::res://assets/progressbar/::1760617659
+ProgressBar01_Background.png::CompressedTexture2D::5681109640376303659::1760617659::1760617830::1::::<><>::
+ProgressBar01_Bar.png::CompressedTexture2D::4446741047019849478::1760617659::1760617830::1::::<><>::
+ProgressBar01_Border.png::CompressedTexture2D::1287557692921412421::1760617659::1760617830::1::::<><>::
+::res://scenes/::1760617659
+base_enemy.tscn::PackedScene::1592437894108702619::1760617659::0::1::::<><>::res://scripts/base_enemy.gd<>uid://cyg2dwh3ts8mq::::res://assets/enemies/1/1.png<>uid://dkguxe1wfyu46::::res://assets/enemies/1/2.png<>uid://bklw8pc3sglk7::::res://assets/enemies/1/3.png<>uid://duir1gl6wo5di::::res://assets/enemies/1/4.png<>uid://cm68bs5obuhex::::res://assets/progressbar/ProgressBar01_Background.png<>uid://slx5fqdqchur::::res://assets/progressbar/ProgressBar01_Border.png<>uid://b4mbf7yv2bwvm::::res://assets/progressbar/ProgressBar01_Bar.png<>uid://iutw4od6mkk8::::res://assets/font/Oxanium-Medium.ttf
+main_scene.tscn::PackedScene::5272711550035179436::1760617659::0::1::::<><>::uid://ciir88k8isk6u::::res://assets/backgrounds/1.png<>res://scripts/main_scene.gd<>uid://dp4l60ef0vkwx::::res://assets/itens/potion/Potion 1.png<>uid://bufxp71go2hq7::::res://assets/backgrounds/EmptyPanel.png<>uid://wxnhpxtp6xfn::::res://scenes/base_enemy.tscn<>uid://f3rv4yrfifht::::res://assets/font/Oxanium-Bold.ttf<>uid://cgm2g3igfxnw1::::res://assets/backgrounds/Panel.png<>uid://iutw4od6mkk8::::res://assets/font/Oxanium-Medium.ttf<>uid://cpbq6nb8esg6h::::res://assets/backgrounds/Button Normal.png<>uid://ryyd4yrcsnio::::res://assets/icons/strength icon.png<>uid://cg724n8l7r5nq::::res://assets/icons/escape icon.png<>uid://cju0hbrm8tun5::::res://assets/backgrounds/Button Active.png<>uid://cjr6rcnfhgc44::::res://assets/icons/pouch icon.png<>uid://dluvk35d70he5::::res://assets/backgrounds/Separator.png<>uid://b1jc2c4vk8cxr::::res://assets/icons/options icon.png<>uid://b1d7dwxtii10e::::res://assets/backgrounds/Box.png<>uid://cc6yw0om5xoiv::::res://assets/icons/energy icon.png<>uid://cqgi215wq7mr8::::res://assets/icons/three stars icon.png<>uid://byv0ufsn4xaia::::res://assets/icons/paralysis icon.png<>uid://cls43brah2tkd::::res://assets/icons/attack icon.png<>uid://dqwxpm8e55dly::::res://assets/icons/agility icon.png<>uid://dnkig6eqllbgc::::res://assets/icons/magic icon.png<>uid://cj0krfgq03g6m::::res://assets/icons/two stars icon.png<>uid://cih1pevuq4n6e::::res://assets/icons/bagpack icon.png
+::res://scripts/::1760617659
+base_enemy.gd::GDScript::-1::1760617659::0::1::::BaseEnemy<>StaticBody2D<>::
+global_player.gd::GDScript::-1::1760617659::0::1::::GlobalPlayer<>Node<>::
+global_world.gd::GDScript::-1::1760617659::0::1::::GlobalWorld<>Node<>::
+main_scene.gd::GDScript::-1::1760617659::0::1::::MainScene<>Control<>::
