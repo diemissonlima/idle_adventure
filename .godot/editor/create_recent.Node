@@ -1,3 +1,5 @@
+VBoxContainer
+ScrollContainer
 Sprite2D
 Label
 Timer
@@ -11,4 +13,3 @@ Button
 HBoxContainer
 TextureRect
 TabContainer
-VScrollBar

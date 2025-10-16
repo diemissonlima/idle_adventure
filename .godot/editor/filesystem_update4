@@ -2,3 +2,5 @@ res://scenes/main_scene.tscn
 res://scenes/base_enemy.tscn
 res://scripts/global_world.gd
 res://scripts/main_scene.gd
+res://scripts/game_log.gd
+res://scripts/global_player.gd

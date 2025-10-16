@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="2_f20an"]
 [ext_resource type="FontFile" uid="uid://f3rv4yrfifht" path="res://assets/font/Oxanium-Bold.ttf" id="4_rkqi3"]
 [ext_resource type="Texture2D" uid="uid://cgm2g3igfxnw1" path="res://assets/backgrounds/Panel.png" id="5_vfv32"]
+[ext_resource type="Script" path="res://scripts/game_log.gd" id="6_f6268"]
 [ext_resource type="FontFile" uid="uid://iutw4od6mkk8" path="res://assets/font/Oxanium-Medium.ttf" id="6_r50xv"]
 [ext_resource type="Texture2D" uid="uid://cpbq6nb8esg6h" path="res://assets/backgrounds/Button Normal.png" id="8_tkobm"]
 [ext_resource type="Texture2D" uid="uid://ryyd4yrcsnio" path="res://assets/icons/strength icon.png" id="8_ygyk3"]
@@ -29,12 +30,6 @@
 font = ExtResource("4_rkqi3")
 font_size = 6
 font_color = Color(1, 1, 0, 1)
-outline_size = 2
-outline_color = Color(0, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_5x7cr"]
-font = ExtResource("4_rkqi3")
-font_size = 5
 outline_size = 2
 outline_color = Color(0, 0, 0, 1)
 
@@ -217,13 +212,16 @@ texture = ExtResource("2_2av4a")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="BackgroundLog" type="TextureRect" parent="VContainer"]
+[node name="BackgroundLog" type="TextureRect" parent="VContainer" node_paths=PackedStringArray("log_container") groups=["game_log"]]
 custom_minimum_size = Vector2(0, 148)
 layout_mode = 2
 texture = ExtResource("2_27dyn")
 expand_mode = 1
+script = ExtResource("6_f6268")
+log_container = NodePath("LogContainer/VBoxContainer")
+font = ExtResource("6_r50xv")
 
-[node name="Label" type="Label" parent="VContainer/BackgroundLog"]
+[node name="Title" type="Label" parent="VContainer/BackgroundLog"]
 layout_mode = 0
 offset_left = 8.0
 offset_top = 4.0
@@ -232,7 +230,8 @@ offset_bottom = 11.0
 text = "Game Log"
 label_settings = SubResource("LabelSettings_qrr8g")
 
-[node name="LogContainer" type="VBoxContainer" parent="VContainer/BackgroundLog"]
+[node name="LogContainer" type="ScrollContainer" parent="VContainer/BackgroundLog"]
+custom_minimum_size = Vector2(113, 121)
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -242,72 +241,14 @@ offset_top = 18.0
 offset_right = 57.0
 offset_bottom = 139.0
 grow_horizontal = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
 
-[node name="Label" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="VContainer/BackgroundLog/LogContainer"]
+custom_minimum_size = Vector2(113, 121)
 layout_mode = 2
-text = "Causou 15 de dano"
-label_settings = SubResource("LabelSettings_5x7cr")
-horizontal_alignment = 1
-
-[node name="Label2" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
-layout_mode = 2
-text = "Causou 15 de dano"
-label_settings = SubResource("LabelSettings_5x7cr")
-horizontal_alignment = 1
-
-[node name="Label3" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
-layout_mode = 2
-text = "Causou 15 de dano"
-label_settings = SubResource("LabelSettings_5x7cr")
-horizontal_alignment = 1
-
-[node name="Label4" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
-layout_mode = 2
-text = "Causou 15 de dano"
-label_settings = SubResource("LabelSettings_5x7cr")
-horizontal_alignment = 1
-
-[node name="Label5" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
-layout_mode = 2
-text = "Causou 15 de dano"
-label_settings = SubResource("LabelSettings_5x7cr")
-horizontal_alignment = 1
-
-[node name="Label6" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
-layout_mode = 2
-text = "Causou 15 de dano"
-label_settings = SubResource("LabelSettings_5x7cr")
-horizontal_alignment = 1
-
-[node name="Label7" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
-layout_mode = 2
-text = "Causou 15 de dano"
-label_settings = SubResource("LabelSettings_5x7cr")
-horizontal_alignment = 1
-
-[node name="Label8" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
-layout_mode = 2
-text = "Causou 15 de dano"
-label_settings = SubResource("LabelSettings_5x7cr")
-horizontal_alignment = 1
-
-[node name="Label9" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
-layout_mode = 2
-text = "Causou 15 de dano"
-label_settings = SubResource("LabelSettings_5x7cr")
-horizontal_alignment = 1
-
-[node name="Label10" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
-layout_mode = 2
-text = "Causou 15 de dano"
-label_settings = SubResource("LabelSettings_5x7cr")
-horizontal_alignment = 1
-
-[node name="Label11" type="Label" parent="VContainer/BackgroundLog/LogContainer"]
-layout_mode = 2
-text = "Causou 15 de dano"
-label_settings = SubResource("LabelSettings_5x7cr")
-horizontal_alignment = 1
+theme_override_constants/separation = -2
+alignment = 2
 
 [node name="Container2" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(178, 270)
