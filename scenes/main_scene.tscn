@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://chee12681ksau"]
+[gd_scene load_steps=44 format=3 uid="uid://chee12681ksau"]
 
 [ext_resource type="Texture2D" uid="uid://ciir88k8isk6u" path="res://assets/backgrounds/1.png" id="1_5hms3"]
 [ext_resource type="Script" path="res://scripts/main_scene.gd" id="1_7f1vr"]
@@ -21,6 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://cqgi215wq7mr8" path="res://assets/icons/three stars icon.png" id="16_iy1b3"]
 [ext_resource type="Texture2D" uid="uid://byv0ufsn4xaia" path="res://assets/icons/paralysis icon.png" id="17_xolln"]
 [ext_resource type="Texture2D" uid="uid://cls43brah2tkd" path="res://assets/icons/attack icon.png" id="18_8oaok"]
+[ext_resource type="Script" path="res://scripts/upgrades.gd" id="19_mei48"]
 [ext_resource type="Texture2D" uid="uid://dqwxpm8e55dly" path="res://assets/icons/agility icon.png" id="19_v0ctn"]
 [ext_resource type="Texture2D" uid="uid://dnkig6eqllbgc" path="res://assets/icons/magic icon.png" id="20_l4mtr"]
 [ext_resource type="Texture2D" uid="uid://cj0krfgq03g6m" path="res://assets/icons/two stars icon.png" id="21_t8il6"]
@@ -114,7 +115,7 @@ font_size = 4
 font_color = Color(0, 1, 0, 1)
 outline_color = Color(0, 0, 0, 1)
 
-[node name="MainScene" type="Control" node_paths=PackedStringArray("attack_timer", "click_attack_label", "dps_attack_label", "gold_resource_label", "scrap_resource_label", "click_damage_cost_label", "click_damage_level_label", "dps_damage_cost_label", "dps_damage_level_label") groups=["main_scene"]]
+[node name="MainScene" type="Control" node_paths=PackedStringArray("attack_timer", "click_attack_label", "dps_attack_label", "gold_resource_label", "scrap_resource_label", "click_damage_cost_label", "click_damage_level_label", "dps_damage_cost_label", "dps_damage_level_label", "gold_mastery_level", "gold_mastery_description", "gold_mastery_cost_label") groups=["main_scene"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -131,6 +132,9 @@ click_damage_cost_label = NodePath("Container3/VBoxContainer/ImproveClick/LabelC
 click_damage_level_label = NodePath("Container3/VBoxContainer/ImproveClick/LabelLevel")
 dps_damage_cost_label = NodePath("Container3/VBoxContainer/ImproveDPS/LabelCost")
 dps_damage_level_label = NodePath("Container3/VBoxContainer/ImproveDPS/LabelLevel")
+gold_mastery_level = NodePath("Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery/Icon/LevelLabel")
+gold_mastery_description = NodePath("Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery/DescriptionLabel")
+gold_mastery_cost_label = NodePath("Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery/CostLabel")
 enemy_scene = ExtResource("2_f20an")
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -157,8 +161,6 @@ expand_mode = 1
 
 [node name="Marker2D" type="Marker2D" parent="VContainer/Battlefield"]
 position = Vector2(69, 70)
-
-[node name="BaseEnemy" parent="VContainer/Battlefield/Marker2D" instance=ExtResource("2_f20an")]
 
 [node name="BackgroundPotion" type="TextureRect" parent="VContainer"]
 custom_minimum_size = Vector2(140, 30)
@@ -231,7 +233,7 @@ text = "Game Log"
 label_settings = SubResource("LabelSettings_qrr8g")
 
 [node name="LogContainer" type="ScrollContainer" parent="VContainer/BackgroundLog"]
-custom_minimum_size = Vector2(113, 121)
+custom_minimum_size = Vector2(113, 126)
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -239,15 +241,15 @@ anchor_right = 0.5
 offset_left = -56.0
 offset_top = 18.0
 offset_right = 57.0
-offset_bottom = 139.0
+offset_bottom = 144.0
 grow_horizontal = 2
 horizontal_scroll_mode = 0
 vertical_scroll_mode = 3
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VContainer/BackgroundLog/LogContainer"]
-custom_minimum_size = Vector2(113, 121)
+custom_minimum_size = Vector2(113, 126)
 layout_mode = 2
-theme_override_constants/separation = -2
+theme_override_constants/separation = 0
 alignment = 2
 
 [node name="Container2" type="TextureRect" parent="."]
@@ -777,12 +779,11 @@ horizontal_alignment = 1
 
 [node name="Label5" type="Label" parent="Container3/VBoxContainer"]
 layout_mode = 2
-text = "Defeat the boss at Level 300 to
+text = "Defeat the boss at Level 100 to
 Prestige or use a Mark of the Hunter
 from the Hunt Shop."
 label_settings = SubResource("LabelSettings_4s0ga")
 horizontal_alignment = 1
-autowrap_mode = 2
 
 [node name="Info2" type="TextureRect" parent="Container3/VBoxContainer"]
 custom_minimum_size = Vector2(80, 75)
@@ -987,7 +988,7 @@ grow_vertical = 2
 text = "View Prestige Slot"
 label_settings = SubResource("LabelSettings_oe63t")
 
-[node name="Container4" type="TextureRect" parent="."]
+[node name="Container4" type="TextureRect" parent="." node_paths=PackedStringArray("gold_mastery", "gold_level_label", "gold_cost_label", "gold_mastery_description")]
 custom_minimum_size = Vector2(79, 270)
 layout_mode = 1
 anchors_preset = 6
@@ -1002,6 +1003,11 @@ grow_horizontal = 0
 grow_vertical = 2
 texture = ExtResource("5_vfv32")
 expand_mode = 1
+script = ExtResource("19_mei48")
+gold_mastery = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery")
+gold_level_label = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery/Icon/LevelLabel")
+gold_cost_label = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery/CostLabel")
+gold_mastery_description = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery/DescriptionLabel")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Container4"]
 custom_minimum_size = Vector2(79, 270)
@@ -1081,7 +1087,7 @@ grow_horizontal = 2
 text = "Gold Mastery"
 label_settings = SubResource("LabelSettings_hfgnv")
 
-[node name="DescriptionLabel2" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery"]
+[node name="DescriptionLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 9.0
@@ -1089,7 +1095,7 @@ offset_right = 69.0
 offset_bottom = 26.0
 text = "Increases the base 
 Gold dropped by monsters 
-by 69%."
+by 1%."
 label_settings = SubResource("LabelSettings_ytyb8")
 
 [node name="CostLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery"]
@@ -1105,8 +1111,9 @@ offset_right = 10.0
 offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 0
-text = "225.5m GOLD"
+text = "250 Gold"
 label_settings = SubResource("LabelSettings_dekxx")
+horizontal_alignment = 1
 
 [node name="BtnBuy" type="TextureButton" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery"]
 custom_minimum_size = Vector2(15, 10)
@@ -1215,8 +1222,9 @@ offset_right = 10.0
 offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 0
-text = "225.5m GOLD"
+text = "500 Gold"
 label_settings = SubResource("LabelSettings_dekxx")
+horizontal_alignment = 1
 
 [node name="BtnBuy" type="TextureButton" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/ScrapScavenger"]
 custom_minimum_size = Vector2(15, 10)
@@ -1264,9 +1272,9 @@ expand_mode = 1
 [node name="Icon" type="TextureRect" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalPower"]
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 0
-offset_left = 3.0
+offset_left = 4.0
 offset_top = 7.0
-offset_right = 15.0
+offset_right = 16.0
 offset_bottom = 19.0
 texture = ExtResource("16_bswde")
 expand_mode = 1
@@ -1285,8 +1293,9 @@ offset_bottom = 13.0
 grow_horizontal = 2
 grow_vertical = 0
 text = "Level: 
-26 / ∞"
+0 / 100"
 label_settings = SubResource("LabelSettings_g8uex")
+horizontal_alignment = 1
 
 [node name="Title" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalPower"]
 custom_minimum_size = Vector2(25, 5)
@@ -1325,8 +1334,9 @@ offset_right = 10.0
 offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 0
-text = "225.5m GOLD"
+text = "3.50K Gold"
 label_settings = SubResource("LabelSettings_dekxx")
+horizontal_alignment = 1
 
 [node name="BtnBuy" type="TextureButton" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalPower"]
 custom_minimum_size = Vector2(15, 10)
@@ -1436,8 +1446,9 @@ offset_right = 10.0
 offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 0
-text = "225.5m GOLD"
+text = "800 Gold"
 label_settings = SubResource("LabelSettings_dekxx")
+horizontal_alignment = 1
 
 [node name="BtnBuy" type="TextureButton" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalDamage"]
 custom_minimum_size = Vector2(15, 10)
@@ -1548,8 +1559,9 @@ offset_right = 10.0
 offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 0
-text = "225.5m GOLD"
+text = "10.00K Gold"
 label_settings = SubResource("LabelSettings_dekxx")
+horizontal_alignment = 1
 
 [node name="BtnBuy" type="TextureButton" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/BossHunter"]
 custom_minimum_size = Vector2(15, 10)
@@ -1660,8 +1672,9 @@ offset_right = 10.0
 offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 0
-text = "225.5m GOLD"
+text = "50.00K Gold"
 label_settings = SubResource("LabelSettings_dekxx")
+horizontal_alignment = 1
 
 [node name="BtnBuy" type="TextureButton" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/SwiftStrikes"]
 custom_minimum_size = Vector2(15, 10)
@@ -1772,8 +1785,9 @@ offset_right = 10.0
 offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 0
-text = "225.5m GOLD"
+text = "1.00M Gold"
 label_settings = SubResource("LabelSettings_dekxx")
+horizontal_alignment = 1
 
 [node name="BtnBuy" type="TextureButton" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/HuntersAcumen"]
 custom_minimum_size = Vector2(15, 10)
@@ -1885,8 +1899,9 @@ offset_right = 10.0
 offset_bottom = -2.0
 grow_horizontal = 2
 grow_vertical = 0
-text = "225.5m GOLD"
+text = "25.00K Gold"
 label_settings = SubResource("LabelSettings_dekxx")
+horizontal_alignment = 1
 
 [node name="BtnBuy" type="TextureButton" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/PrestigeSurge"]
 custom_minimum_size = Vector2(15, 10)
@@ -1997,8 +2012,9 @@ offset_right = 10.0
 offset_bottom = -2.0
 grow_horizontal = 2
 grow_vertical = 0
-text = "225.5m GOLD"
+text = "1.00M Gold"
 label_settings = SubResource("LabelSettings_dekxx")
+horizontal_alignment = 1
 
 [node name="BtnBuy" type="TextureButton" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/LegacyKeeper"]
 custom_minimum_size = Vector2(15, 10)
@@ -2043,4 +2059,5 @@ label_settings = SubResource("LabelSettings_ytyb8")
 [connection signal="mouse_exited" from="VContainer/Battlefield" to="." method="_on_battlefield_mouse_exited"]
 [connection signal="pressed" from="Container3/VBoxContainer/ImproveClick/MaxClick" to="." method="_on_max_click_pressed"]
 [connection signal="pressed" from="Container3/VBoxContainer/ImproveDPS/MaxDPS" to="." method="_on_max_dps_pressed"]
+[connection signal="pressed" from="Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery/BtnBuy" to="Container4" method="_on_btn_buy_gold_mastery_pressed"]
 [connection signal="timeout" from="AttackTimer" to="." method="_on_attack_timer_timeout"]

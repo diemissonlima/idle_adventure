@@ -16,16 +16,21 @@ class_name MainScene
 @export var dps_damage_cost_label: Label
 @export var dps_damage_level_label: Label
 
+@export_category("Objetos - Upgrades Gold Mastery")
+@export var gold_mastery_level: Label
+@export var gold_mastery_description: Label
+@export var gold_mastery_cost_label: Label
+
 @export_category("Variaveis")
-@export var level: int = 1
 @export var enemy_scene: PackedScene
 
 var can_click: bool = false
 
 
 func _ready() -> void:
-	attack_timer.start()
+	spawn_new_enemy()
 	update_label()
+	attack_timer.start()
 
 
 func _process(_delta: float) -> void:
@@ -47,6 +52,10 @@ func update_label() -> void:
 	click_damage_level_label.text = "Improve Clicks - Lvl " + str(World.format_number(World.click_damage_level))
 	dps_damage_cost_label.text = "Cost: " + str(World.format_number(World.dps_damage_cost)) + " Gold"
 	dps_damage_level_label.text = "Improve Idle DPS - Lvl " + str(World.format_number(World.dps_damage_level))
+	
+	gold_mastery_level.text = "Level:\n" + str(Player.gold_mastery_level) + " / ∞"
+	gold_mastery_description.text = "Increases the base\nGold dropped by monsters\nby " + str(Player.gold_mastery_level) + "%."
+	gold_mastery_cost_label.text = "Cost " + str(World.format_number(Player.gold_mastery_cost))
 
 
 func _on_attack_timer_timeout() -> void:
@@ -55,20 +64,14 @@ func _on_attack_timer_timeout() -> void:
 
 func _on_max_dps_pressed() -> void:
 	if Player.gold_resource >= World.dps_damage_cost:
-		World.dps_damage_level += 1 # aumenta o level do dps damage
-		Player.dps_damage += round((Player.dps_damage * 0.25) + 1) # aumenta o poder do dps damage
-		Player.gold_resource -= World.dps_damage_cost # deduz o custo do upgrade
-		World.dps_damage_cost += World.dps_damage_cost * 0.35 # calcula o novo custo do upgrade
+		Player.improve_damage("dps")
 		
 	update_label()
 
 
 func _on_max_click_pressed() -> void:
 	if Player.gold_resource >= World.click_damage_cost:
-		World.click_damage_level += 1
-		Player.click_damage += round(Player.click_damage * 0.15) + 1
-		Player.gold_resource -= World.click_damage_cost
-		World.click_damage_cost += World.click_damage_cost * 0.25
+		Player.improve_damage("click")
 		
 	update_label()
 
