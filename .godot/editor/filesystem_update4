@@ -3,3 +3,4 @@ res://scripts/global_player.gd
 res://scenes/base_enemy.tscn
 res://scripts/upgrades.gd
 res://scripts/game_log.gd
+res://scripts/global_world.gd

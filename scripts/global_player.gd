@@ -4,7 +4,7 @@ class_name GlobalPlayer
 # status de dano
 var dps_damage: float = 0.0
 var click_damage: float = 1.0
-var gold_resource: float = 100000000000
+var gold_resource: float = 100000000000000000
 var scrap_resource: float = 0.0
 
 # bonus de upgrade permanente
@@ -135,7 +135,10 @@ func improve_damage(type: String) -> void:
 			World.dps_damage_level += 1 # aumenta o level do dps damage
 			dps_damage += round(bonus_damage) # aumenta o poder do dps damage
 			gold_resource -= World.dps_damage_cost # deduz o custo do upgrade
-			World.dps_damage_cost += World.dps_damage_cost * 0.35 # calcula o novo custo do upgrade
+			World.dps_damage_cost += World.dps_damage_cost * 0.19 # calcula o novo custo do upgrade
+			
+			var total_dps = dps_damage + (World.dps_damage_level * 10) + (dps_damage * 0.01 * World.dps_damage_level)
+			print(total_dps)
 		
 			log_msg = "DPS Damage increased to level " + str(World.dps_damage_level)
 		
