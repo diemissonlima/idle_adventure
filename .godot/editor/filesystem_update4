@@ -1,5 +1,4 @@
 res://scenes/main_scene.tscn
-res://scripts/upgrades.gd
 res://scripts/global_player.gd
 res://scripts/main_scene.gd
 res://scenes/base_enemy.tscn

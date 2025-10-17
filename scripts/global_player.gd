@@ -7,15 +7,27 @@ var click_damage: float = 1.0
 var gold_resource: float = 0.0
 var scrap_resource: float = 0.0
 
-# bonus de upgrades
-var gold_mastery_level: int = 0
-var gold_mastery_cost: int = 250
+# bonus de upgrade permanente
+var permanent_bonus: Dictionary = {
+	"gold_mastery": {
+		"level": 0,
+		"cost": 250,
+		"bonus": 0.0
+	}
+}
 
 
 func improve_gold() -> void:
 	var gold_range = World.get_gold_range(str(World.level))
 	var gold_dropped: float = randi_range(gold_range[0], gold_range[1])
 	var msg_log = "You gained " + str(World.format_number(gold_dropped)) + " gold."
+	
+	var bonus_gold = gold_dropped * permanent_bonus["gold_mastery"]["bonus"]
+	print("Gold dropado: ", gold_dropped)
+	print("% de drop bonus: ", permanent_bonus["gold_mastery"]["bonus"] * 100, "%")
+	print("Gold bonus: ", bonus_gold)
+	print("Total gold dropado: ", round(gold_dropped + bonus_gold))
+	print("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
 	
 	gold_resource += gold_dropped
 	
@@ -59,10 +71,10 @@ func improve_damage(type: String) -> void:
 func improve_upgrades(upgrade_name: String) -> void:
 	match upgrade_name:
 		"gold_mastery":
-			if gold_resource >= gold_mastery_cost:
-				gold_resource -= gold_mastery_cost
-				gold_mastery_cost += gold_mastery_cost * 0.35
-				gold_mastery_level += 1
-		
+			if gold_resource >= permanent_bonus["gold_mastery"]["cost"]:
+				gold_resource -= permanent_bonus["gold_mastery"]["cost"]
+				permanent_bonus["gold_mastery"]["cost"] += permanent_bonus["gold_mastery"]["cost"] * 0.35
+				permanent_bonus["gold_mastery"]["level"] += 1
+				permanent_bonus["gold_mastery"]["bonus"] += 0.01
 		
 	get_tree().call_group("main_scene", "update_label")

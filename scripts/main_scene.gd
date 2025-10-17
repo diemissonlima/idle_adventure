@@ -53,9 +53,9 @@ func update_label() -> void:
 	dps_damage_cost_label.text = "Cost: " + str(World.format_number(World.dps_damage_cost)) + " Gold"
 	dps_damage_level_label.text = "Improve Idle DPS - Lvl " + str(World.format_number(World.dps_damage_level))
 	
-	gold_mastery_level.text = "Level:\n" + str(Player.gold_mastery_level) + " / ∞"
-	gold_mastery_description.text = "Increases the base\nGold dropped by monsters\nby " + str(Player.gold_mastery_level) + "%."
-	gold_mastery_cost_label.text = "Cost " + str(World.format_number(Player.gold_mastery_cost))
+	gold_mastery_level.text = "Level:\n" + str(Player.permanent_bonus["gold_mastery"]["level"]) + " / ∞"
+	gold_mastery_description.text = "Increases the base\nGold dropped by monsters\nby " + str(Player.permanent_bonus["gold_mastery"]["bonus"] * 100) + "%."
+	gold_mastery_cost_label.text = "Cost " + str(World.format_number(Player.permanent_bonus["gold_mastery"]["cost"])) + " Gold"
 
 
 func _on_attack_timer_timeout() -> void:
