@@ -35,7 +35,7 @@ func _ready() -> void:
 
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("click") and can_click:
-		get_tree().call_group("enemy", "take_damage", Player.click_damage)
+		Player.cause_damage("click_damage")
 
 
 func spawn_new_enemy() -> void:
@@ -52,14 +52,10 @@ func update_label() -> void:
 	click_damage_level_label.text = "Improve Clicks - Lvl " + str(World.format_number(World.click_damage_level))
 	dps_damage_cost_label.text = "Cost: " + str(World.format_number(World.dps_damage_cost)) + " Gold"
 	dps_damage_level_label.text = "Improve Idle DPS - Lvl " + str(World.format_number(World.dps_damage_level))
-	
-	gold_mastery_level.text = "Level:\n" + str(Player.permanent_bonus["gold_mastery"]["level"]) + " / ∞"
-	gold_mastery_description.text = "Increases the base\nGold dropped by monsters\nby " + str(Player.permanent_bonus["gold_mastery"]["bonus"] * 100) + "%."
-	gold_mastery_cost_label.text = "Cost " + str(World.format_number(Player.permanent_bonus["gold_mastery"]["cost"])) + " Gold"
 
 
 func _on_attack_timer_timeout() -> void:
-	get_tree().call_group("enemy", "take_damage", Player.dps_damage)
+	Player.cause_damage("dps_damage")
 
 
 func _on_max_dps_pressed() -> void:

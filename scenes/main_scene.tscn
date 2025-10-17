@@ -137,6 +137,8 @@ gold_mastery_description = NodePath("Container4/VBoxContainer/ScrollContainer/VB
 gold_mastery_cost_label = NodePath("Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery/CostLabel")
 enemy_scene = ExtResource("2_f20an")
 
+[node name="Player" type="Node" parent="."]
+
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
@@ -214,13 +216,15 @@ texture = ExtResource("2_2av4a")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="BackgroundLog" type="TextureRect" parent="VContainer" node_paths=PackedStringArray("log_container") groups=["game_log"]]
+[node name="BackgroundLog" type="TextureRect" parent="VContainer" node_paths=PackedStringArray("log_container", "scroll_container") groups=["game_log"]]
 custom_minimum_size = Vector2(0, 148)
 layout_mode = 2
 texture = ExtResource("2_27dyn")
 expand_mode = 1
 script = ExtResource("6_f6268")
 log_container = NodePath("LogContainer/VBoxContainer")
+scroll_container = NodePath("LogContainer")
+max_messages = 100
 font = ExtResource("6_r50xv")
 
 [node name="Title" type="Label" parent="VContainer/BackgroundLog"]
@@ -988,7 +992,7 @@ grow_vertical = 2
 text = "View Prestige Slot"
 label_settings = SubResource("LabelSettings_oe63t")
 
-[node name="Container4" type="TextureRect" parent="." node_paths=PackedStringArray("gold_mastery", "gold_level_label", "gold_cost_label", "gold_mastery_description")]
+[node name="Container4" type="TextureRect" parent="." node_paths=PackedStringArray("gold_level_label", "gold_cost_label", "gold_mastery_description", "scrap_level_label", "scrap_cost_label", "scrap_scavenger_description", "critical_power_level_label", "critical_power_cost_label", "critical_power_description", "critical_damage_level_label", "critical_damage_cost_label", "critical_damage_description", "boss_hunter_level_label", "boss_hunter_cost_label", "boss_hunter_description", "swift_strikes_level_label", "swift_strikes_cost_label", "swift_strikes_description", "hunters_acumen_level_label", "hunters_acumen_cost_label", "hunters_acumen_description", "prestige_surge_level_label", "prestige_surge_cost_label", "prestige_surge_description", "legacy_keeper_level_label", "legacy_keeper_cost_label", "legacy_keeper_description")]
 custom_minimum_size = Vector2(79, 270)
 layout_mode = 1
 anchors_preset = 6
@@ -1004,10 +1008,33 @@ grow_vertical = 2
 texture = ExtResource("5_vfv32")
 expand_mode = 1
 script = ExtResource("19_mei48")
-gold_mastery = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery")
 gold_level_label = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery/Icon/LevelLabel")
 gold_cost_label = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery/CostLabel")
 gold_mastery_description = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery/DescriptionLabel")
+scrap_level_label = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/ScrapScavenger/Icon/LevelLabel")
+scrap_cost_label = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/ScrapScavenger/CostLabel")
+scrap_scavenger_description = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/ScrapScavenger/DescriptionLabel")
+critical_power_level_label = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/CriticalPower/Icon/LevelLabel")
+critical_power_cost_label = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/CriticalPower/CostLabel")
+critical_power_description = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/CriticalPower/DescriptionLabel")
+critical_damage_level_label = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/CriticalDamage/Icon/LevelLabel")
+critical_damage_cost_label = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/CriticalDamage/CostLabel")
+critical_damage_description = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/CriticalDamage/DescriptionLabel")
+boss_hunter_level_label = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/BossHunter/Icon/LevelLabel")
+boss_hunter_cost_label = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/BossHunter/CostLabel")
+boss_hunter_description = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/BossHunter/DescriptionLabel")
+swift_strikes_level_label = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/SwiftStrikes/Icon/LevelLabel")
+swift_strikes_cost_label = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/SwiftStrikes/CostLabel")
+swift_strikes_description = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/SwiftStrikes/DescriptionLabel")
+hunters_acumen_level_label = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/HuntersAcumen/Icon/LevelLabel")
+hunters_acumen_cost_label = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/HuntersAcumen/CostLabel")
+hunters_acumen_description = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/HuntersAcumen/DescriptionLabel")
+prestige_surge_level_label = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/PrestigeSurge/Icon/LevelLabel")
+prestige_surge_cost_label = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/PrestigeSurge/CostLabel")
+prestige_surge_description = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/PrestigeSurge/DescriptionLabel")
+legacy_keeper_level_label = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/LegacyKeeper/Icon/LevelLabel")
+legacy_keeper_cost_label = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/LegacyKeeper/CostLabel")
+legacy_keeper_description = NodePath("VBoxContainer/ScrollContainer/VBoxContainer/LegacyKeeper/DescriptionLabel")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Container4"]
 custom_minimum_size = Vector2(79, 270)
@@ -1050,9 +1077,9 @@ expand_mode = 1
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 0
 offset_left = 3.0
-offset_top = 7.0
+offset_top = 5.0
 offset_right = 15.0
-offset_bottom = 19.0
+offset_bottom = 17.0
 texture = ExtResource("9_qo7ay")
 expand_mode = 1
 
@@ -1095,19 +1122,20 @@ offset_right = 69.0
 offset_bottom = 26.0
 text = "Increases the base 
 Gold dropped by monsters 
-by 1%."
+by 50%."
 label_settings = SubResource("LabelSettings_ytyb8")
 
 [node name="CostLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery"]
+custom_minimum_size = Vector2(45, 5)
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -16.0
+offset_left = -32.0
 offset_top = -8.0
-offset_right = 10.0
+offset_right = 13.0
 offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -1162,9 +1190,9 @@ expand_mode = 1
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 0
 offset_left = 3.0
-offset_top = 7.0
+offset_top = 5.0
 offset_right = 15.0
-offset_bottom = 19.0
+offset_bottom = 17.0
 texture = ExtResource("10_ud07j")
 expand_mode = 1
 
@@ -1199,7 +1227,7 @@ grow_horizontal = 2
 text = "Scrap Scavenger"
 label_settings = SubResource("LabelSettings_hfgnv")
 
-[node name="DescriptionLabel2" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/ScrapScavenger"]
+[node name="DescriptionLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/ScrapScavenger"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 12.0
@@ -1210,15 +1238,16 @@ from salvaging items."
 label_settings = SubResource("LabelSettings_ytyb8")
 
 [node name="CostLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/ScrapScavenger"]
+custom_minimum_size = Vector2(45, 5)
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -16.0
+offset_left = -32.0
 offset_top = -8.0
-offset_right = 10.0
+offset_right = 13.0
 offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -1273,9 +1302,9 @@ expand_mode = 1
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 0
 offset_left = 4.0
-offset_top = 7.0
+offset_top = 5.0
 offset_right = 16.0
-offset_bottom = 19.0
+offset_bottom = 17.0
 texture = ExtResource("16_bswde")
 expand_mode = 1
 
@@ -1311,7 +1340,7 @@ grow_horizontal = 2
 text = "Critical Power"
 label_settings = SubResource("LabelSettings_hfgnv")
 
-[node name="DescriptionLabel2" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalPower"]
+[node name="DescriptionLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalPower"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 12.0
@@ -1322,15 +1351,16 @@ deal a critical hit."
 label_settings = SubResource("LabelSettings_ytyb8")
 
 [node name="CostLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalPower"]
+custom_minimum_size = Vector2(45, 5)
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -16.0
+offset_left = -32.0
 offset_top = -8.0
-offset_right = 10.0
+offset_right = 13.0
 offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -1385,9 +1415,9 @@ expand_mode = 1
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 0
 offset_left = 3.0
-offset_top = 7.0
+offset_top = 5.0
 offset_right = 15.0
-offset_bottom = 19.0
+offset_bottom = 17.0
 texture = ExtResource("17_xolln")
 expand_mode = 1
 
@@ -1422,7 +1452,7 @@ grow_horizontal = 2
 text = "Critical Damage"
 label_settings = SubResource("LabelSettings_hfgnv")
 
-[node name="DescriptionLabel2" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalDamage"]
+[node name="DescriptionLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalDamage"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 10.0
@@ -1434,15 +1464,16 @@ Base crit damage is 1.5x."
 label_settings = SubResource("LabelSettings_ytyb8")
 
 [node name="CostLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalDamage"]
+custom_minimum_size = Vector2(45, 5)
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -16.0
+offset_left = -32.0
 offset_top = -8.0
-offset_right = 10.0
+offset_right = 13.0
 offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -1497,9 +1528,9 @@ expand_mode = 1
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 0
 offset_left = 3.0
-offset_top = 7.0
+offset_top = 5.0
 offset_right = 15.0
-offset_bottom = 19.0
+offset_bottom = 17.0
 texture = ExtResource("18_8oaok")
 expand_mode = 1
 
@@ -1535,7 +1566,7 @@ text = "Boss Hunter"
 label_settings = SubResource("LabelSettings_hfgnv")
 horizontal_alignment = 1
 
-[node name="DescriptionLabel2" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/BossHunter"]
+[node name="DescriptionLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/BossHunter"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 10.0
@@ -1547,15 +1578,16 @@ and Big Bosses."
 label_settings = SubResource("LabelSettings_ytyb8")
 
 [node name="CostLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/BossHunter"]
+custom_minimum_size = Vector2(45, 5)
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -16.0
+offset_left = -32.0
 offset_top = -8.0
-offset_right = 10.0
+offset_right = 13.0
 offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -1610,9 +1642,9 @@ expand_mode = 1
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 0
 offset_left = 3.0
-offset_top = 7.0
+offset_top = 5.0
 offset_right = 15.0
-offset_bottom = 19.0
+offset_bottom = 17.0
 texture = ExtResource("19_v0ctn")
 expand_mode = 1
 
@@ -1648,7 +1680,7 @@ text = "Swift Strikes"
 label_settings = SubResource("LabelSettings_hfgnv")
 horizontal_alignment = 1
 
-[node name="DescriptionLabel2" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/SwiftStrikes"]
+[node name="DescriptionLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/SwiftStrikes"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 10.0
@@ -1660,15 +1692,16 @@ time."
 label_settings = SubResource("LabelSettings_ytyb8")
 
 [node name="CostLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/SwiftStrikes"]
+custom_minimum_size = Vector2(45, 5)
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -16.0
+offset_left = -32.0
 offset_top = -8.0
-offset_right = 10.0
+offset_right = 13.0
 offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -1723,9 +1756,9 @@ expand_mode = 1
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 0
 offset_left = 3.0
-offset_top = 7.0
+offset_top = 5.0
 offset_right = 15.0
-offset_bottom = 19.0
+offset_bottom = 17.0
 texture = ExtResource("20_l4mtr")
 expand_mode = 1
 
@@ -1761,7 +1794,7 @@ text = "Hunter's Acumen"
 label_settings = SubResource("LabelSettings_hfgnv")
 horizontal_alignment = 1
 
-[node name="DescriptionLabel2" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/HuntersAcumen"]
+[node name="DescriptionLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/HuntersAcumen"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 10.0
@@ -1773,15 +1806,16 @@ bounties."
 label_settings = SubResource("LabelSettings_ytyb8")
 
 [node name="CostLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/HuntersAcumen"]
+custom_minimum_size = Vector2(45, 5)
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -16.0
+offset_left = -32.0
 offset_top = -8.0
-offset_right = 10.0
+offset_right = 13.0
 offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -1836,9 +1870,9 @@ expand_mode = 1
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 0
 offset_left = 3.0
-offset_top = 7.0
+offset_top = 5.0
 offset_right = 15.0
-offset_bottom = 19.0
+offset_bottom = 17.0
 texture = ExtResource("21_t8il6")
 expand_mode = 1
 
@@ -1874,7 +1908,7 @@ text = "Prestige Surge"
 label_settings = SubResource("LabelSettings_hfgnv")
 horizontal_alignment = 1
 
-[node name="DescriptionLabel2" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/PrestigeSurge"]
+[node name="DescriptionLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/PrestigeSurge"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 8.0
@@ -1887,15 +1921,16 @@ time you have prestiged."
 label_settings = SubResource("LabelSettings_ytyb8")
 
 [node name="CostLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/PrestigeSurge"]
+custom_minimum_size = Vector2(45, 5)
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -16.0
+offset_left = -32.0
 offset_top = -7.0
-offset_right = 10.0
+offset_right = 13.0
 offset_bottom = -2.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -1950,9 +1985,9 @@ expand_mode = 1
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 0
 offset_left = 3.0
-offset_top = 7.0
+offset_top = 5.0
 offset_right = 15.0
-offset_bottom = 19.0
+offset_bottom = 17.0
 texture = ExtResource("22_7to3c")
 expand_mode = 1
 
@@ -1988,7 +2023,7 @@ text = "Legacy Keeper"
 label_settings = SubResource("LabelSettings_hfgnv")
 horizontal_alignment = 1
 
-[node name="DescriptionLabel2" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/LegacyKeeper"]
+[node name="DescriptionLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/LegacyKeeper"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 11.0
@@ -2000,15 +2035,16 @@ during Prestige."
 label_settings = SubResource("LabelSettings_ytyb8")
 
 [node name="CostLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/LegacyKeeper"]
+custom_minimum_size = Vector2(45, 5)
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -16.0
+offset_left = -32.0
 offset_top = -7.0
-offset_right = 10.0
+offset_right = 13.0
 offset_bottom = -2.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -2057,7 +2093,17 @@ label_settings = SubResource("LabelSettings_ytyb8")
 
 [connection signal="mouse_entered" from="VContainer/Battlefield" to="." method="_on_battlefield_mouse_entered"]
 [connection signal="mouse_exited" from="VContainer/Battlefield" to="." method="_on_battlefield_mouse_exited"]
+[connection signal="mouse_entered" from="VContainer/BackgroundLog/LogContainer" to="VContainer/BackgroundLog" method="_on_log_container_mouse_entered"]
+[connection signal="mouse_exited" from="VContainer/BackgroundLog/LogContainer" to="VContainer/BackgroundLog" method="_on_log_container_mouse_exited"]
 [connection signal="pressed" from="Container3/VBoxContainer/ImproveClick/MaxClick" to="." method="_on_max_click_pressed"]
 [connection signal="pressed" from="Container3/VBoxContainer/ImproveDPS/MaxDPS" to="." method="_on_max_dps_pressed"]
 [connection signal="pressed" from="Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery/BtnBuy" to="Container4" method="_on_btn_buy_gold_mastery_pressed"]
+[connection signal="pressed" from="Container4/VBoxContainer/ScrollContainer/VBoxContainer/ScrapScavenger/BtnBuy" to="Container4" method="_on_btn_buy_scrap_scavenger_pressed"]
+[connection signal="pressed" from="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalPower/BtnBuy" to="Container4" method="_on_btn_buy_critical_power_pressed"]
+[connection signal="pressed" from="Container4/VBoxContainer/ScrollContainer/VBoxContainer/CriticalDamage/BtnBuy" to="Container4" method="_on_btn_buy_critical_damage_pressed"]
+[connection signal="pressed" from="Container4/VBoxContainer/ScrollContainer/VBoxContainer/BossHunter/BtnBuy" to="Container4" method="_on_btn_buy_boss_hunter_pressed"]
+[connection signal="pressed" from="Container4/VBoxContainer/ScrollContainer/VBoxContainer/SwiftStrikes/BtnBuy" to="Container4" method="_on_btn_buy_swift_strikes_pressed"]
+[connection signal="pressed" from="Container4/VBoxContainer/ScrollContainer/VBoxContainer/HuntersAcumen/BtnBuy" to="Container4" method="_on_btn_buy_hunters_acumen_pressed"]
+[connection signal="pressed" from="Container4/VBoxContainer/ScrollContainer/VBoxContainer/PrestigeSurge/BtnBuy" to="Container4" method="_on_btn_buy_prestige_surge_pressed"]
+[connection signal="pressed" from="Container4/VBoxContainer/ScrollContainer/VBoxContainer/LegacyKeeper/BtnBuy" to="Container4" method="_on_btn_buy_legacy_keeper_pressed"]
 [connection signal="timeout" from="AttackTimer" to="." method="_on_attack_timer_timeout"]

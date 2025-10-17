@@ -1,3 +1,5 @@
+RichTextLabel
+Node
 VBoxContainer
 ScrollContainer
 Sprite2D
@@ -11,5 +13,3 @@ Marker2D
 TextureButton
 Button
 HBoxContainer
-TextureRect
-TabContainer
