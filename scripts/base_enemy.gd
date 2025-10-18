@@ -47,6 +47,10 @@ func init_bar() -> void:
 	enemy_name_label.text = enemy_name + " - Lvl " + str(World.level)
 
 
+func increase_health2() -> void:
+	pass
+
+
 func increase_health() -> void:
 	var base_health: float = 4.0
 	var level: int = max(0, World.level) # segurança caso level seja negativo
