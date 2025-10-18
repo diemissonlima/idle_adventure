@@ -16,11 +16,6 @@ class_name MainScene
 @export var dps_damage_cost_label: Label
 @export var dps_damage_level_label: Label
 
-@export_category("Objetos - Upgrades Gold Mastery")
-@export var gold_mastery_level: Label
-@export var gold_mastery_description: Label
-@export var gold_mastery_cost_label: Label
-
 @export_category("Variaveis")
 @export var enemy_scene: PackedScene
 

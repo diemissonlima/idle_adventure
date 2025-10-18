@@ -93,6 +93,7 @@ func cause_damage(type_damage: String) -> void:
 				base_damage *= base_critical # dano base * 1.5 (critico_base)
 				bonus_damage = base_damage * multiplier_damage
 				final_damage = base_damage + bonus_damage
+				
 				get_tree().call_group("enemy", "take_damage", final_damage)
 			else:
 				get_tree().call_group("enemy", "take_damage", dps_damage)
@@ -103,6 +104,7 @@ func cause_damage(type_damage: String) -> void:
 				base_damage *= base_critical
 				bonus_damage = base_damage * multiplier_damage
 				final_damage = base_damage + bonus_damage
+				
 				get_tree().call_group("enemy", "take_damage", final_damage)
 			else:
 				get_tree().call_group("enemy", "take_damage", click_damage)
@@ -128,29 +130,30 @@ func improve_damage(type: String) -> void:
 	
 	match type:
 		"dps":
-			# +10 flat +1% total dps por level
-			bonus_flat = 10
-			var bonus_damage: float = (dps_damage * (bonus_percent / 100)) + bonus_flat
+			# +5 flat +1% total dps por level
+			World.dps_damage_level += 1
+			var base_damage: float = World.dps_damage_level * 5
+			var bonus_damage: float = base_damage * (bonus_percent / 100)
+			var total_dps: float = base_damage + bonus_damage
 			
-			World.dps_damage_level += 1 # aumenta o level do dps damage
-			dps_damage += round(bonus_damage) # aumenta o poder do dps damage
-			gold_resource -= World.dps_damage_cost # deduz o custo do upgrade
-			World.dps_damage_cost += World.dps_damage_cost * 0.19 # calcula o novo custo do upgrade
+			dps_damage += total_dps
 			
-			var total_dps = dps_damage + (World.dps_damage_level * 10) + (dps_damage * 0.01 * World.dps_damage_level)
-			print(total_dps)
-		
+			gold_resource -= World.dps_damage_cost
+			World.dps_damage_cost += World.dps_damage_cost * 0.19
+			
 			log_msg = "DPS Damage increased to level " + str(World.dps_damage_level)
 		
 		"click":
-			# +5 flat +1% total dps por level
-			bonus_flat = 5
-			var bonus_damage: float = (click_damage * (bonus_percent / 100)) + bonus_flat
-			
+			# +2.5 flat +1% total dps por level
 			World.click_damage_level += 1
-			click_damage += round(bonus_damage)
+			var base_damage: float = World.click_damage_level * 2.5
+			var bonus_damage: float = base_damage * (bonus_percent / 100)
+			var total_click_damage: float = base_damage + bonus_damage
+			
+			click_damage += total_click_damage
+			
 			gold_resource -= World.click_damage_cost
-			World.click_damage_cost += World.click_damage_cost * 0.40
+			World.click_damage_cost += World.click_damage_cost * 0.30
 		
 			log_msg = "Click Damage increased to level " + str(World.click_damage_level)
 			

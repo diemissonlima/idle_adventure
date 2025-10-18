@@ -115,7 +115,7 @@ font_size = 4
 font_color = Color(0, 1, 0, 1)
 outline_color = Color(0, 0, 0, 1)
 
-[node name="MainScene" type="Control" node_paths=PackedStringArray("attack_timer", "click_attack_label", "dps_attack_label", "gold_resource_label", "scrap_resource_label", "click_damage_cost_label", "click_damage_level_label", "dps_damage_cost_label", "dps_damage_level_label", "gold_mastery_level", "gold_mastery_description", "gold_mastery_cost_label") groups=["main_scene"]]
+[node name="MainScene" type="Control" node_paths=PackedStringArray("attack_timer", "click_attack_label", "dps_attack_label", "gold_resource_label", "scrap_resource_label", "click_damage_cost_label", "click_damage_level_label", "dps_damage_cost_label", "dps_damage_level_label") groups=["main_scene"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -132,9 +132,6 @@ click_damage_cost_label = NodePath("Container3/VBoxContainer/ImproveClick/LabelC
 click_damage_level_label = NodePath("Container3/VBoxContainer/ImproveClick/LabelLevel")
 dps_damage_cost_label = NodePath("Container3/VBoxContainer/ImproveDPS/LabelCost")
 dps_damage_level_label = NodePath("Container3/VBoxContainer/ImproveDPS/LabelLevel")
-gold_mastery_level = NodePath("Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery/Icon/LevelLabel")
-gold_mastery_description = NodePath("Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery/DescriptionLabel")
-gold_mastery_cost_label = NodePath("Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery/CostLabel")
 enemy_scene = ExtResource("2_f20an")
 
 [node name="Player" type="Node" parent="."]
