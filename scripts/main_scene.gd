@@ -35,7 +35,7 @@ func _process(_delta: float) -> void:
 
 func spawn_new_enemy() -> void:
 	var enemy_instance = enemy_scene.instantiate()
-	$VContainer/Battlefield/Marker2D.add_child(enemy_instance)
+	$Container1/Battlefield/Marker2D.add_child(enemy_instance)
 
 
 func update_label() -> void:

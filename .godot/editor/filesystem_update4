@@ -1,6 +1,9 @@
 res://scenes/main_scene.tscn
 res://scenes/base_enemy.tscn
+res://scripts/stats_container_2.gd
+res://scripts/stats_container.gd
+res://scripts/main_scene.gd
+res://scripts/json/player_exp.json
 res://scripts/global_player.gd
-res://scripts/upgrades.gd
+res://scripts/global_world.gd
 res://scripts/base_enemy.gd
-res://scenes/slime_1.tscn

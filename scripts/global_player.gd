@@ -1,6 +1,12 @@
 extends Node
 class_name GlobalPlayer
 
+# stats level player
+var level: int = 1
+var current_exp: float = 0.0
+var available_stats_points: int = 0
+var avg_power_level: int = 0
+
 # status de dano
 var dps_damage: float = 0.0
 var click_damage: float = 1.0
@@ -75,6 +81,9 @@ var permanent_bonus: Dictionary = {
 		"bonus": 0
 	},
 }
+
+# dicionario com exp necessaria pra passar de level
+var level_dict: Dictionary
 
 
 func cause_damage(type_damage: String) -> void:
@@ -211,3 +220,15 @@ func improve_upgrades(upgrade_name: String) -> void:
 	
 	get_tree().call_group("game_log", "add_message", log_msg)
 	get_tree().call_group("main_scene", "update_label")
+
+
+func update_exp(value: float) -> void:
+	current_exp += value
+	
+	if current_exp >= level_dict[str(level)]:
+		var leftover = current_exp - level_dict[str(level)]
+		current_exp += leftover
+		level += 1
+		available_stats_points += 2
+	
+	get_tree().call_group("stats_container", "update_exp_bar")

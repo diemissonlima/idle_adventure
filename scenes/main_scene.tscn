@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://chee12681ksau"]
+[gd_scene load_steps=60 format=3 uid="uid://chee12681ksau"]
 
 [ext_resource type="Texture2D" uid="uid://ciir88k8isk6u" path="res://assets/backgrounds/1.png" id="1_5hms3"]
 [ext_resource type="Script" path="res://scripts/main_scene.gd" id="1_7f1vr"]
@@ -15,12 +15,18 @@
 [ext_resource type="Texture2D" uid="uid://cju0hbrm8tun5" path="res://assets/backgrounds/Button Active.png" id="9_c50tc"]
 [ext_resource type="Texture2D" uid="uid://cjr6rcnfhgc44" path="res://assets/icons/pouch icon.png" id="9_qo7ay"]
 [ext_resource type="Texture2D" uid="uid://dluvk35d70he5" path="res://assets/backgrounds/Separator.png" id="10_68jdv"]
+[ext_resource type="Script" path="res://scripts/stats_container.gd" id="10_kyq4a"]
 [ext_resource type="Texture2D" uid="uid://b1jc2c4vk8cxr" path="res://assets/icons/options icon.png" id="10_ud07j"]
 [ext_resource type="Texture2D" uid="uid://b1d7dwxtii10e" path="res://assets/backgrounds/Box.png" id="11_7htbn"]
+[ext_resource type="Texture2D" uid="uid://ci3pwam4erm3v" path="res://assets/maps/map1.png" id="13_o5jv0"]
+[ext_resource type="Texture2D" uid="uid://b3bqaij1prm5h" path="res://assets/progressbar/V1/Background Static.png" id="14_ce5mp"]
+[ext_resource type="Texture2D" uid="uid://dl6h6x71p5tr8" path="res://assets/progressbar/V1/Foreground.png" id="15_s5ieg"]
+[ext_resource type="Texture2D" uid="uid://g15dueat3i2i" path="res://assets/progressbar/V1/Background Bar.png" id="16_68rti"]
 [ext_resource type="Texture2D" uid="uid://cc6yw0om5xoiv" path="res://assets/icons/energy icon.png" id="16_bswde"]
 [ext_resource type="Texture2D" uid="uid://cqgi215wq7mr8" path="res://assets/icons/three stars icon.png" id="16_iy1b3"]
 [ext_resource type="Texture2D" uid="uid://byv0ufsn4xaia" path="res://assets/icons/paralysis icon.png" id="17_xolln"]
 [ext_resource type="Texture2D" uid="uid://cls43brah2tkd" path="res://assets/icons/attack icon.png" id="18_8oaok"]
+[ext_resource type="Texture2D" uid="uid://b1vffns8ngpn1" path="res://assets/backgrounds/Box-1.png" id="18_sn34m"]
 [ext_resource type="Script" path="res://scripts/upgrades.gd" id="19_mei48"]
 [ext_resource type="Texture2D" uid="uid://dqwxpm8e55dly" path="res://assets/icons/agility icon.png" id="19_v0ctn"]
 [ext_resource type="Texture2D" uid="uid://dnkig6eqllbgc" path="res://assets/icons/magic icon.png" id="20_l4mtr"]
@@ -38,6 +44,68 @@ outline_color = Color(0, 0, 0, 1)
 line_spacing = 0.0
 font = ExtResource("6_r50xv")
 font_size = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_wojjr"]
+line_spacing = 0.0
+font = ExtResource("6_r50xv")
+font_size = 4
+font_color = Color(0, 1, 0, 1)
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_h2y3c"]
+font = ExtResource("6_r50xv")
+font_size = 6
+font_color = Color(1, 1, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_q8maw"]
+font = ExtResource("6_r50xv")
+font_size = 5
+
+[sub_resource type="LabelSettings" id="LabelSettings_32f08"]
+font = ExtResource("6_r50xv")
+font_size = 4
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_five1"]
+font = ExtResource("6_r50xv")
+font_size = 6
+font_color = Color(1, 1, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_jwlmw"]
+font = ExtResource("6_r50xv")
+font_size = 5
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_suv4n"]
+line_spacing = 0.0
+font = ExtResource("6_r50xv")
+font_size = 5
+font_color = Color(1, 0, 0, 1)
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_arlb8"]
+line_spacing = 0.0
+font = ExtResource("6_r50xv")
+font_size = 4
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_8eq51"]
+line_spacing = 0.0
+font = ExtResource("6_r50xv")
+font_size = 4
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_4eyrs"]
+font = ExtResource("6_r50xv")
+font_size = 4
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_x8rbt"]
 font = ExtResource("6_r50xv")
@@ -145,29 +213,29 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 1, 1, 0.196078)
 
-[node name="VContainer" type="VBoxContainer" parent="."]
+[node name="Container1" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(140, 270)
 layout_mode = 0
 offset_right = 140.0
 offset_bottom = 270.0
 theme_override_constants/separation = 1
 
-[node name="Battlefield" type="TextureRect" parent="VContainer"]
+[node name="Battlefield" type="TextureRect" parent="Container1"]
 custom_minimum_size = Vector2(0, 90)
 layout_mode = 2
 texture = ExtResource("1_5hms3")
 expand_mode = 1
 
-[node name="Marker2D" type="Marker2D" parent="VContainer/Battlefield"]
+[node name="Marker2D" type="Marker2D" parent="Container1/Battlefield"]
 position = Vector2(69, 72)
 
-[node name="BackgroundPotion" type="TextureRect" parent="VContainer"]
+[node name="BackgroundPotion" type="TextureRect" parent="Container1"]
 custom_minimum_size = Vector2(140, 30)
 layout_mode = 2
 texture = ExtResource("2_27dyn")
 expand_mode = 1
 
-[node name="PotionContainer" type="HBoxContainer" parent="VContainer/BackgroundPotion"]
+[node name="PotionContainer" type="HBoxContainer" parent="Container1/BackgroundPotion"]
 custom_minimum_size = Vector2(0, 30)
 layout_mode = 1
 anchors_preset = 15
@@ -178,42 +246,42 @@ grow_vertical = 2
 theme_override_constants/separation = 13
 alignment = 1
 
-[node name="Potion" type="TextureRect" parent="VContainer/BackgroundPotion/PotionContainer"]
+[node name="Potion" type="TextureRect" parent="Container1/BackgroundPotion/PotionContainer"]
 custom_minimum_size = Vector2(16, 16)
 layout_mode = 2
 texture = ExtResource("2_2av4a")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Potion2" type="TextureRect" parent="VContainer/BackgroundPotion/PotionContainer"]
+[node name="Potion2" type="TextureRect" parent="Container1/BackgroundPotion/PotionContainer"]
 custom_minimum_size = Vector2(16, 16)
 layout_mode = 2
 texture = ExtResource("2_2av4a")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Potion3" type="TextureRect" parent="VContainer/BackgroundPotion/PotionContainer"]
+[node name="Potion3" type="TextureRect" parent="Container1/BackgroundPotion/PotionContainer"]
 custom_minimum_size = Vector2(16, 16)
 layout_mode = 2
 texture = ExtResource("2_2av4a")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Potion4" type="TextureRect" parent="VContainer/BackgroundPotion/PotionContainer"]
+[node name="Potion4" type="TextureRect" parent="Container1/BackgroundPotion/PotionContainer"]
 custom_minimum_size = Vector2(16, 16)
 layout_mode = 2
 texture = ExtResource("2_2av4a")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Potion5" type="TextureRect" parent="VContainer/BackgroundPotion/PotionContainer"]
+[node name="Potion5" type="TextureRect" parent="Container1/BackgroundPotion/PotionContainer"]
 custom_minimum_size = Vector2(16, 16)
 layout_mode = 2
 texture = ExtResource("2_2av4a")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="BackgroundLog" type="TextureRect" parent="VContainer" node_paths=PackedStringArray("log_container", "scroll_container") groups=["game_log"]]
+[node name="BackgroundLog" type="TextureRect" parent="Container1" node_paths=PackedStringArray("log_container", "scroll_container") groups=["game_log"]]
 custom_minimum_size = Vector2(0, 148)
 layout_mode = 2
 texture = ExtResource("2_27dyn")
@@ -224,7 +292,7 @@ scroll_container = NodePath("LogContainer")
 max_messages = 100
 font = ExtResource("6_r50xv")
 
-[node name="Title" type="Label" parent="VContainer/BackgroundLog"]
+[node name="Title" type="Label" parent="Container1/BackgroundLog"]
 layout_mode = 0
 offset_left = 8.0
 offset_top = 4.0
@@ -233,7 +301,7 @@ offset_bottom = 11.0
 text = "Game Log"
 label_settings = SubResource("LabelSettings_qrr8g")
 
-[node name="LogContainer" type="ScrollContainer" parent="VContainer/BackgroundLog"]
+[node name="LogContainer" type="ScrollContainer" parent="Container1/BackgroundLog"]
 custom_minimum_size = Vector2(113, 126)
 layout_mode = 1
 anchors_preset = 5
@@ -247,14 +315,14 @@ grow_horizontal = 2
 horizontal_scroll_mode = 0
 vertical_scroll_mode = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VContainer/BackgroundLog/LogContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Container1/BackgroundLog/LogContainer"]
 custom_minimum_size = Vector2(113, 126)
 layout_mode = 2
 theme_override_constants/separation = 0
 alignment = 2
 
-[node name="Container2" type="TextureRect" parent="."]
-custom_minimum_size = Vector2(178, 270)
+[node name="Container2" type="TextureRect" parent="." node_paths=PackedStringArray("hero_level_label", "avg_power_level_label", "exp_bar", "btn_reset_attributes") groups=["stats_container"]]
+custom_minimum_size = Vector2(174, 270)
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -265,6 +333,11 @@ offset_bottom = 270.0
 grow_horizontal = 2
 texture = ExtResource("5_vfv32")
 expand_mode = 1
+script = ExtResource("10_kyq4a")
+hero_level_label = NodePath("Hero/HeroLevel")
+avg_power_level_label = NodePath("Hero/AVGPower")
+exp_bar = NodePath("Hero/ExpBar")
+btn_reset_attributes = NodePath("Hero/ResetAttributes")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Container2"]
 custom_minimum_size = Vector2(174, 10)
@@ -409,6 +482,192 @@ text = "Forge"
 label_settings = SubResource("LabelSettings_7scff")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Map" type="Node2D" parent="Container2"]
+visible = false
+position = Vector2(99, 0)
+
+[node name="MapName" type="Label" parent="Container2/Map"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -95.0
+offset_top = 21.0
+offset_right = -64.0
+offset_bottom = 26.0
+grow_horizontal = 2
+text = "Green Meadows"
+label_settings = SubResource("LabelSettings_wojjr")
+
+[node name="Separator" type="TextureRect" parent="Container2/Map"]
+custom_minimum_size = Vector2(170, 1)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -96.0
+offset_top = 27.0
+offset_right = 74.0
+offset_bottom = 28.0
+grow_horizontal = 2
+texture = ExtResource("10_68jdv")
+expand_mode = 1
+
+[node name="SpriteMap" type="TextureRect" parent="Container2/Map"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -95.0
+offset_top = 31.0
+offset_right = 75.0
+offset_bottom = 91.0
+grow_horizontal = 2
+texture = ExtResource("13_o5jv0")
+expand_mode = 1
+
+[node name="Hero" type="Node2D" parent="Container2"]
+
+[node name="Title" type="Label" parent="Container2/Hero"]
+offset_left = 4.0
+offset_top = 22.0
+offset_right = 34.0
+offset_bottom = 29.0
+text = "Hero Stats"
+label_settings = SubResource("LabelSettings_h2y3c")
+
+[node name="HeroLevel" type="Label" parent="Container2/Hero"]
+offset_left = 4.0
+offset_top = 34.0
+offset_right = 33.0
+offset_bottom = 39.0
+text = "Hero Level: 250"
+label_settings = SubResource("LabelSettings_q8maw")
+
+[node name="AVGPower" type="Label" parent="Container2/Hero"]
+offset_left = 4.0
+offset_top = 42.0
+offset_right = 64.0
+offset_bottom = 48.0
+text = "Average Power Level: 485"
+label_settings = SubResource("LabelSettings_q8maw")
+
+[node name="ExpBar" type="TextureProgressBar" parent="Container2/Hero"]
+offset_left = 3.0
+offset_top = 50.0
+offset_right = 175.0
+offset_bottom = 56.0
+value = 50.0
+nine_patch_stretch = true
+texture_under = ExtResource("14_ce5mp")
+texture_over = ExtResource("15_s5ieg")
+texture_progress = ExtResource("16_68rti")
+
+[node name="Label" type="Label" parent="Container2/Hero/ExpBar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.5
+offset_top = -2.5
+offset_right = 11.5
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "1840 / 5000"
+label_settings = SubResource("LabelSettings_32f08")
+
+[node name="Attributes" type="Label" parent="Container2/Hero"]
+offset_left = 4.0
+offset_top = 62.0
+offset_right = 28.0
+offset_bottom = 68.0
+text = "Attributes"
+label_settings = SubResource("LabelSettings_five1")
+
+[node name="AvailablePoints" type="Label" parent="Container2/Hero"]
+offset_left = 4.0
+offset_top = 72.0
+offset_right = 47.0
+offset_bottom = 78.0
+text = "Available Points: 2"
+label_settings = SubResource("LabelSettings_jwlmw")
+
+[node name="ResetAttributes" type="TextureButton" parent="Container2/Hero"]
+offset_left = 127.0
+offset_top = 62.0
+offset_right = 173.0
+offset_bottom = 69.0
+texture_normal = ExtResource("8_tkobm")
+texture_pressed = ExtResource("8_tkobm")
+texture_hover = ExtResource("9_c50tc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Container2/Hero/ResetAttributes"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -19.5
+offset_top = -3.0
+offset_right = 19.5
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Reset Attributes"
+label_settings = SubResource("LabelSettings_suv4n")
+
+[node name="AttributesBackground" type="TextureRect" parent="Container2/Hero"]
+offset_left = 4.0
+offset_top = 82.0
+offset_right = 174.0
+offset_bottom = 124.0
+texture = ExtResource("18_sn34m")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container2/Hero/AttributesBackground"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = -119.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="Strength" type="Label" parent="Container2/Hero/AttributesBackground/VBoxContainer"]
+layout_mode = 2
+text = "Strength: 15"
+label_settings = SubResource("LabelSettings_arlb8")
+
+[node name="Agility" type="Label" parent="Container2/Hero/AttributesBackground/VBoxContainer"]
+layout_mode = 2
+text = "Agility: 20"
+label_settings = SubResource("LabelSettings_8eq51")
+
+[node name="Luck" type="Label" parent="Container2/Hero/AttributesBackground/VBoxContainer"]
+layout_mode = 2
+text = "Luck: 25"
+label_settings = SubResource("LabelSettings_4eyrs")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Container2/Hero/AttributesBackground"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 119.0
+offset_top = 4.0
+offset_right = -4.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
 
 [node name="Container3" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(80, 268)
@@ -2081,10 +2340,11 @@ label_settings = SubResource("LabelSettings_ytyb8")
 
 [node name="AttackTimer" type="Timer" parent="."]
 
-[connection signal="mouse_entered" from="VContainer/Battlefield" to="." method="_on_battlefield_mouse_entered"]
-[connection signal="mouse_exited" from="VContainer/Battlefield" to="." method="_on_battlefield_mouse_exited"]
-[connection signal="mouse_entered" from="VContainer/BackgroundLog/LogContainer" to="VContainer/BackgroundLog" method="_on_log_container_mouse_entered"]
-[connection signal="mouse_exited" from="VContainer/BackgroundLog/LogContainer" to="VContainer/BackgroundLog" method="_on_log_container_mouse_exited"]
+[connection signal="mouse_entered" from="Container1/Battlefield" to="." method="_on_battlefield_mouse_entered"]
+[connection signal="mouse_exited" from="Container1/Battlefield" to="." method="_on_battlefield_mouse_exited"]
+[connection signal="mouse_entered" from="Container1/BackgroundLog/LogContainer" to="Container1/BackgroundLog" method="_on_log_container_mouse_entered"]
+[connection signal="mouse_exited" from="Container1/BackgroundLog/LogContainer" to="Container1/BackgroundLog" method="_on_log_container_mouse_exited"]
+[connection signal="pressed" from="Container2/Hero/ResetAttributes" to="Container2" method="_on_reset_attributes_pressed"]
 [connection signal="pressed" from="Container3/VBoxContainer/ImproveClick/MaxClick" to="." method="_on_max_click_pressed"]
 [connection signal="pressed" from="Container3/VBoxContainer/ImproveDPS/MaxDPS" to="." method="_on_max_dps_pressed"]
 [connection signal="pressed" from="Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery/BtnBuy" to="Container4" method="_on_btn_buy_gold_mastery_pressed"]
