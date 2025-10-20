@@ -4,7 +4,7 @@ class_name GlobalPlayer
 # status de dano
 var dps_damage: float = 0.0
 var click_damage: float = 1.0
-var gold_resource: float = 100000000000000000
+var gold_resource: float = 0#16330000000000000000000.0
 var scrap_resource: float = 0.0
 
 # bonus de upgrade permanente
@@ -124,19 +124,17 @@ func improve_gold() -> void:
 
 
 func improve_damage(type: String) -> void:
-	var bonus_percent: float = World.dps_damage_level
-	var bonus_flat: float
 	var log_msg: String
 	
 	match type:
 		"dps":
-			# +5 flat +1% total dps por level
+			# +10 flat +1% total dps por level
 			World.dps_damage_level += 1
-			var base_damage: float = World.dps_damage_level * 5
+			var bonus_percent: float = World.dps_damage_level
+			var base_damage: float = World.dps_damage_level * 10
 			var bonus_damage: float = base_damage * (bonus_percent / 100)
-			var total_dps: float = base_damage + bonus_damage
 			
-			dps_damage += total_dps
+			dps_damage = base_damage + bonus_damage
 			
 			gold_resource -= World.dps_damage_cost
 			World.dps_damage_cost += World.dps_damage_cost * 0.19
@@ -144,13 +142,13 @@ func improve_damage(type: String) -> void:
 			log_msg = "DPS Damage increased to level " + str(World.dps_damage_level)
 		
 		"click":
-			# +2.5 flat +1% total dps por level
+			# +5 flat +1% total dps por level
 			World.click_damage_level += 1
-			var base_damage: float = World.click_damage_level * 2.5
+			var bonus_percent: float = World.click_damage_level
+			var base_damage: float = World.click_damage_level * 5
 			var bonus_damage: float = base_damage * (bonus_percent / 100)
-			var total_click_damage: float = base_damage + bonus_damage
-			
-			click_damage += total_click_damage
+
+			click_damage = base_damage + bonus_damage
 			
 			gold_resource -= World.click_damage_cost
 			World.click_damage_cost += World.click_damage_cost * 0.30

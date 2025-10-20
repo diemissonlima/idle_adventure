@@ -159,7 +159,7 @@ texture = ExtResource("1_5hms3")
 expand_mode = 1
 
 [node name="Marker2D" type="Marker2D" parent="VContainer/Battlefield"]
-position = Vector2(69, 70)
+position = Vector2(69, 72)
 
 [node name="BackgroundPotion" type="TextureRect" parent="VContainer"]
 custom_minimum_size = Vector2(140, 30)
@@ -446,25 +446,24 @@ flip_h = true
 [node name="IconClick" type="TextureRect" parent="Container3/VBoxContainer/Info"]
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 0
-offset_left = 4.0
+offset_left = 3.0
 offset_top = 1.0
-offset_right = 16.0
+offset_right = 15.0
 offset_bottom = 13.0
 texture = ExtResource("8_ygyk3")
 expand_mode = 1
 
 [node name="Label" type="Label" parent="Container3/VBoxContainer/Info/IconClick"]
-custom_minimum_size = Vector2(12, 5)
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 6.0
-offset_top = -2.0
-offset_right = 19.0
-offset_bottom = 4.0
+offset_left = 2.0
+offset_top = -3.0
+offset_right = 23.0
+offset_bottom = 3.0
 grow_horizontal = 0
 grow_vertical = 2
 label_settings = SubResource("LabelSettings_cmpgq")
@@ -473,84 +472,78 @@ vertical_alignment = 1
 [node name="IconGold" type="TextureRect" parent="Container3/VBoxContainer/Info"]
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 0
-offset_left = 43.0
-offset_top = 1.0
-offset_right = 55.0
-offset_bottom = 13.0
+offset_left = 3.0
+offset_top = 17.0
+offset_right = 15.0
+offset_bottom = 29.0
 texture = ExtResource("9_qo7ay")
 expand_mode = 1
 
 [node name="Label" type="Label" parent="Container3/VBoxContainer/Info/IconGold"]
-custom_minimum_size = Vector2(12, 5)
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 7.0
-offset_top = -2.0
-offset_right = 20.0
-offset_bottom = 4.0
+offset_left = 2.0
+offset_top = -3.0
+offset_right = 23.0
+offset_bottom = 3.0
 grow_horizontal = 0
 grow_vertical = 2
-text = "13.5k"
 label_settings = SubResource("LabelSettings_cmpgq")
 vertical_alignment = 1
 
 [node name="IconScrap" type="TextureRect" parent="Container3/VBoxContainer/Info"]
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 0
-offset_left = 43.0
-offset_top = 16.0
-offset_right = 55.0
-offset_bottom = 28.0
+offset_left = 42.0
+offset_top = 17.0
+offset_right = 54.0
+offset_bottom = 29.0
 texture = ExtResource("10_ud07j")
 expand_mode = 1
 
 [node name="Label" type="Label" parent="Container3/VBoxContainer/Info/IconScrap"]
-custom_minimum_size = Vector2(12, 5)
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 7.0
-offset_top = -2.0
-offset_right = 20.0
-offset_bottom = 4.0
+offset_left = 2.0
+offset_top = -3.0
+offset_right = 23.0
+offset_bottom = 3.0
 grow_horizontal = 0
 grow_vertical = 2
-text = "13.5k"
 label_settings = SubResource("LabelSettings_cmpgq")
 vertical_alignment = 1
 
 [node name="IconDPS" type="TextureRect" parent="Container3/VBoxContainer/Info"]
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 0
-offset_left = 4.0
-offset_top = 17.0
-offset_right = 16.0
-offset_bottom = 29.0
+offset_left = 42.0
+offset_top = 1.0
+offset_right = 54.0
+offset_bottom = 13.0
 texture = ExtResource("9_aj0nw")
 expand_mode = 1
 
 [node name="Label" type="Label" parent="Container3/VBoxContainer/Info/IconDPS"]
-custom_minimum_size = Vector2(12, 5)
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 6.0
+offset_left = 2.0
 offset_top = -3.0
-offset_right = 19.0
+offset_right = 23.0
 offset_bottom = 3.0
 grow_horizontal = 0
 grow_vertical = 2
-text = "13.5k"
 label_settings = SubResource("LabelSettings_cmpgq")
 vertical_alignment = 1
 

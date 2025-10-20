@@ -1,5 +1,6 @@
 res://scenes/main_scene.tscn
-res://scripts/global_world.gd
-res://scripts/gold_range_blocks.json
 res://scenes/base_enemy.tscn
-res://scripts/gold_range.json
+res://scripts/global_player.gd
+res://scripts/upgrades.gd
+res://scripts/base_enemy.gd
+res://scenes/slime_1.tscn

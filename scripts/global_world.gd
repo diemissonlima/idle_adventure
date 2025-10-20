@@ -10,24 +10,34 @@ var click_damage_cost: int = 10
 var click_damage_level: int = 0
 
 var gold_range: Dictionary
+var enemy_hp_level: Dictionary
 
 
 func _ready() -> void:
-	var file_path = "res://scripts/gold_range.json"
+	load_json()
+
+
+func load_json() -> void:
+	var path_list: Array = [
+		"res://scripts/json/gold_range.json",
+		"res://scripts/json/enemy_hp_levels.json"
+	]
 	
-	var file = FileAccess.open(file_path, FileAccess.READ)
-	if file:
-		var json_text = file.get_as_text()
-		var json = JSON.new()
-		var result = json.parse(json_text)
+	for path in path_list:
+		var file = FileAccess.open(path, FileAccess.READ)
 		
-		if result == OK:
-			gold_range = json.get_data()
-			print("JSON carregado com sucesso")
-		else:
-			push_error("erro ao parsear JSON: ", str(result))
-	else:
-		push_error("erro ao abrir arquivo JSON em: " + file_path)
+		if file:
+			var json_text = file.get_as_text()
+			var json = JSON.new()
+			var result = json.parse(json_text)
+			
+			if result == OK:
+				var data = json.get_data()
+				match path:
+					"res://scripts/json/gold_range.json":
+						gold_range = data
+					"res://scripts/json/enemy_hp_levels.json":
+						enemy_hp_level = data
 
 
 func format_number(value: float) -> String:

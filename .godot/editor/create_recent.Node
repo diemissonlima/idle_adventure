@@ -1,3 +1,4 @@
+TextureRect
 RichTextLabel
 Node
 VBoxContainer
@@ -12,4 +13,3 @@ StaticBody2D
 Marker2D
 TextureButton
 Button
-HBoxContainer

@@ -102,10 +102,10 @@ func update_label(upgrade_name: String) -> void:
 		"gold_mastery":
 			gold_level_label.text = "Level:\n" + str(
 				Player.permanent_bonus["gold_mastery"]["level"]) + " / ∞"
-			gold_cost_label.text = "Cost " + str(
+			gold_cost_label.text = "Custo " + str(
 				World.format_number(Player.permanent_bonus["gold_mastery"]["cost"])) + " Gold"
 			gold_mastery_description.text = (
-				"Increases the base\nGold dropped by monsters\nby " + 
+				"Increases the base Gold\ndropped by monsters\nby " + 
 				str(Player.permanent_bonus["gold_mastery"]["bonus"] * 100) + "%."
 			)
 			

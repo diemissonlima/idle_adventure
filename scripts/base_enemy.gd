@@ -9,32 +9,15 @@ class_name BaseEnemy
 @export var enemy_name: String
 @export var max_health: float
 @export var health: float
-@export var gold_range: Array[int]
-@export_enum("Normal", "Elite", "Mini-Boss", "Boss") var enemy_type
+@export_enum("Normal", "Mini-Boss", "Boss") var enemy_type
 @export_enum(
-	"Golem"
+	"Slime"
 ) var enemy_race
 
 
 func _ready() -> void:
 	increase_health()
 	init_bar()
-	# test_health()
-
-
-func test_health() -> void:
-	increase_health()
-	print("==============================")
-	print("TESTANDO ESCALONAMENTO DE VIDA ATÉ O LEVEL 500")
-	print("==============================")
-
-	for lvl in range(1, 101):
-		World.level = lvl
-		increase_health()
-
-	print("==============================")
-	print("FIM DO TESTE")
-	print("==============================")
 
 
 func init_bar() -> void:
@@ -47,53 +30,9 @@ func init_bar() -> void:
 	enemy_name_label.text = enemy_name + " - Lvl " + str(World.level)
 
 
-func increase_health2() -> void:
-	pass
-
-
 func increase_health() -> void:
-	var base_health: float = 4.0
-	var level: int = max(0, World.level) # segurança caso level seja negativo
-
-	# Defina os segmentos [start, end] (inclusive) e a taxa por nível (growth_rate)
-	var segments = [
-		{"start": 1,   "end": 99,   "rate": 0.15},
-		{"start": 100,  "end": 199,  "rate": 0.10},
-		{"start": 200,  "end": 299,  "rate": 0.08},
-		{"start": 300,  "end": 399,  "rate": 0.06},
-		{"start": 400,  "end": 499,  "rate": 0.03},
-		{"start": 500, "end": 999999, "rate": 0.01} # end grande para "infinito"
-	]
-
-	# Se level for 0, mantemos a vida no base_health
-	if level <= 0:
-		if not "max_health" in self:
-			self.max_health = 0
-		max_health = float(base_health)
-		return
-
-	# Calcula o multiplicador acumulado por segmentos (usando pow por bloco)
-	var multiplier: float = 1.0
-	for seg in segments:
-		var seg_start: int = seg["start"]
-		var seg_end: int = seg["end"]
-		var rate: float = seg["rate"]
-
-		# quantos níveis deste segmento estão dentro do level atual?
-		var levels_in_seg: int = clamp(min(level, seg_end) - seg_start + 1, 0, seg_end - seg_start + 1)
-		if levels_in_seg > 0:
-			# cada nível multiplica por (1 + rate)
-			multiplier *= pow(1.0 + rate, levels_in_seg)
-
-	var new_max_health: float = base_health * multiplier
-
-	# Arredonda e atribui
-	if not "max_health" in self:
-		self.max_health = 0
-	max_health = float(round(new_max_health))
+	max_health = World.enemy_hp_level[str(World.level)]
 	health = max_health
-	
-	# print("Level:", level, " | Multiplier:", multiplier, " | Max Health:", max_health)
 
 
 func take_damage(value: int) -> void:
