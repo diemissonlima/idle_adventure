@@ -1,9 +1,9 @@
+Label
+TextureButton
 VBoxContainer
 TextureRect
 ColorRect
-TextureButton
 TextureProgressBar
-Label
 Node2D
 Node
 Sprite2D

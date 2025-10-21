@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=3 uid="uid://chee12681ksau"]
+[gd_scene load_steps=63 format=3 uid="uid://chee12681ksau"]
 
 [ext_resource type="Texture2D" uid="uid://ciir88k8isk6u" path="res://assets/backgrounds/1.png" id="1_5hms3"]
 [ext_resource type="Script" path="res://scripts/main_scene.gd" id="1_7f1vr"]
@@ -9,11 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://cgm2g3igfxnw1" path="res://assets/backgrounds/Panel.png" id="5_vfv32"]
 [ext_resource type="Script" path="res://scripts/game_log.gd" id="6_f6268"]
 [ext_resource type="FontFile" uid="uid://iutw4od6mkk8" path="res://assets/font/Oxanium-Medium.ttf" id="6_r50xv"]
-[ext_resource type="Texture2D" uid="uid://cpbq6nb8esg6h" path="res://assets/backgrounds/Button Normal.png" id="8_tkobm"]
 [ext_resource type="Texture2D" uid="uid://ryyd4yrcsnio" path="res://assets/icons/strength icon.png" id="8_ygyk3"]
 [ext_resource type="Texture2D" uid="uid://cg724n8l7r5nq" path="res://assets/icons/escape icon.png" id="9_aj0nw"]
-[ext_resource type="Texture2D" uid="uid://cju0hbrm8tun5" path="res://assets/backgrounds/Button Active.png" id="9_c50tc"]
-[ext_resource type="Texture2D" uid="uid://cjr6rcnfhgc44" path="res://assets/icons/pouch icon.png" id="9_qo7ay"]
 [ext_resource type="Texture2D" uid="uid://dluvk35d70he5" path="res://assets/backgrounds/Separator.png" id="10_68jdv"]
 [ext_resource type="Script" path="res://scripts/stats_container.gd" id="10_kyq4a"]
 [ext_resource type="Texture2D" uid="uid://b1jc2c4vk8cxr" path="res://assets/icons/options icon.png" id="10_ud07j"]
@@ -32,6 +29,10 @@
 [ext_resource type="Texture2D" uid="uid://dnkig6eqllbgc" path="res://assets/icons/magic icon.png" id="20_l4mtr"]
 [ext_resource type="Texture2D" uid="uid://cj0krfgq03g6m" path="res://assets/icons/two stars icon.png" id="21_t8il6"]
 [ext_resource type="Texture2D" uid="uid://cih1pevuq4n6e" path="res://assets/icons/bagpack icon.png" id="22_7to3c"]
+[ext_resource type="Texture2D" uid="uid://c7ottgyyv7t0b" path="res://assets/buttons/S Button 3/ButtonHover.png" id="24_5fp80"]
+[ext_resource type="Texture2D" uid="uid://d3nu0on3alprl" path="res://assets/icons/Wenrexa Money 3.png" id="24_u7a4l"]
+[ext_resource type="Texture2D" uid="uid://cu3ee5mq046by" path="res://assets/buttons/S Button 3/ButtonActive.png" id="25_2ihlf"]
+[ext_resource type="Texture2D" uid="uid://bmwqrp1rpk85y" path="res://assets/buttons/S Button 3/ButtonNormal.png" id="26_83xn1"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_qrr8g"]
 font = ExtResource("4_rkqi3")
@@ -79,11 +80,16 @@ font_size = 5
 outline_size = 1
 outline_color = Color(0, 0, 0, 1)
 
+[sub_resource type="LabelSettings" id="LabelSettings_1m0og"]
+font = ExtResource("6_r50xv")
+font_size = 4
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
 [sub_resource type="LabelSettings" id="LabelSettings_suv4n"]
 line_spacing = 0.0
 font = ExtResource("6_r50xv")
 font_size = 5
-font_color = Color(1, 0, 0, 1)
 outline_size = 1
 outline_color = Color(0, 0, 0, 1)
 
@@ -107,10 +113,12 @@ font_size = 4
 outline_size = 1
 outline_color = Color(0, 0, 0, 1)
 
-[sub_resource type="LabelSettings" id="LabelSettings_x8rbt"]
+[sub_resource type="LabelSettings" id="LabelSettings_4c7yy"]
+line_spacing = 0.0
 font = ExtResource("6_r50xv")
-font_size = 8
-font_color = Color(1, 1, 0, 1)
+font_size = 4
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_cmpgq"]
 line_spacing = 0.0
@@ -119,6 +127,11 @@ font_size = 5
 font_color = Color(0, 1, 0, 1)
 outline_size = 1
 outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_x8rbt"]
+font = ExtResource("6_r50xv")
+font_size = 8
+font_color = Color(1, 1, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_at25e"]
 font = ExtResource("6_r50xv")
@@ -351,9 +364,9 @@ alignment = 1
 [node name="BtnMap" type="TextureButton" parent="Container2/HBoxContainer"]
 custom_minimum_size = Vector2(25, 14)
 layout_mode = 2
-texture_normal = ExtResource("8_tkobm")
-texture_pressed = ExtResource("8_tkobm")
-texture_hover = ExtResource("9_c50tc")
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -378,9 +391,9 @@ vertical_alignment = 1
 [node name="BtnHero" type="TextureButton" parent="Container2/HBoxContainer"]
 custom_minimum_size = Vector2(25, 14)
 layout_mode = 2
-texture_normal = ExtResource("8_tkobm")
-texture_pressed = ExtResource("8_tkobm")
-texture_hover = ExtResource("9_c50tc")
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -405,9 +418,9 @@ vertical_alignment = 1
 [node name="BtnEquipment" type="TextureButton" parent="Container2/HBoxContainer"]
 custom_minimum_size = Vector2(25, 14)
 layout_mode = 2
-texture_normal = ExtResource("8_tkobm")
-texture_pressed = ExtResource("8_tkobm")
-texture_hover = ExtResource("9_c50tc")
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -432,9 +445,9 @@ vertical_alignment = 1
 [node name="BtnInventory" type="TextureButton" parent="Container2/HBoxContainer"]
 custom_minimum_size = Vector2(25, 14)
 layout_mode = 2
-texture_normal = ExtResource("8_tkobm")
-texture_pressed = ExtResource("8_tkobm")
-texture_hover = ExtResource("9_c50tc")
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -459,9 +472,9 @@ vertical_alignment = 1
 [node name="BtnForge" type="TextureButton" parent="Container2/HBoxContainer"]
 custom_minimum_size = Vector2(25, 14)
 layout_mode = 2
-texture_normal = ExtResource("8_tkobm")
-texture_pressed = ExtResource("8_tkobm")
-texture_hover = ExtResource("9_c50tc")
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -593,14 +606,24 @@ offset_bottom = 78.0
 text = "Available Points: 2"
 label_settings = SubResource("LabelSettings_jwlmw")
 
+[node name="Info" type="Label" parent="Container2/Hero"]
+offset_left = 4.0
+offset_top = 80.0
+offset_right = 128.0
+offset_bottom = 86.0
+text = "Spend your available points to increase your hero's core attributes.
+"
+label_settings = SubResource("LabelSettings_1m0og")
+
 [node name="ResetAttributes" type="TextureButton" parent="Container2/Hero"]
+custom_minimum_size = Vector2(46, 8)
 offset_left = 127.0
 offset_top = 62.0
 offset_right = 173.0
 offset_bottom = 69.0
-texture_normal = ExtResource("8_tkobm")
-texture_pressed = ExtResource("8_tkobm")
-texture_hover = ExtResource("9_c50tc")
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -612,9 +635,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -19.5
-offset_top = -3.0
+offset_top = -2.0
 offset_right = 19.5
-offset_bottom = 3.0
+offset_bottom = 4.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Reset Attributes"
@@ -622,9 +645,9 @@ label_settings = SubResource("LabelSettings_suv4n")
 
 [node name="AttributesBackground" type="TextureRect" parent="Container2/Hero"]
 offset_left = 4.0
-offset_top = 82.0
+offset_top = 93.0
 offset_right = 174.0
-offset_bottom = 124.0
+offset_bottom = 135.0
 texture = ExtResource("18_sn34m")
 expand_mode = 1
 
@@ -661,13 +684,299 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 119.0
-offset_top = 4.0
+offset_left = 146.0
+offset_top = 2.5
 offset_right = -4.0
-offset_bottom = -3.0
+offset_bottom = -3.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 10
+theme_override_constants/separation = 7
+
+[node name="StrengthPlus" type="TextureButton" parent="Container2/Hero/AttributesBackground/VBoxContainer2"]
+custom_minimum_size = Vector2(20, 8)
+layout_mode = 2
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Container2/Hero/AttributesBackground/VBoxContainer2/StrengthPlus"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -3.0
+offset_top = -2.0
+offset_right = 3.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "+1"
+label_settings = SubResource("LabelSettings_suv4n")
+
+[node name="AgiltyPlus" type="TextureButton" parent="Container2/Hero/AttributesBackground/VBoxContainer2"]
+custom_minimum_size = Vector2(20, 7)
+layout_mode = 2
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Container2/Hero/AttributesBackground/VBoxContainer2/AgiltyPlus"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -3.0
+offset_top = -3.0
+offset_right = 3.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "+1"
+label_settings = SubResource("LabelSettings_suv4n")
+
+[node name="LuckPlus" type="TextureButton" parent="Container2/Hero/AttributesBackground/VBoxContainer2"]
+custom_minimum_size = Vector2(20, 7)
+layout_mode = 2
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Container2/Hero/AttributesBackground/VBoxContainer2/LuckPlus"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -3.0
+offset_top = -3.0
+offset_right = 3.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "+1"
+label_settings = SubResource("LabelSettings_suv4n")
+
+[node name="DerivedStatus" type="Label" parent="Container2/Hero"]
+offset_left = 4.0
+offset_top = 143.0
+offset_right = 46.0
+offset_bottom = 150.0
+text = "Derived Status"
+label_settings = SubResource("LabelSettings_five1")
+
+[node name="Info2" type="Label" parent="Container2/Hero"]
+offset_left = 4.0
+offset_top = 152.0
+offset_right = 106.0
+offset_bottom = 158.0
+text = "Your overall combat and looting stats from all sources."
+label_settings = SubResource("LabelSettings_1m0og")
+
+[node name="DerivedStatusBackground" type="TextureRect" parent="Container2/Hero"]
+offset_left = 4.0
+offset_top = 165.0
+offset_right = 174.0
+offset_bottom = 207.0
+texture = ExtResource("18_sn34m")
+expand_mode = 1
+
+[node name="IconClick" type="TextureRect" parent="Container2/Hero/DerivedStatusBackground"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 1
+offset_left = 34.0
+offset_top = 5.0
+offset_right = 46.0
+offset_bottom = 17.0
+texture = ExtResource("8_ygyk3")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconClick"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -6.0
+offset_right = 34.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Click Damage"
+label_settings = SubResource("LabelSettings_4c7yy")
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconClick"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 2.0
+offset_top = -7.0
+offset_right = 23.0
+offset_bottom = -1.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "150K"
+label_settings = SubResource("LabelSettings_cmpgq")
+vertical_alignment = 1
+
+[node name="IconGold" type="TextureRect" parent="Container2/Hero/DerivedStatusBackground"]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 34.0
+offset_top = -16.0
+offset_right = 44.0
+offset_bottom = -6.0
+grow_vertical = 0
+texture = ExtResource("24_u7a4l")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconGold"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 9.0
+offset_top = -3.0
+offset_right = 35.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Gold Gain"
+label_settings = SubResource("LabelSettings_4c7yy")
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconGold"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 4.0
+offset_top = -6.0
+offset_right = 25.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "148 %"
+label_settings = SubResource("LabelSettings_cmpgq")
+vertical_alignment = 1
+
+[node name="IconMagicFind" type="TextureRect" parent="Container2/Hero/DerivedStatusBackground"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -69.0
+offset_top = -15.0
+offset_right = -57.0
+offset_bottom = -3.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("21_t8il6")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconMagicFind"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -5.0
+offset_right = 34.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Magic Find"
+label_settings = SubResource("LabelSettings_4c7yy")
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconMagicFind"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 2.0
+offset_top = -6.0
+offset_right = 23.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "487 %"
+label_settings = SubResource("LabelSettings_cmpgq")
+vertical_alignment = 1
+
+[node name="IconDPS" type="TextureRect" parent="Container2/Hero/DerivedStatusBackground"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -69.0
+offset_top = 4.0
+offset_right = -57.0
+offset_bottom = 16.0
+grow_horizontal = 0
+texture = ExtResource("9_aj0nw")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconDPS"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -5.0
+offset_right = 32.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "DPS Damage"
+label_settings = SubResource("LabelSettings_4c7yy")
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconDPS"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 2.0
+offset_top = -6.0
+offset_right = 23.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "47.12K"
+label_settings = SubResource("LabelSettings_cmpgq")
+vertical_alignment = 1
 
 [node name="Container3" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(80, 268)
@@ -729,13 +1038,13 @@ label_settings = SubResource("LabelSettings_cmpgq")
 vertical_alignment = 1
 
 [node name="IconGold" type="TextureRect" parent="Container3/VBoxContainer/Info"]
-custom_minimum_size = Vector2(12, 12)
+custom_minimum_size = Vector2(10, 10)
 layout_mode = 0
-offset_left = 3.0
+offset_left = 4.0
 offset_top = 17.0
-offset_right = 15.0
-offset_bottom = 29.0
-texture = ExtResource("9_qo7ay")
+offset_right = 14.0
+offset_bottom = 27.0
+texture = ExtResource("24_u7a4l")
 expand_mode = 1
 
 [node name="Label" type="Label" parent="Container3/VBoxContainer/Info/IconGold"]
@@ -745,9 +1054,9 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 2.0
+offset_left = 3.0
 offset_top = -3.0
-offset_right = 23.0
+offset_right = 24.0
 offset_bottom = 3.0
 grow_horizontal = 0
 grow_vertical = 2
@@ -815,9 +1124,9 @@ expand_mode = 1
 [node name="Hunts" type="TextureButton" parent="Container3/VBoxContainer"]
 custom_minimum_size = Vector2(10, 15)
 layout_mode = 2
-texture_normal = ExtResource("8_tkobm")
-texture_pressed = ExtResource("8_tkobm")
-texture_hover = ExtResource("9_c50tc")
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
 stretch_mode = 5
 
@@ -840,9 +1149,9 @@ label_settings = SubResource("LabelSettings_at25e")
 [node name="Expeditions" type="TextureButton" parent="Container3/VBoxContainer"]
 custom_minimum_size = Vector2(30, 15)
 layout_mode = 2
-texture_normal = ExtResource("8_tkobm")
-texture_pressed = ExtResource("8_tkobm")
-texture_hover = ExtResource("9_c50tc")
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -927,11 +1236,11 @@ offset_right = -3.0
 offset_bottom = 4.0
 grow_horizontal = 0
 grow_vertical = 2
-texture_normal = ExtResource("8_tkobm")
-texture_pressed = ExtResource("8_tkobm")
-texture_hover = ExtResource("9_c50tc")
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
-stretch_mode = 5
+stretch_mode = 0
 
 [node name="Label" type="Label" parent="Container3/VBoxContainer/ImproveClick/MaxClick"]
 layout_mode = 1
@@ -996,11 +1305,11 @@ offset_right = -3.0
 offset_bottom = 4.0
 grow_horizontal = 0
 grow_vertical = 2
-texture_normal = ExtResource("8_tkobm")
-texture_pressed = ExtResource("8_tkobm")
-texture_hover = ExtResource("9_c50tc")
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
-stretch_mode = 5
+stretch_mode = 0
 
 [node name="Label" type="Label" parent="Container3/VBoxContainer/ImproveDPS/MaxDPS"]
 layout_mode = 1
@@ -1150,13 +1459,13 @@ label_settings = SubResource("LabelSettings_e4drc")
 vertical_alignment = 1
 
 [node name="IconGold" type="TextureRect" parent="Container3/VBoxContainer/Info2"]
-custom_minimum_size = Vector2(12, 12)
+custom_minimum_size = Vector2(10, 10)
 layout_mode = 1
 offset_left = 5.0
-offset_top = 48.0
-offset_right = 17.0
-offset_bottom = 60.0
-texture = ExtResource("9_qo7ay")
+offset_top = 49.0
+offset_right = 15.0
+offset_bottom = 59.0
+texture = ExtResource("24_u7a4l")
 expand_mode = 1
 
 [node name="Label" type="Label" parent="Container3/VBoxContainer/Info2/IconGold"]
@@ -1167,9 +1476,9 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 3.0
+offset_left = 5.0
 offset_top = -5.5
-offset_right = 29.0
+offset_right = 31.0
 offset_bottom = 5.5
 grow_horizontal = 0
 grow_vertical = 2
@@ -1178,7 +1487,7 @@ Gold Gain"
 label_settings = SubResource("LabelSettings_e4drc")
 vertical_alignment = 1
 
-[node name="BtnPrestige" type="TextureRect" parent="Container3"]
+[node name="BtnPrestige" type="TextureButton" parent="Container3"]
 custom_minimum_size = Vector2(36, 10)
 layout_mode = 1
 anchors_preset = 2
@@ -1189,8 +1498,11 @@ offset_top = -13.0
 offset_right = 39.0
 offset_bottom = -3.0
 grow_vertical = 0
-texture = ExtResource("9_c50tc")
-expand_mode = 1
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="Label" type="Label" parent="Container3/BtnPrestige"]
 layout_mode = 1
@@ -1208,7 +1520,7 @@ grow_vertical = 2
 text = "Prestige Now"
 label_settings = SubResource("LabelSettings_oe63t")
 
-[node name="BtnPrestigeSlot" type="TextureRect" parent="Container3"]
+[node name="BtnPrestigeSlot" type="TextureButton" parent="Container3"]
 custom_minimum_size = Vector2(36, 10)
 layout_mode = 1
 anchors_preset = 3
@@ -1222,8 +1534,11 @@ offset_right = -3.0
 offset_bottom = -3.0
 grow_horizontal = 0
 grow_vertical = 0
-texture = ExtResource("9_c50tc")
-expand_mode = 1
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="Label" type="Label" parent="Container3/BtnPrestigeSlot"]
 layout_mode = 1
@@ -1323,13 +1638,13 @@ texture = ExtResource("11_7htbn")
 expand_mode = 1
 
 [node name="Icon" type="TextureRect" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery"]
-custom_minimum_size = Vector2(12, 12)
+custom_minimum_size = Vector2(10, 10)
 layout_mode = 0
-offset_left = 3.0
-offset_top = 5.0
-offset_right = 15.0
-offset_bottom = 17.0
-texture = ExtResource("9_qo7ay")
+offset_left = 4.0
+offset_top = 6.0
+offset_right = 14.0
+offset_bottom = 16.0
+texture = ExtResource("24_u7a4l")
 expand_mode = 1
 
 [node name="LevelLabel" type="Label" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery/Icon"]
@@ -1401,14 +1716,14 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -19.0
-offset_top = -11.0
+offset_top = -12.0
 offset_right = -4.0
-offset_bottom = -1.0
+offset_bottom = -2.0
 grow_horizontal = 0
 grow_vertical = 0
-texture_normal = ExtResource("8_tkobm")
-texture_pressed = ExtResource("8_tkobm")
-texture_hover = ExtResource("9_c50tc")
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -1513,14 +1828,14 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -19.0
-offset_top = -11.0
+offset_top = -12.0
 offset_right = -4.0
-offset_bottom = -1.0
+offset_bottom = -2.0
 grow_horizontal = 0
 grow_vertical = 0
-texture_normal = ExtResource("8_tkobm")
-texture_pressed = ExtResource("8_tkobm")
-texture_hover = ExtResource("9_c50tc")
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -1626,14 +1941,14 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -19.0
-offset_top = -11.0
+offset_top = -12.0
 offset_right = -4.0
-offset_bottom = -1.0
+offset_bottom = -2.0
 grow_horizontal = 0
 grow_vertical = 0
-texture_normal = ExtResource("8_tkobm")
-texture_pressed = ExtResource("8_tkobm")
-texture_hover = ExtResource("9_c50tc")
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -1739,14 +2054,14 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -19.0
-offset_top = -11.0
+offset_top = -12.0
 offset_right = -4.0
-offset_bottom = -1.0
+offset_bottom = -2.0
 grow_horizontal = 0
 grow_vertical = 0
-texture_normal = ExtResource("8_tkobm")
-texture_pressed = ExtResource("8_tkobm")
-texture_hover = ExtResource("9_c50tc")
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -1853,14 +2168,14 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -19.0
-offset_top = -11.0
+offset_top = -12.0
 offset_right = -4.0
-offset_bottom = -1.0
+offset_bottom = -2.0
 grow_horizontal = 0
 grow_vertical = 0
-texture_normal = ExtResource("8_tkobm")
-texture_pressed = ExtResource("8_tkobm")
-texture_hover = ExtResource("9_c50tc")
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -1967,14 +2282,14 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -19.0
-offset_top = -11.0
+offset_top = -12.0
 offset_right = -4.0
-offset_bottom = -1.0
+offset_bottom = -2.0
 grow_horizontal = 0
 grow_vertical = 0
-texture_normal = ExtResource("8_tkobm")
-texture_pressed = ExtResource("8_tkobm")
-texture_hover = ExtResource("9_c50tc")
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -2081,14 +2396,14 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -19.0
-offset_top = -11.0
+offset_top = -12.0
 offset_right = -4.0
-offset_bottom = -1.0
+offset_bottom = -2.0
 grow_horizontal = 0
 grow_vertical = 0
-texture_normal = ExtResource("8_tkobm")
-texture_pressed = ExtResource("8_tkobm")
-texture_hover = ExtResource("9_c50tc")
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -2201,9 +2516,9 @@ offset_right = -4.0
 offset_bottom = -1.0
 grow_horizontal = 0
 grow_vertical = 0
-texture_normal = ExtResource("8_tkobm")
-texture_pressed = ExtResource("8_tkobm")
-texture_hover = ExtResource("9_c50tc")
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -2315,9 +2630,9 @@ offset_right = -4.0
 offset_bottom = -1.0
 grow_horizontal = 0
 grow_vertical = 0
-texture_normal = ExtResource("8_tkobm")
-texture_pressed = ExtResource("8_tkobm")
-texture_hover = ExtResource("9_c50tc")
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -2330,9 +2645,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -4.0
-offset_top = -1.5
+offset_top = -2.5
 offset_right = 4.0
-offset_bottom = 3.5
+offset_bottom = 2.5
 grow_horizontal = 2
 grow_vertical = 2
 text = "Buy"

@@ -9,7 +9,27 @@ class_name StatsContainer
 
 
 func _ready() -> void:
+	connect_button_signal()
 	update_exp_bar()
+
+
+func connect_button_signal() -> void:
+	for button in $HBoxContainer.get_children():
+		if button is TextureButton:
+			button.pressed.connect(on_button_pressed.bind(button))
+
+
+func on_button_pressed(button: TextureButton) -> void:
+	for child in $".".get_children():
+		if child is Node2D:
+			child.visible = false
+	
+	match button.name:
+		"BtnMap":
+			$Map.visible = true
+		
+		"BtnHero":
+			$Hero.visible = true
 
 
 func update_exp_bar() -> void:
@@ -24,13 +44,6 @@ func update_exp_bar() -> void:
 	)
 
 
+
 func _on_reset_attributes_pressed() -> void:
 	pass # Replace with function body.
-
-
-func _on_reset_attributes_mouse_entered() -> void:
-	btn_reset_attributes.modulate.a = 150
-
-
-func _on_reset_attributes_mouse_exited() -> void:
-	btn_reset_attributes.modulate.a = 255

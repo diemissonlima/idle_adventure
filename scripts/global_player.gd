@@ -231,4 +231,7 @@ func update_exp(value: float) -> void:
 		level += 1
 		available_stats_points += 2
 	
+	var log_msg: String = "You gained " + World.format_number(value) + " XP."
+	
+	get_tree().call_group("game_log", "add_message", log_msg)
 	get_tree().call_group("stats_container", "update_exp_bar")
