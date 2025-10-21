@@ -96,20 +96,20 @@ outline_color = Color(0, 0, 0, 1)
 [sub_resource type="LabelSettings" id="LabelSettings_arlb8"]
 line_spacing = 0.0
 font = ExtResource("6_r50xv")
-font_size = 4
+font_size = 5
 outline_size = 1
 outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_8eq51"]
 line_spacing = 0.0
 font = ExtResource("6_r50xv")
-font_size = 4
+font_size = 5
 outline_size = 1
 outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_4eyrs"]
 font = ExtResource("6_r50xv")
-font_size = 4
+font_size = 5
 outline_size = 1
 outline_color = Color(0, 0, 0, 1)
 
@@ -334,7 +334,7 @@ layout_mode = 2
 theme_override_constants/separation = 0
 alignment = 2
 
-[node name="Container2" type="TextureRect" parent="." node_paths=PackedStringArray("hero_level_label", "avg_power_level_label", "exp_bar", "btn_reset_attributes") groups=["stats_container"]]
+[node name="Container2" type="TextureRect" parent="." node_paths=PackedStringArray("hero_level_label", "avg_power_level_label", "exp_bar", "btn_reset_attributes", "strength_label", "agility_label", "luck_label", "available_points_label") groups=["stats_container"]]
 custom_minimum_size = Vector2(174, 270)
 layout_mode = 1
 anchors_preset = 5
@@ -351,6 +351,10 @@ hero_level_label = NodePath("Hero/HeroLevel")
 avg_power_level_label = NodePath("Hero/AVGPower")
 exp_bar = NodePath("Hero/ExpBar")
 btn_reset_attributes = NodePath("Hero/ResetAttributes")
+strength_label = NodePath("Hero/AttributesBackground/VBoxContainer/Strength")
+agility_label = NodePath("Hero/AttributesBackground/VBoxContainer/Agility")
+luck_label = NodePath("Hero/AttributesBackground/VBoxContainer/Luck")
+available_points_label = NodePath("Hero/AvailablePoints")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Container2"]
 custom_minimum_size = Vector2(174, 10)
@@ -685,14 +689,14 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 146.0
-offset_top = 2.5
+offset_top = 2.0
 offset_right = -4.0
-offset_bottom = -3.5
+offset_bottom = -2.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 7
 
-[node name="StrengthPlus" type="TextureButton" parent="Container2/Hero/AttributesBackground/VBoxContainer2"]
+[node name="Strength" type="TextureButton" parent="Container2/Hero/AttributesBackground/VBoxContainer2"]
 custom_minimum_size = Vector2(20, 8)
 layout_mode = 2
 texture_normal = ExtResource("24_5fp80")
@@ -701,7 +705,7 @@ texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="Container2/Hero/AttributesBackground/VBoxContainer2/StrengthPlus"]
+[node name="Label" type="Label" parent="Container2/Hero/AttributesBackground/VBoxContainer2/Strength"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -717,8 +721,8 @@ grow_vertical = 2
 text = "+1"
 label_settings = SubResource("LabelSettings_suv4n")
 
-[node name="AgiltyPlus" type="TextureButton" parent="Container2/Hero/AttributesBackground/VBoxContainer2"]
-custom_minimum_size = Vector2(20, 7)
+[node name="Agility" type="TextureButton" parent="Container2/Hero/AttributesBackground/VBoxContainer2"]
+custom_minimum_size = Vector2(20, 8)
 layout_mode = 2
 texture_normal = ExtResource("24_5fp80")
 texture_pressed = ExtResource("25_2ihlf")
@@ -726,7 +730,7 @@ texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="Container2/Hero/AttributesBackground/VBoxContainer2/AgiltyPlus"]
+[node name="Label" type="Label" parent="Container2/Hero/AttributesBackground/VBoxContainer2/Agility"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -734,16 +738,16 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -3.0
-offset_top = -3.0
+offset_top = -2.0
 offset_right = 3.0
-offset_bottom = 3.0
+offset_bottom = 4.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "+1"
 label_settings = SubResource("LabelSettings_suv4n")
 
-[node name="LuckPlus" type="TextureButton" parent="Container2/Hero/AttributesBackground/VBoxContainer2"]
-custom_minimum_size = Vector2(20, 7)
+[node name="Luck" type="TextureButton" parent="Container2/Hero/AttributesBackground/VBoxContainer2"]
+custom_minimum_size = Vector2(20, 8)
 layout_mode = 2
 texture_normal = ExtResource("24_5fp80")
 texture_pressed = ExtResource("25_2ihlf")
@@ -751,7 +755,7 @@ texture_hover = ExtResource("26_83xn1")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="Container2/Hero/AttributesBackground/VBoxContainer2/LuckPlus"]
+[node name="Label" type="Label" parent="Container2/Hero/AttributesBackground/VBoxContainer2/Luck"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -759,9 +763,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -3.0
-offset_top = -3.0
+offset_top = -2.0
 offset_right = 3.0
-offset_bottom = 3.0
+offset_bottom = 4.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "+1"
@@ -978,8 +982,56 @@ text = "47.12K"
 label_settings = SubResource("LabelSettings_cmpgq")
 vertical_alignment = 1
 
+[node name="Separator" type="TextureRect" parent="Container2/Hero"]
+custom_minimum_size = Vector2(80, 1)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 210.0
+offset_right = 174.0
+offset_bottom = 211.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("10_68jdv")
+expand_mode = 1
+
+[node name="Companion" type="Label" parent="Container2/Hero"]
+offset_left = 4.0
+offset_top = 218.0
+offset_right = 46.0
+offset_bottom = 225.0
+text = "Companion"
+label_settings = SubResource("LabelSettings_five1")
+
+[node name="CompanionBackground" type="TextureRect" parent="Container2/Hero"]
+offset_left = 4.0
+offset_top = 229.0
+offset_right = 174.0
+offset_bottom = 268.0
+texture = ExtResource("18_sn34m")
+expand_mode = 1
+
+[node name="Info" type="Label" parent="Container2/Hero/CompanionBackground"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -51.0
+offset_top = -3.0
+offset_right = 51.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "No companions. Collect them from Expeditions"
+label_settings = SubResource("LabelSettings_1m0og")
+
 [node name="Container3" type="TextureRect" parent="."]
-custom_minimum_size = Vector2(80, 268)
+custom_minimum_size = Vector2(78, 270)
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5

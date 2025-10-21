@@ -55,14 +55,14 @@ func _on_attack_timer_timeout() -> void:
 
 func _on_max_dps_pressed() -> void:
 	if Player.gold_resource >= World.dps_damage_cost:
-		Player.improve_damage("dps")
+		Player.improve_damage("dps", "gold_upgrade")
 		
 	update_label()
 
 
 func _on_max_click_pressed() -> void:
 	if Player.gold_resource >= World.click_damage_cost:
-		Player.improve_damage("click")
+		Player.improve_damage("click", "gold_upgrade")
 		
 	update_label()
 

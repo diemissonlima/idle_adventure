@@ -3,6 +3,9 @@ class_name GlobalPlayer
 
 # stats level player
 var level: int = 1
+var strength: int = 0
+var agility: int = 0
+var luck: int = 0
 var current_exp: float = 0.0
 var available_stats_points: int = 0
 var avg_power_level: int = 0
@@ -132,36 +135,38 @@ func improve_gold() -> void:
 	get_tree().call_group("game_log", "add_message", msg_log)
 
 
-func improve_damage(type: String) -> void:
+func improve_damage(type: String, increase_type: String) -> void:
+	var bonus_percent_dps: float = World.dps_damage_level
+	var bonus_percent_click: float = World.click_damage_level
 	var log_msg: String
 	
 	match type:
 		"dps":
 			# +10 flat +1% total dps por level
-			World.dps_damage_level += 1
+			if increase_type == "gold_upgrade":
+				World.dps_damage_level += 1
+				gold_resource -= World.dps_damage_cost
+				World.dps_damage_cost += World.dps_damage_cost * 0.19
+			
 			var bonus_percent: float = World.dps_damage_level
-			var base_damage: float = World.dps_damage_level * 10
+			var base_damage: float = (World.dps_damage_level * 10) + (agility * 10)
 			var bonus_damage: float = base_damage * (bonus_percent / 100)
 			
 			dps_damage = base_damage + bonus_damage
-			
-			gold_resource -= World.dps_damage_cost
-			World.dps_damage_cost += World.dps_damage_cost * 0.19
-			
 			log_msg = "DPS Damage increased to level " + str(World.dps_damage_level)
 		
 		"click":
 			# +5 flat +1% total dps por level
-			World.click_damage_level += 1
+			if increase_type == "gold_upgrade":
+				World.click_damage_level += 1
+				gold_resource -= World.click_damage_cost
+				World.click_damage_cost += World.click_damage_cost * 0.30
+				
 			var bonus_percent: float = World.click_damage_level
 			var base_damage: float = World.click_damage_level * 5
 			var bonus_damage: float = base_damage * (bonus_percent / 100)
-
-			click_damage = base_damage + bonus_damage
 			
-			gold_resource -= World.click_damage_cost
-			World.click_damage_cost += World.click_damage_cost * 0.30
-		
+			click_damage = base_damage + bonus_damage
 			log_msg = "Click Damage increased to level " + str(World.click_damage_level)
 			
 	get_tree().call_group("game_log", "add_message", log_msg)
@@ -224,14 +229,21 @@ func improve_upgrades(upgrade_name: String) -> void:
 
 func update_exp(value: float) -> void:
 	current_exp += value
+	var log_msg: String = "You gained " + World.format_number(value) + " XP."
 	
 	if current_exp >= level_dict[str(level)]:
 		var leftover = current_exp - level_dict[str(level)]
-		current_exp += leftover
-		level += 1
-		available_stats_points += 2
-	
-	var log_msg: String = "You gained " + World.format_number(value) + " XP."
+		current_exp = leftover
+		on_level_up()
 	
 	get_tree().call_group("game_log", "add_message", log_msg)
 	get_tree().call_group("stats_container", "update_exp_bar")
+
+
+func on_level_up() -> void:
+	level += 1
+	available_stats_points += 2
+	
+	var log_msg: String = "Congratulations, you reached lvl " + str(level) + "."
+	get_tree().call_group("game_log", "add_message", log_msg)
+	get_tree().call_group("stats_container", "update_label")

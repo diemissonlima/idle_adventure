@@ -1,5 +1,6 @@
 res://scenes/main_scene.tscn
 res://scenes/base_enemy.tscn
 res://scripts/stats_container.gd
-res://scripts/base_enemy.gd
 res://scripts/global_player.gd
+res://scripts/base_enemy.gd
+res://scripts/main_scene.gd
