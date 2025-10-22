@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=3 uid="uid://chee12681ksau"]
+[gd_scene load_steps=67 format=3 uid="uid://chee12681ksau"]
 
 [ext_resource type="Texture2D" uid="uid://ciir88k8isk6u" path="res://assets/backgrounds/1.png" id="1_5hms3"]
 [ext_resource type="Script" path="res://scripts/main_scene.gd" id="1_7f1vr"]
@@ -26,10 +26,12 @@
 [ext_resource type="Texture2D" uid="uid://b1vffns8ngpn1" path="res://assets/backgrounds/Box-1.png" id="18_sn34m"]
 [ext_resource type="Script" path="res://scripts/upgrades.gd" id="19_mei48"]
 [ext_resource type="Texture2D" uid="uid://dqwxpm8e55dly" path="res://assets/icons/agility icon.png" id="19_v0ctn"]
+[ext_resource type="Script" path="res://scripts/derived_status.gd" id="20_8n5al"]
 [ext_resource type="Texture2D" uid="uid://dnkig6eqllbgc" path="res://assets/icons/magic icon.png" id="20_l4mtr"]
 [ext_resource type="Texture2D" uid="uid://cj0krfgq03g6m" path="res://assets/icons/two stars icon.png" id="21_t8il6"]
 [ext_resource type="Texture2D" uid="uid://cih1pevuq4n6e" path="res://assets/icons/bagpack icon.png" id="22_7to3c"]
 [ext_resource type="Texture2D" uid="uid://c7ottgyyv7t0b" path="res://assets/buttons/S Button 3/ButtonHover.png" id="24_5fp80"]
+[ext_resource type="Texture2D" uid="uid://d2hiuho182mje" path="res://assets/inventory/Backpack 10x6/Panel Green Empty.png" id="24_aqwqb"]
 [ext_resource type="Texture2D" uid="uid://d3nu0on3alprl" path="res://assets/icons/Wenrexa Money 3.png" id="24_u7a4l"]
 [ext_resource type="Texture2D" uid="uid://cu3ee5mq046by" path="res://assets/buttons/S Button 3/ButtonActive.png" id="25_2ihlf"]
 [ext_resource type="Texture2D" uid="uid://bmwqrp1rpk85y" path="res://assets/buttons/S Button 3/ButtonNormal.png" id="26_83xn1"]
@@ -125,6 +127,21 @@ line_spacing = 0.0
 font = ExtResource("6_r50xv")
 font_size = 5
 font_color = Color(0, 1, 0, 1)
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_q2nxm"]
+line_spacing = 0.0
+font = ExtResource("6_r50xv")
+font_size = 4
+font_color = Color(1, 1, 0, 1)
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_lb1o5"]
+line_spacing = 0.0
+font = ExtResource("6_r50xv")
+font_size = 3
 outline_size = 1
 outline_color = Color(0, 0, 0, 1)
 
@@ -542,6 +559,7 @@ texture = ExtResource("13_o5jv0")
 expand_mode = 1
 
 [node name="Hero" type="Node2D" parent="Container2"]
+visible = false
 
 [node name="Title" type="Label" parent="Container2/Hero"]
 offset_left = 4.0
@@ -787,20 +805,25 @@ offset_bottom = 158.0
 text = "Your overall combat and looting stats from all sources."
 label_settings = SubResource("LabelSettings_1m0og")
 
-[node name="DerivedStatusBackground" type="TextureRect" parent="Container2/Hero"]
+[node name="DerivedStatusBackground" type="TextureRect" parent="Container2/Hero" node_paths=PackedStringArray("icon_click", "icon_gold", "icon_magig_find", "icon_dps") groups=["derived_status"]]
 offset_left = 4.0
 offset_top = 165.0
 offset_right = 174.0
 offset_bottom = 207.0
 texture = ExtResource("18_sn34m")
 expand_mode = 1
+script = ExtResource("20_8n5al")
+icon_click = NodePath("IconClick")
+icon_gold = NodePath("IconGold")
+icon_magig_find = NodePath("IconMagicFind")
+icon_dps = NodePath("IconDPS")
 
 [node name="IconClick" type="TextureRect" parent="Container2/Hero/DerivedStatusBackground"]
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 1
-offset_left = 34.0
+offset_left = 4.0
 offset_top = 5.0
-offset_right = 46.0
+offset_right = 16.0
 offset_bottom = 17.0
 texture = ExtResource("8_ygyk3")
 expand_mode = 1
@@ -838,15 +861,71 @@ text = "150K"
 label_settings = SubResource("LabelSettings_cmpgq")
 vertical_alignment = 1
 
+[node name="Info" type="TextureRect" parent="Container2/Hero/DerivedStatusBackground/IconClick"]
+visible = false
+layout_mode = 0
+offset_left = 41.0
+offset_top = -11.0
+offset_right = 90.0
+offset_bottom = 45.0
+texture = ExtResource("24_aqwqb")
+expand_mode = 1
+
+[node name="Name" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconClick/Info"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -13.0
+offset_top = 2.0
+offset_right = 13.0
+offset_bottom = 8.0
+grow_horizontal = 2
+text = "Click Damage"
+label_settings = SubResource("LabelSettings_q2nxm")
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container2/Hero/DerivedStatusBackground/IconClick/Info"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 10.0
+offset_right = 47.0
+offset_bottom = 56.0
+theme_override_constants/separation = 1
+
+[node name="StrengthFlat" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconClick/Info/VBoxContainer"]
+layout_mode = 2
+text = "From Strength: + 350"
+label_settings = SubResource("LabelSettings_lb1o5")
+vertical_alignment = 1
+
+[node name="StrengthPercent" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconClick/Info/VBoxContainer"]
+layout_mode = 2
+text = "From Strength: + 7%"
+label_settings = SubResource("LabelSettings_lb1o5")
+vertical_alignment = 1
+
+[node name="GoldUpgradeFlat" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconClick/Info/VBoxContainer"]
+layout_mode = 2
+text = "From Gold Upgrade: + 150"
+label_settings = SubResource("LabelSettings_lb1o5")
+vertical_alignment = 1
+
+[node name="GoldUpgradePercent" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconClick/Info/VBoxContainer"]
+layout_mode = 2
+text = "From Gold Upgrade: + 15%"
+label_settings = SubResource("LabelSettings_lb1o5")
+vertical_alignment = 1
+
 [node name="IconGold" type="TextureRect" parent="Container2/Hero/DerivedStatusBackground"]
 custom_minimum_size = Vector2(10, 10)
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 34.0
+offset_left = 4.0
 offset_top = -16.0
-offset_right = 44.0
+offset_right = 14.0
 offset_bottom = -6.0
 grow_vertical = 0
 texture = ExtResource("24_u7a4l")
@@ -885,6 +964,56 @@ text = "148 %"
 label_settings = SubResource("LabelSettings_cmpgq")
 vertical_alignment = 1
 
+[node name="Info" type="TextureRect" parent="Container2/Hero/DerivedStatusBackground/IconGold"]
+visible = false
+layout_mode = 0
+offset_left = 41.0
+offset_top = -18.0
+offset_right = 90.0
+offset_bottom = 38.0
+texture = ExtResource("24_aqwqb")
+expand_mode = 1
+
+[node name="Name" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconGold/Info"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -9.0
+offset_top = 2.0
+offset_right = 9.0
+offset_bottom = 8.0
+grow_horizontal = 2
+text = "Gold Gain"
+label_settings = SubResource("LabelSettings_q2nxm")
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container2/Hero/DerivedStatusBackground/IconGold/Info"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 10.0
+offset_right = 47.0
+offset_bottom = 56.0
+theme_override_constants/separation = 1
+
+[node name="LuckFlat" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconGold/Info/VBoxContainer"]
+layout_mode = 2
+text = "From Luck: + 4%"
+label_settings = SubResource("LabelSettings_lb1o5")
+vertical_alignment = 1
+
+[node name="LuckPercent" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconGold/Info/VBoxContainer"]
+layout_mode = 2
+text = "From Luck: + 0.4%"
+label_settings = SubResource("LabelSettings_lb1o5")
+vertical_alignment = 1
+
+[node name="GoldUpgrade" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconGold/Info/VBoxContainer"]
+layout_mode = 2
+text = "From Gold Upgrade: + 25%"
+label_settings = SubResource("LabelSettings_lb1o5")
+vertical_alignment = 1
+
 [node name="IconMagicFind" type="TextureRect" parent="Container2/Hero/DerivedStatusBackground"]
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 1
@@ -893,9 +1022,9 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -69.0
+offset_left = -42.0
 offset_top = -15.0
-offset_right = -57.0
+offset_right = -30.0
 offset_bottom = -3.0
 grow_horizontal = 0
 grow_vertical = 0
@@ -935,15 +1064,53 @@ text = "487 %"
 label_settings = SubResource("LabelSettings_cmpgq")
 vertical_alignment = 1
 
+[node name="Info" type="TextureRect" parent="Container2/Hero/DerivedStatusBackground/IconMagicFind"]
+visible = false
+layout_mode = 0
+offset_left = -51.0
+offset_top = -19.0
+offset_right = -2.0
+offset_bottom = 37.0
+texture = ExtResource("24_aqwqb")
+expand_mode = 1
+
+[node name="Name" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconMagicFind/Info"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -9.0
+offset_top = 2.0
+offset_right = 9.0
+offset_bottom = 8.0
+grow_horizontal = 2
+text = "Magic Find"
+label_settings = SubResource("LabelSettings_q2nxm")
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container2/Hero/DerivedStatusBackground/IconMagicFind/Info"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 10.0
+offset_right = 47.0
+offset_bottom = 56.0
+theme_override_constants/separation = 1
+
+[node name="LuckFlat" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconMagicFind/Info/VBoxContainer"]
+layout_mode = 2
+text = "From Luck: + 0.7 %"
+label_settings = SubResource("LabelSettings_lb1o5")
+vertical_alignment = 1
+
 [node name="IconDPS" type="TextureRect" parent="Container2/Hero/DerivedStatusBackground"]
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -69.0
+offset_left = -42.0
 offset_top = 4.0
-offset_right = -57.0
+offset_right = -30.0
 offset_bottom = 16.0
 grow_horizontal = 0
 texture = ExtResource("9_aj0nw")
@@ -980,6 +1147,62 @@ grow_horizontal = 0
 grow_vertical = 2
 text = "47.12K"
 label_settings = SubResource("LabelSettings_cmpgq")
+vertical_alignment = 1
+
+[node name="Info" type="TextureRect" parent="Container2/Hero/DerivedStatusBackground/IconDPS"]
+visible = false
+layout_mode = 0
+offset_left = -51.0
+offset_top = -10.0
+offset_right = -2.0
+offset_bottom = 46.0
+texture = ExtResource("24_aqwqb")
+expand_mode = 1
+
+[node name="Name" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconDPS/Info"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -9.0
+offset_top = 2.0
+offset_right = 9.0
+offset_bottom = 8.0
+grow_horizontal = 2
+text = "DPS Damage"
+label_settings = SubResource("LabelSettings_q2nxm")
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container2/Hero/DerivedStatusBackground/IconDPS/Info"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 10.0
+offset_right = 47.0
+offset_bottom = 56.0
+theme_override_constants/separation = 1
+
+[node name="AgilityFlat" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconDPS/Info/VBoxContainer"]
+layout_mode = 2
+text = "From Agility: + 4%"
+label_settings = SubResource("LabelSettings_lb1o5")
+vertical_alignment = 1
+
+[node name="AgilityPercent" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconDPS/Info/VBoxContainer"]
+layout_mode = 2
+text = "From Agility: + 0.4%"
+label_settings = SubResource("LabelSettings_lb1o5")
+vertical_alignment = 1
+
+[node name="GoldUpgradeFlat" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconDPS/Info/VBoxContainer"]
+layout_mode = 2
+text = "From Gold Upgrade: + 25%"
+label_settings = SubResource("LabelSettings_lb1o5")
+vertical_alignment = 1
+
+[node name="GoldUpgradePercent" type="Label" parent="Container2/Hero/DerivedStatusBackground/IconDPS/Info/VBoxContainer"]
+layout_mode = 2
+text = "From Gold Upgrade: + 25%"
+label_settings = SubResource("LabelSettings_lb1o5")
 vertical_alignment = 1
 
 [node name="Separator" type="TextureRect" parent="Container2/Hero"]

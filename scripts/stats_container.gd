@@ -12,6 +12,7 @@ class_name StatsContainer
 @export var available_points_label: Label
 
 
+
 func _ready() -> void:
 	connect_button_signal()
 	update_label()

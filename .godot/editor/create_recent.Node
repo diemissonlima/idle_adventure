@@ -1,7 +1,7 @@
+VBoxContainer
 TextureRect
 Label
 TextureButton
-VBoxContainer
 ColorRect
 TextureProgressBar
 Node2D

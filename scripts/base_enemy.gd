@@ -51,7 +51,10 @@ func update_bar() -> void:
 
 
 func kill() -> void:
-	Player.improve_gold()
+	var gold_range = World.get_gold_range(str(World.level))
+	var gold_dropped: float = randi_range(gold_range[0], gold_range[1])
+	
+	Player.improve_gold(gold_dropped)
 	World.level += 1
 	Player.update_exp(randi_range(15000, 15000))
 	get_tree().call_group("main_scene", "spawn_new_enemy")

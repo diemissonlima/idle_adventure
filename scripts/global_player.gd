@@ -6,6 +6,7 @@ var level: int = 1
 var strength: int = 0
 var agility: int = 0
 var luck: int = 0
+var magic_find: float = 0
 var current_exp: float = 0.0
 var available_stats_points: int = 0
 var avg_power_level: int = 0
@@ -122,17 +123,28 @@ func cause_damage(type_damage: String) -> void:
 				get_tree().call_group("enemy", "take_damage", click_damage)
 
 
-func improve_gold() -> void:
-	var gold_range = World.get_gold_range(str(World.level))
-	var gold_dropped: float = randi_range(gold_range[0], gold_range[1])
-	var bonus_gold = gold_dropped * permanent_bonus["gold_mastery"]["bonus"]
-	var final_gold: float = gold_dropped + bonus_gold
-	var msg_log = "You gained " + str(World.format_number(final_gold)) + " gold."
+func improve_gold(value: float) -> void:
+	var bonus_from_gold_mastery: float = permanent_bonus["gold_mastery"]["bonus"]
+	var bonus_from_luck: float = luck * 2
+	var total_bonus: float = (luck * 0.2) + bonus_from_gold_mastery + bonus_from_luck
 	
-	gold_resource += final_gold
+	var gold_dropped: float = value + (value * (total_bonus / 100))
+	
+	#print("gold base: ", value)
+	#print("bonus gold mastery: ", bonus_from_gold_mastery)
+	#print("bonus luck: ", bonus_from_luck)
+	#print("bonus 2 luck: ", float(luck * 0.2))
+	#print("total bonus: ", total_bonus)
+	#print("gold dropado: ", gold_dropped)
+	#print("-=-=-=-=-=-=-=-=-=-=-=")
+	
+	gold_resource += gold_dropped
 	
 	get_tree().call_group("main_scene", "update_label")
-	get_tree().call_group("game_log", "add_message", msg_log)
+	get_tree().call_group(
+		"game_log", "add_message",
+		"You gained " + str(World.format_number(gold_dropped)) + " gold."
+		)
 
 
 func improve_damage(type: String, improve_type: String) -> void:
