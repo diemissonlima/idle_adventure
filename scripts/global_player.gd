@@ -135,41 +135,50 @@ func improve_gold() -> void:
 	get_tree().call_group("game_log", "add_message", msg_log)
 
 
-func improve_damage(type: String, increase_type: String) -> void:
-	var bonus_percent_dps: float = World.dps_damage_level
-	var bonus_percent_click: float = World.click_damage_level
-	var log_msg: String
-	
+func improve_damage(type: String, improve_type: String) -> void:
 	match type:
 		"dps":
 			# +10 flat +1% total dps por level
-			if increase_type == "gold_upgrade":
+			if improve_type == "gold_upgrade":
 				World.dps_damage_level += 1
 				gold_resource -= World.dps_damage_cost
 				World.dps_damage_cost += World.dps_damage_cost * 0.19
+				get_tree().call_group(
+					"game_log", "add_message", 
+					"DPS Damage increased to level " + str(World.dps_damage_level)
+				)
 			
-			var bonus_percent: float = World.dps_damage_level
-			var base_damage: float = (World.dps_damage_level * 10) + (agility * 10)
-			var bonus_damage: float = base_damage * (bonus_percent / 100)
+			var bonus_percent_dps: float = (World.dps_damage_level * 1) + (agility * 0.8)
+			var bonus_flat_dps: float = (World.dps_damage_level * 10) + (agility * 10)
+			var dps_base_damage: float = bonus_flat_dps
+			var dps_bonus_damage: float = dps_base_damage * (bonus_percent_dps / 100)
 			
-			dps_damage = base_damage + bonus_damage
-			log_msg = "DPS Damage increased to level " + str(World.dps_damage_level)
-		
+			dps_damage = dps_base_damage + dps_bonus_damage
+			
+			#print("% DPS Bonus: ", bonus_percent_dps)
+			#print("Flat bonus: ",bonus_flat_dps )
+			#print("DPS base damage: ", dps_base_damage)
+			#print("DPS bonus damage: ", dps_bonus_damage)
+			#print("DPS final damage: ", dps_damage)
+			#print("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+			
 		"click":
 			# +5 flat +1% total dps por level
-			if increase_type == "gold_upgrade":
+			if improve_type == "gold_upgrade":
 				World.click_damage_level += 1
 				gold_resource -= World.click_damage_cost
 				World.click_damage_cost += World.click_damage_cost * 0.30
-				
-			var bonus_percent: float = World.click_damage_level
-			var base_damage: float = World.click_damage_level * 5
-			var bonus_damage: float = base_damage * (bonus_percent / 100)
+				get_tree().call_group(
+					"game_log", "add_message", 
+					"Click Damage increased to level " + str(World.click_damage_level)
+					)
 			
-			click_damage = base_damage + bonus_damage
-			log_msg = "Click Damage increased to level " + str(World.click_damage_level)
+			var bonus_percent_click: float = (World.click_damage_level * 1) + (strength * 0.2)
+			var bonus_flat_click: float = (World.click_damage_level * 5) + (strength * 5)
+			var click_base_damage: float = bonus_flat_click
+			var click_bonus_damage: float = click_base_damage * (bonus_percent_click / 100)
 			
-	get_tree().call_group("game_log", "add_message", log_msg)
+			click_damage = click_base_damage + click_bonus_damage
 
 
 func improve_upgrades(upgrade_name: String) -> void:

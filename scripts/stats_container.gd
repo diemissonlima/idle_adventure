@@ -48,6 +48,7 @@ func on_button_increase_status_pressed(button: TextureButton) -> void:
 	match button.name:
 		"Strength":
 			Player.strength += 1
+			Player.improve_damage("click", "stats_upgrade")
 			
 		"Agility":
 			Player.agility += 1
