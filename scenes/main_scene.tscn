@@ -1253,6 +1253,8 @@ grow_vertical = 2
 text = "No companions. Collect them from Expeditions"
 label_settings = SubResource("LabelSettings_1m0og")
 
+[node name="Equipment" type="Node2D" parent="Container2"]
+
 [node name="Container3" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(78, 270)
 layout_mode = 1
@@ -1313,12 +1315,12 @@ label_settings = SubResource("LabelSettings_cmpgq")
 vertical_alignment = 1
 
 [node name="IconGold" type="TextureRect" parent="Container3/VBoxContainer/Info"]
-custom_minimum_size = Vector2(10, 10)
+custom_minimum_size = Vector2(11, 11)
 layout_mode = 0
-offset_left = 4.0
+offset_left = 3.0
 offset_top = 17.0
 offset_right = 14.0
-offset_bottom = 27.0
+offset_bottom = 28.0
 texture = ExtResource("24_u7a4l")
 expand_mode = 1
 
@@ -1734,12 +1736,12 @@ label_settings = SubResource("LabelSettings_e4drc")
 vertical_alignment = 1
 
 [node name="IconGold" type="TextureRect" parent="Container3/VBoxContainer/Info2"]
-custom_minimum_size = Vector2(10, 10)
+custom_minimum_size = Vector2(11, 11)
 layout_mode = 1
-offset_left = 5.0
+offset_left = 4.0
 offset_top = 49.0
 offset_right = 15.0
-offset_bottom = 59.0
+offset_bottom = 60.0
 texture = ExtResource("24_u7a4l")
 expand_mode = 1
 
@@ -1913,12 +1915,12 @@ texture = ExtResource("11_7htbn")
 expand_mode = 1
 
 [node name="Icon" type="TextureRect" parent="Container4/VBoxContainer/ScrollContainer/VBoxContainer/GoldMastery"]
-custom_minimum_size = Vector2(10, 10)
+custom_minimum_size = Vector2(11, 11)
 layout_mode = 0
-offset_left = 4.0
+offset_left = 3.0
 offset_top = 6.0
 offset_right = 14.0
-offset_bottom = 16.0
+offset_bottom = 17.0
 texture = ExtResource("24_u7a4l")
 expand_mode = 1
 

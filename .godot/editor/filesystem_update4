@@ -1,4 +1,5 @@
 res://scenes/main_scene.tscn
+res://scripts/stats_container.gd
 res://scenes/base_enemy.tscn
 res://scripts/derived_status.gd
-res://scripts/stats_container.gd
+res://scripts/main_scene.gd

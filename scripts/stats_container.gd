@@ -50,13 +50,17 @@ func on_button_increase_status_pressed(button: TextureButton) -> void:
 		"Strength":
 			Player.strength += 1
 			Player.improve_damage("click", "stats_upgrade")
+			get_tree().call_group("derived_status", "update_label", "IconClick")
 			
 		"Agility":
 			Player.agility += 1
 			Player.improve_damage("dps", "stats_upgrade")
+			get_tree().call_group("derived_status", "update_label", "IconDPS")
 			
 		"Luck":
 			Player.luck += 1
+			get_tree().call_group("derived_status", "update_label", "IconGold")
+			get_tree().call_group("derived_status", "update_label", "IconMagicFind")
 	
 	Player.available_stats_points -= 1
 	get_tree().call_group("main_scene", "update_label")

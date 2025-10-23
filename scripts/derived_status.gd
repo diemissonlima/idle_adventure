@@ -9,6 +9,10 @@ class_name DerivedStats
 
 
 func _ready() -> void:
+	update_label("IconClick")
+	update_label("IconGold")
+	update_label("IconMagicFind")
+	update_label("IconDPS")
 	connect_signal()
 	
 
@@ -79,7 +83,7 @@ func update_label(icon_name: String) -> void:
 				"From Agility: + " + str(Player.agility * 10)
 			)
 			icon_dps.get_node("Info/VBoxContainer/AgilityPercent").text = (
-				"From Agility: + " + str(Player.agility * 0.8)
+				"From Agility: + " + str(Player.agility * 0.8) + " %"
 			)
 			icon_dps.get_node("Info/VBoxContainer/GoldUpgradeFlat").text = (
 				"From Gold Upgrade: + " + str(World.dps_damage_level * 10)

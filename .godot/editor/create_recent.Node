@@ -1,10 +1,10 @@
+Node2D
 VBoxContainer
 TextureRect
 Label
 TextureButton
 ColorRect
 TextureProgressBar
-Node2D
 Node
 Sprite2D
 RichTextLabel

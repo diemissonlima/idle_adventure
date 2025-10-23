@@ -58,6 +58,7 @@ func _on_max_dps_pressed() -> void:
 		Player.improve_damage("dps", "gold_upgrade")
 		
 	update_label()
+	get_tree().call_group("derived_status", "update_label", "IconDPS")
 
 
 func _on_max_click_pressed() -> void:
@@ -65,6 +66,7 @@ func _on_max_click_pressed() -> void:
 		Player.improve_damage("click", "gold_upgrade")
 		
 	update_label()
+	get_tree().call_group("derived_status", "update_label", "IconClick")
 
 
 func _on_battlefield_mouse_entered() -> void:
