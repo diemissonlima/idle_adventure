@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpvbic3vb4jcm"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_u84gq"]
+[ext_resource type="Texture2D" uid="uid://tv5xa7ls6msm" path="res://assets/itens/potion/Potion 4.png" id="2_t5txe"]
+
+[node name="RustySword" instance=ExtResource("1_u84gq")]
+item_name = "Rusty Sword"
+item_type = 3
+click_damage_range = Array[float]([10.0, 15.0])
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_t5txe")

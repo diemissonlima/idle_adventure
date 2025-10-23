@@ -14,6 +14,9 @@ class_name BaseEnemy
 	"Slime"
 ) var enemy_race
 
+@export var drop_list: Array[PackedScene]
+@export var drop_chances: Array[float]
+
 
 func _ready() -> void:
 	increase_health()
@@ -43,6 +46,23 @@ func take_damage(value: int) -> void:
 		kill()
 
 
+func drop_loot() -> void:
+	var drop_rng: float = randf()
+	if drop_rng > .25:
+		return
+		
+	for i in range(drop_list.size()):
+		var rng: float = randf()
+		if rng <= drop_chances[i]:
+			var drop_item = drop_list[i].instantiate()
+			
+			get_tree().call_group(
+				"game_log", "add_message",
+				"You found " + drop_item.item_name
+				)
+			break
+
+
 func update_bar() -> void:
 	progress_bar.value = round(health)
 	progress_bar.get_node("Label").text = str(
@@ -56,7 +76,8 @@ func kill() -> void:
 	
 	Player.improve_gold(gold_dropped)
 	World.level += 1
-	Player.update_exp(randi_range(15000, 15000))
+	Player.update_exp(randi_range(1500, 1500))
+	drop_loot()
 	get_tree().call_group("main_scene", "spawn_new_enemy")
 	
 	queue_free()

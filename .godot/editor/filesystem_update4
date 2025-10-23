@@ -1,5 +1,6 @@
 res://scenes/main_scene.tscn
-res://scripts/stats_container.gd
 res://scenes/base_enemy.tscn
-res://scripts/derived_status.gd
-res://scripts/main_scene.gd
+res://scenes/base_item.tscn
+res://scenes/items/equipment/weapons/rusty_sword.tscn
+res://scripts/base_item.gd
+res://scenes/items/equipment/helmet/leather_cap.tscn

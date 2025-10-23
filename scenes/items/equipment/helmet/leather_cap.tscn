@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvwkxo8nx26w0"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_7u7wy"]
+[ext_resource type="Texture2D" uid="uid://vn3ravrle30m" path="res://assets/itens/potion/Potion 2.png" id="2_c07qa"]
+
+[node name="LeatherCap" instance=ExtResource("1_7u7wy")]
+item_name = "Leather Cap"
+item_type = 0
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_c07qa")

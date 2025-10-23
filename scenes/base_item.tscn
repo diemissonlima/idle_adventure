@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://ck1g0o4dx1ilm"]
+
+[ext_resource type="Script" path="res://scripts/base_item.gd" id="1_32xci"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mhnap"]
+
+[node name="BaseItem" type="StaticBody2D" node_paths=PackedStringArray("item_sprite")]
+script = ExtResource("1_32xci")
+item_sprite = NodePath("Sprite")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_mhnap")
+
+[node name="Sprite" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(20, 20)
+offset_right = 20.0
+offset_bottom = 20.0
+expand_mode = 1
