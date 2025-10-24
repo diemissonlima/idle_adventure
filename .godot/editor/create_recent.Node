@@ -1,5 +1,6 @@
-CollisionShape2D
 TextureRect
+GridContainer
+CollisionShape2D
 StaticBody2D
 Node2D
 VBoxContainer
@@ -11,5 +12,3 @@ Node
 Sprite2D
 RichTextLabel
 ScrollContainer
-Timer
-AnimatedSprite2D

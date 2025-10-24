@@ -1,4 +1,4 @@
-[gd_scene load_steps=67 format=3 uid="uid://chee12681ksau"]
+[gd_scene load_steps=69 format=3 uid="uid://chee12681ksau"]
 
 [ext_resource type="Texture2D" uid="uid://ciir88k8isk6u" path="res://assets/backgrounds/1.png" id="1_5hms3"]
 [ext_resource type="Script" path="res://scripts/main_scene.gd" id="1_7f1vr"]
@@ -34,7 +34,9 @@
 [ext_resource type="Texture2D" uid="uid://d2hiuho182mje" path="res://assets/inventory/Backpack 10x6/Panel Green Empty.png" id="24_aqwqb"]
 [ext_resource type="Texture2D" uid="uid://d3nu0on3alprl" path="res://assets/icons/Wenrexa Money 3.png" id="24_u7a4l"]
 [ext_resource type="Texture2D" uid="uid://cu3ee5mq046by" path="res://assets/buttons/S Button 3/ButtonActive.png" id="25_2ihlf"]
+[ext_resource type="Script" path="res://scripts/inventory.gd" id="26_61m63"]
 [ext_resource type="Texture2D" uid="uid://bmwqrp1rpk85y" path="res://assets/buttons/S Button 3/ButtonNormal.png" id="26_83xn1"]
+[ext_resource type="PackedScene" uid="uid://blbvtl8up3ubx" path="res://scenes/slot.tscn" id="26_cvly0"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_qrr8g"]
 font = ExtResource("4_rkqi3")
@@ -1254,6 +1256,32 @@ text = "No companions. Collect them from Expeditions"
 label_settings = SubResource("LabelSettings_1m0og")
 
 [node name="Equipment" type="Node2D" parent="Container2"]
+visible = false
+
+[node name="Inventory" type="Node2D" parent="Container2" node_paths=PackedStringArray("inventory_container")]
+visible = false
+script = ExtResource("26_61m63")
+slot_scene = ExtResource("26_cvly0")
+inventory_size = 72
+inventory_container = NodePath("Background/GridContainer")
+
+[node name="Background" type="TextureRect" parent="Container2/Inventory"]
+offset_left = 1.0
+offset_top = 19.0
+offset_right = 177.0
+offset_bottom = 269.0
+texture = ExtResource("24_aqwqb")
+expand_mode = 1
+
+[node name="GridContainer" type="GridContainer" parent="Container2/Inventory/Background"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 36.0
+offset_right = 177.0
+offset_bottom = 249.0
+theme_override_constants/h_separation = 2
+theme_override_constants/v_separation = 2
+columns = 8
 
 [node name="Container3" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(78, 270)

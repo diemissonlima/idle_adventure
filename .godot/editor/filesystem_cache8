@@ -1,234 +1,235 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1761252802
-icon.svg::CompressedTexture2D::1437991343033267371::1760963738::1761229363::1::::<><>::
-::res://assets/::1761049020
-::res://assets/backgrounds/::1761229364
-1.png::CompressedTexture2D::5351960008828209546::1760963737::1761229364::1::::<><>::
-Box-1.png::CompressedTexture2D::4254995777177581488::1760963737::1761229364::1::::<><>::
-Box.png::CompressedTexture2D::4219473244612877726::1760963737::1761229364::1::::<><>::
-Button Active.png::CompressedTexture2D::5447359019961304720::1760963737::1761229364::1::::<><>::
-Button Normal.png::CompressedTexture2D::5828765917059848941::1760963737::1761229364::1::::<><>::
-Cell.png::CompressedTexture2D::3755773594043204953::1760963737::1761229364::1::::<><>::
-EmptyPanel.png::CompressedTexture2D::3801944444170760276::1760963737::1761229364::1::::<><>::
-Panel.png::CompressedTexture2D::5220398519123691010::1760963737::1761229364::1::::<><>::
-Separator.png::CompressedTexture2D::7973921318143996010::1760963737::1761229364::1::::<><>::
-::res://assets/backgrounds/bar/::1761229364
-background.png::CompressedTexture2D::6200592789972883477::1761049020::1761229364::1::::<><>::
-green.png::CompressedTexture2D::8765330498961210920::1761049020::1761229364::1::::<><>::
-purple.png::CompressedTexture2D::3164757919541420487::1761049020::1761229364::1::::<><>::
-red.png::CompressedTexture2D::5243867777954296117::1761049020::1761229364::1::::<><>::
-yellow.png::CompressedTexture2D::629533421693954352::1761049020::1761229364::1::::<><>::
-::res://assets/buttons/::1761049020
-::res://assets/buttons/S Button 3/::1761229364
-ButtonActive.png::CompressedTexture2D::6234672423406917166::1761049020::1761229364::1::::<><>::
-ButtonHover.png::CompressedTexture2D::7048973558642031727::1761049020::1761229364::1::::<><>::
-ButtonNormal.png::CompressedTexture2D::3275105777127497848::1761049020::1761229364::1::::<><>::
-::res://assets/buttons/S Button Round 1/::1761229364
-ButtonActive.png::CompressedTexture2D::2011854045495759125::1761049020::1761229364::1::::<><>::
-ButtonHover.png::CompressedTexture2D::8071838771616083842::1761049020::1761229364::1::::<><>::
-ButtonNormal.png::CompressedTexture2D::228764062897934635::1761049020::1761229364::1::::<><>::
-::res://assets/enemies/::1760966508
-::res://assets/enemies/1/::1761229364
-1.png::CompressedTexture2D::6471405765035409580::1760963737::1761229364::1::::<><>::
-2.png::CompressedTexture2D::7874792418364671385::1760963737::1761229364::1::::<><>::
-3.png::CompressedTexture2D::3112412772644162032::1760963737::1761229364::1::::<><>::
-4.png::CompressedTexture2D::8580632898962418262::1760963737::1761229364::1::::<><>::
-::res://assets/enemies/bandits/::1761229364
-93.png::CompressedTexture2D::4785364222428534841::1742094018::1761229364::1::::<><>::
-104.png::CompressedTexture2D::7175303203028585302::1742094680::1761229364::1::::<><>::
-143.png::CompressedTexture2D::2321556392184199596::1742094545::1761229364::1::::<><>::
-144.png::CompressedTexture2D::1613469373844312283::1742094650::1761229364::1::::<><>::
-190.png::CompressedTexture2D::1457837730054357302::1742320175::1761229364::1::::<><>::
-287.png::CompressedTexture2D::6441222275845134547::1742320051::1761229364::1::::<><>::
-::res://assets/enemies/goblins/::1761229364
-11.png::CompressedTexture2D::1319239136178779710::1741995125::1761229364::1::::<><>::
-12.png::CompressedTexture2D::46807377654671422::1741995166::1761229364::1::::<><>::
-13.png::CompressedTexture2D::6845839141360397663::1741995199::1761229364::1::::<><>::
-24.png::CompressedTexture2D::5361759951833462801::1742003625::1761229364::1::::<><>::
-25.png::CompressedTexture2D::1762886784275175961::1742003673::1761229364::1::::<><>::
-26.png::CompressedTexture2D::2264644652687075217::1742003708::1761229364::1::::<><>::
-27.png::CompressedTexture2D::5383677436055443337::1742003739::1761229364::1::::<><>::
-28.png::CompressedTexture2D::6952500502939542226::1742003775::1761229364::1::::<><>::
-29.png::CompressedTexture2D::631944617042583714::1742003844::1761229364::1::::<><>::
-30.png::CompressedTexture2D::5275270768611532330::1742045018::1761229364::1::::<><>::
-31.png::CompressedTexture2D::1307577311354210376::1742045071::1761229364::1::::<><>::
-32.png::CompressedTexture2D::7209229006776437987::1742045112::1761229364::1::::<><>::
-33.png::CompressedTexture2D::9090702912962730145::1742045148::1761229364::1::::<><>::
-103.png::CompressedTexture2D::1542956196470807359::1742045181::1761229364::1::::<><>::
-104.png::CompressedTexture2D::5523686609718472281::1742045209::1761229364::1::::<><>::
-::res://assets/enemies/slimes/::1761229365
-22.png::CompressedTexture2D::6346083934483977840::1760963737::1761229364::1::::<><>::
-100.png::CompressedTexture2D::2086490730664573601::1760963737::1761229364::1::::<><>::
-101.png::CompressedTexture2D::3101820937026261325::1760963737::1761229364::1::::<><>::
-102.png::CompressedTexture2D::1470068511495882999::1760963737::1761229364::1::::<><>::
-252.png::CompressedTexture2D::9109160730867361016::1760963737::1761229364::1::::<><>::
-253.png::CompressedTexture2D::6495840040043329596::1760963737::1761229364::1::::<><>::
-254.png::CompressedTexture2D::2017926911458587518::1760963737::1761229364::1::::<><>::
-405.png::CompressedTexture2D::398425044583648123::1760963737::1761229364::1::::<><>::
-406.png::CompressedTexture2D::2974764869453717440::1760963737::1761229364::1::::<><>::
-407.png::CompressedTexture2D::6707304892366865252::1760963737::1761229364::1::::<><>::
-408.png::CompressedTexture2D::4102042599008040305::1760963737::1761229364::1::::<><>::
-409.png::CompressedTexture2D::6934177408403864475::1760963737::1761229364::1::::<><>::
-410.png::CompressedTexture2D::4857659230816018602::1760963737::1761229364::1::::<><>::
-411.png::CompressedTexture2D::2898789730828925451::1760963737::1761229364::1::::<><>::
-412.png::CompressedTexture2D::5467845842064542756::1760963737::1761229364::1::::<><>::
-413.png::CompressedTexture2D::6562859112628044566::1760963737::1761229364::1::::<><>::
-414.png::CompressedTexture2D::6817300733865661658::1760963737::1761229364::1::::<><>::
-415.png::CompressedTexture2D::6600493807002768984::1760963737::1761229364::1::::<><>::
-416.png::CompressedTexture2D::6878120615430762939::1760963737::1761229364::1::::<><>::
-417.png::CompressedTexture2D::2981239029374133486::1760963737::1761229364::1::::<><>::
-418.png::CompressedTexture2D::2773480833606397069::1760963737::1761229364::1::::<><>::
-419.png::CompressedTexture2D::4976052661243571962::1760963737::1761229364::1::::<><>::
-432.png::CompressedTexture2D::2550105946775476398::1760963737::1761229365::1::::<><>::
-433.png::CompressedTexture2D::8743659564048412515::1760963737::1761229364::1::::<><>::
-::res://assets/enemies/wolfs/::1761229364
-62.png::CompressedTexture2D::6152323793260090079::1742046651::1761229364::1::::<><>::
-63.png::CompressedTexture2D::2612521317681831162::1742046722::1761229364::1::::<><>::
-64.png::CompressedTexture2D::3226984068829086447::1742046809::1761229364::1::::<><>::
-65.png::CompressedTexture2D::2142894979705040190::1742046833::1761229364::1::::<><>::
-66.png::CompressedTexture2D::7071391586573319140::1742046883::1761229364::1::::<><>::
-67.png::CompressedTexture2D::2987528842288466748::1742046909::1761229364::1::::<><>::
-68.png::CompressedTexture2D::3634074822550333131::1742047023::1761229364::1::::<><>::
-69.png::CompressedTexture2D::8453003563178872541::1742047046::1761229364::1::::<><>::
-70.png::CompressedTexture2D::9012689941274868241::1742047129::1761229364::1::::<><>::
-71.png::CompressedTexture2D::4989331518748785016::1742047161::1761229364::1::::<><>::
-72.png::CompressedTexture2D::2210680854935278734::1742047185::1761229364::1::::<><>::
-73.png::CompressedTexture2D::8840912660521713414::1742047220::1761229364::1::::<><>::
-74.png::CompressedTexture2D::6566767618823923171::1742047249::1761229364::1::::<><>::
-75.png::CompressedTexture2D::8130306689858066466::1742047281::1761229364::1::::<><>::
-76.png::CompressedTexture2D::7645102057592387462::1742047321::1761229364::1::::<><>::
-77.png::CompressedTexture2D::1137652382280275775::1742047344::1761229364::1::::<><>::
-78.png::CompressedTexture2D::6593980167566643710::1742047366::1761229364::1::::<><>::
-79.png::CompressedTexture2D::7407210049528028488::1742047392::1761229364::1::::<><>::
-80.png::CompressedTexture2D::4920772268923572319::1742047420::1761229364::1::::<><>::
-114.png::CompressedTexture2D::6134008188823879446::1742046690::1761229364::1::::<><>::
-115.png::CompressedTexture2D::3828790137119190144::1742046775::1761229364::1::::<><>::
-116.png::CompressedTexture2D::8962356311588406733::1742047091::1761229364::1::::<><>::
-::res://assets/font/::1761229360
-Oxanium-Bold.ttf::FontFile::409818046884732869::1760963737::1761229360::1::::<><>::
-Oxanium-ExtraBold.ttf::FontFile::1557212382361150861::1760963737::1761229360::1::::<><>::
-Oxanium-ExtraLight.ttf::FontFile::9131719404345591166::1760963737::1761229360::1::::<><>::
-Oxanium-Light.ttf::FontFile::6864468917563616270::1760963737::1761229360::1::::<><>::
-Oxanium-Medium.ttf::FontFile::603992759496557389::1760963737::1761229360::1::::<><>::
-Oxanium-Regular.ttf::FontFile::8649974219081696382::1760963737::1761229360::1::::<><>::
-Oxanium-SemiBold.ttf::FontFile::4809827116573988245::1760963737::1761229360::1::::<><>::
-::res://assets/icons/::1761229362
-agility icon.png::CompressedTexture2D::8329123819101100714::1760963737::1761229360::1::::<><>::
-attack icon.png::CompressedTexture2D::5583888320792661931::1760963737::1761229360::1::::<><>::
-bagpack icon.png::CompressedTexture2D::5350408432954920190::1760963737::1761229361::1::::<><>::
-energy icon.png::CompressedTexture2D::4978712595627673845::1760963737::1761229361::1::::<><>::
-escape icon.png::CompressedTexture2D::5261726398497599082::1760963737::1761229360::1::::<><>::
-gold_coin.png::CompressedTexture2D::8969939528851131079::1761229333::1761229361::1::::<><>::
-magic icon.png::CompressedTexture2D::8092858881765055322::1760963738::1761229361::1::::<><>::
-options icon.png::CompressedTexture2D::4230079819304281903::1760963738::1761229361::1::::<><>::
-paralysis icon.png::CompressedTexture2D::4115858795591941816::1760963738::1761229361::1::::<><>::
-pouch icon.png::CompressedTexture2D::5441548092585581695::1760963738::1761229361::1::::<><>::
-strength icon.png::CompressedTexture2D::1244219534180352802::1760963738::1761229361::1::::<><>::
-three stars icon.png::CompressedTexture2D::5908784497470111955::1760963738::1761229362::1::::<><>::
-two stars icon.png::CompressedTexture2D::5456788205051096754::1760963738::1761229362::1::::<><>::
-Wenrexa Money 3.png::CompressedTexture2D::9152646325131940257::1761049020::1761229361::1::::<><>::
-::res://assets/inventory/::1761049020
-::res://assets/inventory/Backpack 10x6/::1761229362
-All Cells.png::CompressedTexture2D::3507967629062856675::1761049020::1761229361::1::::<><>::
-Cell.png::CompressedTexture2D::8752309245296473695::1761049020::1761229361::1::::<><>::
-Panel Green Empty.png::CompressedTexture2D::9069333315922033934::1761049020::1761229362::1::::<><>::
-Panel Green.png::CompressedTexture2D::3253173126241501963::1761049020::1761229362::1::::<><>::
-Preview.png::CompressedTexture2D::5977144064600624093::1761049020::1761229362::1::::<><>::
-Wenrexa Money 1.png::CompressedTexture2D::2397824978418977233::1761049020::1761229360::1::::<><>::
-Wenrexa Money 2.png::CompressedTexture2D::3050884350128664592::1761049020::1761229360::1::::<><>::
-Wenrexa Money 3.png::CompressedTexture2D::3504115326601946::1761049020::1761229360::1::::<><>::
-::res://assets/inventory/Details/::1761229360
-Panel Green.png::CompressedTexture2D::3806785662841793601::1761049020::1761229360::1::::<><>::
-Preview.png::CompressedTexture2D::6304612563995198665::1761049020::1761229360::1::::<><>::
-::res://assets/inventory/Details/SliderBar/::1761229360
-Bar.png::CompressedTexture2D::5382477611378558407::1761049020::1761229360::1::::<><>::
-Slider.png::CompressedTexture2D::820222967727653269::1761049020::1761229360::1::::<><>::
-::res://assets/inventory/Inventory/::1761229360
-Button Active.png::CompressedTexture2D::6067046517759024781::1761049020::1761229360::1::::<><>::
-Button Normal.png::CompressedTexture2D::6978703892079707768::1761049020::1761229360::1::::<><>::
-Cell.png::CompressedTexture2D::245746744677677005::1761049020::1761229360::1::::<><>::
-Main Panel No Inventory.png::CompressedTexture2D::8533329427892055036::1761049020::1761229360::1::::<><>::
-Main Panel.png::CompressedTexture2D::5171918512269488894::1761049020::1761229360::1::::<><>::
-Preview.png::CompressedTexture2D::4234881427653278614::1761049020::1761229360::1::::<><>::
-Wenrexa Money 1.png::CompressedTexture2D::5205226644617954347::1761049020::1761229360::1::::<><>::
-Wenrexa Money 2.png::CompressedTexture2D::2061320930621804903::1761049020::1761229360::1::::<><>::
-Wenrexa Money 3.png::CompressedTexture2D::3346335119998495651::1761049020::1761229360::1::::<><>::
-::res://assets/item_description/::1761229363
-01.png::CompressedTexture2D::6647530847946428512::1761162809::1761229360::1::::<><>::
-02.png::CompressedTexture2D::4956800926858744274::1761162809::1761229360::1::::<><>::
-MessageBox01.png::CompressedTexture2D::4949037905788596782::1761163205::1761229360::1::::<><>::
-MessageBox04.png::CompressedTexture2D::6787426463759912288::1761163122::1761229363::1::::<><>::
-Panel Green.png::CompressedTexture2D::7735210342803961590::1761049020::1761229363::1::::<><>::
-WindowSettings03_NoPanels.png::CompressedTexture2D::4693914756195749969::1761163252::1761229363::1::::<><>::
-::res://assets/itens/::1760963738
-::res://assets/itens/potion/::1761229364
-01.png::CompressedTexture2D::702392935352550679::1760963738::1761229363::1::::<><>::
-02.png::CompressedTexture2D::7149541652724329586::1760963738::1761229363::1::::<><>::
-03.png::CompressedTexture2D::8668910730068990825::1760963738::1761229363::1::::<><>::
-04.png::CompressedTexture2D::632314335982817446::1760963738::1761229363::1::::<><>::
-05.png::CompressedTexture2D::6525817692137410352::1760963738::1761229363::1::::<><>::
-06.png::CompressedTexture2D::6061731027416376328::1760963738::1761229363::1::::<><>::
-07.png::CompressedTexture2D::1598617834846227582::1760963738::1761229363::1::::<><>::
-08.png::CompressedTexture2D::4818250895811061213::1760963738::1761229363::1::::<><>::
-09.png::CompressedTexture2D::3012147092054593665::1760963738::1761229363::1::::<><>::
-11.png::CompressedTexture2D::9197555865729273609::1760963738::1761229363::1::::<><>::
-12.png::CompressedTexture2D::527781607172492376::1760963738::1761229363::1::::<><>::
-13.png::CompressedTexture2D::1396114790911392785::1760963738::1761229363::1::::<><>::
-14.png::CompressedTexture2D::289433575556821396::1760963738::1761229363::1::::<><>::
-15.png::CompressedTexture2D::4780701265795159496::1760963738::1761229363::1::::<><>::
-16.png::CompressedTexture2D::7888999132713824882::1760963738::1761229363::1::::<><>::
-17.png::CompressedTexture2D::1517238703351267068::1760963738::1761229363::1::::<><>::
-18.png::CompressedTexture2D::5998528196169861364::1760963738::1761229363::1::::<><>::
-19.png::CompressedTexture2D::7218346682900539611::1760963738::1761229363::1::::<><>::
-Potion 1.png::CompressedTexture2D::8272686226573399811::1760963738::1761229363::1::::<><>::
-Potion 2.png::CompressedTexture2D::1502533094723486462::1760963738::1761229364::1::::<><>::
-Potion 3.png::CompressedTexture2D::131685240493498507::1760963738::1761229362::1::::<><>::
-Potion 4.png::CompressedTexture2D::1378802594959495064::1760963738::1761229362::1::::<><>::
-Potion 5.png::CompressedTexture2D::7286104462455980859::1760963738::1761229362::1::::<><>::
-Potion 6.png::CompressedTexture2D::8344264695156015855::1760963738::1761229362::1::::<><>::
-Potion 7.png::CompressedTexture2D::826675141748626137::1760963738::1761229362::1::::<><>::
-Potion 8.png::CompressedTexture2D::5740120312689601042::1760963738::1761229362::1::::<><>::
-Potion 9.png::CompressedTexture2D::6577422603319783990::1760963738::1761229362::1::::<><>::
-Potion 10.png::CompressedTexture2D::6818565952639016380::1760963738::1761229362::1::::<><>::
-Potion 11.png::CompressedTexture2D::2484920974495270941::1760963738::1761229362::1::::<><>::
-::res://assets/maps/::1761229363
-ChatGPT Image 20 de out. de 2025, 14_47_27.png::CompressedTexture2D::975942715693763931::1760986131::1761229362::1::::<><>::
-map1.png::CompressedTexture2D::5393104755822848229::1760963738::1761229363::1::::<><>::
-map2.png::CompressedTexture2D::9045629263764141051::1760963738::1761229363::1::::<><>::
-map3.png::CompressedTexture2D::7325278686518629290::1760963738::1761229363::1::::<><>::
-map4.png::CompressedTexture2D::1972437875165672456::1760963738::1761229363::1::::<><>::
-world_map.png::CompressedTexture2D::653930701590880692::1760963738::1761229363::1::::<><>::
-::res://assets/progressbar/::1761229363
-ProgressBar01_Background.png::CompressedTexture2D::5681109640376303659::1760963738::1761229363::1::::<><>::
-ProgressBar01_Bar.png::CompressedTexture2D::4446741047019849478::1760963738::1761229363::1::::<><>::
-ProgressBar01_Border.png::CompressedTexture2D::1287557692921412421::1760963738::1761229363::1::::<><>::
-::res://assets/progressbar/V1/::1761229363
-Background Bar2.png::CompressedTexture2D::3968904281661145080::1760988335::1761229363::1::::<><>::
-Background Bar.png::CompressedTexture2D::476634807271178702::1760988056::1761229363::1::::<><>::
-Background Static.png::CompressedTexture2D::4354744590488421035::1760988056::1761229363::1::::<><>::
-Foreground.png::CompressedTexture2D::7995816678707291855::1760988056::1761229363::1::::<><>::
-::res://scenes/::1761249386
-base_enemy.tscn::PackedScene::1592437894108702619::1761249288::0::1::::<><>::res://scripts/base_enemy.gd<>uid://cyg2dwh3ts8mq::::res://assets/enemies/1/1.png<>uid://bpvbic3vb4jcm::::res://scenes/items/equipment/weapons/rusty_sword.tscn<>uid://dkguxe1wfyu46::::res://assets/enemies/1/2.png<>uid://cvwkxo8nx26w0::::res://scenes/items/equipment/helmet/leather_cap.tscn<>uid://bklw8pc3sglk7::::res://assets/enemies/1/3.png<>uid://duir1gl6wo5di::::res://assets/enemies/1/4.png<>uid://b3bqaij1prm5h::::res://assets/progressbar/V1/Background Static.png<>uid://dl6h6x71p5tr8::::res://assets/progressbar/V1/Foreground.png<>uid://bwstjkly0iwia::::res://assets/progressbar/V1/Background Bar2.png<>uid://iutw4od6mkk8::::res://assets/font/Oxanium-Medium.ttf
-base_item.tscn::PackedScene::5528813352470604930::1761249288::0::1::::<><>::res://scripts/base_item.gd
-main_scene.tscn::PackedScene::5272711550035179436::1761249386::0::1::::<><>::uid://ciir88k8isk6u::::res://assets/backgrounds/1.png<>res://scripts/main_scene.gd<>uid://dp4l60ef0vkwx::::res://assets/itens/potion/Potion 1.png<>uid://bufxp71go2hq7::::res://assets/backgrounds/EmptyPanel.png<>uid://wxnhpxtp6xfn::::res://scenes/base_enemy.tscn<>uid://f3rv4yrfifht::::res://assets/font/Oxanium-Bold.ttf<>uid://cgm2g3igfxnw1::::res://assets/backgrounds/Panel.png<>res://scripts/game_log.gd<>uid://iutw4od6mkk8::::res://assets/font/Oxanium-Medium.ttf<>uid://ryyd4yrcsnio::::res://assets/icons/strength icon.png<>uid://cg724n8l7r5nq::::res://assets/icons/escape icon.png<>uid://dluvk35d70he5::::res://assets/backgrounds/Separator.png<>res://scripts/stats_container.gd<>uid://b1jc2c4vk8cxr::::res://assets/icons/options icon.png<>uid://b1d7dwxtii10e::::res://assets/backgrounds/Box.png<>uid://ci3pwam4erm3v::::res://assets/maps/map1.png<>uid://b3bqaij1prm5h::::res://assets/progressbar/V1/Background Static.png<>uid://dl6h6x71p5tr8::::res://assets/progressbar/V1/Foreground.png<>uid://g15dueat3i2i::::res://assets/progressbar/V1/Background Bar.png<>uid://cc6yw0om5xoiv::::res://assets/icons/energy icon.png<>uid://cqgi215wq7mr8::::res://assets/icons/three stars icon.png<>uid://byv0ufsn4xaia::::res://assets/icons/paralysis icon.png<>uid://cls43brah2tkd::::res://assets/icons/attack icon.png<>uid://b1vffns8ngpn1::::res://assets/backgrounds/Box-1.png<>res://scripts/upgrades.gd<>uid://dqwxpm8e55dly::::res://assets/icons/agility icon.png<>res://scripts/derived_status.gd<>uid://dnkig6eqllbgc::::res://assets/icons/magic icon.png<>uid://cj0krfgq03g6m::::res://assets/icons/two stars icon.png<>uid://cih1pevuq4n6e::::res://assets/icons/bagpack icon.png<>uid://c7ottgyyv7t0b::::res://assets/buttons/S Button 3/ButtonHover.png<>uid://d2hiuho182mje::::res://assets/inventory/Backpack 10x6/Panel Green Empty.png<>uid://d3nu0on3alprl::::res://assets/icons/Wenrexa Money 3.png<>uid://cu3ee5mq046by::::res://assets/buttons/S Button 3/ButtonActive.png<>uid://bmwqrp1rpk85y::::res://assets/buttons/S Button 3/ButtonNormal.png
-slime_1.tscn::PackedScene::6931490992256580683::1760963738::0::1::::<><>::uid://wxnhpxtp6xfn::::res://scenes/base_enemy.tscn
-::res://scenes/items/::1761248335
-::res://scenes/items/equipment/::1761248596
-::res://scenes/items/equipment/helmet/::1761248626
-leather_cap.tscn::PackedScene::6292872424489616297::1761248626::0::1::::<><>::uid://ck1g0o4dx1ilm::::res://scenes/base_item.tscn<>uid://vn3ravrle30m::::res://assets/itens/potion/Potion 2.png
-::res://scenes/items/equipment/weapons/::1761248641
-rusty_sword.tscn::PackedScene::3482680423700702220::1761248641::0::1::::<><>::uid://ck1g0o4dx1ilm::::res://scenes/base_item.tscn<>uid://tv5xa7ls6msm::::res://assets/itens/potion/Potion 4.png
-::res://scripts/::1761249386
-base_enemy.gd::GDScript::-1::1761249386::0::1::::BaseEnemy<>StaticBody2D<>::
-base_item.gd::GDScript::-1::1761246896::0::1::::BaseItem<>StaticBody2D<>::
-derived_status.gd::GDScript::-1::1761229333::0::1::::DerivedStats<>TextureRect<>::
-game_log.gd::GDScript::-1::1760963738::0::1::::GameLog<>TextureRect<>::
-global_player.gd::GDScript::-1::1761157253::0::1::::GlobalPlayer<>Node<>::
-global_world.gd::GDScript::-1::1760991875::0::1::::GlobalWorld<>Node<>::
-main_scene.gd::GDScript::-1::1761229333::0::1::::MainScene<>Control<>::
-stats_container.gd::GDScript::-1::1761229333::0::1::::StatsContainer<>TextureRect<>::
-upgrades.gd::GDScript::-1::1760963738::0::1::::Upgrades<>TextureRect<>::
-::res://scripts/json/::1760991752
-enemy_hp_levels.json::JSON::-1::1760963738::0::1::::<><>::
-gold_range.json::JSON::-1::1760963738::0::1::::<><>::
-player_exp.json::JSON::-1::1760991752::0::1::::<><>::
+::res://::1761269063
+icon.svg::CompressedTexture2D::1437991343033267371::1760825869::1761269063::1::::<><>::
+::res://assets/::1761013217
+::res://assets/backgrounds/::1761269064
+1.png::CompressedTexture2D::5351960008828209546::1760825869::1761269064::1::::<><>::
+Box-1.png::CompressedTexture2D::4254995777177581488::1760825869::1761269064::1::::<><>::
+Box.png::CompressedTexture2D::4219473244612877726::1760825869::1761269064::1::::<><>::
+Button Active.png::CompressedTexture2D::5447359019961304720::1760825869::1761269064::1::::<><>::
+Button Normal.png::CompressedTexture2D::5828765917059848941::1760825869::1761269064::1::::<><>::
+Cell.png::CompressedTexture2D::3755773594043204953::1760825869::1761269064::1::::<><>::
+EmptyPanel.png::CompressedTexture2D::3801944444170760276::1760825869::1761269064::1::::<><>::
+Panel.png::CompressedTexture2D::5220398519123691010::1760825869::1761269064::1::::<><>::
+Separator.png::CompressedTexture2D::7973921318143996010::1760825869::1761269064::1::::<><>::
+::res://assets/backgrounds/bar/::1761269064
+background.png::CompressedTexture2D::6200592789972883477::1761002118::1761269064::1::::<><>::
+green.png::CompressedTexture2D::8765330498961210920::1761002118::1761269064::1::::<><>::
+purple.png::CompressedTexture2D::3164757919541420487::1761002118::1761269064::1::::<><>::
+red.png::CompressedTexture2D::5243867777954296117::1761002118::1761269064::1::::<><>::
+yellow.png::CompressedTexture2D::629533421693954352::1761002118::1761269064::1::::<><>::
+::res://assets/buttons/::1761013100
+::res://assets/buttons/S Button 3/::1761269064
+ButtonActive.png::CompressedTexture2D::6234672423406917166::1761004215::1761269064::1::::<><>::
+ButtonHover.png::CompressedTexture2D::7048973558642031727::1761004215::1761269064::1::::<><>::
+ButtonNormal.png::CompressedTexture2D::3275105777127497848::1761004215::1761269064::1::::<><>::
+::res://assets/buttons/S Button Round 1/::1761269064
+ButtonActive.png::CompressedTexture2D::2011854045495759125::1761004203::1761269064::1::::<><>::
+ButtonHover.png::CompressedTexture2D::8071838771616083842::1761004203::1761269064::1::::<><>::
+ButtonNormal.png::CompressedTexture2D::228764062897934635::1761004203::1761269064::1::::<><>::
+::res://assets/enemies/::1761001189
+::res://assets/enemies/1/::1761269064
+1.png::CompressedTexture2D::6471405765035409580::1760825869::1761269064::1::::<><>::
+2.png::CompressedTexture2D::7874792418364671385::1760825869::1761269064::1::::<><>::
+3.png::CompressedTexture2D::3112412772644162032::1760825869::1761269064::1::::<><>::
+4.png::CompressedTexture2D::8580632898962418262::1760825869::1761269064::1::::<><>::
+::res://assets/enemies/bandits/::1761269064
+93.png::CompressedTexture2D::4785364222428534841::1761001189::1761269064::1::::<><>::
+104.png::CompressedTexture2D::7175303203028585302::1761001189::1761269064::1::::<><>::
+143.png::CompressedTexture2D::2321556392184199596::1761001189::1761269064::1::::<><>::
+144.png::CompressedTexture2D::1613469373844312283::1761001189::1761269064::1::::<><>::
+190.png::CompressedTexture2D::1457837730054357302::1761001189::1761269064::1::::<><>::
+287.png::CompressedTexture2D::6441222275845134547::1761001189::1761269064::1::::<><>::
+::res://assets/enemies/goblins/::1761269064
+11.png::CompressedTexture2D::1319239136178779710::1761001189::1761269064::1::::<><>::
+12.png::CompressedTexture2D::46807377654671422::1761001189::1761269064::1::::<><>::
+13.png::CompressedTexture2D::6845839141360397663::1761001189::1761269064::1::::<><>::
+24.png::CompressedTexture2D::5361759951833462801::1761001189::1761269064::1::::<><>::
+25.png::CompressedTexture2D::1762886784275175961::1761001189::1761269064::1::::<><>::
+26.png::CompressedTexture2D::2264644652687075217::1761001189::1761269064::1::::<><>::
+27.png::CompressedTexture2D::5383677436055443337::1761001189::1761269064::1::::<><>::
+28.png::CompressedTexture2D::6952500502939542226::1761001189::1761269064::1::::<><>::
+29.png::CompressedTexture2D::631944617042583714::1761001189::1761269064::1::::<><>::
+30.png::CompressedTexture2D::5275270768611532330::1761001189::1761269064::1::::<><>::
+31.png::CompressedTexture2D::1307577311354210376::1761001189::1761269064::1::::<><>::
+32.png::CompressedTexture2D::7209229006776437987::1761001189::1761269064::1::::<><>::
+33.png::CompressedTexture2D::9090702912962730145::1761001189::1761269064::1::::<><>::
+103.png::CompressedTexture2D::1542956196470807359::1761001189::1761269064::1::::<><>::
+104.png::CompressedTexture2D::5523686609718472281::1761001189::1761269064::1::::<><>::
+::res://assets/enemies/slimes/::1761269065
+22.png::CompressedTexture2D::6346083934483977840::1760927821::1761269065::1::::<><>::
+100.png::CompressedTexture2D::2086490730664573601::1760927821::1761269065::1::::<><>::
+101.png::CompressedTexture2D::3101820937026261325::1760927821::1761269065::1::::<><>::
+102.png::CompressedTexture2D::1470068511495882999::1760927821::1761269065::1::::<><>::
+252.png::CompressedTexture2D::9109160730867361016::1760927821::1761269065::1::::<><>::
+253.png::CompressedTexture2D::6495840040043329596::1760927821::1761269065::1::::<><>::
+254.png::CompressedTexture2D::2017926911458587518::1760927821::1761269065::1::::<><>::
+405.png::CompressedTexture2D::398425044583648123::1760927821::1761269065::1::::<><>::
+406.png::CompressedTexture2D::2974764869453717440::1760927821::1761269065::1::::<><>::
+407.png::CompressedTexture2D::6707304892366865252::1760927821::1761269065::1::::<><>::
+408.png::CompressedTexture2D::4102042599008040305::1760927821::1761269065::1::::<><>::
+409.png::CompressedTexture2D::6934177408403864475::1760927821::1761269065::1::::<><>::
+410.png::CompressedTexture2D::4857659230816018602::1760927821::1761269065::1::::<><>::
+411.png::CompressedTexture2D::2898789730828925451::1760927821::1761269065::1::::<><>::
+412.png::CompressedTexture2D::5467845842064542756::1760927821::1761269065::1::::<><>::
+413.png::CompressedTexture2D::6562859112628044566::1760927821::1761269065::1::::<><>::
+414.png::CompressedTexture2D::6817300733865661658::1760927821::1761269065::1::::<><>::
+415.png::CompressedTexture2D::6600493807002768984::1760927821::1761269065::1::::<><>::
+416.png::CompressedTexture2D::6878120615430762939::1760927821::1761269065::1::::<><>::
+417.png::CompressedTexture2D::2981239029374133486::1760927821::1761269065::1::::<><>::
+418.png::CompressedTexture2D::2773480833606397069::1760927822::1761269065::1::::<><>::
+419.png::CompressedTexture2D::4976052661243571962::1760927822::1761269065::1::::<><>::
+432.png::CompressedTexture2D::2550105946775476398::1760927822::1761269065::1::::<><>::
+433.png::CompressedTexture2D::8743659564048412515::1760927822::1761269064::1::::<><>::
+::res://assets/enemies/wolfs/::1761269065
+62.png::CompressedTexture2D::6152323793260090079::1761001189::1761269064::1::::<><>::
+63.png::CompressedTexture2D::2612521317681831162::1761001189::1761269064::1::::<><>::
+64.png::CompressedTexture2D::3226984068829086447::1761001189::1761269064::1::::<><>::
+65.png::CompressedTexture2D::2142894979705040190::1761001189::1761269064::1::::<><>::
+66.png::CompressedTexture2D::7071391586573319140::1761001189::1761269064::1::::<><>::
+67.png::CompressedTexture2D::2987528842288466748::1761001189::1761269064::1::::<><>::
+68.png::CompressedTexture2D::3634074822550333131::1761001189::1761269064::1::::<><>::
+69.png::CompressedTexture2D::8453003563178872541::1761001189::1761269064::1::::<><>::
+70.png::CompressedTexture2D::9012689941274868241::1761001189::1761269064::1::::<><>::
+71.png::CompressedTexture2D::4989331518748785016::1761001189::1761269064::1::::<><>::
+72.png::CompressedTexture2D::2210680854935278734::1761001189::1761269064::1::::<><>::
+73.png::CompressedTexture2D::8840912660521713414::1761001189::1761269064::1::::<><>::
+74.png::CompressedTexture2D::6566767618823923171::1761001189::1761269064::1::::<><>::
+75.png::CompressedTexture2D::8130306689858066466::1761001189::1761269064::1::::<><>::
+76.png::CompressedTexture2D::7645102057592387462::1761001189::1761269065::1::::<><>::
+77.png::CompressedTexture2D::1137652382280275775::1761001189::1761269065::1::::<><>::
+78.png::CompressedTexture2D::6593980167566643710::1761001189::1761269065::1::::<><>::
+79.png::CompressedTexture2D::7407210049528028488::1761001189::1761269065::1::::<><>::
+80.png::CompressedTexture2D::4920772268923572319::1761001189::1761269065::1::::<><>::
+114.png::CompressedTexture2D::6134008188823879446::1761001189::1761269065::1::::<><>::
+115.png::CompressedTexture2D::3828790137119190144::1761001189::1761269065::1::::<><>::
+116.png::CompressedTexture2D::8962356311588406733::1761001189::1761269065::1::::<><>::
+::res://assets/font/::1761269062
+Oxanium-Bold.ttf::FontFile::409818046884732869::1760825869::1761269062::1::::<><>::
+Oxanium-ExtraBold.ttf::FontFile::1557212382361150861::1760825869::1761269062::1::::<><>::
+Oxanium-ExtraLight.ttf::FontFile::9131719404345591166::1760825869::1761269062::1::::<><>::
+Oxanium-Light.ttf::FontFile::6864468917563616270::1760825869::1761269062::1::::<><>::
+Oxanium-Medium.ttf::FontFile::603992759496557389::1760825869::1761269062::1::::<><>::
+Oxanium-Regular.ttf::FontFile::8649974219081696382::1760825869::1761269062::1::::<><>::
+Oxanium-SemiBold.ttf::FontFile::4809827116573988245::1760825869::1761269062::1::::<><>::
+::res://assets/icons/::1761269063
+agility icon.png::CompressedTexture2D::8329123819101100714::1760825869::1761269063::1::::<><>::
+attack icon.png::CompressedTexture2D::5583888320792661931::1760825869::1761269062::1::::<><>::
+bagpack icon.png::CompressedTexture2D::5350408432954920190::1760825869::1761269063::1::::<><>::
+energy icon.png::CompressedTexture2D::4978712595627673845::1760825869::1761269063::1::::<><>::
+escape icon.png::CompressedTexture2D::5261726398497599082::1760825869::1761269062::1::::<><>::
+gold_coin.png::CompressedTexture2D::8969939528851131079::1761187983::1761269062::1::::<><>::
+magic icon.png::CompressedTexture2D::8092858881765055322::1760825869::1761269063::1::::<><>::
+options icon.png::CompressedTexture2D::4230079819304281903::1760825869::1761269062::1::::<><>::
+paralysis icon.png::CompressedTexture2D::4115858795591941816::1760825869::1761269063::1::::<><>::
+pouch icon.png::CompressedTexture2D::5441548092585581695::1760825869::1761269063::1::::<><>::
+strength icon.png::CompressedTexture2D::1244219534180352802::1760825869::1761269063::1::::<><>::
+three stars icon.png::CompressedTexture2D::5908784497470111955::1760825869::1761269063::1::::<><>::
+two stars icon.png::CompressedTexture2D::5456788205051096754::1760825869::1761269063::1::::<><>::
+Wenrexa Money 3.png::CompressedTexture2D::9152646325131940257::1761012548::1761269063::1::::<><>::
+::res://assets/inventory/::1761013224
+::res://assets/inventory/Backpack 10x6/::1761269063
+All Cells.png::CompressedTexture2D::3507967629062856675::1761013224::1761269063::1::::<><>::
+Cell.png::CompressedTexture2D::8752309245296473695::1761013224::1761269063::1::::<><>::
+Panel Green Empty.png::CompressedTexture2D::9069333315922033934::1761013224::1761269063::1::::<><>::
+Panel Green.png::CompressedTexture2D::3253173126241501963::1761013224::1761269063::1::::<><>::
+Preview.png::CompressedTexture2D::5977144064600624093::1761013224::1761269063::1::::<><>::
+Wenrexa Money 1.png::CompressedTexture2D::2397824978418977233::1761013224::1761269062::1::::<><>::
+Wenrexa Money 2.png::CompressedTexture2D::3050884350128664592::1761013224::1761269062::1::::<><>::
+Wenrexa Money 3.png::CompressedTexture2D::3504115326601946::1761013224::1761269062::1::::<><>::
+::res://assets/inventory/Details/::1761269062
+Panel Green.png::CompressedTexture2D::3806785662841793601::1761013224::1761269062::1::::<><>::
+Preview.png::CompressedTexture2D::6304612563995198665::1761013224::1761269062::1::::<><>::
+::res://assets/inventory/Details/SliderBar/::1761269062
+Bar.png::CompressedTexture2D::5382477611378558407::1761013224::1761269062::1::::<><>::
+Slider.png::CompressedTexture2D::820222967727653269::1761013224::1761269062::1::::<><>::
+::res://assets/inventory/Inventory/::1761269062
+Button Active.png::CompressedTexture2D::6067046517759024781::1761013224::1761269062::1::::<><>::
+Button Normal.png::CompressedTexture2D::6978703892079707768::1761013224::1761269062::1::::<><>::
+Cell.png::CompressedTexture2D::245746744677677005::1761013224::1761269062::1::::<><>::
+Main Panel No Inventory.png::CompressedTexture2D::8533329427892055036::1761013224::1761269062::1::::<><>::
+Main Panel.png::CompressedTexture2D::5171918512269488894::1761013224::1761269062::1::::<><>::
+Preview.png::CompressedTexture2D::4234881427653278614::1761013224::1761269062::1::::<><>::
+Wenrexa Money 1.png::CompressedTexture2D::5205226644617954347::1761013224::1761269062::1::::<><>::
+Wenrexa Money 2.png::CompressedTexture2D::2061320930621804903::1761013224::1761269062::1::::<><>::
+Wenrexa Money 3.png::CompressedTexture2D::3346335119998495651::1761013224::1761269062::1::::<><>::
+::res://assets/item_description/::1761269063
+01.png::CompressedTexture2D::6647530847946428512::1761181128::1761269062::1::::<><>::
+02.png::CompressedTexture2D::4956800926858744274::1761181128::1761269062::1::::<><>::
+MessageBox01.png::CompressedTexture2D::4949037905788596782::1761181128::1761269062::1::::<><>::
+MessageBox04.png::CompressedTexture2D::6787426463759912288::1761181128::1761269063::1::::<><>::
+Panel Green.png::CompressedTexture2D::7735210342803961590::1761012413::1761269063::1::::<><>::
+WindowSettings03_NoPanels.png::CompressedTexture2D::4693914756195749969::1761181128::1761269063::1::::<><>::
+::res://assets/itens/::1761270875
+sword_01.png::CompressedTexture2D::6482851462504087486::1761270875::1761270876::1::::<><>::
+::res://assets/itens/potion/::1761269064
+01.png::CompressedTexture2D::702392935352550679::1760825869::1761269063::1::::<><>::
+02.png::CompressedTexture2D::7149541652724329586::1760825869::1761269063::1::::<><>::
+03.png::CompressedTexture2D::8668910730068990825::1760825869::1761269063::1::::<><>::
+04.png::CompressedTexture2D::632314335982817446::1760825869::1761269063::1::::<><>::
+05.png::CompressedTexture2D::6525817692137410352::1760825869::1761269063::1::::<><>::
+06.png::CompressedTexture2D::6061731027416376328::1760825869::1761269064::1::::<><>::
+07.png::CompressedTexture2D::1598617834846227582::1760825869::1761269064::1::::<><>::
+08.png::CompressedTexture2D::4818250895811061213::1760825869::1761269064::1::::<><>::
+09.png::CompressedTexture2D::3012147092054593665::1760825869::1761269064::1::::<><>::
+11.png::CompressedTexture2D::9197555865729273609::1760825869::1761269064::1::::<><>::
+12.png::CompressedTexture2D::527781607172492376::1760825869::1761269064::1::::<><>::
+13.png::CompressedTexture2D::1396114790911392785::1760825869::1761269064::1::::<><>::
+14.png::CompressedTexture2D::289433575556821396::1760825869::1761269064::1::::<><>::
+15.png::CompressedTexture2D::4780701265795159496::1760825869::1761269064::1::::<><>::
+16.png::CompressedTexture2D::7888999132713824882::1760825869::1761269064::1::::<><>::
+17.png::CompressedTexture2D::1517238703351267068::1760825869::1761269064::1::::<><>::
+18.png::CompressedTexture2D::5998528196169861364::1760825869::1761269064::1::::<><>::
+19.png::CompressedTexture2D::7218346682900539611::1760825869::1761269064::1::::<><>::
+Potion 1.png::CompressedTexture2D::8272686226573399811::1760825869::1761269064::1::::<><>::
+Potion 2.png::CompressedTexture2D::1502533094723486462::1760825869::1761269064::1::::<><>::
+Potion 3.png::CompressedTexture2D::131685240493498507::1760825869::1761269063::1::::<><>::
+Potion 4.png::CompressedTexture2D::1378802594959495064::1760825869::1761269063::1::::<><>::
+Potion 5.png::CompressedTexture2D::7286104462455980859::1760825869::1761269063::1::::<><>::
+Potion 6.png::CompressedTexture2D::8344264695156015855::1760825869::1761269063::1::::<><>::
+Potion 7.png::CompressedTexture2D::826675141748626137::1760825869::1761269063::1::::<><>::
+Potion 8.png::CompressedTexture2D::5740120312689601042::1760825869::1761269063::1::::<><>::
+Potion 9.png::CompressedTexture2D::6577422603319783990::1760825869::1761269063::1::::<><>::
+Potion 10.png::CompressedTexture2D::6818565952639016380::1760825869::1761269063::1::::<><>::
+Potion 11.png::CompressedTexture2D::2484920974495270941::1760825869::1761269063::1::::<><>::
+::res://assets/maps/::1761269064
+ChatGPT Image 20 de out. de 2025, 14_47_27.png::CompressedTexture2D::975942715693763931::1761001189::1761269063::1::::<><>::
+map1.png::CompressedTexture2D::5393104755822848229::1760825869::1761269064::1::::<><>::
+map2.png::CompressedTexture2D::9045629263764141051::1760825869::1761269064::1::::<><>::
+map3.png::CompressedTexture2D::7325278686518629290::1760825869::1761269064::1::::<><>::
+map4.png::CompressedTexture2D::1972437875165672456::1760825869::1761269064::1::::<><>::
+world_map.png::CompressedTexture2D::653930701590880692::1760825869::1761269064::1::::<><>::
+::res://assets/progressbar/::1761269063
+ProgressBar01_Background.png::CompressedTexture2D::5681109640376303659::1760825869::1761269063::1::::<><>::
+ProgressBar01_Bar.png::CompressedTexture2D::4446741047019849478::1760825869::1761269063::1::::<><>::
+ProgressBar01_Border.png::CompressedTexture2D::1287557692921412421::1760825869::1761269063::1::::<><>::
+::res://assets/progressbar/V1/::1761269063
+Background Bar2.png::CompressedTexture2D::3968904281661145080::1761001189::1761269063::1::::<><>::
+Background Bar.png::CompressedTexture2D::476634807271178702::1761001189::1761269063::1::::<><>::
+Background Static.png::CompressedTexture2D::4354744590488421035::1761001189::1761269063::1::::<><>::
+Foreground.png::CompressedTexture2D::7995816678707291855::1761001189::1761269063::1::::<><>::
+::res://scenes/::1761270778
+base_enemy.tscn::PackedScene::1592437894108702619::1761270778::0::1::::<><>::res://scripts/base_enemy.gd<>uid://cyg2dwh3ts8mq::::res://assets/enemies/1/1.png<>uid://bpvbic3vb4jcm::::res://scenes/items/equipment/weapons/rusty_sword.tscn<>uid://dkguxe1wfyu46::::res://assets/enemies/1/2.png<>uid://cvwkxo8nx26w0::::res://scenes/items/equipment/helmet/leather_cap.tscn<>uid://bklw8pc3sglk7::::res://assets/enemies/1/3.png<>uid://duir1gl6wo5di::::res://assets/enemies/1/4.png<>uid://b3bqaij1prm5h::::res://assets/progressbar/V1/Background Static.png<>uid://dl6h6x71p5tr8::::res://assets/progressbar/V1/Foreground.png<>uid://bwstjkly0iwia::::res://assets/progressbar/V1/Background Bar2.png<>uid://iutw4od6mkk8::::res://assets/font/Oxanium-Medium.ttf
+base_item.tscn::PackedScene::5528813352470604930::1761270778::0::1::::<><>::res://scripts/base_item.gd
+main_scene.tscn::PackedScene::5272711550035179436::1761270778::0::1::::<><>::uid://ciir88k8isk6u::::res://assets/backgrounds/1.png<>res://scripts/main_scene.gd<>uid://dp4l60ef0vkwx::::res://assets/itens/potion/Potion 1.png<>uid://bufxp71go2hq7::::res://assets/backgrounds/EmptyPanel.png<>uid://wxnhpxtp6xfn::::res://scenes/base_enemy.tscn<>uid://f3rv4yrfifht::::res://assets/font/Oxanium-Bold.ttf<>uid://cgm2g3igfxnw1::::res://assets/backgrounds/Panel.png<>res://scripts/game_log.gd<>uid://iutw4od6mkk8::::res://assets/font/Oxanium-Medium.ttf<>uid://ryyd4yrcsnio::::res://assets/icons/strength icon.png<>uid://cg724n8l7r5nq::::res://assets/icons/escape icon.png<>uid://dluvk35d70he5::::res://assets/backgrounds/Separator.png<>res://scripts/stats_container.gd<>uid://b1jc2c4vk8cxr::::res://assets/icons/options icon.png<>uid://b1d7dwxtii10e::::res://assets/backgrounds/Box.png<>uid://ci3pwam4erm3v::::res://assets/maps/map1.png<>uid://b3bqaij1prm5h::::res://assets/progressbar/V1/Background Static.png<>uid://dl6h6x71p5tr8::::res://assets/progressbar/V1/Foreground.png<>uid://g15dueat3i2i::::res://assets/progressbar/V1/Background Bar.png<>uid://cc6yw0om5xoiv::::res://assets/icons/energy icon.png<>uid://cqgi215wq7mr8::::res://assets/icons/three stars icon.png<>uid://byv0ufsn4xaia::::res://assets/icons/paralysis icon.png<>uid://cls43brah2tkd::::res://assets/icons/attack icon.png<>uid://b1vffns8ngpn1::::res://assets/backgrounds/Box-1.png<>res://scripts/upgrades.gd<>uid://dqwxpm8e55dly::::res://assets/icons/agility icon.png<>res://scripts/derived_status.gd<>uid://dnkig6eqllbgc::::res://assets/icons/magic icon.png<>uid://cj0krfgq03g6m::::res://assets/icons/two stars icon.png<>uid://cih1pevuq4n6e::::res://assets/icons/bagpack icon.png<>uid://c7ottgyyv7t0b::::res://assets/buttons/S Button 3/ButtonHover.png<>uid://d2hiuho182mje::::res://assets/inventory/Backpack 10x6/Panel Green Empty.png<>uid://d3nu0on3alprl::::res://assets/icons/Wenrexa Money 3.png<>uid://cu3ee5mq046by::::res://assets/buttons/S Button 3/ButtonActive.png<>uid://bmwqrp1rpk85y::::res://assets/buttons/S Button 3/ButtonNormal.png<>uid://dwxxiwirf0jad::::res://assets/inventory/Backpack 10x6/Cell.png
+slime_1.tscn::PackedScene::6931490992256580683::1760929014::0::1::::<><>::uid://wxnhpxtp6xfn::::res://scenes/base_enemy.tscn
+::res://scenes/items/::1761268729
+::res://scenes/items/equipment/::1761268729
+::res://scenes/items/equipment/helmet/::1761268729
+leather_cap.tscn::PackedScene::6292872424489616297::1761268729::0::1::::<><>::uid://ck1g0o4dx1ilm::::res://scenes/base_item.tscn<>uid://vn3ravrle30m::::res://assets/itens/potion/Potion 2.png
+::res://scenes/items/equipment/weapons/::1761268729
+rusty_sword.tscn::PackedScene::3482680423700702220::1761268729::0::1::::<><>::uid://ck1g0o4dx1ilm::::res://scenes/base_item.tscn<>uid://tv5xa7ls6msm::::res://assets/itens/potion/Potion 4.png
+::res://scripts/::1761268730
+base_enemy.gd::GDScript::-1::1761268730::0::1::::BaseEnemy<>StaticBody2D<>::
+base_item.gd::GDScript::-1::1761268730::0::1::::BaseItem<>StaticBody2D<>::
+derived_status.gd::GDScript::-1::1761181740::0::1::::DerivedStats<>TextureRect<>::
+game_log.gd::GDScript::-1::1760825869::0::1::::GameLog<>TextureRect<>::
+global_player.gd::GDScript::-1::1761181128::0::1::::GlobalPlayer<>Node<>::
+global_world.gd::GDScript::-1::1761001189::0::1::::GlobalWorld<>Node<>::
+main_scene.gd::GDScript::-1::1761181877::0::1::::MainScene<>Control<>::
+stats_container.gd::GDScript::-1::1761181538::0::1::::StatsContainer<>TextureRect<>::
+upgrades.gd::GDScript::-1::1760922103::0::1::::Upgrades<>TextureRect<>::
+::res://scripts/json/::1761001189
+enemy_hp_levels.json::JSON::-1::1760905734::0::1::::<><>::
+gold_range.json::JSON::-1::1760825869::0::1::::<><>::
+player_exp.json::JSON::-1::1761001189::0::1::::<><>::
