@@ -1258,11 +1258,10 @@ label_settings = SubResource("LabelSettings_1m0og")
 [node name="Equipment" type="Node2D" parent="Container2"]
 visible = false
 
-[node name="Inventory" type="Node2D" parent="Container2" node_paths=PackedStringArray("inventory_container")]
-visible = false
+[node name="Inventory" type="Node2D" parent="Container2" node_paths=PackedStringArray("inventory_container") groups=["inventory"]]
 script = ExtResource("26_61m63")
 slot_scene = ExtResource("26_cvly0")
-inventory_size = 72
+inventory_size = 80
 inventory_container = NodePath("Background/GridContainer")
 
 [node name="Background" type="TextureRect" parent="Container2/Inventory"]
@@ -1280,7 +1279,7 @@ offset_top = 36.0
 offset_right = 177.0
 offset_bottom = 249.0
 theme_override_constants/h_separation = 2
-theme_override_constants/v_separation = 2
+theme_override_constants/v_separation = 1
 columns = 8
 
 [node name="Container3" type="TextureRect" parent="."]

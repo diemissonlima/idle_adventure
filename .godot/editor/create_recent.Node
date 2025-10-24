@@ -1,12 +1,12 @@
+VBoxContainer
+Label
 TextureRect
+ColorRect
+TextureButton
 GridContainer
 CollisionShape2D
 StaticBody2D
 Node2D
-VBoxContainer
-Label
-TextureButton
-ColorRect
 TextureProgressBar
 Node
 Sprite2D

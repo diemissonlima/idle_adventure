@@ -12,6 +12,7 @@ var click_damage_level: int = 0
 var gold_range: Dictionary
 var enemy_hp_level: Dictionary
 var level_dict: Dictionary
+var equipments: Dictionary
 
 
 func _ready() -> void:
@@ -22,7 +23,8 @@ func load_json() -> void:
 	var path_list: Array = [
 		"res://scripts/json/gold_range.json",
 		"res://scripts/json/enemy_hp_levels.json",
-		"res://scripts/json/player_exp.json"
+		"res://scripts/json/player_exp.json",
+		"res://scripts/json/equipment.json"
 	]
 	
 	for path in path_list:
@@ -42,6 +44,8 @@ func load_json() -> void:
 						enemy_hp_level = data
 					"res://scripts/json/player_exp.json":
 						Player.level_dict = data
+					"res://scripts/json/equipment.json":
+						equipments = data
 
 
 func format_number(value: float) -> String:

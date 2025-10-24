@@ -47,10 +47,6 @@ func take_damage(value: int) -> void:
 
 
 func drop_loot() -> void:
-	var drop_rng: float = randf()
-	if drop_rng > .25:
-		return
-		
 	for i in range(drop_list.size()):
 		var rng: float = randf()
 		if rng <= drop_chances[i]:
@@ -58,8 +54,9 @@ func drop_loot() -> void:
 			
 			get_tree().call_group(
 				"game_log", "add_message",
-				"You found " + drop_item.item_name
+				"You found " + drop_item.item_rarity + " " + drop_item.item_name
 				)
+			get_tree().call_group("inventory", "add_item", drop_item)
 			break
 
 

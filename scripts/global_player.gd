@@ -17,6 +17,19 @@ var click_damage: float = 1.0
 var gold_resource: float = 0#16330000000000000000000.0
 var scrap_resource: float = 0.0
 
+# itens equipados
+var equipped_items := {
+	"helmet": null,
+	"armor": null,
+	"necklace": null,
+	"weapon": null,
+	"shield": null,
+	"belt": null,
+	"legs": null,
+	"ring_1": null,
+	"ring_2": null
+}
+
 # bonus de upgrade permanente
 var permanent_bonus: Dictionary = {
 	"gold_mastery": {

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cymlu7ug6nqok"
-path="res://.godot/imported/sword_01.png-19803d055dcba71c345390af1bc40a0a.ctex"
+uid="uid://cegrkjbnwd1fd"
+path="res://.godot/imported/tile096.png-f7cd0d40c38f5a653f6dfd2644c355ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/itens/sword_01.png"
-dest_files=["res://.godot/imported/sword_01.png-19803d055dcba71c345390af1bc40a0a.ctex"]
+source_file="res://assets/itens/equipments/helm/tile096.png"
+dest_files=["res://.godot/imported/tile096.png-f7cd0d40c38f5a653f6dfd2644c355ba.ctex"]
 
 [params]
 

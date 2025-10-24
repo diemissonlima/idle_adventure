@@ -8,9 +8,17 @@ class_name Inventory
 
 func _ready() -> void:
 	populate_inventory_slot()
+	pass
 
 
 func populate_inventory_slot() -> void:
 	for j in range(inventory_size):
 		var slot = slot_scene.instantiate()
 		inventory_container.add_child(slot)
+
+
+func add_item(item: StaticBody2D) -> void:
+	for slot in inventory_container.get_children():
+		if slot.get_child_count() <= 1:
+			slot.add_child(item)
+			break

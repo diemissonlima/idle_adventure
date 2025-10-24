@@ -1,10 +1,11 @@
-[gd_scene load_steps=16 format=3 uid="uid://wxnhpxtp6xfn"]
+[gd_scene load_steps=17 format=3 uid="uid://wxnhpxtp6xfn"]
 
 [ext_resource type="Script" path="res://scripts/base_enemy.gd" id="1_4oi7a"]
 [ext_resource type="Texture2D" uid="uid://cyg2dwh3ts8mq" path="res://assets/enemies/1/1.png" id="2_5tmd5"]
 [ext_resource type="PackedScene" uid="uid://bpvbic3vb4jcm" path="res://scenes/items/equipment/weapons/rusty_sword.tscn" id="2_mss1k"]
 [ext_resource type="Texture2D" uid="uid://dkguxe1wfyu46" path="res://assets/enemies/1/2.png" id="3_gcs7q"]
 [ext_resource type="PackedScene" uid="uid://cvwkxo8nx26w0" path="res://scenes/items/equipment/helmet/leather_cap.tscn" id="3_svs20"]
+[ext_resource type="PackedScene" uid="uid://c75roqyw5exar" path="res://scenes/items/equipment/armor/leather_tunic.tscn" id="4_2w5hr"]
 [ext_resource type="Texture2D" uid="uid://bklw8pc3sglk7" path="res://assets/enemies/1/3.png" id="4_nbjpk"]
 [ext_resource type="Texture2D" uid="uid://duir1gl6wo5di" path="res://assets/enemies/1/4.png" id="5_xvpjm"]
 [ext_resource type="Texture2D" uid="uid://b3bqaij1prm5h" path="res://assets/progressbar/V1/Background Static.png" id="6_1flv0"]
@@ -54,8 +55,8 @@ script = ExtResource("1_4oi7a")
 enemy_name_label = NodePath("EnemyName")
 progress_bar = NodePath("ProgressBar")
 enemy_name = "Golem"
-drop_list = Array[PackedScene]([ExtResource("2_mss1k"), ExtResource("3_svs20")])
-drop_chances = Array[float]([0.35, 0.5])
+drop_list = Array[PackedScene]([ExtResource("2_mss1k"), ExtResource("3_svs20"), ExtResource("4_2w5hr")])
+drop_chances = Array[float]([0.1, 0.1, 0.1])
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 visible = false
