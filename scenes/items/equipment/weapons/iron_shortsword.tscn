@@ -5,8 +5,7 @@
 
 [node name="IronShortsword" instance=ExtResource("1_5brvr")]
 item_name = "Iron Shortsword"
-item_rarity = "Common"
-item_type = 3
+item_rarity = "common"
 
 [node name="Sprite" parent="." index="1"]
 texture = ExtResource("2_4w88k")

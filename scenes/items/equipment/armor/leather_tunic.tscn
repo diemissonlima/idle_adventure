@@ -5,8 +5,7 @@
 
 [node name="LeatherTunic" instance=ExtResource("1_605qx")]
 item_name = "Leather Tunic"
-item_rarity = "Common"
-item_type = 1
+item_rarity = "common"
 power_level = 2
 
 [node name="Sprite" parent="." index="1"]

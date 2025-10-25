@@ -1,37 +1,57 @@
 {
 	"Rusty Sword": {
-		"power_level": [1, 24],
-		"click_damage": [10, 15]
+		"slot": "weapon",
+		"power_level": {
+			"common": [1, 5],
+			"uncommon": [6, 10],
+			"rare": [11, 15],
+			"epic": [16, 20],
+			"legendary": [21, 24]
+		},
+		"click_damage": {
+			"common": [10, 10],
+			"uncommon": [11, 11],
+			"rare": [12, 12],
+			"epic": [13, 13],
+			"legendary": [14, 15]
+		}
 	},
 	"Leather Cap": {
+		"slot": "helm",
 		"power_level": [1, 24],
 		"click_damage": [5, 5],
 		"gold_gain": [1, 8]
 	},
 	"Leather Tunic": {
+		"slot": "armor",
 		"power_level": [1, 24],
 		"click_damage": [1, 10],
 		"dps_damage": [50, 150]
 	},
 	"Iron Shortsword": {
+		"slot": "weapon",
 		"power_level": [1, 24],
 		"click_damage": [10, 30],
 		"dps_damage": [10, 50]
 	},
 	"Wooded Shield": {
+		"slot": "shield",
 		"power_level": [1, 24],
 		"dps_damage": [50, 250]
 	},
 	"Leather Belt": {
+		"slot": "belt",
 		"power_level": [1, 24],
 		"click_damage": [1, 9],
 		"dps_damage": [30, 100]
 	},
 	"Simple Sash": {
+		"slot": "belt",
 		"power_level": [1, 24],
 		"dps_damage": [20, 60]
 	},
 	"Steel Longsword": {
+		"slot": "weapon",
 		"power_level": [25, 25],
 		"click_damage": [25, 75],
 		"dps_damage": [10, 80]

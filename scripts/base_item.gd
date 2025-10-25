@@ -4,11 +4,9 @@ class_name BaseItem
 @export var item_name: String
 @export var item_sprite: TextureRect
 @export_enum(
-	"Common", "Uncommon", "Rare", "Epic", "Legendary"
-	) var item_rarity: String = "Commom"
-@export_enum(
-	"helmet", "armor", "necklace", "weapon", "shield", "belt", "legs", "ring"
-	) var item_type
+	"common", "uncommon", "rare", "epic", "legendary"
+	) var item_rarity: String = "commom"
+@export var item_type: String
 @export var item_unique: bool = false
 @export var power_level: int = 0
 @export var gold_gain: float = 0.0
@@ -43,7 +41,7 @@ func get_total_power() -> float:
 
 
 func update_item_info() -> void:
-	item_name_label.text = item_rarity + "\n" + item_name
+	item_name_label.text = item_rarity.capitalize() + "\n" + item_name
 	power_level_label.text = "Power Level: " + str(power_level)
 	
 	if gold_gain:
@@ -64,24 +62,33 @@ func update_item_info() -> void:
 
 
 func get_attributes() -> void:
-	var attributes = World.equipments[item_name]
-	power_level = randi_range(attributes["power_level"][0], attributes["power_level"][1])
+	var item_info = World.equipments[item_name]
+	item_type = item_info["slot"]
+	power_level = randi_range(
+		item_info["power_level"][item_rarity][0],
+		item_info["power_level"][item_rarity][1]
+		)
+	#power_level = randi_range(item_info["power_level"][0], item_info["power_level"][1])
 	
-	if attributes.has("click_damage"):
+	if item_info.has("click_damage"):
 		click_damage = randi_range(
-			attributes["click_damage"][0], attributes["click_damage"][1]
+			item_info["click_damage"][item_rarity][0], 
+			item_info["click_damage"][item_rarity][1]
 			)
-	if attributes.has("gold_gain"):
+	if item_info.has("gold_gain"):
 		gold_gain = randi_range(
-			attributes["gold_gain"][0], attributes["gold_gain"][1]
+			item_info["gold_gain"][item_rarity][0], 
+			item_info["gold_gain"][item_rarity][1]
 		)
-	if attributes.has("dps_damage"):
+	if item_info.has("dps_damage"):
 		dps_damage = randi_range(
-			attributes["dps_damage"][0], attributes["dps_damage"][1]
+			item_info["dps_damage"][item_rarity][0], 
+			item_info["dps_damage"][item_rarity][1]
 		)
-	if attributes.has("magic_find"):
+	if item_info.has("magic_find"):
 		magic_find = randi_range(
-			attributes["magic_find"][0], attributes["magic_find"][1]
+			item_info["magic_find"][item_rarity][0], 
+			item_info["magic_find"][item_rarity][1]
 		)
 
 
