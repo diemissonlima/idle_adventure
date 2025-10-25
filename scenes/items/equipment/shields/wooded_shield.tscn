@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://2sjtfobfb40r"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_nlcoc"]
+[ext_resource type="Texture2D" uid="uid://bcdndkpbjjcmn" path="res://assets/itens/equipments/shields/tile061.png" id="2_unxov"]
+
+[node name="WoodedShield" instance=ExtResource("1_nlcoc")]
+item_name = "Wooded Shield"
+item_rarity = "Common"
+item_type = 4
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_unxov")

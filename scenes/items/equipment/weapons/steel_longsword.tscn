@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://l3q2cv0t7c02"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_187o7"]
+[ext_resource type="Texture2D" uid="uid://dxauj8memiwgy" path="res://assets/itens/equipments/weapons/tile006.png" id="2_222gs"]
+
+[node name="SteelLongsword" instance=ExtResource("1_187o7")]
+item_name = "Steel Longsword"
+item_rarity = "Common"
+item_type = 3
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_222gs")

@@ -11,7 +11,6 @@ var click_damage_level: int = 0
 
 var gold_range: Dictionary
 var enemy_hp_level: Dictionary
-var level_dict: Dictionary
 var equipments: Dictionary
 
 
