@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://wxnhpxtp6xfn"]
+[gd_scene load_steps=23 format=3 uid="uid://wxnhpxtp6xfn"]
 
 [ext_resource type="Script" path="res://scripts/base_enemy.gd" id="1_4oi7a"]
 [ext_resource type="Texture2D" uid="uid://cyg2dwh3ts8mq" path="res://assets/enemies/1/1.png" id="2_5tmd5"]
@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://bwstjkly0iwia" path="res://assets/progressbar/V1/Background Bar2.png" id="8_w75xy"]
 [ext_resource type="FontFile" uid="uid://iutw4od6mkk8" path="res://assets/font/Oxanium-Medium.ttf" id="9_trvy0"]
 [ext_resource type="PackedScene" uid="uid://2sjtfobfb40r" path="res://scenes/items/equipment/shields/wooded_shield.tscn" id="9_xiruq"]
+[ext_resource type="PackedScene" uid="uid://c4drjt05jl1qo" path="res://scenes/items/equipment/gloves/leather_gloves.tscn" id="10_vnhdm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yjes7"]
 size = Vector2(46, 59)
@@ -60,8 +61,8 @@ script = ExtResource("1_4oi7a")
 enemy_name_label = NodePath("EnemyName")
 progress_bar = NodePath("ProgressBar")
 enemy_name = "Golem"
-drop_list = Array[PackedScene]([ExtResource("2_mss1k"), ExtResource("3_svs20"), ExtResource("4_2w5hr"), ExtResource("5_qcq6y"), ExtResource("6_rv47m"), ExtResource("7_y8g7h"), ExtResource("8_o61ni"), ExtResource("9_xiruq")])
-drop_chances = Array[float]([1.0, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05])
+drop_list = Array[PackedScene]([ExtResource("2_mss1k"), ExtResource("3_svs20"), ExtResource("4_2w5hr"), ExtResource("5_qcq6y"), ExtResource("6_rv47m"), ExtResource("7_y8g7h"), ExtResource("8_o61ni"), ExtResource("9_xiruq"), ExtResource("10_vnhdm")])
+drop_chances = Array[float]([0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05])
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 visible = false

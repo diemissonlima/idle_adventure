@@ -43,6 +43,9 @@ func on_button_tab_pressed(button: TextureButton) -> void:
 		
 		"BtnInventory":
 			$Inventory.visible = true
+			
+		"BtnEquipment":
+			$Equipment.visible = true
 
 
 func on_button_increase_status_pressed(button: TextureButton) -> void:

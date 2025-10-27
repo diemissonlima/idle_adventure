@@ -21,4 +21,9 @@ func add_item(item: StaticBody2D) -> void:
 	for slot in inventory_container.get_children():
 		if slot.get_child_count() <= 1:
 			slot.add_child(item)
+			slot.handler_slot_color(item.item_rarity)
+			get_tree().call_group(
+				"game_log", "add_message",
+				"You found " + item.item_rarity.capitalize() + " " + item.item_name
+				)
 			break

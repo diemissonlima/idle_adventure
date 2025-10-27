@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=3 uid="uid://chee12681ksau"]
+[gd_scene load_steps=73 format=3 uid="uid://chee12681ksau"]
 
 [ext_resource type="Texture2D" uid="uid://ciir88k8isk6u" path="res://assets/backgrounds/1.png" id="1_5hms3"]
 [ext_resource type="Script" path="res://scripts/main_scene.gd" id="1_7f1vr"]
@@ -37,6 +37,7 @@
 [ext_resource type="Script" path="res://scripts/inventory.gd" id="26_61m63"]
 [ext_resource type="Texture2D" uid="uid://bmwqrp1rpk85y" path="res://assets/buttons/S Button 3/ButtonNormal.png" id="26_83xn1"]
 [ext_resource type="PackedScene" uid="uid://blbvtl8up3ubx" path="res://scenes/slot.tscn" id="26_cvly0"]
+[ext_resource type="Texture2D" uid="uid://dwxxiwirf0jad" path="res://assets/inventory/Backpack 10x6/Cell.png" id="26_rjwgf"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_qrr8g"]
 font = ExtResource("4_rkqi3")
@@ -145,6 +146,25 @@ line_spacing = 0.0
 font = ExtResource("6_r50xv")
 font_size = 3
 outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_r7las"]
+font = ExtResource("6_r50xv")
+font_size = 8
+font_color = Color(1, 1, 0, 1)
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_noom4"]
+line_spacing = 0.0
+font = ExtResource("6_r50xv")
+font_size = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_cbxh7"]
+font = ExtResource("6_r50xv")
+font_size = 8
+font_color = Color(1, 1, 0, 1)
+outline_size = 2
 outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_x8rbt"]
@@ -1256,9 +1276,288 @@ text = "No companions. Collect them from Expeditions"
 label_settings = SubResource("LabelSettings_1m0og")
 
 [node name="Equipment" type="Node2D" parent="Container2"]
-visible = false
+
+[node name="BackgroundEquipment" type="TextureRect" parent="Container2/Equipment"]
+offset_left = 66.0
+offset_top = 20.0
+offset_right = 176.0
+offset_bottom = 142.0
+texture = ExtResource("24_aqwqb")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="Container2/Equipment/BackgroundEquipment"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -22.5
+offset_top = 5.0
+offset_right = 22.5
+offset_bottom = 14.0
+grow_horizontal = 2
+text = "Equipments"
+label_settings = SubResource("LabelSettings_r7las")
+
+[node name="Helm" type="TextureRect" parent="Container2/Equipment/BackgroundEquipment"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -10.0
+offset_top = 21.0
+offset_right = 10.0
+offset_bottom = 41.0
+grow_horizontal = 2
+texture = ExtResource("26_rjwgf")
+expand_mode = 1
+
+[node name="Armor" type="TextureRect" parent="Container2/Equipment/BackgroundEquipment"]
+custom_minimum_size = Vector2(20, 30)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -10.0
+offset_top = 44.0
+offset_right = 10.0
+offset_bottom = 74.0
+grow_horizontal = 2
+texture = ExtResource("26_rjwgf")
+expand_mode = 1
+
+[node name="Boots" type="TextureRect" parent="Container2/Equipment/BackgroundEquipment"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 27.0
+offset_top = 77.0
+offset_right = 47.0
+offset_bottom = 97.0
+grow_horizontal = 2
+texture = ExtResource("26_rjwgf")
+expand_mode = 1
+
+[node name="Gloves" type="TextureRect" parent="Container2/Equipment/BackgroundEquipment"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -47.0
+offset_top = 77.0
+offset_right = -27.0
+offset_bottom = 97.0
+grow_horizontal = 2
+texture = ExtResource("26_rjwgf")
+expand_mode = 1
+
+[node name="Belt" type="TextureRect" parent="Container2/Equipment/BackgroundEquipment"]
+custom_minimum_size = Vector2(20, 10)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -10.0
+offset_top = 77.0
+offset_right = 10.0
+offset_bottom = 87.0
+grow_horizontal = 2
+texture = ExtResource("26_rjwgf")
+expand_mode = 1
+
+[node name="Ring1" type="TextureRect" parent="Container2/Equipment/BackgroundEquipment"]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -23.0
+offset_top = 64.0
+offset_right = -13.0
+offset_bottom = 74.0
+grow_horizontal = 2
+texture = ExtResource("26_rjwgf")
+expand_mode = 1
+
+[node name="Ring2" type="TextureRect" parent="Container2/Equipment/BackgroundEquipment"]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 13.0
+offset_top = 64.0
+offset_right = 23.0
+offset_bottom = 74.0
+grow_horizontal = 2
+texture = ExtResource("26_rjwgf")
+expand_mode = 1
+
+[node name="Shield" type="TextureRect" parent="Container2/Equipment/BackgroundEquipment"]
+custom_minimum_size = Vector2(20, 30)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 27.0
+offset_top = 44.0
+offset_right = 47.0
+offset_bottom = 74.0
+grow_horizontal = 2
+texture = ExtResource("26_rjwgf")
+expand_mode = 1
+
+[node name="Weapon" type="TextureRect" parent="Container2/Equipment/BackgroundEquipment"]
+custom_minimum_size = Vector2(20, 30)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -47.0
+offset_top = 44.0
+offset_right = -27.0
+offset_bottom = 74.0
+grow_horizontal = 2
+texture = ExtResource("26_rjwgf")
+expand_mode = 1
+
+[node name="Necklace" type="TextureRect" parent="Container2/Equipment/BackgroundEquipment"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 27.0
+offset_top = 21.0
+offset_right = 47.0
+offset_bottom = 41.0
+grow_horizontal = 2
+texture = ExtResource("26_rjwgf")
+expand_mode = 1
+
+[node name="BackgroundStats" type="TextureRect" parent="Container2/Equipment"]
+offset_left = 2.0
+offset_top = 20.0
+offset_right = 64.0
+offset_bottom = 142.0
+texture = ExtResource("24_aqwqb")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="Container2/Equipment/BackgroundStats"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -19.5
+offset_top = 5.0
+offset_right = 19.5
+offset_bottom = 14.0
+grow_horizontal = 2
+text = "Gear Stats"
+label_settings = SubResource("LabelSettings_r7las")
+
+[node name="GearPower" type="TextureRect" parent="Container2/Equipment/BackgroundStats"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 0
+offset_top = 27.0
+offset_right = 12.0
+offset_bottom = 39.0
+texture = ExtResource("16_bswde")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container2/Equipment/BackgroundStats/GearPower"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 1.0
+offset_right = 47.0
+offset_bottom = 11.0
+text = "700
+Gear Power Score"
+label_settings = SubResource("LabelSettings_noom4")
+
+[node name="ClickDamage" type="TextureRect" parent="Container2/Equipment/BackgroundStats"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 0
+offset_top = 48.0
+offset_right = 12.0
+offset_bottom = 60.0
+texture = ExtResource("8_ygyk3")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container2/Equipment/BackgroundStats/ClickDamage"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 1.0
+offset_right = 47.0
+offset_bottom = 11.0
+text = "+2.52M
+Click Damage"
+label_settings = SubResource("LabelSettings_noom4")
+
+[node name="DpsDamage" type="TextureRect" parent="Container2/Equipment/BackgroundStats"]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 0
+offset_top = 69.0
+offset_right = 12.0
+offset_bottom = 81.0
+texture = ExtResource("9_aj0nw")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container2/Equipment/BackgroundStats/DpsDamage"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 1.0
+offset_right = 47.0
+offset_bottom = 11.0
+text = "+2.52M
+Damage Per Second (DPS)"
+label_settings = SubResource("LabelSettings_noom4")
+
+[node name="GoldGain" type="TextureRect" parent="Container2/Equipment/BackgroundStats"]
+custom_minimum_size = Vector2(11, 11)
+layout_mode = 0
+offset_top = 90.0
+offset_right = 11.0
+offset_bottom = 101.0
+texture = ExtResource("24_u7a4l")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container2/Equipment/BackgroundStats/GoldGain"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 1.0
+offset_right = 47.0
+offset_bottom = 11.0
+text = "+7.48K %
+Gold Gain"
+label_settings = SubResource("LabelSettings_noom4")
+
+[node name="Separator" type="TextureRect" parent="Container2/Equipment"]
+custom_minimum_size = Vector2(80, 1)
+offset_left = 2.0
+offset_top = 146.0
+offset_right = 176.0
+offset_bottom = 147.0
+texture = ExtResource("10_68jdv")
+expand_mode = 1
+
+[node name="AchievementsTitle" type="Label" parent="Container2/Equipment"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 43.0
+offset_top = 153.0
+offset_right = 136.0
+offset_bottom = 162.0
+grow_horizontal = 2
+text = "Achievements & Records"
+label_settings = SubResource("LabelSettings_cbxh7")
 
 [node name="Inventory" type="Node2D" parent="Container2" node_paths=PackedStringArray("inventory_container") groups=["inventory"]]
+visible = false
 script = ExtResource("26_61m63")
 slot_scene = ExtResource("26_cvly0")
 inventory_size = 80

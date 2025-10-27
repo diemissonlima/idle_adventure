@@ -3,9 +3,7 @@ class_name BaseItem
 
 @export var item_name: String
 @export var item_sprite: TextureRect
-@export_enum(
-	"common", "uncommon", "rare", "epic", "legendary"
-	) var item_rarity: String = "commom"
+@export var item_rarity: String
 @export var item_type: String
 @export var item_unique: bool = false
 @export var power_level: int = 0
@@ -61,14 +59,30 @@ func update_item_info() -> void:
 		magic_find_label.text = "+" + str(magic_find) + "% Magic Find"
 
 
+func get_item_rarity() -> String:
+	var rarity_list: Array = [
+		"legendary", "epic", "rare", "uncommon"
+	]
+	var rarity_chance: Array = [
+		0.005, 0.01, 0.10, 0.30
+	]
+	
+	for j in rarity_list.size():
+		var rng: float = randf()
+		if rng <= rarity_chance[j]:
+			return rarity_list[j]
+	
+	return "common"
+
+
 func get_attributes() -> void:
 	var item_info = World.equipments[item_name]
+	item_rarity = get_item_rarity()
 	item_type = item_info["slot"]
 	power_level = randi_range(
 		item_info["power_level"][item_rarity][0],
 		item_info["power_level"][item_rarity][1]
 		)
-	#power_level = randi_range(item_info["power_level"][0], item_info["power_level"][1])
 	
 	if item_info.has("click_damage"):
 		click_damage = randi_range(

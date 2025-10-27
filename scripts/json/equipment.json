@@ -10,50 +10,189 @@
 		},
 		"click_damage": {
 			"common": [10, 10],
-			"uncommon": [11, 11],
-			"rare": [12, 12],
-			"epic": [13, 13],
-			"legendary": [14, 15]
+			"uncommon": [10, 11],
+			"rare": [10, 12],
+			"epic": [10, 13],
+			"legendary": [10, 15]
 		}
 	},
 	"Leather Cap": {
 		"slot": "helm",
-		"power_level": [1, 24],
-		"click_damage": [5, 5],
-		"gold_gain": [1, 8]
+		"power_level": {
+			"common": [1, 5],
+			"uncommon": [6, 10],
+			"rare": [11, 15],
+			"epic": [16, 20],
+			"legendary": [21, 24]
+		},
+		"click_damage": {
+			"common": [5, 5],
+			"uncommon": [5, 6],
+			"rare": [5, 7],
+			"epic": [5, 8],
+			"legendary": [5, 10]
+		},
+		"gold_gain": {
+			"common": [1, 2],
+			"uncommon": [1, 3],
+			"rare": [1, 4],
+			"epic": [1, 6],
+			"legendary": [1, 8]
+		}
 	},
 	"Leather Tunic": {
 		"slot": "armor",
-		"power_level": [1, 24],
-		"click_damage": [1, 10],
-		"dps_damage": [50, 150]
+		"power_level": {
+			"common": [1, 5],
+			"uncommon": [6, 10],
+			"rare": [11, 15],
+			"epic": [16, 20],
+			"legendary": [21, 24]
+		},
+		"click_damage": {
+			"common": [1, 2],
+			"uncommon": [1, 4],
+			"rare": [1, 6],
+			"epic": [1, 8],
+			"legendary": [1, 10]
+		},
+		"dps_damage": {
+			"common": [50, 70],
+			"uncommon": [50, 90],
+			"rare": [50, 110],
+			"epic": [50, 130],
+			"legendary": [50, 150]
+		}
 	},
 	"Iron Shortsword": {
 		"slot": "weapon",
-		"power_level": [1, 24],
-		"click_damage": [10, 30],
-		"dps_damage": [10, 50]
+		"power_level": {
+			"common": [1, 5],
+			"uncommon": [6, 10],
+			"rare": [11, 15],
+			"epic": [16, 20],
+			"legendary": [21, 24]
+		},
+		"click_damage": {
+			"common": [10, 14],
+			"uncommon": [10, 18],
+			"rare": [10, 24],
+			"epic": [10, 26],
+			"legendary": [10, 30]
+		},
+		"dps_damage": {
+			"common": [10, 18],
+			"uncommon": [10, 26],
+			"rare": [10, 34],
+			"epic": [10, 42],
+			"legendary": [10, 50]
+		}
 	},
 	"Wooded Shield": {
 		"slot": "shield",
-		"power_level": [1, 24],
-		"dps_damage": [50, 250]
+		"power_level": {
+			"common": [1, 5],
+			"uncommon": [6, 10],
+			"rare": [11, 15],
+			"epic": [16, 20],
+			"legendary": [21, 24]
+		},
+		"dps_damage": {
+			"common": [50, 90],
+			"uncommon": [50, 130],
+			"rare": [50, 170],
+			"epic": [50, 210],
+			"legendary": [50, 250]
+		}
 	},
 	"Leather Belt": {
 		"slot": "belt",
-		"power_level": [1, 24],
-		"click_damage": [1, 9],
-		"dps_damage": [30, 100]
+		"power_level": {
+			"common": [1, 5],
+			"uncommon": [6, 10],
+			"rare": [11, 15],
+			"epic": [16, 20],
+			"legendary": [21, 24]
+		},
+		"click_damage": {
+			"common": [1, 2],
+			"uncommon": [1, 4],
+			"rare": [1, 6],
+			"epic": [1, 7],
+			"legendary": [1, 9]
+		},
+		"dps_damage": {
+			"common": [30, 44],
+			"uncommon": [30, 58],
+			"rare": [30, 72],
+			"epic": [30, 86],
+			"legendary": [30, 100]
+		}
+	},
+	"Leather Gloves": {
+		"slot": "gloves",
+		"power_level": {
+			"common": [1, 5],
+			"uncommon": [6, 10],
+			"rare": [11, 15],
+			"epic": [16, 20],
+			"legendary": [21, 24]
+		},
+		"click_damage": {
+			"common": [1, 3],
+			"uncommon": [1, 6],
+			"rare": [1, 9],
+			"epic": [1, 12],
+			"legendary": [1, 15]
+		},
+		"dps_damage": {
+			"common": [30, 44],
+			"uncommon": [30, 58],
+			"rare": [30, 72],
+			"epic": [30, 86],
+			"legendary": [30, 100]
+		}
 	},
 	"Simple Sash": {
 		"slot": "belt",
-		"power_level": [1, 24],
-		"dps_damage": [20, 60]
+		"power_level": {
+			"common": [1, 5],
+			"uncommon": [6, 10],
+			"rare": [11, 15],
+			"epic": [16, 20],
+			"legendary": [21, 24]
+		},
+		"dps_damage": {
+			"common": [20, 28],
+			"uncommon": [20, 36],
+			"rare": [20, 44],
+			"epic": [20, 52],
+			"legendary": [20, 60]
+		}
 	},
 	"Steel Longsword": {
 		"slot": "weapon",
-		"power_level": [25, 25],
-		"click_damage": [25, 75],
-		"dps_damage": [10, 80]
-	}
+		"power_level": {
+			"common": [1, 5],
+			"uncommon": [6, 10],
+			"rare": [11, 15],
+			"epic": [16, 20],
+			"legendary": [21, 25]
+		},
+		"click_damage": {
+			"common": [25, 35],
+			"uncommon": [25, 45],
+			"rare": [25, 55],
+			"epic": [25, 65],
+			"legendary": [25, 75]
+		},
+		"dps_damage": {
+			"common": [10, 24],
+			"uncommon": [10, 38],
+			"rare": [10, 52],
+			"epic": [10, 66],
+			"legendary": [10, 80]
+		}
+	},
+	
 }

@@ -52,10 +52,6 @@ func drop_loot() -> void:
 		if rng <= drop_chances[i]:
 			var drop_item = drop_list[i].instantiate()
 			
-			get_tree().call_group(
-				"game_log", "add_message",
-				"You found " + drop_item.item_rarity.capitalize() + " " + drop_item.item_name
-				)
 			get_tree().call_group("inventory", "add_item", drop_item)
 			break
 

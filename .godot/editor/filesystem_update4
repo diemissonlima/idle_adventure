@@ -1,14 +1,5 @@
 res://scenes/main_scene.tscn
 res://scenes/base_enemy.tscn
 res://scenes/base_item.tscn
+res://scenes/slot.tscn
 res://scripts/json/equipment.json
-res://scripts/base_item.gd
-res://scenes/items/equipment/armor/leather_tunic.tscn
-res://scenes/items/equipment/weapons/steel_longsword.tscn
-res://scenes/items/equipment/weapons/rusty_sword.tscn
-res://scenes/items/equipment/weapons/iron_shortsword.tscn
-res://scenes/items/equipment/shields/wooded_shield.tscn
-res://scenes/items/equipment/helmet/leather_cap.tscn
-res://scenes/items/equipment/belts/simple_sash.tscn
-res://scenes/items/equipment/belts/leather_belt.tscn
-res://scripts/base_enemy.gd
