@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=3 uid="uid://chee12681ksau"]
+[gd_scene load_steps=74 format=3 uid="uid://chee12681ksau"]
 
 [ext_resource type="Texture2D" uid="uid://ciir88k8isk6u" path="res://assets/backgrounds/1.png" id="1_5hms3"]
 [ext_resource type="Script" path="res://scripts/main_scene.gd" id="1_7f1vr"]
@@ -38,6 +38,7 @@
 [ext_resource type="Texture2D" uid="uid://bmwqrp1rpk85y" path="res://assets/buttons/S Button 3/ButtonNormal.png" id="26_83xn1"]
 [ext_resource type="PackedScene" uid="uid://blbvtl8up3ubx" path="res://scenes/slot.tscn" id="26_cvly0"]
 [ext_resource type="Texture2D" uid="uid://dwxxiwirf0jad" path="res://assets/inventory/Backpack 10x6/Cell.png" id="26_rjwgf"]
+[ext_resource type="Script" path="res://scripts/equipment_manager.gd" id="28_dg3qf"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_qrr8g"]
 font = ExtResource("4_rkqi3")
@@ -458,33 +459,6 @@ label_settings = SubResource("LabelSettings_7scff")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BtnEquipment" type="TextureButton" parent="Container2/HBoxContainer"]
-custom_minimum_size = Vector2(25, 14)
-layout_mode = 2
-texture_normal = ExtResource("24_5fp80")
-texture_pressed = ExtResource("25_2ihlf")
-texture_hover = ExtResource("26_83xn1")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="Label" type="Label" parent="Container2/HBoxContainer/BtnEquipment"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -4.5
-offset_top = -2.5
-offset_right = 4.5
-offset_bottom = 2.5
-grow_horizontal = 2
-grow_vertical = 2
-text = "Equipment"
-label_settings = SubResource("LabelSettings_7scff")
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="BtnInventory" type="TextureButton" parent="Container2/HBoxContainer"]
 custom_minimum_size = Vector2(25, 14)
 layout_mode = 2
@@ -535,6 +509,33 @@ offset_bottom = 2.5
 grow_horizontal = 2
 grow_vertical = 2
 text = "Forge"
+label_settings = SubResource("LabelSettings_7scff")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BtnAchievements" type="TextureButton" parent="Container2/HBoxContainer"]
+custom_minimum_size = Vector2(30, 14)
+layout_mode = 2
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Container2/HBoxContainer/BtnAchievements"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.5
+offset_top = -2.5
+offset_right = 4.5
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Achievements"
 label_settings = SubResource("LabelSettings_7scff")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -1275,17 +1276,33 @@ grow_vertical = 2
 text = "No companions. Collect them from Expeditions"
 label_settings = SubResource("LabelSettings_1m0og")
 
-[node name="Equipment" type="Node2D" parent="Container2"]
+[node name="Inventory" type="Node2D" parent="Container2" node_paths=PackedStringArray("inventory_container", "equipment_container") groups=["inventory"]]
+script = ExtResource("26_61m63")
+slot_scene = ExtResource("26_cvly0")
+inventory_size = 160
+inventory_container = NodePath("BackgroundInventory/ScrollContainer/GridContainer")
+equipment_container = NodePath("BackgroundEquipment")
 
-[node name="BackgroundEquipment" type="TextureRect" parent="Container2/Equipment"]
+[node name="BackgroundEquipment" type="TextureRect" parent="Container2/Inventory" node_paths=PackedStringArray("helmet_slot", "armor_slot", "boots_slot", "gloves_slot", "belt_slot", "ring_1_slot", "ring_2_slot", "shield_slot", "weapon_slot", "necklace_slot") groups=["equipment_manager"]]
 offset_left = 66.0
 offset_top = 20.0
 offset_right = 176.0
 offset_bottom = 142.0
 texture = ExtResource("24_aqwqb")
 expand_mode = 1
+script = ExtResource("28_dg3qf")
+helmet_slot = NodePath("Helmet")
+armor_slot = NodePath("Armor")
+boots_slot = NodePath("Boots")
+gloves_slot = NodePath("Gloves")
+belt_slot = NodePath("Belt")
+ring_1_slot = NodePath("Ring1")
+ring_2_slot = NodePath("Necklace")
+shield_slot = NodePath("Shield")
+weapon_slot = NodePath("Weapon")
+necklace_slot = NodePath("Necklace")
 
-[node name="Title" type="Label" parent="Container2/Equipment/BackgroundEquipment"]
+[node name="Title" type="Label" parent="Container2/Inventory/BackgroundEquipment"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -1298,7 +1315,7 @@ grow_horizontal = 2
 text = "Equipments"
 label_settings = SubResource("LabelSettings_r7las")
 
-[node name="Helm" type="TextureRect" parent="Container2/Equipment/BackgroundEquipment"]
+[node name="Helmet" type="TextureRect" parent="Container2/Inventory/BackgroundEquipment"]
 custom_minimum_size = Vector2(20, 20)
 layout_mode = 1
 anchors_preset = 5
@@ -1312,7 +1329,7 @@ grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
 expand_mode = 1
 
-[node name="Armor" type="TextureRect" parent="Container2/Equipment/BackgroundEquipment"]
+[node name="Armor" type="TextureRect" parent="Container2/Inventory/BackgroundEquipment"]
 custom_minimum_size = Vector2(20, 30)
 layout_mode = 1
 anchors_preset = 5
@@ -1326,7 +1343,7 @@ grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
 expand_mode = 1
 
-[node name="Boots" type="TextureRect" parent="Container2/Equipment/BackgroundEquipment"]
+[node name="Boots" type="TextureRect" parent="Container2/Inventory/BackgroundEquipment"]
 custom_minimum_size = Vector2(20, 20)
 layout_mode = 1
 anchors_preset = 5
@@ -1340,7 +1357,7 @@ grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
 expand_mode = 1
 
-[node name="Gloves" type="TextureRect" parent="Container2/Equipment/BackgroundEquipment"]
+[node name="Gloves" type="TextureRect" parent="Container2/Inventory/BackgroundEquipment"]
 custom_minimum_size = Vector2(20, 20)
 layout_mode = 1
 anchors_preset = 5
@@ -1354,8 +1371,8 @@ grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
 expand_mode = 1
 
-[node name="Belt" type="TextureRect" parent="Container2/Equipment/BackgroundEquipment"]
-custom_minimum_size = Vector2(20, 10)
+[node name="Belt" type="TextureRect" parent="Container2/Inventory/BackgroundEquipment"]
+custom_minimum_size = Vector2(20, 20)
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -1368,7 +1385,7 @@ grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
 expand_mode = 1
 
-[node name="Ring1" type="TextureRect" parent="Container2/Equipment/BackgroundEquipment"]
+[node name="Ring1" type="TextureRect" parent="Container2/Inventory/BackgroundEquipment"]
 custom_minimum_size = Vector2(10, 10)
 layout_mode = 1
 anchors_preset = 5
@@ -1382,7 +1399,7 @@ grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
 expand_mode = 1
 
-[node name="Ring2" type="TextureRect" parent="Container2/Equipment/BackgroundEquipment"]
+[node name="Ring2" type="TextureRect" parent="Container2/Inventory/BackgroundEquipment"]
 custom_minimum_size = Vector2(10, 10)
 layout_mode = 1
 anchors_preset = 5
@@ -1396,7 +1413,7 @@ grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
 expand_mode = 1
 
-[node name="Shield" type="TextureRect" parent="Container2/Equipment/BackgroundEquipment"]
+[node name="Shield" type="TextureRect" parent="Container2/Inventory/BackgroundEquipment"]
 custom_minimum_size = Vector2(20, 30)
 layout_mode = 1
 anchors_preset = 5
@@ -1410,7 +1427,7 @@ grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
 expand_mode = 1
 
-[node name="Weapon" type="TextureRect" parent="Container2/Equipment/BackgroundEquipment"]
+[node name="Weapon" type="TextureRect" parent="Container2/Inventory/BackgroundEquipment"]
 custom_minimum_size = Vector2(20, 30)
 layout_mode = 1
 anchors_preset = 5
@@ -1424,7 +1441,7 @@ grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
 expand_mode = 1
 
-[node name="Necklace" type="TextureRect" parent="Container2/Equipment/BackgroundEquipment"]
+[node name="Necklace" type="TextureRect" parent="Container2/Inventory/BackgroundEquipment"]
 custom_minimum_size = Vector2(20, 20)
 layout_mode = 1
 anchors_preset = 5
@@ -1438,7 +1455,7 @@ grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
 expand_mode = 1
 
-[node name="BackgroundStats" type="TextureRect" parent="Container2/Equipment"]
+[node name="BackgroundStats" type="TextureRect" parent="Container2/Inventory"]
 offset_left = 2.0
 offset_top = 20.0
 offset_right = 64.0
@@ -1446,7 +1463,7 @@ offset_bottom = 142.0
 texture = ExtResource("24_aqwqb")
 expand_mode = 1
 
-[node name="Title" type="Label" parent="Container2/Equipment/BackgroundStats"]
+[node name="Title" type="Label" parent="Container2/Inventory/BackgroundStats"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -1459,7 +1476,7 @@ grow_horizontal = 2
 text = "Gear Stats"
 label_settings = SubResource("LabelSettings_r7las")
 
-[node name="GearPower" type="TextureRect" parent="Container2/Equipment/BackgroundStats"]
+[node name="GearPower" type="TextureRect" parent="Container2/Inventory/BackgroundStats"]
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 0
 offset_top = 27.0
@@ -1468,7 +1485,7 @@ offset_bottom = 39.0
 texture = ExtResource("16_bswde")
 expand_mode = 1
 
-[node name="Label" type="Label" parent="Container2/Equipment/BackgroundStats/GearPower"]
+[node name="Label" type="Label" parent="Container2/Inventory/BackgroundStats/GearPower"]
 layout_mode = 0
 offset_left = 13.0
 offset_top = 1.0
@@ -1478,7 +1495,7 @@ text = "700
 Gear Power Score"
 label_settings = SubResource("LabelSettings_noom4")
 
-[node name="ClickDamage" type="TextureRect" parent="Container2/Equipment/BackgroundStats"]
+[node name="ClickDamage" type="TextureRect" parent="Container2/Inventory/BackgroundStats"]
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 0
 offset_top = 48.0
@@ -1487,7 +1504,7 @@ offset_bottom = 60.0
 texture = ExtResource("8_ygyk3")
 expand_mode = 1
 
-[node name="Label" type="Label" parent="Container2/Equipment/BackgroundStats/ClickDamage"]
+[node name="Label" type="Label" parent="Container2/Inventory/BackgroundStats/ClickDamage"]
 layout_mode = 0
 offset_left = 13.0
 offset_top = 1.0
@@ -1497,7 +1514,7 @@ text = "+2.52M
 Click Damage"
 label_settings = SubResource("LabelSettings_noom4")
 
-[node name="DpsDamage" type="TextureRect" parent="Container2/Equipment/BackgroundStats"]
+[node name="DpsDamage" type="TextureRect" parent="Container2/Inventory/BackgroundStats"]
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 0
 offset_top = 69.0
@@ -1506,7 +1523,7 @@ offset_bottom = 81.0
 texture = ExtResource("9_aj0nw")
 expand_mode = 1
 
-[node name="Label" type="Label" parent="Container2/Equipment/BackgroundStats/DpsDamage"]
+[node name="Label" type="Label" parent="Container2/Inventory/BackgroundStats/DpsDamage"]
 layout_mode = 0
 offset_left = 13.0
 offset_top = 1.0
@@ -1516,7 +1533,7 @@ text = "+2.52M
 Damage Per Second (DPS)"
 label_settings = SubResource("LabelSettings_noom4")
 
-[node name="GoldGain" type="TextureRect" parent="Container2/Equipment/BackgroundStats"]
+[node name="GoldGain" type="TextureRect" parent="Container2/Inventory/BackgroundStats"]
 custom_minimum_size = Vector2(11, 11)
 layout_mode = 0
 offset_top = 90.0
@@ -1525,7 +1542,7 @@ offset_bottom = 101.0
 texture = ExtResource("24_u7a4l")
 expand_mode = 1
 
-[node name="Label" type="Label" parent="Container2/Equipment/BackgroundStats/GoldGain"]
+[node name="Label" type="Label" parent="Container2/Inventory/BackgroundStats/GoldGain"]
 layout_mode = 0
 offset_left = 13.0
 offset_top = 1.0
@@ -1535,51 +1552,55 @@ text = "+7.48K %
 Gold Gain"
 label_settings = SubResource("LabelSettings_noom4")
 
-[node name="Separator" type="TextureRect" parent="Container2/Equipment"]
-custom_minimum_size = Vector2(80, 1)
-offset_left = 2.0
-offset_top = 146.0
-offset_right = 176.0
-offset_bottom = 147.0
-texture = ExtResource("10_68jdv")
-expand_mode = 1
-
-[node name="AchievementsTitle" type="Label" parent="Container2/Equipment"]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = 43.0
-offset_top = 153.0
-offset_right = 136.0
-offset_bottom = 162.0
-grow_horizontal = 2
-text = "Achievements & Records"
-label_settings = SubResource("LabelSettings_cbxh7")
-
-[node name="Inventory" type="Node2D" parent="Container2" node_paths=PackedStringArray("inventory_container") groups=["inventory"]]
-visible = false
-script = ExtResource("26_61m63")
-slot_scene = ExtResource("26_cvly0")
-inventory_size = 80
-inventory_container = NodePath("Background/GridContainer")
-
-[node name="Background" type="TextureRect" parent="Container2/Inventory"]
+[node name="BackgroundInventory" type="TextureRect" parent="Container2/Inventory"]
 offset_left = 1.0
-offset_top = 19.0
+offset_top = 143.0
 offset_right = 177.0
 offset_bottom = 269.0
 texture = ExtResource("24_aqwqb")
 expand_mode = 1
 
-[node name="GridContainer" type="GridContainer" parent="Container2/Inventory/Background"]
+[node name="Title" type="Label" parent="Container2/Inventory/BackgroundInventory"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -18.0
+offset_top = 5.0
+offset_right = 18.0
+offset_bottom = 14.0
+grow_horizontal = 2
+text = "Inventory"
+label_settings = SubResource("LabelSettings_r7las")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Container2/Inventory/BackgroundInventory"]
 layout_mode = 0
-offset_left = 1.0
-offset_top = 36.0
-offset_right = 177.0
-offset_bottom = 249.0
+offset_top = 20.0
+offset_right = 176.0
+offset_bottom = 126.0
+vertical_scroll_mode = 3
+
+[node name="GridContainer" type="GridContainer" parent="Container2/Inventory/BackgroundInventory/ScrollContainer"]
+custom_minimum_size = Vector2(176, 106)
+layout_mode = 2
 theme_override_constants/h_separation = 2
 theme_override_constants/v_separation = 1
 columns = 8
+
+[node name="Achievements" type="Node2D" parent="Container2"]
+visible = false
+
+[node name="AchievementsTitle" type="Label" parent="Container2/Achievements"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 43.0
+offset_top = 22.0
+offset_right = 136.0
+offset_bottom = 31.0
+grow_horizontal = 2
+text = "Achievements & Records"
+label_settings = SubResource("LabelSettings_cbxh7")
 
 [node name="Container3" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(78, 270)

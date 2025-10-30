@@ -21,9 +21,12 @@ class_name BaseItem
 @export var click_damage_label: Label
 @export var magic_find_label: Label
 
+var item_data: Dictionary
+
 
 func _ready() -> void:
 	get_attributes()
+	set_item_data()
 
 
 func get_total_power() -> float:
@@ -104,6 +107,18 @@ func get_attributes() -> void:
 			item_info["magic_find"][item_rarity][0], 
 			item_info["magic_find"][item_rarity][1]
 		)
+
+
+func set_item_data() -> void:
+	item_data["item_name"] = item_name
+	item_data["item_sprite"] = item_sprite.texture.resource_path
+	item_data["item_rarity"] = item_rarity
+	item_data["item_unique"] = item_unique
+	item_data["power_level"] = power_level
+	item_data["gold_gain"] = gold_gain
+	item_data["dps_damage"] = dps_damage
+	item_data["click_damage"] = click_damage
+	item_data["magic_find"] = magic_find
 
 
 func _on_sprite_mouse_entered() -> void:

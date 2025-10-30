@@ -17,19 +17,6 @@ var click_damage: float = 1.0
 var gold_resource: float = 0#16330000000000000000000.0
 var scrap_resource: float = 0.0
 
-# itens equipados
-var equipped_items := {
-	"helmet": null,
-	"armor": null,
-	"necklace": null,
-	"weapon": null,
-	"shield": null,
-	"belt": null,
-	"legs": null,
-	"ring_1": null,
-	"ring_2": null
-}
-
 # bonus de upgrade permanente
 var permanent_bonus: Dictionary = {
 	"gold_mastery": {
@@ -99,6 +86,13 @@ var permanent_bonus: Dictionary = {
 	},
 }
 
+var equipment_bonus: Dictionary = {
+	"click_damage": 0.0,
+	"dps_damage": 0.0,
+	"gold_gain": 0.0,
+	"magic_find": 0.0
+}
+
 # dicionario com exp necessaria pra passar de level
 var level_dict: Dictionary
 
@@ -139,7 +133,13 @@ func cause_damage(type_damage: String) -> void:
 func improve_gold(value: float) -> void:
 	var bonus_from_gold_mastery: float = permanent_bonus["gold_mastery"]["bonus"]
 	var bonus_from_luck: float = luck * 2
-	var total_bonus: float = (luck * 0.2) + bonus_from_gold_mastery + bonus_from_luck
+	var bonus_from_equipment: float = equipment_bonus["gold_gain"]
+	var total_bonus: float = (
+		(luck * 0.2) + 
+		bonus_from_gold_mastery + 
+		bonus_from_luck +
+		bonus_from_equipment
+		)
 	
 	var gold_dropped: float = value + (value * (total_bonus / 100))
 	
@@ -174,7 +174,11 @@ func improve_damage(type: String, improve_type: String) -> void:
 				)
 			
 			var bonus_percent_dps: float = (World.dps_damage_level * 1) + (agility * 0.8)
-			var bonus_flat_dps: float = (World.dps_damage_level * 10) + (agility * 10)
+			var bonus_flat_dps: float = (
+				(World.dps_damage_level * 10) + 
+				(agility * 10) + 
+				equipment_bonus["dps_damage"]
+				)
 			var dps_base_damage: float = bonus_flat_dps
 			var dps_bonus_damage: float = dps_base_damage * (bonus_percent_dps / 100)
 			
@@ -184,6 +188,7 @@ func improve_damage(type: String, improve_type: String) -> void:
 			#print("Flat bonus: ",bonus_flat_dps )
 			#print("DPS base damage: ", dps_base_damage)
 			#print("DPS bonus damage: ", dps_bonus_damage)
+			#print("DPS equipment bonus: ", equipment_bonus["dps_damage"])
 			#print("DPS final damage: ", dps_damage)
 			#print("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
 			
@@ -199,11 +204,15 @@ func improve_damage(type: String, improve_type: String) -> void:
 					)
 			
 			var bonus_percent_click: float = (World.click_damage_level * 1) + (strength * 0.2)
-			var bonus_flat_click: float = (World.click_damage_level * 5) + (strength * 5)
+			var bonus_flat_click: float = (
+				(World.click_damage_level * 5) + 
+				(strength * 5) +
+				equipment_bonus["click_damage"]
+				)
 			var click_base_damage: float = bonus_flat_click
 			var click_bonus_damage: float = click_base_damage * (bonus_percent_click / 100)
 			
-			click_damage = click_base_damage + click_bonus_damage
+			click_damage = max(1, click_base_damage + click_bonus_damage + 1)
 
 
 func improve_upgrades(upgrade_name: String) -> void:

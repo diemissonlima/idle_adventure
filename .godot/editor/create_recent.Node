@@ -1,5 +1,6 @@
-Label
 TextureRect
+ScrollContainer
+Label
 VBoxContainer
 ColorRect
 TextureButton
@@ -11,4 +12,3 @@ TextureProgressBar
 Node
 Sprite2D
 RichTextLabel
-ScrollContainer

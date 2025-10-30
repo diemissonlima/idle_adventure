@@ -17,7 +17,7 @@
 		}
 	},
 	"Leather Cap": {
-		"slot": "helm",
+		"slot": "helmet",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [6, 10],
