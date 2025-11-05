@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmi1vfp28ul4b"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_ajwph"]
+[ext_resource type="Texture2D" uid="uid://t183lyj3vu8d" path="res://assets/itens/equipments/weapons/tile026.png" id="2_pb0ui"]
+
+[node name="GladiatorsLongsword" instance=ExtResource("1_ajwph")]
+item_name = "Gladiator's Longsword"
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_pb0ui")

@@ -13,6 +13,9 @@ class_name EquipmentManager
 @export var weapon_slot: TextureRect
 @export var necklace_slot: TextureRect
 
+@export_category("Labels")
+
+
 var equipment_data: Dictionary = {
 	"helmet": null,
 	"armor": null,
@@ -103,11 +106,30 @@ func equip_item(item: StaticBody2D) -> void:
 			item.get_parent().color = Color("#262626")
 			item.get_parent().remove_child(item)
 			belt_slot.add_child(item)
+		
+		"necklace":
+			if necklace_slot.get_child_count() == 1:
+				return
+				
+			equipment_data["necklace"] = item.item_data
+			item.get_parent().color = Color("#262626")
+			item.get_parent().remove_child(item)
+			necklace_slot.add_child(item)
+		
+		"ring":
+			if ring_1_slot.get_child_count() == 1:
+				return
+			
+			equipment_data["ring_1"] = item.item_data
+			item.get_parent().color = Color("#262626")
+			item.get_parent().remove_child(item)
+			ring_1_slot.add_child(item)
 	
 	get_total_bonus()
 	Player.improve_damage("dps", "equipment")
 	Player.improve_damage("click", "equipment")
 	get_tree().call_group("main_scene", "update_label")
+	get_tree().call_group("equipment_stats", "update_label")
 
 
 func unequip_item(slot: TextureRect) -> void:
@@ -136,15 +158,23 @@ func unequip_item(slot: TextureRect) -> void:
 		
 		"Belt":
 			equipment_data["belt"] = null
+		
+		"Necklace":
+			equipment_data["necklace"] = null
+		
+		"Ring1":
+			equipment_data["ring_1"] = null
 	
 	get_total_bonus()
 	Player.improve_damage("dps", "equipment")
 	Player.improve_damage("click", "equipment")
 	get_tree().call_group("main_scene", "update_label")
+	get_tree().call_group("equipment_stats", "update_label")
 
 
 func get_total_bonus() -> void:
 	var total_bonus: Dictionary = {
+	"gear_power": 0.0,
 	"click_damage": 0.0,
 	"dps_damage": 0.0,
 	"gold_gain": 0.0,
@@ -154,6 +184,7 @@ func get_total_bonus() -> void:
 	for item in equipment_data.values():
 		if item == null:
 			continue
+		total_bonus["gear_power"] += item["power_level"]
 		total_bonus["click_damage"] += item["click_damage"]
 		total_bonus["dps_damage"] += item["dps_damage"]
 		total_bonus["gold_gain"] += item["gold_gain"]

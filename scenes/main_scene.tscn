@@ -1,4 +1,4 @@
-[gd_scene load_steps=74 format=3 uid="uid://chee12681ksau"]
+[gd_scene load_steps=75 format=3 uid="uid://chee12681ksau"]
 
 [ext_resource type="Texture2D" uid="uid://ciir88k8isk6u" path="res://assets/backgrounds/1.png" id="1_5hms3"]
 [ext_resource type="Script" path="res://scripts/main_scene.gd" id="1_7f1vr"]
@@ -39,6 +39,7 @@
 [ext_resource type="PackedScene" uid="uid://blbvtl8up3ubx" path="res://scenes/slot.tscn" id="26_cvly0"]
 [ext_resource type="Texture2D" uid="uid://dwxxiwirf0jad" path="res://assets/inventory/Backpack 10x6/Cell.png" id="26_rjwgf"]
 [ext_resource type="Script" path="res://scripts/equipment_manager.gd" id="28_dg3qf"]
+[ext_resource type="Script" path="res://scripts/equipment_stats.gd" id="30_d0rwl"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_qrr8g"]
 font = ExtResource("4_rkqi3")
@@ -157,7 +158,7 @@ outline_size = 1
 outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_noom4"]
-line_spacing = 0.0
+line_spacing = 1.0
 font = ExtResource("6_r50xv")
 font_size = 4
 
@@ -1284,10 +1285,10 @@ inventory_container = NodePath("BackgroundInventory/ScrollContainer/GridContaine
 equipment_container = NodePath("BackgroundEquipment")
 
 [node name="BackgroundEquipment" type="TextureRect" parent="Container2/Inventory" node_paths=PackedStringArray("helmet_slot", "armor_slot", "boots_slot", "gloves_slot", "belt_slot", "ring_1_slot", "ring_2_slot", "shield_slot", "weapon_slot", "necklace_slot") groups=["equipment_manager"]]
-offset_left = 66.0
+offset_left = 63.0
 offset_top = 20.0
 offset_right = 176.0
-offset_bottom = 142.0
+offset_bottom = 120.0
 texture = ExtResource("24_aqwqb")
 expand_mode = 1
 script = ExtResource("28_dg3qf")
@@ -1308,9 +1309,9 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -22.5
-offset_top = 5.0
+offset_top = 3.0
 offset_right = 22.5
-offset_bottom = 14.0
+offset_bottom = 12.0
 grow_horizontal = 2
 text = "Equipments"
 label_settings = SubResource("LabelSettings_r7las")
@@ -1321,9 +1322,9 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -10.0
+offset_left = -11.0
 offset_top = 21.0
-offset_right = 10.0
+offset_right = 9.0
 offset_bottom = 41.0
 grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
@@ -1335,9 +1336,9 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -10.0
+offset_left = -11.0
 offset_top = 44.0
-offset_right = 10.0
+offset_right = 9.0
 offset_bottom = 74.0
 grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
@@ -1349,9 +1350,9 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 27.0
+offset_left = 34.0
 offset_top = 77.0
-offset_right = 47.0
+offset_right = 54.0
 offset_bottom = 97.0
 grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
@@ -1363,9 +1364,9 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -47.0
+offset_left = -55.0
 offset_top = 77.0
-offset_right = -27.0
+offset_right = -35.0
 offset_bottom = 97.0
 grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
@@ -1377,38 +1378,38 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -10.0
+offset_left = -11.0
 offset_top = 77.0
-offset_right = 10.0
-offset_bottom = 87.0
+offset_right = 9.0
+offset_bottom = 97.0
 grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
 expand_mode = 1
 
 [node name="Ring1" type="TextureRect" parent="Container2/Inventory/BackgroundEquipment"]
-custom_minimum_size = Vector2(10, 10)
+custom_minimum_size = Vector2(20, 20)
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -23.0
+offset_left = -33.0
 offset_top = 64.0
 offset_right = -13.0
-offset_bottom = 74.0
+offset_bottom = 84.0
 grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
 expand_mode = 1
 
 [node name="Ring2" type="TextureRect" parent="Container2/Inventory/BackgroundEquipment"]
-custom_minimum_size = Vector2(10, 10)
+custom_minimum_size = Vector2(20, 20)
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 13.0
+offset_left = 12.0
 offset_top = 64.0
-offset_right = 23.0
-offset_bottom = 74.0
+offset_right = 32.0
+offset_bottom = 84.0
 grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
 expand_mode = 1
@@ -1419,9 +1420,9 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 27.0
+offset_left = 34.0
 offset_top = 44.0
-offset_right = 47.0
+offset_right = 54.0
 offset_bottom = 74.0
 grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
@@ -1433,9 +1434,9 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -47.0
+offset_left = -55.0
 offset_top = 44.0
-offset_right = -27.0
+offset_right = -35.0
 offset_bottom = 74.0
 grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
@@ -1447,21 +1448,26 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 27.0
+offset_left = 34.0
 offset_top = 21.0
-offset_right = 47.0
+offset_right = 54.0
 offset_bottom = 41.0
 grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
 expand_mode = 1
 
-[node name="BackgroundStats" type="TextureRect" parent="Container2/Inventory"]
+[node name="BackgroundStats" type="TextureRect" parent="Container2/Inventory" node_paths=PackedStringArray("gear_power", "click_damage", "dps_damage", "gold_gain") groups=["equipment_stats"]]
 offset_left = 2.0
 offset_top = 20.0
-offset_right = 64.0
-offset_bottom = 142.0
+offset_right = 62.0
+offset_bottom = 120.0
 texture = ExtResource("24_aqwqb")
 expand_mode = 1
+script = ExtResource("30_d0rwl")
+gear_power = NodePath("GearPower/Label")
+click_damage = NodePath("ClickDamage/Label")
+dps_damage = NodePath("DpsDamage/Label")
+gold_gain = NodePath("GoldGain/Label")
 
 [node name="Title" type="Label" parent="Container2/Inventory/BackgroundStats"]
 layout_mode = 1
@@ -1469,9 +1475,9 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -19.5
-offset_top = 5.0
+offset_top = 3.0
 offset_right = 19.5
-offset_bottom = 14.0
+offset_bottom = 12.0
 grow_horizontal = 2
 text = "Gear Stats"
 label_settings = SubResource("LabelSettings_r7las")
@@ -1479,9 +1485,10 @@ label_settings = SubResource("LabelSettings_r7las")
 [node name="GearPower" type="TextureRect" parent="Container2/Inventory/BackgroundStats"]
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 0
-offset_top = 27.0
-offset_right = 12.0
-offset_bottom = 39.0
+offset_left = 3.0
+offset_top = 19.0
+offset_right = 15.0
+offset_bottom = 31.0
 texture = ExtResource("16_bswde")
 expand_mode = 1
 
@@ -1498,9 +1505,10 @@ label_settings = SubResource("LabelSettings_noom4")
 [node name="ClickDamage" type="TextureRect" parent="Container2/Inventory/BackgroundStats"]
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 0
-offset_top = 48.0
-offset_right = 12.0
-offset_bottom = 60.0
+offset_left = 3.0
+offset_top = 39.0
+offset_right = 15.0
+offset_bottom = 51.0
 texture = ExtResource("8_ygyk3")
 expand_mode = 1
 
@@ -1517,9 +1525,10 @@ label_settings = SubResource("LabelSettings_noom4")
 [node name="DpsDamage" type="TextureRect" parent="Container2/Inventory/BackgroundStats"]
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 0
-offset_top = 69.0
-offset_right = 12.0
-offset_bottom = 81.0
+offset_left = 3.0
+offset_top = 60.0
+offset_right = 15.0
+offset_bottom = 72.0
 texture = ExtResource("9_aj0nw")
 expand_mode = 1
 
@@ -1530,15 +1539,17 @@ offset_top = 1.0
 offset_right = 47.0
 offset_bottom = 11.0
 text = "+2.52M
-Damage Per Second (DPS)"
+Damage Per Second 
+(DPS)"
 label_settings = SubResource("LabelSettings_noom4")
 
 [node name="GoldGain" type="TextureRect" parent="Container2/Inventory/BackgroundStats"]
 custom_minimum_size = Vector2(11, 11)
 layout_mode = 0
-offset_top = 90.0
-offset_right = 11.0
-offset_bottom = 101.0
+offset_left = 3.0
+offset_top = 81.0
+offset_right = 14.0
+offset_bottom = 92.0
 texture = ExtResource("24_u7a4l")
 expand_mode = 1
 
@@ -1554,7 +1565,7 @@ label_settings = SubResource("LabelSettings_noom4")
 
 [node name="BackgroundInventory" type="TextureRect" parent="Container2/Inventory"]
 offset_left = 1.0
-offset_top = 143.0
+offset_top = 121.0
 offset_right = 177.0
 offset_bottom = 269.0
 texture = ExtResource("24_aqwqb")
@@ -1566,22 +1577,22 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -18.0
-offset_top = 5.0
+offset_top = 6.0
 offset_right = 18.0
-offset_bottom = 14.0
+offset_bottom = 15.0
 grow_horizontal = 2
 text = "Inventory"
 label_settings = SubResource("LabelSettings_r7las")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Container2/Inventory/BackgroundInventory"]
 layout_mode = 0
-offset_top = 20.0
+offset_top = 22.0
 offset_right = 176.0
-offset_bottom = 126.0
+offset_bottom = 148.0
 vertical_scroll_mode = 3
 
 [node name="GridContainer" type="GridContainer" parent="Container2/Inventory/BackgroundInventory/ScrollContainer"]
-custom_minimum_size = Vector2(176, 106)
+custom_minimum_size = Vector2(176, 126)
 layout_mode = 2
 theme_override_constants/h_separation = 2
 theme_override_constants/v_separation = 1

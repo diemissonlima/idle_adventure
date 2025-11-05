@@ -1,12 +1,13 @@
 {
 	"Rusty Sword": {
 		"slot": "weapon",
+		"sockets": 0,
 		"power_level": {
 			"common": [1, 5],
-			"uncommon": [6, 10],
-			"rare": [11, 15],
-			"epic": [16, 20],
-			"legendary": [21, 24]
+			"uncommon": [5, 10],
+			"rare": [10, 15],
+			"epic": [15, 20],
+			"legendary": [20, 24]
 		},
 		"click_damage": {
 			"common": [10, 10],
@@ -18,12 +19,13 @@
 	},
 	"Leather Cap": {
 		"slot": "helmet",
+		"sockets": 0,
 		"power_level": {
 			"common": [1, 5],
-			"uncommon": [6, 10],
-			"rare": [11, 15],
-			"epic": [16, 20],
-			"legendary": [21, 24]
+			"uncommon": [5, 10],
+			"rare": [10, 15],
+			"epic": [15, 20],
+			"legendary": [20, 24]
 		},
 		"click_damage": {
 			"common": [5, 5],
@@ -42,12 +44,13 @@
 	},
 	"Leather Tunic": {
 		"slot": "armor",
+		"sockets": 0,
 		"power_level": {
 			"common": [1, 5],
-			"uncommon": [6, 10],
-			"rare": [11, 15],
-			"epic": [16, 20],
-			"legendary": [21, 24]
+			"uncommon": [5, 10],
+			"rare": [10, 15],
+			"epic": [15, 20],
+			"legendary": [20, 24]
 		},
 		"click_damage": {
 			"common": [1, 2],
@@ -66,12 +69,13 @@
 	},
 	"Iron Shortsword": {
 		"slot": "weapon",
+		"sockets": 0,
 		"power_level": {
 			"common": [1, 5],
-			"uncommon": [6, 10],
-			"rare": [11, 15],
-			"epic": [16, 20],
-			"legendary": [21, 24]
+			"uncommon": [5, 10],
+			"rare": [10, 15],
+			"epic": [15, 20],
+			"legendary": [20, 24]
 		},
 		"click_damage": {
 			"common": [10, 14],
@@ -90,12 +94,13 @@
 	},
 	"Wooded Shield": {
 		"slot": "shield",
+		"sockets": 0,
 		"power_level": {
 			"common": [1, 5],
-			"uncommon": [6, 10],
-			"rare": [11, 15],
-			"epic": [16, 20],
-			"legendary": [21, 24]
+			"uncommon": [5, 10],
+			"rare": [10, 15],
+			"epic": [15, 20],
+			"legendary": [20, 24]
 		},
 		"dps_damage": {
 			"common": [50, 90],
@@ -107,12 +112,13 @@
 	},
 	"Leather Belt": {
 		"slot": "belt",
+		"sockets": 0,
 		"power_level": {
 			"common": [1, 5],
-			"uncommon": [6, 10],
-			"rare": [11, 15],
-			"epic": [16, 20],
-			"legendary": [21, 24]
+			"uncommon": [5, 10],
+			"rare": [10, 15],
+			"epic": [15, 20],
+			"legendary": [20, 24]
 		},
 		"click_damage": {
 			"common": [1, 2],
@@ -131,12 +137,13 @@
 	},
 	"Leather Gloves": {
 		"slot": "gloves",
+		"sockets": 0,
 		"power_level": {
 			"common": [1, 5],
-			"uncommon": [6, 10],
-			"rare": [11, 15],
-			"epic": [16, 20],
-			"legendary": [21, 24]
+			"uncommon": [5, 10],
+			"rare": [10, 15],
+			"epic": [15, 20],
+			"legendary": [20, 24]
 		},
 		"click_damage": {
 			"common": [1, 3],
@@ -155,12 +162,13 @@
 	},
 	"Simple Sash": {
 		"slot": "belt",
+		"sockets": 0,
 		"power_level": {
 			"common": [1, 5],
-			"uncommon": [6, 10],
-			"rare": [11, 15],
-			"epic": [16, 20],
-			"legendary": [21, 24]
+			"uncommon": [5, 10],
+			"rare": [10, 15],
+			"epic": [15, 20],
+			"legendary": [20, 24]
 		},
 		"dps_damage": {
 			"common": [20, 28],
@@ -172,12 +180,13 @@
 	},
 	"Steel Longsword": {
 		"slot": "weapon",
+		"sockets": 0,
 		"power_level": {
 			"common": [1, 5],
-			"uncommon": [6, 10],
-			"rare": [11, 15],
-			"epic": [16, 20],
-			"legendary": [21, 25]
+			"uncommon": [5, 10],
+			"rare": [10, 15],
+			"epic": [15, 20],
+			"legendary": [20, 25]
 		},
 		"click_damage": {
 			"common": [25, 35],
@@ -194,5 +203,90 @@
 			"legendary": [10, 80]
 		}
 	},
-	
+	"Iron Kiteshield": {
+		"slot": "shield",
+		"sockets": 0,
+		"power_level": {
+			"common": [1, 5],
+			"uncommon": [5, 10],
+			"rare": [10, 15],
+			"epic": [15, 20],
+			"legendary": [20, 25]
+		},
+		"click_damage": {
+			"common": [5, 7],
+			"uncommon": [5, 9],
+			"rare": [5, 11],
+			"epic": [5, 13],
+			"legendary": [5, 15]
+		},
+		"dps_damage": {
+			"common": [500, 600],
+			"uncommon": [500, 700],
+			"rare": [500, 800],
+			"epic": [500, 900],
+			"legendary": [500, 1000]
+		}
+	},
+	"Gladiator's Longsword": {
+		"slot": "weapon",
+		"sockets": 2,
+		"power_level": {
+			"common": [1, 5],
+			"uncommon": [5, 10],
+			"rare": [10, 15],
+			"epic": [15, 20],
+			"legendary": [20, 25]
+		},
+		"click_damage": {
+			"common": [20, 36],
+			"uncommon": [20, 52],
+			"rare": [20, 68],
+			"epic": [20, 84],
+			"legendary": [20, 100]
+		},
+		"dps_damage": {
+			"common": [500, 900],
+			"uncommon": [500, 1300],
+			"rare": [500, 1700],
+			"epic": [500, 2100],
+			"legendary": [500, 2500]
+		}
+	},
+	"Simple Pendant": {
+		"slot": "necklace",
+		"sockets": 0,
+		"power_level": {
+			"common": [25, 30],
+			"uncommon": [30, 35],
+			"rare": [35, 40],
+			"epic": [40, 45],
+			"legendary": [45, 49]
+		},
+		"gold_gain": {
+			"common": [2, 2],
+			"uncommon": [2, 3],
+			"rare": [2, 4],
+			"epic": [2, 5],
+			"legendary": [2, 6]
+		}
+	},
+	"Iron Ring": {
+		"slot": "ring",
+		"sockets": 0,
+		"power_level": {
+			"common": [25, 30],
+			"uncommon": [30, 35],
+			"rare": [35, 40],
+			"epic": [40, 45],
+			"legendary": [45, 49]
+		},
+		"dps_damage": {
+			"common": [30, 42],
+			"uncommon": [30, 54],
+			"rare": [30, 66],
+			"epic": [30, 78],
+			"legendary": [30, 90]
+		}
+	},
 }

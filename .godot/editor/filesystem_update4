@@ -1,6 +1,13 @@
 res://scenes/main_scene.tscn
-res://scripts/equipment_manager.gd
-res://scripts/global_player.gd
 res://scenes/base_enemy.tscn
 res://scenes/base_item.tscn
 res://scenes/slot.tscn
+res://scripts/equipment_manager.gd
+res://scripts/equipment_stats.gd
+res://scripts/global_player.gd
+res://scripts/base_item.gd
+res://scripts/json/equipment.json
+res://scenes/items/equipment/shields/iron_kiteshield.tscn
+res://scripts/base_enemy.gd
+res://scenes/items/equipment/weapons/gladiators_longsword.tscn
+res://scenes/items/equipment/necklace/simple_pendant.tscn

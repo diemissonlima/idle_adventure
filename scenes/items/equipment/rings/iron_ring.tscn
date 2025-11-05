@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvegrx3xg63oe"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_uxasr"]
+[ext_resource type="Texture2D" uid="uid://d31tt500lrpoy" path="res://assets/itens/equipments/rings/tile098.png" id="2_jo3da"]
+
+[node name="IronRing" instance=ExtResource("1_uxasr")]
+item_name = "Iron Ring"
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_jo3da")

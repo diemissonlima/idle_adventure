@@ -54,9 +54,9 @@ expand_mode = 1
 
 [node name="ItemInfo" type="TextureRect" parent="."]
 visible = false
-z_index = 10
-offset_left = 22.0
-offset_right = 82.0
+z_index = 100
+offset_left = 21.0
+offset_right = 81.0
 offset_bottom = 54.0
 texture = ExtResource("2_y6dqf")
 expand_mode = 1

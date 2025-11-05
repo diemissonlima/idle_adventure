@@ -29,18 +29,6 @@ func _ready() -> void:
 	set_item_data()
 
 
-func get_total_power() -> float:
-	var rarity_mult = {
-		"Common": 1.0,
-		"Uncommon": 1.1,
-		"Rare": 1.25,
-		"Epic": 1.5,
-		"Legendary": 2.0
-	}
-	
-	return power_level * rarity_mult[item_rarity]
-
-
 func update_item_info() -> void:
 	item_name_label.text = item_rarity.capitalize() + "\n" + item_name
 	power_level_label.text = "Power Level: " + str(power_level)

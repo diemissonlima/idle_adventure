@@ -87,6 +87,7 @@ var permanent_bonus: Dictionary = {
 }
 
 var equipment_bonus: Dictionary = {
+	"gear_power": 0,
 	"click_damage": 0.0,
 	"dps_damage": 0.0,
 	"gold_gain": 0.0,
