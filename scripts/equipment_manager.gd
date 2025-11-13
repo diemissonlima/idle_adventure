@@ -117,13 +117,25 @@ func equip_item(item: StaticBody2D) -> void:
 			necklace_slot.add_child(item)
 		
 		"ring":
-			if ring_1_slot.get_child_count() == 1:
+			if ring_1_slot.get_child_count() == 0:
+				equipment_data["ring_1"] = item.item_data
+				item.get_parent().color = Color("#262626")
+				item.get_parent().remove_child(item)
+				ring_1_slot.add_child(item)
+				
+				get_total_bonus()
+				Player.improve_damage("dps", "equipment")
+				Player.improve_damage("click", "equipment")
+				get_tree().call_group("main_scene", "update_label")
+				get_tree().call_group("equipment_stats", "update_label")
+				
 				return
 			
-			equipment_data["ring_1"] = item.item_data
-			item.get_parent().color = Color("#262626")
-			item.get_parent().remove_child(item)
-			ring_1_slot.add_child(item)
+			if ring_2_slot.get_child_count() == 0:
+				equipment_data["ring_2"] = item.item_data
+				item.get_parent().color = Color("#262626")
+				item.get_parent().remove_child(item)
+				ring_2_slot.add_child(item)
 	
 	get_total_bonus()
 	Player.improve_damage("dps", "equipment")
@@ -164,6 +176,9 @@ func unequip_item(slot: TextureRect) -> void:
 		
 		"Ring1":
 			equipment_data["ring_1"] = null
+		
+		"Ring2":
+			equipment_data["ring_2"] = null
 	
 	get_total_bonus()
 	Player.improve_damage("dps", "equipment")
