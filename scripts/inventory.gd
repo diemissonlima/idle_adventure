@@ -16,6 +16,7 @@ var slot_target: ColorRect
 func _ready() -> void:
 	populate_inventory_slot()
 	connect_slot_signal()
+	# instantiate_item()
 
 
 func _process(_delta: float) -> void:
@@ -60,3 +61,11 @@ func add_item(item: StaticBody2D) -> void:
 				"You found " + item.item_rarity.capitalize() + " " + item.item_name
 				)
 			break
+
+
+func instantiate_item() -> void:
+	var item_scene: PackedScene = preload("res://scenes/items/equipment/armor/leather_tunic.tscn")
+	for j in range(160):
+		var item = item_scene.instantiate()
+		add_item(item)
+	

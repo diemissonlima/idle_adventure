@@ -33,6 +33,22 @@ func update_item_info() -> void:
 	item_name_label.text = item_rarity.capitalize() + "\n" + item_name
 	power_level_label.text = "Power Level: " + str(power_level)
 	
+	match item_rarity:
+		"common":
+			item_name_label.add_theme_color_override("font_color", Color.WHITE)
+		
+		"uncommon":
+			item_name_label.add_theme_color_override("font_color", Color.GREEN)
+		
+		"rare":
+			item_name_label.add_theme_color_override("font_color", Color.BLUE)
+		
+		"epic":
+			item_name_label.add_theme_color_override("font_color", Color.MAGENTA)
+		
+		"legendary":
+			item_name_label.add_theme_color_override("font_color", Color.GOLD)
+	
 	if gold_gain:
 		gold_gain_label.visible = true
 		gold_gain_label.text = "+" + str(gold_gain) + "% Gold Gain"
@@ -110,13 +126,23 @@ func set_item_data() -> void:
 
 
 func _on_sprite_mouse_entered() -> void:
-	item_info.visible = true
 	update_item_info()
+	item_info.visible = true
 	var parent = get_parent()
 	var slot_parent = parent.get_index() + 1
 	
 	if slot_parent % 8 in [5, 6, 7, 0]:
 		item_info.position.x = -61
+		
+		if slot_parent in [149, 150, 151, 152]:
+			item_info.position.y = -17
+		if slot_parent in [157, 158, 159, 160]:
+			item_info.position.y = -34
+	
+	if slot_parent in [145, 146, 147, 148]:
+		item_info.position.y = -17
+	if slot_parent in [153, 154, 155, 156]:
+		item_info.position.y = -34
 
 
 func _on_sprite_mouse_exited() -> void:
