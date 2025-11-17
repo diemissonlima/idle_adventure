@@ -13,7 +13,7 @@ var avg_power_level: int = 0
 
 # status de dano
 var dps_damage: float = 0.0
-var click_damage: float = 1.0
+var click_damage: float = 150000000
 var gold_resource: float = 0#16330000000000000000000.0
 var scrap_resource: float = 0.0
 

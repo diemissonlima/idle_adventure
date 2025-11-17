@@ -67,7 +67,7 @@ enemy_name_label = NodePath("EnemyName")
 progress_bar = NodePath("ProgressBar")
 enemy_name = "Golem"
 drop_list = Array[PackedScene]([ExtResource("2_0d6l7"), ExtResource("3_5hiur"), ExtResource("4_2arxu"), ExtResource("5_x8dt7"), ExtResource("6_adhoj"), ExtResource("7_qvdqt"), ExtResource("3_084np"), ExtResource("9_nel0c"), ExtResource("10_028o6"), ExtResource("11_3d5ba"), ExtResource("12_rxf2y"), ExtResource("13_5snug"), ExtResource("14_4hveo")])
-drop_chances = Array[float]([0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01])
+drop_chances = Array[float]([1.0, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01])
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 visible = false

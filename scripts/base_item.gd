@@ -112,6 +112,11 @@ func set_item_data() -> void:
 func _on_sprite_mouse_entered() -> void:
 	item_info.visible = true
 	update_item_info()
+	var parent = get_parent()
+	var slot_parent = parent.get_index() + 1
+	
+	if slot_parent % 8 in [5, 6, 7, 0]:
+		item_info.position.x = -61
 
 
 func _on_sprite_mouse_exited() -> void:

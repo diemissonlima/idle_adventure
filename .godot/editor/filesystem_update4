@@ -1,4 +1,6 @@
 res://scenes/main_scene.tscn
+res://scripts/base_item.gd
 res://scenes/base_enemy.tscn
 res://scenes/base_item.tscn
 res://scenes/slot.tscn
+res://scripts/global_player.gd
