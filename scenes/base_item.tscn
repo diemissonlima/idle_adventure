@@ -22,7 +22,7 @@ line_spacing = 1.0
 font = ExtResource("3_ymrud")
 font_size = 4
 
-[node name="BaseItem" type="StaticBody2D" node_paths=PackedStringArray("item_sprite", "item_info", "compare_item_info", "item_name_label", "power_level_label", "gold_gain_label", "dps_damage_label", "click_damage_label", "magic_find_label")]
+[node name="BaseItem" type="StaticBody2D" node_paths=PackedStringArray("item_sprite", "item_info", "compare_item_info", "item_name_label", "power_level_label", "gold_gain_label", "dps_damage_label", "click_damage_label", "magic_find_label", "compare_item_name_label", "compare_power_level_label", "compare_gold_gain_label", "compare_dps_damage_label", "compare_click_damage_label", "compare_magic_find_label")]
 script = ExtResource("1_32xci")
 item_sprite = NodePath("Sprite")
 item_info = NodePath("ItemInfo")
@@ -33,6 +33,12 @@ gold_gain_label = NodePath("ItemInfo/VBoxContainer/GoldGain")
 dps_damage_label = NodePath("ItemInfo/VBoxContainer/DpsDamage")
 click_damage_label = NodePath("ItemInfo/VBoxContainer/ClickDamage")
 magic_find_label = NodePath("ItemInfo/VBoxContainer/MagiFind")
+compare_item_name_label = NodePath("CompareItem/Name")
+compare_power_level_label = NodePath("CompareItem/VBoxContainer/PowerLevel")
+compare_gold_gain_label = NodePath("CompareItem/VBoxContainer/GoldGain")
+compare_dps_damage_label = NodePath("CompareItem/VBoxContainer/DpsDamage")
+compare_click_damage_label = NodePath("CompareItem/VBoxContainer/ClickDamage")
+compare_magic_find_label = NodePath("CompareItem/VBoxContainer/MagiFind")
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2(10, 10)
@@ -112,8 +118,8 @@ label_settings = SubResource("LabelSettings_ucr70")
 [node name="CompareItem" type="TextureRect" parent="."]
 visible = false
 z_index = 10
-offset_left = 84.0
-offset_right = 144.0
+offset_left = 82.0
+offset_right = 142.0
 offset_bottom = 54.0
 texture = ExtResource("2_y6dqf")
 expand_mode = 1

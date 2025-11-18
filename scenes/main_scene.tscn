@@ -1,4 +1,4 @@
-[gd_scene load_steps=75 format=3 uid="uid://chee12681ksau"]
+[gd_scene load_steps=88 format=3 uid="uid://chee12681ksau"]
 
 [ext_resource type="Texture2D" uid="uid://ciir88k8isk6u" path="res://assets/backgrounds/1.png" id="1_5hms3"]
 [ext_resource type="Script" path="res://scripts/main_scene.gd" id="1_7f1vr"]
@@ -38,8 +38,21 @@
 [ext_resource type="Texture2D" uid="uid://bmwqrp1rpk85y" path="res://assets/buttons/S Button 3/ButtonNormal.png" id="26_83xn1"]
 [ext_resource type="PackedScene" uid="uid://blbvtl8up3ubx" path="res://scenes/slot.tscn" id="26_cvly0"]
 [ext_resource type="Texture2D" uid="uid://dwxxiwirf0jad" path="res://assets/inventory/Backpack 10x6/Cell.png" id="26_rjwgf"]
+[ext_resource type="PackedScene" uid="uid://c75roqyw5exar" path="res://scenes/items/equipment/armor/leather_tunic.tscn" id="28_cxrfu"]
 [ext_resource type="Script" path="res://scripts/equipment_manager.gd" id="28_dg3qf"]
+[ext_resource type="PackedScene" uid="uid://dhmq1qc6fqw" path="res://scenes/items/equipment/belts/leather_belt.tscn" id="29_l7fe6"]
 [ext_resource type="Script" path="res://scripts/equipment_stats.gd" id="30_d0rwl"]
+[ext_resource type="PackedScene" uid="uid://dhgrb6ivy00oe" path="res://scenes/items/equipment/belts/simple_sash.tscn" id="30_sfkmi"]
+[ext_resource type="PackedScene" uid="uid://c4drjt05jl1qo" path="res://scenes/items/equipment/gloves/leather_gloves.tscn" id="31_pj554"]
+[ext_resource type="PackedScene" uid="uid://cvwkxo8nx26w0" path="res://scenes/items/equipment/helmet/leather_cap.tscn" id="32_w6c3g"]
+[ext_resource type="PackedScene" uid="uid://yw8eklmqtxar" path="res://scenes/items/equipment/necklace/simple_pendant.tscn" id="33_5kmub"]
+[ext_resource type="PackedScene" uid="uid://bvegrx3xg63oe" path="res://scenes/items/equipment/rings/iron_ring.tscn" id="34_jsc5r"]
+[ext_resource type="PackedScene" uid="uid://d13e0q3s6r1th" path="res://scenes/items/equipment/shields/iron_kiteshield.tscn" id="35_fnjlg"]
+[ext_resource type="PackedScene" uid="uid://2sjtfobfb40r" path="res://scenes/items/equipment/shields/wooded_shield.tscn" id="36_52qtn"]
+[ext_resource type="PackedScene" uid="uid://cmi1vfp28ul4b" path="res://scenes/items/equipment/weapons/gladiators_longsword.tscn" id="37_jany3"]
+[ext_resource type="PackedScene" uid="uid://dvcd4q31beisf" path="res://scenes/items/equipment/weapons/iron_shortsword.tscn" id="38_agvd0"]
+[ext_resource type="PackedScene" uid="uid://bpvbic3vb4jcm" path="res://scenes/items/equipment/weapons/rusty_sword.tscn" id="39_i8j4n"]
+[ext_resource type="PackedScene" uid="uid://l3q2cv0t7c02" path="res://scenes/items/equipment/weapons/steel_longsword.tscn" id="40_n06h2"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_qrr8g"]
 font = ExtResource("4_rkqi3")
@@ -1283,6 +1296,7 @@ slot_scene = ExtResource("26_cvly0")
 inventory_size = 160
 inventory_container = NodePath("BackgroundInventory/ScrollContainer/GridContainer")
 equipment_container = NodePath("BackgroundEquipment")
+item_list = Array[PackedScene]([ExtResource("28_cxrfu"), ExtResource("29_l7fe6"), ExtResource("30_sfkmi"), ExtResource("31_pj554"), ExtResource("32_w6c3g"), ExtResource("33_5kmub"), ExtResource("34_jsc5r"), ExtResource("35_fnjlg"), ExtResource("36_52qtn"), ExtResource("37_jany3"), ExtResource("38_agvd0"), ExtResource("39_i8j4n"), ExtResource("40_n06h2")])
 
 [node name="BackgroundEquipment" type="TextureRect" parent="Container2/Inventory" node_paths=PackedStringArray("helmet_slot", "armor_slot", "boots_slot", "gloves_slot", "belt_slot", "ring_1_slot", "ring_2_slot", "shield_slot", "weapon_slot", "necklace_slot") groups=["equipment_manager"]]
 offset_left = 63.0
@@ -1331,7 +1345,7 @@ texture = ExtResource("26_rjwgf")
 expand_mode = 1
 
 [node name="Armor" type="TextureRect" parent="Container2/Inventory/BackgroundEquipment"]
-custom_minimum_size = Vector2(20, 30)
+custom_minimum_size = Vector2(20, 20)
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -1339,7 +1353,7 @@ anchor_right = 0.5
 offset_left = -11.0
 offset_top = 44.0
 offset_right = 9.0
-offset_bottom = 74.0
+offset_bottom = 64.0
 grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
 expand_mode = 1
@@ -1393,9 +1407,9 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -33.0
-offset_top = 64.0
+offset_top = 60.0
 offset_right = -13.0
-offset_bottom = 84.0
+offset_bottom = 80.0
 grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
 expand_mode = 1
@@ -1407,15 +1421,15 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = 12.0
-offset_top = 64.0
+offset_top = 60.0
 offset_right = 32.0
-offset_bottom = 84.0
+offset_bottom = 80.0
 grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
 expand_mode = 1
 
 [node name="Shield" type="TextureRect" parent="Container2/Inventory/BackgroundEquipment"]
-custom_minimum_size = Vector2(20, 30)
+custom_minimum_size = Vector2(20, 20)
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -1423,13 +1437,13 @@ anchor_right = 0.5
 offset_left = 34.0
 offset_top = 44.0
 offset_right = 54.0
-offset_bottom = 74.0
+offset_bottom = 64.0
 grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
 expand_mode = 1
 
 [node name="Weapon" type="TextureRect" parent="Container2/Inventory/BackgroundEquipment"]
-custom_minimum_size = Vector2(20, 30)
+custom_minimum_size = Vector2(20, 20)
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -1437,7 +1451,7 @@ anchor_right = 0.5
 offset_left = -55.0
 offset_top = 44.0
 offset_right = -35.0
-offset_bottom = 74.0
+offset_bottom = 64.0
 grow_horizontal = 2
 texture = ExtResource("26_rjwgf")
 expand_mode = 1

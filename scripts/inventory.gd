@@ -8,6 +8,7 @@ class_name Inventory
 @export var inventory_size: int
 @export var inventory_container: GridContainer
 @export var equipment_container: TextureRect
+@export var item_list: Array[PackedScene]
 
 var slot_can_click: bool = false
 var slot_target: ColorRect
@@ -16,7 +17,7 @@ var slot_target: ColorRect
 func _ready() -> void:
 	populate_inventory_slot()
 	connect_slot_signal()
-	# instantiate_item()
+	populate_inventory()
 
 
 func _process(_delta: float) -> void:
@@ -52,6 +53,8 @@ func on_mouse_exited(slot: ColorRect) -> void:
 
 
 func add_item(item: StaticBody2D) -> void:
+	var added: bool = false
+	
 	for slot in inventory_container.get_children():
 		if slot.get_child_count() <= 1:
 			slot.add_child(item)
@@ -60,12 +63,17 @@ func add_item(item: StaticBody2D) -> void:
 				"game_log", "add_message",
 				"You found " + item.item_rarity.capitalize() + " " + item.item_name
 				)
+			
+			added = true
 			break
+			
+	if not added:
+		Player.improve_scrap(item.power_level)
 
 
-func instantiate_item() -> void:
-	var item_scene: PackedScene = preload("res://scenes/items/equipment/armor/leather_tunic.tscn")
+func populate_inventory() -> void:
 	for j in range(160):
-		var item = item_scene.instantiate()
-		add_item(item)
-	
+		var index: int = randi() % item_list.size()
+		var item_scene = item_list[index]
+		var item_instance = item_scene.instantiate()
+		add_item(item_instance)

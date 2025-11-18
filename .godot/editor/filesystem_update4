@@ -1,7 +1,6 @@
-res://scenes/base_item.tscn
 res://scenes/main_scene.tscn
 res://scenes/base_enemy.tscn
+res://scenes/base_item.tscn
 res://scenes/slot.tscn
-res://scripts/base_item.gd
 res://scripts/inventory.gd
-res://scripts/equipment_manager.gd
+res://scripts/global_player.gd

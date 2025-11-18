@@ -206,13 +206,9 @@ func get_total_bonus() -> void:
 	Player.equipment_bonus = total_bonus
 
 
-func check_equipped_item(item_type: String) -> Dictionary:
+func check_equipped_item(item_type: String) -> void:
 	if equipment_data[item_type] != null:
-		print("Item do mesmo tipo equipado")
-		return equipment_data[item_type]
-	else:
-		print("Nao tem nenhum item do tipo ", item_type, " equipado")
-		return {}
+		Player.compare_item = equipment_data[item_type]
 
 
 func on_mouse_entered(slot: TextureRect) -> void:

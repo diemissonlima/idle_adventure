@@ -97,6 +97,8 @@ var equipment_bonus: Dictionary = {
 # dicionario com exp necessaria pra passar de level
 var level_dict: Dictionary
 
+var compare_item: Dictionary
+
 
 func cause_damage(type_damage: String) -> void:
 	var rng: float = randf()
@@ -269,6 +271,16 @@ func improve_upgrades(upgrade_name: String) -> void:
 	
 	get_tree().call_group("game_log", "add_message", log_msg)
 	get_tree().call_group("main_scene", "update_label")
+
+
+func improve_scrap(value: float) -> void:
+	scrap_resource += value
+	
+	get_tree().call_group("main_scene", "update_label")
+	get_tree().call_group(
+		"game_log", "add_message",
+		"You gained " + str(World.format_number(value)) + " scrap."
+		)
 
 
 func update_exp(value: float) -> void:

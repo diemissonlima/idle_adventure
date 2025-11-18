@@ -22,6 +22,14 @@ class_name BaseItem
 @export var click_damage_label: Label
 @export var magic_find_label: Label
 
+@export_category("Compare Item")
+@export var compare_item_name_label: Label
+@export var compare_power_level_label: Label
+@export var compare_gold_gain_label: Label
+@export var compare_dps_damage_label: Label
+@export var compare_click_damage_label: Label
+@export var compare_magic_find_label: Label
+
 var item_data: Dictionary
 var compare_info: bool = false
 
@@ -32,10 +40,12 @@ func _ready() -> void:
 
 
 func _process(_delta: float) -> void:
-	if Input.is_action_pressed("compare_item") and compare_info:
-		show_compare_item_info()
-	else:
-		compare_item_info.visible = false
+	if get_parent().name == "Slot" or get_parent().name.begins_with("@Color"):
+		if Input.is_action_pressed("compare_item") and compare_info:
+			show_compare_item_info()
+		else:
+			compare_item_info.visible = false
+			Player.compare_item = {}
 
 
 func update_item_info() -> void:
@@ -138,6 +148,47 @@ func set_item_data() -> void:
 func show_compare_item_info() -> void:
 	compare_item_info.visible = true
 	get_tree().call_group("equipment_manager", "check_equipped_item", item_type)
+	var equipped_item = Player.compare_item.duplicate()
+	
+	if equipped_item:
+		compare_item_name_label.text = (
+			equipped_item["item_rarity"].capitalize() + "\n" + equipped_item["item_name"]
+		)
+		compare_power_level_label.text = (
+			"Power Level: " + str(equipped_item["power_level"])
+		)
+		
+		match equipped_item["item_rarity"]:
+			"common":
+				compare_item_name_label.self_modulate = Color.WHITE
+			
+			"uncommon":
+				compare_item_name_label.self_modulate = Color.GREEN
+			
+			"rare":
+				compare_item_name_label.self_modulate = Color.BLUE
+			
+			"epic":
+				compare_item_name_label.self_modulate = Color.MAGENTA
+			
+			"legendary":
+				compare_item_name_label.self_modulate = Color.GOLD
+		
+		if equipped_item["gold_gain"]:
+			compare_gold_gain_label.visible = true
+			compare_gold_gain_label.text = "+" + str(equipped_item["gold_gain"]) + "% Gold Gain"
+		
+		if equipped_item["dps_damage"]:
+			compare_dps_damage_label.visible = true
+			compare_dps_damage_label.text = "+" + str(equipped_item["dps_damage"]) + " DPS Damage"
+		
+		if click_damage:
+			compare_click_damage_label.visible = true
+			compare_click_damage_label.text = "+" + str(equipped_item["click_damage"]) + " Click Damage"
+		
+		if magic_find:
+			compare_magic_find_label.visible = true
+			compare_magic_find_label.text = "+" + str(equipped_item["magic_find"]) + "% Magic Find"
 
 
 func _on_sprite_mouse_entered() -> void:
