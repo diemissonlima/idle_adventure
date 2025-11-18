@@ -12,6 +12,7 @@ class_name BaseItem
 @export var click_damage: float = 0.0
 @export var magic_find: float = 0.0
 @export var item_info: TextureRect
+@export var compare_item_info: TextureRect
 
 @export_category("Item Info")
 @export var item_name_label: Label
@@ -22,11 +23,19 @@ class_name BaseItem
 @export var magic_find_label: Label
 
 var item_data: Dictionary
+var compare_info: bool = false
 
 
 func _ready() -> void:
 	get_attributes()
 	set_item_data()
+
+
+func _process(_delta: float) -> void:
+	if Input.is_action_pressed("compare_item") and compare_info:
+		show_compare_item_info()
+	else:
+		compare_item_info.visible = false
 
 
 func update_item_info() -> void:
@@ -35,19 +44,19 @@ func update_item_info() -> void:
 	
 	match item_rarity:
 		"common":
-			item_name_label.add_theme_color_override("font_color", Color.WHITE)
+			item_name_label.self_modulate = Color.WHITE
 		
 		"uncommon":
-			item_name_label.add_theme_color_override("font_color", Color.GREEN)
+			item_name_label.self_modulate = Color.GREEN
 		
 		"rare":
-			item_name_label.add_theme_color_override("font_color", Color.BLUE)
+			item_name_label.self_modulate = Color.BLUE
 		
 		"epic":
-			item_name_label.add_theme_color_override("font_color", Color.MAGENTA)
+			item_name_label.self_modulate = Color.MAGENTA
 		
 		"legendary":
-			item_name_label.add_theme_color_override("font_color", Color.GOLD)
+			item_name_label.self_modulate = Color.GOLD
 	
 	if gold_gain:
 		gold_gain_label.visible = true
@@ -117,6 +126,7 @@ func set_item_data() -> void:
 	item_data["item_name"] = item_name
 	item_data["item_sprite"] = item_sprite.texture.resource_path
 	item_data["item_rarity"] = item_rarity
+	item_data["item_type"] = item_type
 	item_data["item_unique"] = item_unique
 	item_data["power_level"] = power_level
 	item_data["gold_gain"] = gold_gain
@@ -125,9 +135,16 @@ func set_item_data() -> void:
 	item_data["magic_find"] = magic_find
 
 
+func show_compare_item_info() -> void:
+	compare_item_info.visible = true
+	get_tree().call_group("equipment_manager", "check_equipped_item", item_type)
+
+
 func _on_sprite_mouse_entered() -> void:
 	update_item_info()
 	item_info.visible = true
+	compare_info = true
+	
 	var parent = get_parent()
 	var slot_parent = parent.get_index() + 1
 	
@@ -147,3 +164,4 @@ func _on_sprite_mouse_entered() -> void:
 
 func _on_sprite_mouse_exited() -> void:
 	item_info.visible = false
+	compare_info = false

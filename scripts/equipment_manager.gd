@@ -13,8 +13,6 @@ class_name EquipmentManager
 @export var weapon_slot: TextureRect
 @export var necklace_slot: TextureRect
 
-@export_category("Labels")
-
 
 var equipment_data: Dictionary = {
 	"helmet": null,
@@ -206,6 +204,15 @@ func get_total_bonus() -> void:
 		total_bonus["magic_find"] += item["magic_find"]
 	
 	Player.equipment_bonus = total_bonus
+
+
+func check_equipped_item(item_type: String) -> Dictionary:
+	if equipment_data[item_type] != null:
+		print("Item do mesmo tipo equipado")
+		return equipment_data[item_type]
+	else:
+		print("Nao tem nenhum item do tipo ", item_type, " equipado")
+		return {}
 
 
 func on_mouse_entered(slot: TextureRect) -> void:
