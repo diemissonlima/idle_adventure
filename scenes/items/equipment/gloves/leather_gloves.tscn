@@ -5,6 +5,7 @@
 
 [node name="LeatherGloves" instance=ExtResource("1_su4nw")]
 item_name = "Leather Gloves"
+item_key = "leather_gloves"
 
 [node name="Sprite" parent="." index="1"]
 texture = ExtResource("2_fbpwn")

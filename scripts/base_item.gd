@@ -2,6 +2,7 @@ extends StaticBody2D
 class_name BaseItem
 
 @export var item_name: String
+@export var item_key: String
 @export var item_sprite: TextureRect
 @export var item_rarity: String
 @export var item_type: String
@@ -102,7 +103,7 @@ func get_item_rarity() -> String:
 
 
 func get_attributes() -> void:
-	var item_info = World.equipments[item_name]
+	var item_info = World.equipments[item_key]
 	item_rarity = get_item_rarity()
 	item_type = item_info["slot"]
 	power_level = randi_range(

@@ -21,6 +21,7 @@ class_name BaseEnemy
 func _ready() -> void:
 	increase_health()
 	init_bar()
+	get_item_name()
 
 
 func init_bar() -> void:
@@ -71,6 +72,16 @@ func kill() -> void:
 	World.level += 1
 	Player.update_exp(randi_range(1500, 1500))
 	drop_loot()
+	get_tree().call_group("loot_container", "update_label")
 	get_tree().call_group("main_scene", "spawn_new_enemy")
 	
 	queue_free()
+
+
+func get_item_name() -> void:
+	var possible_loot: Array = []
+	
+	for item in drop_list:
+		possible_loot.append(item.resource_path.get_file().get_basename())
+	
+	get_tree().call_group("loot_container", "get_possible_loot", possible_loot)

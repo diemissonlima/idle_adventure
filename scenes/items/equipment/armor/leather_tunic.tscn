@@ -5,6 +5,7 @@
 
 [node name="LeatherTunic" instance=ExtResource("1_605qx")]
 item_name = "Leather Tunic"
+item_key = "leather_tunic"
 item_rarity = "common"
 power_level = 2
 

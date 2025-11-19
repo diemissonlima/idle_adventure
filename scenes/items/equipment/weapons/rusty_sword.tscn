@@ -5,6 +5,7 @@
 
 [node name="RustySword" instance=ExtResource("1_u84gq")]
 item_name = "Rusty Sword"
+item_key = "rusty_sword"
 item_rarity = "common"
 power_level = 5
 

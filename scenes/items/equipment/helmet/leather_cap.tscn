@@ -5,6 +5,7 @@
 
 [node name="LeatherCap" instance=ExtResource("1_7u7wy")]
 item_name = "Leather Cap"
+item_key = "leather_cap"
 item_rarity = "common"
 
 [node name="Sprite" parent="." index="1"]

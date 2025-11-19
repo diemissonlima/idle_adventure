@@ -40,3 +40,18 @@ func _on_log_container_mouse_entered() -> void:
 
 func _on_log_container_mouse_exited() -> void:
 	automatic_scroll = true
+
+
+func _on_btn_view_log_pressed() -> void:
+	$BtnViewLoot.visible = true
+	$BtnViewLog.visible = false
+	
+	$LogContainer.visible = true
+	$LootContainer.visible = false
+
+func _on_btn_view_loot_pressed() -> void:
+	$BtnViewLoot.visible = false
+	$BtnViewLog.visible = true
+	
+	$LogContainer.visible = false
+	$LootContainer.visible = true

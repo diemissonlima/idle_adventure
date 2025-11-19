@@ -5,6 +5,7 @@
 
 [node name="IronKiteshield" instance=ExtResource("1_0ij4u")]
 item_name = "Iron Kiteshield"
+item_key = "iron_kiteshield"
 
 [node name="Sprite" parent="." index="1"]
 texture = ExtResource("2_an15u")

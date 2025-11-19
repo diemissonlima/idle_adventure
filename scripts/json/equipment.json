@@ -1,7 +1,9 @@
 {
-	"Rusty Sword": {
+	"rusty_sword": {
+		"name": "Rusty Sword",
 		"slot": "weapon",
 		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/weapons/tile000.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -10,16 +12,18 @@
 			"legendary": [20, 24]
 		},
 		"click_damage": {
-			"common": [10, 10],
-			"uncommon": [10, 11],
-			"rare": [10, 12],
-			"epic": [10, 13],
+			"common": [10, 11],
+			"uncommon": [10, 12],
+			"rare": [10, 13],
+			"epic": [10, 14],
 			"legendary": [10, 15]
 		}
 	},
-	"Leather Cap": {
+	"leather_cap": {
+		"name": "Leather Cap",
 		"slot": "helmet",
 		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/helm/tile096.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -42,9 +46,11 @@
 			"legendary": [1, 8]
 		}
 	},
-	"Leather Tunic": {
+	"leather_tunic": {
+		"name": "Leather Tunic",
 		"slot": "armor",
 		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/armor/tile000.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -67,9 +73,11 @@
 			"legendary": [50, 150]
 		}
 	},
-	"Iron Shortsword": {
+	"iron_shortsword": {
+		"name": "Iron Shortsword",
 		"slot": "weapon",
 		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/weapons/tile008.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -92,9 +100,11 @@
 			"legendary": [10, 50]
 		}
 	},
-	"Wooded Shield": {
+	"wooded_shield": {
+		"name": "Wooded Shield",
 		"slot": "shield",
 		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/shields/tile061.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -110,9 +120,11 @@
 			"legendary": [50, 250]
 		}
 	},
-	"Leather Belt": {
+	"leather_belt": {
+		"name":"Leather Belt",
 		"slot": "belt",
 		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/belts/tile416.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -135,9 +147,11 @@
 			"legendary": [30, 100]
 		}
 	},
-	"Leather Gloves": {
+	"leather_gloves": {
+		"name": "Leather Gloves",
 		"slot": "gloves",
 		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/gloves/tile272.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -160,9 +174,11 @@
 			"legendary": [30, 100]
 		}
 	},
-	"Simple Sash": {
+	"simple_sash": {
+		"name": "Simple Sash",
 		"slot": "belt",
 		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/belts/tile417.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -178,9 +194,11 @@
 			"legendary": [20, 60]
 		}
 	},
-	"Steel Longsword": {
+	"steel_longsword": {
+		"name": "Steel Longsword",
 		"slot": "weapon",
 		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/weapons/tile006.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -203,9 +221,11 @@
 			"legendary": [10, 80]
 		}
 	},
-	"Iron Kiteshield": {
+	"iron_kiteshield": {
+		"name": "Iron Kiteshield",
 		"slot": "shield",
 		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/shields/tile062.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -228,9 +248,11 @@
 			"legendary": [500, 1000]
 		}
 	},
-	"Gladiator's Longsword": {
+	"gladiators_longsword": {
+		"name": "Gladiator's Longsword",
 		"slot": "weapon",
 		"sockets": 2,
+		"img_path": "res://assets/itens/equipments/weapons/tile026.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -253,9 +275,11 @@
 			"legendary": [500, 2500]
 		}
 	},
-	"Simple Pendant": {
+	"simple_pendant": {
+		"name": "Simple Pendant",
 		"slot": "necklace",
 		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/necklace/tile103.png",
 		"power_level": {
 			"common": [25, 30],
 			"uncommon": [30, 35],
@@ -271,9 +295,11 @@
 			"legendary": [2, 6]
 		}
 	},
-	"Iron Ring": {
+	"iron_ring": {
+		"name": "Iron Ring",
 		"slot": "ring",
 		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/rings/tile098.png",
 		"power_level": {
 			"common": [25, 30],
 			"uncommon": [30, 35],

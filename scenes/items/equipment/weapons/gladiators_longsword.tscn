@@ -5,6 +5,7 @@
 
 [node name="GladiatorsLongsword" instance=ExtResource("1_ajwph")]
 item_name = "Gladiator's Longsword"
+item_key = "gladiators_longsword"
 
 [node name="Sprite" parent="." index="1"]
 texture = ExtResource("2_pb0ui")

@@ -1,27 +1,17 @@
-[gd_scene load_steps=28 format=3 uid="uid://wxnhpxtp6xfn"]
+[gd_scene load_steps=18 format=3 uid="uid://wxnhpxtp6xfn"]
 
 [ext_resource type="Script" path="res://scripts/base_enemy.gd" id="1_4oi7a"]
 [ext_resource type="PackedScene" uid="uid://c75roqyw5exar" path="res://scenes/items/equipment/armor/leather_tunic.tscn" id="2_0d6l7"]
 [ext_resource type="Texture2D" uid="uid://cyg2dwh3ts8mq" path="res://assets/enemies/1/1.png" id="2_5tmd5"]
 [ext_resource type="PackedScene" uid="uid://dhmq1qc6fqw" path="res://scenes/items/equipment/belts/leather_belt.tscn" id="3_5hiur"]
-[ext_resource type="PackedScene" uid="uid://bvegrx3xg63oe" path="res://scenes/items/equipment/rings/iron_ring.tscn" id="3_084np"]
 [ext_resource type="Texture2D" uid="uid://dkguxe1wfyu46" path="res://assets/enemies/1/2.png" id="3_gcs7q"]
 [ext_resource type="PackedScene" uid="uid://dhgrb6ivy00oe" path="res://scenes/items/equipment/belts/simple_sash.tscn" id="4_2arxu"]
 [ext_resource type="Texture2D" uid="uid://bklw8pc3sglk7" path="res://assets/enemies/1/3.png" id="4_nbjpk"]
-[ext_resource type="PackedScene" uid="uid://c4drjt05jl1qo" path="res://scenes/items/equipment/gloves/leather_gloves.tscn" id="5_x8dt7"]
 [ext_resource type="Texture2D" uid="uid://duir1gl6wo5di" path="res://assets/enemies/1/4.png" id="5_xvpjm"]
 [ext_resource type="Texture2D" uid="uid://b3bqaij1prm5h" path="res://assets/progressbar/V1/Background Static.png" id="6_1flv0"]
-[ext_resource type="PackedScene" uid="uid://cvwkxo8nx26w0" path="res://scenes/items/equipment/helmet/leather_cap.tscn" id="6_adhoj"]
 [ext_resource type="Texture2D" uid="uid://dl6h6x71p5tr8" path="res://assets/progressbar/V1/Foreground.png" id="7_0xuk0"]
-[ext_resource type="PackedScene" uid="uid://yw8eklmqtxar" path="res://scenes/items/equipment/necklace/simple_pendant.tscn" id="7_qvdqt"]
 [ext_resource type="Texture2D" uid="uid://bwstjkly0iwia" path="res://assets/progressbar/V1/Background Bar2.png" id="8_w75xy"]
-[ext_resource type="PackedScene" uid="uid://d13e0q3s6r1th" path="res://scenes/items/equipment/shields/iron_kiteshield.tscn" id="9_nel0c"]
 [ext_resource type="FontFile" uid="uid://iutw4od6mkk8" path="res://assets/font/Oxanium-Medium.ttf" id="9_trvy0"]
-[ext_resource type="PackedScene" uid="uid://2sjtfobfb40r" path="res://scenes/items/equipment/shields/wooded_shield.tscn" id="10_028o6"]
-[ext_resource type="PackedScene" uid="uid://cmi1vfp28ul4b" path="res://scenes/items/equipment/weapons/gladiators_longsword.tscn" id="11_3d5ba"]
-[ext_resource type="PackedScene" uid="uid://dvcd4q31beisf" path="res://scenes/items/equipment/weapons/iron_shortsword.tscn" id="12_rxf2y"]
-[ext_resource type="PackedScene" uid="uid://bpvbic3vb4jcm" path="res://scenes/items/equipment/weapons/rusty_sword.tscn" id="13_5snug"]
-[ext_resource type="PackedScene" uid="uid://l3q2cv0t7c02" path="res://scenes/items/equipment/weapons/steel_longsword.tscn" id="14_4hveo"]
 [ext_resource type="Texture2D" uid="uid://cx1f8whpfj8p0" path="res://assets/enemies/bandits/287.png" id="15_4vt8l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yjes7"]
@@ -66,8 +56,8 @@ script = ExtResource("1_4oi7a")
 enemy_name_label = NodePath("EnemyName")
 progress_bar = NodePath("ProgressBar")
 enemy_name = "Golem"
-drop_list = Array[PackedScene]([ExtResource("2_0d6l7"), ExtResource("3_5hiur"), ExtResource("4_2arxu"), ExtResource("5_x8dt7"), ExtResource("6_adhoj"), ExtResource("7_qvdqt"), ExtResource("3_084np"), ExtResource("9_nel0c"), ExtResource("10_028o6"), ExtResource("11_3d5ba"), ExtResource("12_rxf2y"), ExtResource("13_5snug"), ExtResource("14_4hveo")])
-drop_chances = Array[float]([1.0, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01])
+drop_list = Array[PackedScene]([ExtResource("2_0d6l7"), ExtResource("3_5hiur"), ExtResource("4_2arxu")])
+drop_chances = Array[float]([0.01, 0.01, 0.01])
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 visible = false

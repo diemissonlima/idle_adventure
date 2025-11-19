@@ -1,9 +1,9 @@
-TextureRect
-ScrollContainer
 Label
+TextureRect
+TextureButton
+ScrollContainer
 VBoxContainer
 ColorRect
-TextureButton
 GridContainer
 CollisionShape2D
 StaticBody2D

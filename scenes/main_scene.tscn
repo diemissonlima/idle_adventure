@@ -1,4 +1,4 @@
-[gd_scene load_steps=88 format=3 uid="uid://chee12681ksau"]
+[gd_scene load_steps=94 format=3 uid="uid://chee12681ksau"]
 
 [ext_resource type="Texture2D" uid="uid://ciir88k8isk6u" path="res://assets/backgrounds/1.png" id="1_5hms3"]
 [ext_resource type="Script" path="res://scripts/main_scene.gd" id="1_7f1vr"]
@@ -15,8 +15,11 @@
 [ext_resource type="Script" path="res://scripts/stats_container.gd" id="10_kyq4a"]
 [ext_resource type="Texture2D" uid="uid://b1jc2c4vk8cxr" path="res://assets/icons/options icon.png" id="10_ud07j"]
 [ext_resource type="Texture2D" uid="uid://b1d7dwxtii10e" path="res://assets/backgrounds/Box.png" id="11_7htbn"]
+[ext_resource type="Texture2D" uid="uid://d02dugdsjp8q2" path="res://assets/icons/gold_coin.png" id="12_4my6k"]
+[ext_resource type="Script" path="res://scripts/loot_container.gd" id="12_7i184"]
 [ext_resource type="Texture2D" uid="uid://ci3pwam4erm3v" path="res://assets/maps/map1.png" id="13_o5jv0"]
 [ext_resource type="Texture2D" uid="uid://b3bqaij1prm5h" path="res://assets/progressbar/V1/Background Static.png" id="14_ce5mp"]
+[ext_resource type="FontFile" uid="uid://dvid2uhtkf6xm" path="res://assets/font/Oxanium-Regular.ttf" id="14_cn0d2"]
 [ext_resource type="Texture2D" uid="uid://dl6h6x71p5tr8" path="res://assets/progressbar/V1/Foreground.png" id="15_s5ieg"]
 [ext_resource type="Texture2D" uid="uid://g15dueat3i2i" path="res://assets/progressbar/V1/Background Bar.png" id="16_68rti"]
 [ext_resource type="Texture2D" uid="uid://cc6yw0om5xoiv" path="res://assets/icons/energy icon.png" id="16_bswde"]
@@ -60,6 +63,15 @@ font_size = 6
 font_color = Color(1, 1, 0, 1)
 outline_size = 2
 outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_oe63t"]
+font = ExtResource("6_r50xv")
+font_size = 6
+font_color = Color(1, 1, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ufw3e"]
+font = ExtResource("14_cn0d2")
+font_size = 6
 
 [sub_resource type="LabelSettings" id="LabelSettings_7scff"]
 line_spacing = 0.0
@@ -224,7 +236,11 @@ line_spacing = 1.0
 font = ExtResource("6_r50xv")
 font_size = 4
 
-[sub_resource type="LabelSettings" id="LabelSettings_oe63t"]
+[sub_resource type="LabelSettings" id="LabelSettings_0xlms"]
+font = ExtResource("6_r50xv")
+font_size = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_vjt05"]
 font = ExtResource("6_r50xv")
 font_size = 4
 
@@ -360,6 +376,7 @@ max_messages = 100
 font = ExtResource("6_r50xv")
 
 [node name="Title" type="Label" parent="Container1/BackgroundLog"]
+visible = false
 layout_mode = 0
 offset_left = 8.0
 offset_top = 4.0
@@ -368,7 +385,69 @@ offset_bottom = 11.0
 text = "Game Log"
 label_settings = SubResource("LabelSettings_qrr8g")
 
+[node name="BtnViewLog" type="TextureButton" parent="Container1/BackgroundLog"]
+visible = false
+custom_minimum_size = Vector2(36, 10)
+layout_mode = 2
+offset_left = 14.0
+offset_top = 4.0
+offset_right = 56.0
+offset_bottom = 14.0
+grow_vertical = 0
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Container1/BackgroundLog/BtnViewLog"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -2.5
+offset_right = 13.0
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "View Log"
+label_settings = SubResource("LabelSettings_oe63t")
+
+[node name="BtnViewLoot" type="TextureButton" parent="Container1/BackgroundLog"]
+custom_minimum_size = Vector2(36, 10)
+layout_mode = 2
+offset_left = 14.0
+offset_top = 4.0
+offset_right = 56.0
+offset_bottom = 14.0
+grow_vertical = 0
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Container1/BackgroundLog/BtnViewLoot"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -2.5
+offset_right = 13.0
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "View Loot"
+label_settings = SubResource("LabelSettings_oe63t")
+
 [node name="LogContainer" type="ScrollContainer" parent="Container1/BackgroundLog"]
+visible = false
 custom_minimum_size = Vector2(113, 126)
 layout_mode = 1
 anchors_preset = 5
@@ -387,6 +466,60 @@ custom_minimum_size = Vector2(113, 126)
 layout_mode = 2
 theme_override_constants/separation = 0
 alignment = 2
+
+[node name="LootContainer" type="ScrollContainer" parent="Container1/BackgroundLog" node_paths=PackedStringArray("gold_label", "loot_container") groups=["loot_container"]]
+custom_minimum_size = Vector2(113, 116)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -56.0
+offset_top = 21.0
+offset_right = 57.0
+offset_bottom = 137.0
+grow_horizontal = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+script = ExtResource("12_7i184")
+gold_label = NodePath("VBoxContainer/Gold/Label")
+loot_container = NodePath("VBoxContainer")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container1/BackgroundLog/LootContainer"]
+custom_minimum_size = Vector2(25, 116)
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="Gold" type="TextureRect" parent="Container1/BackgroundLog/LootContainer/VBoxContainer"]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 2
+texture = ExtResource("11_7htbn")
+expand_mode = 1
+
+[node name="Sprite" type="TextureRect" parent="Container1/BackgroundLog/LootContainer/VBoxContainer/Gold"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_4my6k")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container1/BackgroundLog/LootContainer/VBoxContainer/Gold"]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 8.0
+offset_right = 66.0
+offset_bottom = 15.0
+text = "547g - 751g"
+label_settings = SubResource("LabelSettings_ufw3e")
 
 [node name="Container2" type="TextureRect" parent="." node_paths=PackedStringArray("hero_level_label", "avg_power_level_label", "exp_bar", "btn_reset_attributes", "strength_label", "agility_label", "luck_label", "available_points_label") groups=["stats_container"]]
 custom_minimum_size = Vector2(174, 270)
@@ -2167,7 +2300,7 @@ offset_bottom = 2.5
 grow_horizontal = 2
 grow_vertical = 2
 text = "Prestige Now"
-label_settings = SubResource("LabelSettings_oe63t")
+label_settings = SubResource("LabelSettings_0xlms")
 
 [node name="BtnPrestigeSlot" type="TextureButton" parent="Container3"]
 custom_minimum_size = Vector2(36, 10)
@@ -2203,7 +2336,7 @@ offset_bottom = 2.5
 grow_horizontal = 2
 grow_vertical = 2
 text = "View Prestige Slot"
-label_settings = SubResource("LabelSettings_oe63t")
+label_settings = SubResource("LabelSettings_vjt05")
 
 [node name="Container4" type="TextureRect" parent="." node_paths=PackedStringArray("gold_level_label", "gold_cost_label", "gold_mastery_description", "scrap_level_label", "scrap_cost_label", "scrap_scavenger_description", "critical_power_level_label", "critical_power_cost_label", "critical_power_description", "critical_damage_level_label", "critical_damage_cost_label", "critical_damage_description", "boss_hunter_level_label", "boss_hunter_cost_label", "boss_hunter_description", "swift_strikes_level_label", "swift_strikes_cost_label", "swift_strikes_description", "hunters_acumen_level_label", "hunters_acumen_cost_label", "hunters_acumen_description", "prestige_surge_level_label", "prestige_surge_cost_label", "prestige_surge_description", "legacy_keeper_level_label", "legacy_keeper_cost_label", "legacy_keeper_description")]
 custom_minimum_size = Vector2(79, 270)
@@ -3306,6 +3439,8 @@ label_settings = SubResource("LabelSettings_ytyb8")
 
 [connection signal="mouse_entered" from="Container1/Battlefield" to="." method="_on_battlefield_mouse_entered"]
 [connection signal="mouse_exited" from="Container1/Battlefield" to="." method="_on_battlefield_mouse_exited"]
+[connection signal="pressed" from="Container1/BackgroundLog/BtnViewLog" to="Container1/BackgroundLog" method="_on_btn_view_log_pressed"]
+[connection signal="pressed" from="Container1/BackgroundLog/BtnViewLoot" to="Container1/BackgroundLog" method="_on_btn_view_loot_pressed"]
 [connection signal="mouse_entered" from="Container1/BackgroundLog/LogContainer" to="Container1/BackgroundLog" method="_on_log_container_mouse_entered"]
 [connection signal="mouse_exited" from="Container1/BackgroundLog/LogContainer" to="Container1/BackgroundLog" method="_on_log_container_mouse_exited"]
 [connection signal="pressed" from="Container2/Hero/ResetAttributes" to="Container2" method="_on_reset_attributes_pressed"]

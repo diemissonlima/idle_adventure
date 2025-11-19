@@ -5,6 +5,7 @@
 
 [node name="IronShortsword" instance=ExtResource("1_5brvr")]
 item_name = "Iron Shortsword"
+item_key = "iron_shortsword"
 item_rarity = "common"
 
 [node name="Sprite" parent="." index="1"]

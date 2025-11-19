@@ -5,6 +5,7 @@
 
 [node name="SimpleSash" instance=ExtResource("1_n7rly")]
 item_name = "Simple Sash"
+item_key = "simple_sash"
 item_rarity = "common"
 
 [node name="Sprite" parent="." index="1"]
