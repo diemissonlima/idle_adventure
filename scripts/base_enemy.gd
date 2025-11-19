@@ -9,13 +9,15 @@ class_name BaseEnemy
 @export var enemy_name: String
 @export var max_health: float
 @export var health: float
-@export_enum("Normal", "Mini-Boss", "Boss") var enemy_type
+@export_enum("Normal", "Elite", "Boss") var enemy_type
 @export_enum(
 	"goblin", "bandit", "slime", "wolf"
 ) var enemy_race
 
 @export var drop_list: Array[PackedScene]
 @export var drop_chances: Array[float]
+
+var is_dead: bool = false
 
 
 func _ready() -> void:
@@ -65,6 +67,11 @@ func update_bar() -> void:
 
 
 func kill() -> void:
+	if is_dead:
+		return
+	
+	is_dead = true
+	
 	var gold_range = World.get_gold_range(str(World.level))
 	var gold_dropped: float = randi_range(gold_range[0], gold_range[1])
 	

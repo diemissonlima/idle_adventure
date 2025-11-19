@@ -22,7 +22,7 @@ font = ExtResource("3_801pr")
 font_size = 4
 
 [node name="Item" type="TextureRect" node_paths=PackedStringArray("item_name_label", "power_level_label", "gold_gain_label", "dps_damage_label", "click_damage_label", "magic_find_label")]
-custom_minimum_size = Vector2(25, 25)
+custom_minimum_size = Vector2(20, 20)
 texture = ExtResource("1_xlrgv")
 expand_mode = 1
 script = ExtResource("2_3wupj")
@@ -34,17 +34,17 @@ click_damage_label = NodePath("ItemInfo/VBoxContainer/ClickDamage")
 magic_find_label = NodePath("ItemInfo/VBoxContainer/MagicFind")
 
 [node name="Sprite" type="TextureRect" parent="."]
-custom_minimum_size = Vector2(20, 20)
+custom_minimum_size = Vector2(15, 15)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -10.0
-offset_top = -10.0
-offset_right = 10.0
-offset_bottom = 10.0
+offset_left = -5.0
+offset_top = -5.0
+offset_right = 5.0
+offset_bottom = 5.0
 grow_horizontal = 2
 grow_vertical = 2
 expand_mode = 1
@@ -53,8 +53,8 @@ expand_mode = 1
 visible = false
 custom_minimum_size = Vector2(60, 54)
 layout_mode = 0
-offset_left = 26.0
-offset_right = 86.0
+offset_left = 22.0
+offset_right = 82.0
 offset_bottom = 54.0
 texture = ExtResource("2_k3qr6")
 expand_mode = 1

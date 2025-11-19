@@ -9,12 +9,12 @@ enemy_name = "Bandit"
 enemy_type = 0
 enemy_race = 1
 drop_list = Array[PackedScene]([ExtResource("2_j660x")])
-drop_chances = Array[float]([1.0])
+drop_chances = Array[float]([0.1])
 
 [node name="Sprite" parent="." index="1"]
 offset_top = -39.0
 offset_bottom = 11.0
 texture = ExtResource("2_sovtd")
 
-[node name="EnemyName" parent="." index="4"]
+[node name="EnemyName" parent="." index="3"]
 text = "Bandit"

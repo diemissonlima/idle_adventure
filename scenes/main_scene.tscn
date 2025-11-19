@@ -316,7 +316,7 @@ texture = ExtResource("1_5hms3")
 expand_mode = 1
 
 [node name="Marker2D" type="Marker2D" parent="Container1/Battlefield"]
-position = Vector2(69, 72)
+position = Vector2(69, 70)
 
 [node name="BackgroundPotion" type="TextureRect" parent="Container1"]
 custom_minimum_size = Vector2(140, 30)
@@ -492,28 +492,28 @@ loot_container = NodePath("VBoxContainer")
 slot_scene = ExtResource("16_rxm7j")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Container1/BackgroundLog/LootContainer"]
-custom_minimum_size = Vector2(25, 116)
+custom_minimum_size = Vector2(15, 116)
 layout_mode = 2
 theme_override_constants/separation = 2
 
 [node name="Gold" type="TextureRect" parent="Container1/BackgroundLog/LootContainer/VBoxContainer"]
-custom_minimum_size = Vector2(25, 25)
+custom_minimum_size = Vector2(20, 20)
 layout_mode = 2
 texture = ExtResource("11_7htbn")
 expand_mode = 1
 
 [node name="Sprite" type="TextureRect" parent="Container1/BackgroundLog/LootContainer/VBoxContainer/Gold"]
-custom_minimum_size = Vector2(20, 20)
+custom_minimum_size = Vector2(15, 15)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -10.0
-offset_top = -10.0
-offset_right = 10.0
-offset_bottom = 10.0
+offset_left = -5.0
+offset_top = -5.0
+offset_right = 5.0
+offset_bottom = 5.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("12_4my6k")
@@ -521,10 +521,10 @@ expand_mode = 1
 
 [node name="Label" type="Label" parent="Container1/BackgroundLog/LootContainer/VBoxContainer/Gold"]
 layout_mode = 0
-offset_left = 33.0
-offset_top = 8.0
-offset_right = 66.0
-offset_bottom = 15.0
+offset_left = 28.0
+offset_top = 7.0
+offset_right = 61.0
+offset_bottom = 14.0
 text = "547g - 751g"
 label_settings = SubResource("LabelSettings_ufw3e")
 
@@ -1689,9 +1689,9 @@ expand_mode = 1
 [node name="Label" type="Label" parent="Container2/Inventory/BackgroundStats/DpsDamage"]
 layout_mode = 0
 offset_left = 13.0
-offset_top = 1.0
-offset_right = 47.0
-offset_bottom = 11.0
+offset_top = -2.0
+offset_right = 51.0
+offset_bottom = 15.0
 text = "+2.52M
 Damage Per Second 
 (DPS)"
