@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgcigtpfnqo64"
-path="res://.godot/imported/tile272.png-80b0f0494ade8797816d151bd00b1ff4.ctex"
+uid="uid://bttfmt7a5rq26"
+path="res://.godot/imported/simple_pendant.png-0ba23ed4e1305f698eb70c0bd978eb9a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/itens/equipments/gloves/tile272.png"
-dest_files=["res://.godot/imported/tile272.png-80b0f0494ade8797816d151bd00b1ff4.ctex"]
+source_file="res://assets/itens/equipments/necklace/simple_pendant.png"
+dest_files=["res://.godot/imported/simple_pendant.png-0ba23ed4e1305f698eb70c0bd978eb9a.ctex"]
 
 [params]
 

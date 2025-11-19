@@ -1,8 +1,8 @@
 Label
+VBoxContainer
 TextureRect
 TextureButton
 ScrollContainer
-VBoxContainer
 ColorRect
 GridContainer
 CollisionShape2D

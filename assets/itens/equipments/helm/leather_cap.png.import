@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bttfmt7a5rq26"
-path="res://.godot/imported/tile103.png-66feaee0f8797135338236b55bfbf1e1.ctex"
+uid="uid://cegrkjbnwd1fd"
+path="res://.godot/imported/leather_cap.png-6633b1ea41f33561caebcb3c2d12b8e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/itens/equipments/necklace/tile103.png"
-dest_files=["res://.godot/imported/tile103.png-66feaee0f8797135338236b55bfbf1e1.ctex"]
+source_file="res://assets/itens/equipments/helm/leather_cap.png"
+dest_files=["res://.godot/imported/leather_cap.png-6633b1ea41f33561caebcb3c2d12b8e4.ctex"]
 
 [params]
 

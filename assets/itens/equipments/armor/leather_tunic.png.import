@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7m6sbftgeprm"
-path="res://.godot/imported/tile008.png-c9acb000b3b6e37831fd71787dc6e5c2.ctex"
+uid="uid://4dfs5t7dc2a3"
+path="res://.godot/imported/leather_tunic.png-c7c96682cadce1f22a55c8659ba46e75.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/itens/equipments/weapons/tile008.png"
-dest_files=["res://.godot/imported/tile008.png-c9acb000b3b6e37831fd71787dc6e5c2.ctex"]
+source_file="res://assets/itens/equipments/armor/leather_tunic.png"
+dest_files=["res://.godot/imported/leather_tunic.png-c7c96682cadce1f22a55c8659ba46e75.ctex"]
 
 [params]
 

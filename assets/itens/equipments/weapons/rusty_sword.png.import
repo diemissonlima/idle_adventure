@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cymopkvyq8v4m"
-path="res://.godot/imported/tile416.png-7f9aee654cb408ed223e5fe7df8f25e3.ctex"
+uid="uid://ddy2ec6bqa3qu"
+path="res://.godot/imported/rusty_sword.png-e3e6a90a776faf748dd7c51823762b8f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/itens/equipments/belts/tile416.png"
-dest_files=["res://.godot/imported/tile416.png-7f9aee654cb408ed223e5fe7df8f25e3.ctex"]
+source_file="res://assets/itens/equipments/weapons/rusty_sword.png"
+dest_files=["res://.godot/imported/rusty_sword.png-e3e6a90a776faf748dd7c51823762b8f.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c4drjt05jl1qo"]
 
 [ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_su4nw"]
-[ext_resource type="Texture2D" uid="uid://bgcigtpfnqo64" path="res://assets/itens/equipments/gloves/tile272.png" id="2_fbpwn"]
+[ext_resource type="Texture2D" uid="uid://bgcigtpfnqo64" path="res://assets/itens/equipments/gloves/leather_gloves.png" id="2_fbpwn"]
 
 [node name="LeatherGloves" instance=ExtResource("1_su4nw")]
 item_name = "Leather Gloves"

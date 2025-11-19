@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://yw8eklmqtxar"]
 
 [ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_lw7go"]
-[ext_resource type="Texture2D" uid="uid://bttfmt7a5rq26" path="res://assets/itens/equipments/necklace/tile103.png" id="2_ctfst"]
+[ext_resource type="Texture2D" uid="uid://bttfmt7a5rq26" path="res://assets/itens/equipments/necklace/simple_pendant.png" id="2_ctfst"]
 
 [node name="SimplePendant" instance=ExtResource("1_lw7go")]
 item_name = "Simple Pendant"

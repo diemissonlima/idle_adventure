@@ -12,9 +12,9 @@ var available_stats_points: int = 0
 var avg_power_level: int = 0
 
 # status de dano
-var dps_damage: float = 0.0
-var click_damage: float = 150000000
-var gold_resource: float = 0#16330000000000000000000.0
+var dps_damage: float = 0.0#150000000
+var click_damage: float = 0.0#150000000
+var gold_resource: float = 0.0#16330000000000000000000
 var scrap_resource: float = 0.0
 
 # bonus de upgrade permanente
@@ -285,14 +285,16 @@ func improve_scrap(value: float) -> void:
 
 func update_exp(value: float) -> void:
 	current_exp += value
-	var log_msg: String = "You gained " + World.format_number(value) + " XP."
 	
 	if current_exp >= level_dict[str(level)]:
 		var leftover = current_exp - level_dict[str(level)]
 		current_exp = leftover
 		on_level_up()
 	
-	get_tree().call_group("game_log", "add_message", log_msg)
+	get_tree().call_group(
+		"game_log", "add_message", 
+		"You gained " + World.format_number(value) + " XP."
+		)
 	get_tree().call_group("stats_container", "update_exp_bar")
 
 
@@ -300,6 +302,8 @@ func on_level_up() -> void:
 	level += 1
 	available_stats_points += 2
 	
-	var log_msg: String = "Congratulations, you reached lvl " + str(level) + "."
-	get_tree().call_group("game_log", "add_message", log_msg)
+	get_tree().call_group(
+		"game_log", "add_message", 
+		"Congratulations, you reached lvl " + str(level) + "."
+		)
 	get_tree().call_group("stats_container", "update_label")

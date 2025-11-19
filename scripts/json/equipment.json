@@ -3,7 +3,7 @@
 		"name": "Rusty Sword",
 		"slot": "weapon",
 		"sockets": 0,
-		"img_path": "res://assets/itens/equipments/weapons/tile000.png",
+		"img_path": "res://assets/itens/equipments/weapons/rusty_sword.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -23,7 +23,7 @@
 		"name": "Leather Cap",
 		"slot": "helmet",
 		"sockets": 0,
-		"img_path": "res://assets/itens/equipments/helm/tile096.png",
+		"img_path": "res://assets/itens/equipments/helm/leather_cap.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -50,7 +50,7 @@
 		"name": "Leather Tunic",
 		"slot": "armor",
 		"sockets": 0,
-		"img_path": "res://assets/itens/equipments/armor/tile000.png",
+		"img_path": "res://assets/itens/equipments/armor/leather_tunic.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -77,7 +77,7 @@
 		"name": "Iron Shortsword",
 		"slot": "weapon",
 		"sockets": 0,
-		"img_path": "res://assets/itens/equipments/weapons/tile008.png",
+		"img_path": "res://assets/itens/equipments/weapons/iron_shortsword.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -104,7 +104,7 @@
 		"name": "Wooded Shield",
 		"slot": "shield",
 		"sockets": 0,
-		"img_path": "res://assets/itens/equipments/shields/tile061.png",
+		"img_path": "res://assets/itens/equipments/shields/wooded_shield.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -124,7 +124,7 @@
 		"name":"Leather Belt",
 		"slot": "belt",
 		"sockets": 0,
-		"img_path": "res://assets/itens/equipments/belts/tile416.png",
+		"img_path": "res://assets/itens/equipments/belts/leather_belt.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -151,7 +151,7 @@
 		"name": "Leather Gloves",
 		"slot": "gloves",
 		"sockets": 0,
-		"img_path": "res://assets/itens/equipments/gloves/tile272.png",
+		"img_path": "res://assets/itens/equipments/gloves/leather_gloves.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -178,7 +178,7 @@
 		"name": "Simple Sash",
 		"slot": "belt",
 		"sockets": 0,
-		"img_path": "res://assets/itens/equipments/belts/tile417.png",
+		"img_path": "res://assets/itens/equipments/belts/simple_sash.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -198,7 +198,7 @@
 		"name": "Steel Longsword",
 		"slot": "weapon",
 		"sockets": 0,
-		"img_path": "res://assets/itens/equipments/weapons/tile006.png",
+		"img_path": "res://assets/itens/equipments/weapons/steel_longsword.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -225,7 +225,7 @@
 		"name": "Iron Kiteshield",
 		"slot": "shield",
 		"sockets": 0,
-		"img_path": "res://assets/itens/equipments/shields/tile062.png",
+		"img_path": "res://assets/itens/equipments/shields/iron_kiteshield.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -252,7 +252,7 @@
 		"name": "Gladiator's Longsword",
 		"slot": "weapon",
 		"sockets": 2,
-		"img_path": "res://assets/itens/equipments/weapons/tile026.png",
+		"img_path": "res://assets/itens/equipments/weapons/gladiators_longsword.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -279,7 +279,7 @@
 		"name": "Simple Pendant",
 		"slot": "necklace",
 		"sockets": 0,
-		"img_path": "res://assets/itens/equipments/necklace/tile103.png",
+		"img_path": "res://assets/itens/equipments/necklace/simple_pendant.png",
 		"power_level": {
 			"common": [25, 30],
 			"uncommon": [30, 35],
@@ -299,7 +299,7 @@
 		"name": "Iron Ring",
 		"slot": "ring",
 		"sockets": 0,
-		"img_path": "res://assets/itens/equipments/rings/tile098.png",
+		"img_path": "res://assets/itens/equipments/rings/iron_ring.png",
 		"power_level": {
 			"common": [25, 30],
 			"uncommon": [30, 35],

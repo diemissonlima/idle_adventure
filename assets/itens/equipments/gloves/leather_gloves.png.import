@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4dfs5t7dc2a3"
-path="res://.godot/imported/tile000.png-4a2e619c4002087138478e479b8bdbc6.ctex"
+uid="uid://bgcigtpfnqo64"
+path="res://.godot/imported/leather_gloves.png-d7a5d49d81d6f827a83af5be96e046df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/itens/equipments/armor/tile000.png"
-dest_files=["res://.godot/imported/tile000.png-4a2e619c4002087138478e479b8bdbc6.ctex"]
+source_file="res://assets/itens/equipments/gloves/leather_gloves.png"
+dest_files=["res://.godot/imported/leather_gloves.png-d7a5d49d81d6f827a83af5be96e046df.ctex"]
 
 [params]
 

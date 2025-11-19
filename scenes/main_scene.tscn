@@ -1,13 +1,17 @@
-[gd_scene load_steps=94 format=3 uid="uid://chee12681ksau"]
+[gd_scene load_steps=99 format=3 uid="uid://chee12681ksau"]
 
 [ext_resource type="Texture2D" uid="uid://ciir88k8isk6u" path="res://assets/backgrounds/1.png" id="1_5hms3"]
 [ext_resource type="Script" path="res://scripts/main_scene.gd" id="1_7f1vr"]
 [ext_resource type="Texture2D" uid="uid://dp4l60ef0vkwx" path="res://assets/itens/potion/Potion 1.png" id="2_2av4a"]
 [ext_resource type="Texture2D" uid="uid://bufxp71go2hq7" path="res://assets/backgrounds/EmptyPanel.png" id="2_27dyn"]
 [ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="2_f20an"]
+[ext_resource type="PackedScene" uid="uid://bvbiyffex0vl6" path="res://scenes/enemies/bandit_1.tscn" id="3_4md8k"]
 [ext_resource type="FontFile" uid="uid://f3rv4yrfifht" path="res://assets/font/Oxanium-Bold.ttf" id="4_rkqi3"]
+[ext_resource type="PackedScene" uid="uid://c6l52gfn4g4ge" path="res://scenes/enemies/goblin_1.tscn" id="4_tdakd"]
+[ext_resource type="PackedScene" uid="uid://c8m76amluo7mg" path="res://scenes/enemies/slime_1.tscn" id="5_s0o4w"]
 [ext_resource type="Texture2D" uid="uid://cgm2g3igfxnw1" path="res://assets/backgrounds/Panel.png" id="5_vfv32"]
 [ext_resource type="Script" path="res://scripts/game_log.gd" id="6_f6268"]
+[ext_resource type="PackedScene" uid="uid://c1y2ohdxrpjjy" path="res://scenes/enemies/wolf_1.tscn" id="6_maxp7"]
 [ext_resource type="FontFile" uid="uid://iutw4od6mkk8" path="res://assets/font/Oxanium-Medium.ttf" id="6_r50xv"]
 [ext_resource type="Texture2D" uid="uid://ryyd4yrcsnio" path="res://assets/icons/strength icon.png" id="8_ygyk3"]
 [ext_resource type="Texture2D" uid="uid://cg724n8l7r5nq" path="res://assets/icons/escape icon.png" id="9_aj0nw"]
@@ -24,6 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://g15dueat3i2i" path="res://assets/progressbar/V1/Background Bar.png" id="16_68rti"]
 [ext_resource type="Texture2D" uid="uid://cc6yw0om5xoiv" path="res://assets/icons/energy icon.png" id="16_bswde"]
 [ext_resource type="Texture2D" uid="uid://cqgi215wq7mr8" path="res://assets/icons/three stars icon.png" id="16_iy1b3"]
+[ext_resource type="PackedScene" uid="uid://d1jqbg3r6jroa" path="res://scenes/slot_possible_item.tscn" id="16_rxm7j"]
 [ext_resource type="Texture2D" uid="uid://byv0ufsn4xaia" path="res://assets/icons/paralysis icon.png" id="17_xolln"]
 [ext_resource type="Texture2D" uid="uid://cls43brah2tkd" path="res://assets/icons/attack icon.png" id="18_8oaok"]
 [ext_resource type="Texture2D" uid="uid://b1vffns8ngpn1" path="res://assets/backgrounds/Box-1.png" id="18_sn34m"]
@@ -284,6 +289,7 @@ click_damage_level_label = NodePath("Container3/VBoxContainer/ImproveClick/Label
 dps_damage_cost_label = NodePath("Container3/VBoxContainer/ImproveDPS/LabelCost")
 dps_damage_level_label = NodePath("Container3/VBoxContainer/ImproveDPS/LabelLevel")
 enemy_scene = ExtResource("2_f20an")
+enemy_list = Array[PackedScene]([ExtResource("3_4md8k"), ExtResource("4_tdakd"), ExtResource("5_s0o4w"), ExtResource("6_maxp7")])
 
 [node name="Player" type="Node" parent="."]
 
@@ -447,7 +453,6 @@ text = "View Loot"
 label_settings = SubResource("LabelSettings_oe63t")
 
 [node name="LogContainer" type="ScrollContainer" parent="Container1/BackgroundLog"]
-visible = false
 custom_minimum_size = Vector2(113, 126)
 layout_mode = 1
 anchors_preset = 5
@@ -468,6 +473,7 @@ theme_override_constants/separation = 0
 alignment = 2
 
 [node name="LootContainer" type="ScrollContainer" parent="Container1/BackgroundLog" node_paths=PackedStringArray("gold_label", "loot_container") groups=["loot_container"]]
+visible = false
 custom_minimum_size = Vector2(113, 116)
 layout_mode = 1
 anchors_preset = 5
@@ -483,6 +489,7 @@ vertical_scroll_mode = 3
 script = ExtResource("12_7i184")
 gold_label = NodePath("VBoxContainer/Gold/Label")
 loot_container = NodePath("VBoxContainer")
+slot_scene = ExtResource("16_rxm7j")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Container1/BackgroundLog/LootContainer"]
 custom_minimum_size = Vector2(25, 116)

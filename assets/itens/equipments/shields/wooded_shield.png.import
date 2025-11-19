@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fudahpxkc123"
-path="res://.godot/imported/tile417.png-6f6a277e9f64b0a8ac0c4f7e6439bccc.ctex"
+uid="uid://bcdndkpbjjcmn"
+path="res://.godot/imported/wooded_shield.png-f77c513973f64ac7cab3b93b4ac50cda.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/itens/equipments/belts/tile417.png"
-dest_files=["res://.godot/imported/tile417.png-6f6a277e9f64b0a8ac0c4f7e6439bccc.ctex"]
+source_file="res://assets/itens/equipments/shields/wooded_shield.png"
+dest_files=["res://.godot/imported/wooded_shield.png-f77c513973f64ac7cab3b93b4ac50cda.ctex"]
 
 [params]
 

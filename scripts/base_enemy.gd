@@ -11,7 +11,7 @@ class_name BaseEnemy
 @export var health: float
 @export_enum("Normal", "Mini-Boss", "Boss") var enemy_type
 @export_enum(
-	"Slime"
+	"goblin", "bandit", "slime", "wolf"
 ) var enemy_race
 
 @export var drop_list: Array[PackedScene]
@@ -73,6 +73,7 @@ func kill() -> void:
 	Player.update_exp(randi_range(1500, 1500))
 	drop_loot()
 	get_tree().call_group("loot_container", "update_label")
+	get_tree().call_group("loot_container", "clear_possible_loot")
 	get_tree().call_group("main_scene", "spawn_new_enemy")
 	
 	queue_free()

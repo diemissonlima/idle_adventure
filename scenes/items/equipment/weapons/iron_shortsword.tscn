@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dvcd4q31beisf"]
 
 [ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_5brvr"]
-[ext_resource type="Texture2D" uid="uid://b7m6sbftgeprm" path="res://assets/itens/equipments/weapons/tile008.png" id="2_4w88k"]
+[ext_resource type="Texture2D" uid="uid://b7m6sbftgeprm" path="res://assets/itens/equipments/weapons/iron_shortsword.png" id="2_4w88k"]
 
 [node name="IronShortsword" instance=ExtResource("1_5brvr")]
 item_name = "Iron Shortsword"

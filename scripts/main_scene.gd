@@ -18,6 +18,7 @@ class_name MainScene
 
 @export_category("Variaveis")
 @export var enemy_scene: PackedScene
+@export var enemy_list: Array[PackedScene]
 
 var can_click: bool = false
 
@@ -34,7 +35,9 @@ func _process(_delta: float) -> void:
 
 
 func spawn_new_enemy() -> void:
-	var enemy_instance = enemy_scene.instantiate()
+	var random_enemy = enemy_list[randi() % enemy_list.size()]
+	var enemy_instance = random_enemy.instantiate()#enemy_scene.instantiate()
+	
 	$Container1/Battlefield/Marker2D.add_child(enemy_instance)
 
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cvwkxo8nx26w0"]
 
 [ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_7u7wy"]
-[ext_resource type="Texture2D" uid="uid://cegrkjbnwd1fd" path="res://assets/itens/equipments/helm/tile096.png" id="2_uairf"]
+[ext_resource type="Texture2D" uid="uid://cegrkjbnwd1fd" path="res://assets/itens/equipments/helm/leather_cap.png" id="2_uairf"]
 
 [node name="LeatherCap" instance=ExtResource("1_7u7wy")]
 item_name = "Leather Cap"

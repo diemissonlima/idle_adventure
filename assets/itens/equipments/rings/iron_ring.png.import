@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cegrkjbnwd1fd"
-path="res://.godot/imported/tile096.png-f7cd0d40c38f5a653f6dfd2644c355ba.ctex"
+uid="uid://d31tt500lrpoy"
+path="res://.godot/imported/iron_ring.png-5bfd48574f2eb893bb2f2271c484f502.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/itens/equipments/helm/tile096.png"
-dest_files=["res://.godot/imported/tile096.png-f7cd0d40c38f5a653f6dfd2644c355ba.ctex"]
+source_file="res://assets/itens/equipments/rings/iron_ring.png"
+dest_files=["res://.godot/imported/iron_ring.png-5bfd48574f2eb893bb2f2271c484f502.ctex"]
 
 [params]
 

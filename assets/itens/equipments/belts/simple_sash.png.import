@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d31tt500lrpoy"
-path="res://.godot/imported/tile098.png-1d7a9f8c627e5e050d36488a4d34e6f5.ctex"
+uid="uid://fudahpxkc123"
+path="res://.godot/imported/simple_sash.png-3eca40dd7b5e36037de3ab90b9b0275d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/itens/equipments/rings/tile098.png"
-dest_files=["res://.godot/imported/tile098.png-1d7a9f8c627e5e050d36488a4d34e6f5.ctex"]
+source_file="res://assets/itens/equipments/belts/simple_sash.png"
+dest_files=["res://.godot/imported/simple_sash.png-3eca40dd7b5e36037de3ab90b9b0275d.ctex"]
 
 [params]
 

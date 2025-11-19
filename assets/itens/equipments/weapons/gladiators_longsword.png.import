@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddy2ec6bqa3qu"
-path="res://.godot/imported/tile000.png-b791e01ca66ef8525c68c726ccc15b1c.ctex"
+uid="uid://t183lyj3vu8d"
+path="res://.godot/imported/gladiators_longsword.png-2363096f1dc3efefffbccc19d30b3ca9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/itens/equipments/weapons/tile000.png"
-dest_files=["res://.godot/imported/tile000.png-b791e01ca66ef8525c68c726ccc15b1c.ctex"]
+source_file="res://assets/itens/equipments/weapons/gladiators_longsword.png"
+dest_files=["res://.godot/imported/gladiators_longsword.png-2363096f1dc3efefffbccc19d30b3ca9.ctex"]
 
 [params]
 
