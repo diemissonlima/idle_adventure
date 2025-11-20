@@ -14,6 +14,7 @@ func update_label() -> void:
 	var gold_range = World.get_gold_range(str(World.level))
 	
 	gold_label.text = (
+		"Gold \n" + 
 		str(World.format_number(gold_range[0])) + " - " + 
 		str(World.format_number(gold_range[1]))
 	)
@@ -22,6 +23,7 @@ func update_label() -> void:
 func get_possible_loot(possible_loot: Array) -> void:
 	for item in possible_loot:
 		var new_texture_rect = slot_scene.instantiate()
+		new_texture_rect.get_node("ItemName").text = World.equipments[item]["name"]
 		new_texture_rect.get_node("Sprite").texture = load(
 			World.equipments[item]["img_path"]
 		)

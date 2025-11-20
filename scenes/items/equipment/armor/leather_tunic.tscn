@@ -1,13 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://c75roqyw5exar"]
 
 [ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_605qx"]
-[ext_resource type="Texture2D" uid="uid://b48uyegwxrsf6" path="res://assets/itens/equipments/armor/leather_tunic.png" id="2_ermph"]
+[ext_resource type="Texture2D" uid="uid://badxemhc8gmts" path="res://assets/itens/equipments/armor/leather_tunic.png" id="2_ermph"]
 
 [node name="LeatherTunic" instance=ExtResource("1_605qx")]
 item_name = "Leather Tunic"
 item_key = "leather_tunic"
-item_rarity = "common"
-power_level = 2
 
 [node name="Sprite" parent="." index="1"]
 texture = ExtResource("2_ermph")

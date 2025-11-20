@@ -1,9 +1,14 @@
-[gd_scene load_steps=8 format=3 uid="uid://d1jqbg3r6jroa"]
+[gd_scene load_steps=9 format=3 uid="uid://d1jqbg3r6jroa"]
 
 [ext_resource type="Texture2D" uid="uid://b1d7dwxtii10e" path="res://assets/backgrounds/Box.png" id="1_xlrgv"]
 [ext_resource type="Script" path="res://scripts/slot_possible_item.gd" id="2_3wupj"]
 [ext_resource type="Texture2D" uid="uid://t46mri5wpkqe" path="res://assets/inventory/Backpack 10x6/Panel Green (2).png" id="2_k3qr6"]
 [ext_resource type="FontFile" uid="uid://iutw4od6mkk8" path="res://assets/font/Oxanium-Medium.ttf" id="3_801pr"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_dbdd0"]
+line_spacing = 0.0
+font = ExtResource("3_801pr")
+font_size = 5
 
 [sub_resource type="LabelSettings" id="LabelSettings_5c47i"]
 line_spacing = 0.0
@@ -41,16 +46,31 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -5.0
-offset_top = -5.0
-offset_right = 5.0
-offset_bottom = 5.0
+offset_left = -7.5
+offset_top = -7.5
+offset_right = 7.5
+offset_bottom = 7.5
 grow_horizontal = 2
 grow_vertical = 2
 expand_mode = 1
 
+[node name="ItemName" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 18.0
+offset_top = 7.0
+offset_right = 67.0
+offset_bottom = 13.0
+grow_horizontal = 2
+text = "Nome Item"
+label_settings = SubResource("LabelSettings_dbdd0")
+vertical_alignment = 1
+
 [node name="ItemInfo" type="TextureRect" parent="."]
 visible = false
+z_index = 10
 custom_minimum_size = Vector2(60, 54)
 layout_mode = 0
 offset_left = 22.0

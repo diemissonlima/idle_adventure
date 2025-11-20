@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfq8qj4km86n4"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_bcnr5"]
+[ext_resource type="Texture2D" uid="uid://bfy3nc0lstuxt" path="res://assets/itens/equipments/armor/chainmail_hauberk.png" id="2_7ya8n"]
+
+[node name="ChainmailHauberk" instance=ExtResource("1_bcnr5")]
+item_name = "Chainmail Hauberk"
+item_key = "chainmail_hauberk"
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_7ya8n")

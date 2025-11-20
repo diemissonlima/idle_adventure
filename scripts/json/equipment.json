@@ -3,7 +3,7 @@
 		"name": "Rusty Sword",
 		"slot": "weapon",
 		"sockets": 0,
-		"img_path": "res://assets/itens/equipments/weapons/rusty_sword.png",
+		"img_path": "res://assets/itens/equipments/weapons/swords/rusty_sword.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -77,7 +77,7 @@
 		"name": "Iron Shortsword",
 		"slot": "weapon",
 		"sockets": 0,
-		"img_path": "res://assets/itens/equipments/weapons/iron_shortsword.png",
+		"img_path": "res://assets/itens/equipments/weapons/swords/iron_shortsword.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -198,7 +198,7 @@
 		"name": "Steel Longsword",
 		"slot": "weapon",
 		"sockets": 0,
-		"img_path": "res://assets/itens/equipments/weapons/steel_longsword.png",
+		"img_path": "res://assets/itens/equipments/weapons/swords/steel_longsword.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -252,7 +252,7 @@
 		"name": "Gladiator's Longsword",
 		"slot": "weapon",
 		"sockets": 2,
-		"img_path": "res://assets/itens/equipments/weapons/gladiators_longsword.png",
+		"img_path": "res://assets/itens/equipments/weapons/swords/gladiators_longsword.png",
 		"power_level": {
 			"common": [1, 5],
 			"uncommon": [5, 10],
@@ -315,4 +315,25 @@
 			"legendary": [30, 90]
 		}
 	},
+	"chainmail_hauberk": {
+		"name": "Chainmail Hauberk",
+		"slot": "armor",
+		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/armor/chainmail_hauberk.png",
+		"power_level": {
+			"common": [25, 30],
+			"uncommon": [30, 35],
+			"rare": [35, 40],
+			"epic": [40, 45],
+			"legendary": [45, 49]
+		},
+		"dps_damage": {
+			"common": [120, 168],
+			"uncommon": [120, 216],
+			"rare": [120, 264],
+			"epic": [120, 312],
+			"legendary": [120, 360]
+		}
+	},
+	
 }

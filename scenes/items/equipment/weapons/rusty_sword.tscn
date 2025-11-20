@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bpvbic3vb4jcm"]
 
 [ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_u84gq"]
-[ext_resource type="Texture2D" uid="uid://ddy2ec6bqa3qu" path="res://assets/itens/equipments/weapons/rusty_sword.png" id="2_m032q"]
+[ext_resource type="Texture2D" uid="uid://4k7fikeqjk3" path="res://assets/itens/equipments/weapons/swords/rusty_sword.png" id="2_m032q"]
 
 [node name="RustySword" instance=ExtResource("1_u84gq")]
 item_name = "Rusty Sword"

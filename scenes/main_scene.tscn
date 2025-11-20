@@ -75,8 +75,9 @@ font_size = 6
 font_color = Color(1, 1, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_ufw3e"]
+line_spacing = 1.0
 font = ExtResource("14_cn0d2")
-font_size = 6
+font_size = 5
 
 [sub_resource type="LabelSettings" id="LabelSettings_7scff"]
 line_spacing = 0.0
@@ -473,6 +474,7 @@ theme_override_constants/separation = 0
 alignment = 2
 
 [node name="LootContainer" type="ScrollContainer" parent="Container1/BackgroundLog" node_paths=PackedStringArray("gold_label", "loot_container") groups=["loot_container"]]
+visible = false
 custom_minimum_size = Vector2(113, 116)
 layout_mode = 1
 anchors_preset = 5
@@ -491,7 +493,7 @@ loot_container = NodePath("VBoxContainer")
 slot_scene = ExtResource("16_rxm7j")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Container1/BackgroundLog/LootContainer"]
-custom_minimum_size = Vector2(15, 116)
+custom_minimum_size = Vector2(16, 116)
 layout_mode = 2
 theme_override_constants/separation = 2
 
@@ -504,27 +506,25 @@ expand_mode = 1
 [node name="Sprite" type="TextureRect" parent="Container1/BackgroundLog/LootContainer/VBoxContainer/Gold"]
 custom_minimum_size = Vector2(15, 15)
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
+anchors_preset = 4
 anchor_top = 0.5
-anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -5.0
-offset_top = -5.0
-offset_right = 5.0
-offset_bottom = 5.0
-grow_horizontal = 2
+offset_left = 4.0
+offset_top = -7.5
+offset_right = 19.0
+offset_bottom = 7.5
 grow_vertical = 2
 texture = ExtResource("12_4my6k")
 expand_mode = 1
 
 [node name="Label" type="Label" parent="Container1/BackgroundLog/LootContainer/VBoxContainer/Gold"]
 layout_mode = 0
-offset_left = 28.0
-offset_top = 7.0
-offset_right = 61.0
-offset_bottom = 14.0
-text = "547g - 751g"
+offset_left = 27.0
+offset_top = 3.0
+offset_right = 60.0
+offset_bottom = 16.0
+text = "Gold
+547g - 751g"
 label_settings = SubResource("LabelSettings_ufw3e")
 
 [node name="Container2" type="TextureRect" parent="." node_paths=PackedStringArray("hero_level_label", "avg_power_level_label", "exp_bar", "btn_reset_attributes", "strength_label", "agility_label", "luck_label", "available_points_label") groups=["stats_container"]]

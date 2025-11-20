@@ -1,12 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://dhmq1qc6fqw"]
 
 [ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_fbr3h"]
-[ext_resource type="Texture2D" uid="uid://kby0iwbqpb1i" path="res://assets/itens/equipments/belts/leather_belt.png" id="2_u8xui"]
+[ext_resource type="Texture2D" uid="uid://brh57388sis63" path="res://assets/itens/equipments/belts/leather_belt.png" id="2_u8xui"]
 
 [node name="LeatherBelt" instance=ExtResource("1_fbr3h")]
 item_name = "Leather Belt"
 item_key = "leather_belt"
-item_rarity = "common"
 
 [node name="Sprite" parent="." index="1"]
 texture = ExtResource("2_u8xui")

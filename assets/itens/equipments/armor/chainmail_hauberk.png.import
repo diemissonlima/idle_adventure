@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5feomeg01yhg"
-path="res://.godot/imported/Icon6_no_effect.png-c5a90cfd78491c77cec62e321506fd77.ctex"
+uid="uid://bfy3nc0lstuxt"
+path="res://.godot/imported/chainmail_hauberk.png-4394c677823482c72191fae298823d97.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/itens/equipments/weapons/swords/Icon6_no_effect.png"
-dest_files=["res://.godot/imported/Icon6_no_effect.png-c5a90cfd78491c77cec62e321506fd77.ctex"]
+source_file="res://assets/itens/equipments/armor/chainmail_hauberk.png"
+dest_files=["res://.godot/imported/chainmail_hauberk.png-4394c677823482c72191fae298823d97.ctex"]
 
 [params]
 

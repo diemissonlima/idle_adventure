@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1763649125
+::res://::1763651063
 icon.svg::CompressedTexture2D::1437991343033267371::1763393852::1763468902::1::::<><>::
 ::res://assets/::1763393852
 ::res://assets/backgrounds/::1763468903
@@ -159,9 +159,9 @@ Panel Green.png::CompressedTexture2D::7735210342803961590::1763393852::176346890
 WindowSettings03_NoPanels.png::CompressedTexture2D::4693914756195749969::1763393852::1763468901::1::::<><>::
 ::res://assets/itens/::1763646158
 ::res://assets/itens/equipments/::1763648510
-::res://assets/itens/equipments/armor/::1763648404
+::res://assets/itens/equipments/armor/::1763652381
+chainmail_hauberk.png::CompressedTexture2D::2788633403290347337::1763648389::1763652384::1::::<><>::
 Icon2.png::CompressedTexture2D::8160473688954946658::1763648389::1763648390::1::::<><>::
-Icon3.png::CompressedTexture2D::71814202665935378::1763648389::1763648390::1::::<><>::
 Icon4.png::CompressedTexture2D::4987276552172772703::1763648389::1763648390::1::::<><>::
 Icon5.png::CompressedTexture2D::5742241198132772756::1763648389::1763648390::1::::<><>::
 Icon6.png::CompressedTexture2D::468135778383269375::1763648389::1763648390::1::::<><>::
@@ -356,9 +356,8 @@ Icon46.png::CompressedTexture2D::5436555549586276373::1763648691::1763648692::1:
 Icon47.png::CompressedTexture2D::8025509831958572648::1763648691::1763648692::1::::<><>::
 Icon48.png::CompressedTexture2D::6288844798064014837::1763648691::1763648692::1::::<><>::
 leather_gloves.png::CompressedTexture2D::2812179973095890595::1763393852::1763581477::1::::<><>::
-::res://assets/itens/equipments/helm/::1763648789
+::res://assets/itens/equipments/helm/::1763651064
 Icon1.png::CompressedTexture2D::7255055596940408556::1763648788::1763648789::1::::<><>::
-Icon2.png::CompressedTexture2D::2170655222444241252::1763648788::1763648789::1::::<><>::
 Icon3.png::CompressedTexture2D::653987561098563376::1763648788::1763648789::1::::<><>::
 Icon4.png::CompressedTexture2D::5646331697255595667::1763648788::1763648789::1::::<><>::
 Icon5.png::CompressedTexture2D::3914405848551466965::1763648788::1763648789::1::::<><>::
@@ -405,7 +404,7 @@ Icon45.png::CompressedTexture2D::7971159823604396926::1763648788::1763648789::1:
 Icon46.png::CompressedTexture2D::6540384396757699746::1763648788::1763648789::1::::<><>::
 Icon47.png::CompressedTexture2D::7504052538631777719::1763648788::1763648789::1::::<><>::
 Icon48.png::CompressedTexture2D::8692898430404084604::1763648788::1763648789::1::::<><>::
-leather_cap.png::CompressedTexture2D::5067033530153932909::1763393852::1763581427::1::::<><>::
+leather_cap.png::CompressedTexture2D::2170655222444241252::1763648788::1763651064::1::::<><>::
 ::res://assets/itens/equipments/necklace/::1763649126
 Icon1.png::CompressedTexture2D::7089650726579092656::1763648620::1763648969::1::::<><>::
 Icon2.png::CompressedTexture2D::5193728320285130610::1763648620::1763648973::1::::<><>::
@@ -470,10 +469,9 @@ Icon22.png::CompressedTexture2D::175050623237733874::1763648895::1763648909::1::
 Icon23.png::CompressedTexture2D::3167207441478239291::1763648895::1763648914::1::::<><>::
 Icon24.png::CompressedTexture2D::8432948291378600830::1763648895::1763648918::1::::<><>::
 iron_ring.png::CompressedTexture2D::9179412662968405960::1763393852::1763581528::1::::<><>::
-::res://assets/itens/equipments/shields/::1763648612
-Icon1.png::CompressedTexture2D::1354659031614060421::1763648611::1763648612::1::::<><>::
+::res://assets/itens/equipments/shields/::1763651016
 Icon2.png::CompressedTexture2D::2783949153978624271::1763648611::1763648612::1::::<><>::
-Icon3.png::CompressedTexture2D::1301123220654079196::1763648611::1763648612::1::::<><>::
+Icon3.png::CompressedTexture2D::1301123220654079196::1763648611::1763651000::1::::<><>::
 Icon4.png::CompressedTexture2D::6423871198180007623::1763648611::1763648612::1::::<><>::
 Icon5.png::CompressedTexture2D::8721956265977890729::1763648611::1763648612::1::::<><>::
 Icon6.png::CompressedTexture2D::8926828105805906274::1763648611::1763648612::1::::<><>::
@@ -508,7 +506,7 @@ Icon34.png::CompressedTexture2D::2639411290513790460::1763648611::1763648612::1:
 Icon35.png::CompressedTexture2D::7914692640200910548::1763648611::1763648612::1::::<><>::
 Icon36.png::CompressedTexture2D::6662051193570294269::1763648611::1763648612::1::::<><>::
 iron_kiteshield.png::CompressedTexture2D::4773599812120885311::1763393852::1763581501::1::::<><>::
-wooded_shield.png::CompressedTexture2D::2533786730982410469::1763393852::1763581456::1::::<><>::
+wooded_shield.png::CompressedTexture2D::1354659031614060421::1763648611::1763651016::1::::<><>::
 ::res://assets/itens/equipments/weapons/::1763650282
 ::res://assets/itens/equipments/weapons/bow_crossbows/::1763650176
 Icon1.png::CompressedTexture2D::8681910463450446211::1763650084::1763650175::1::::<><>::
@@ -589,7 +587,7 @@ Icon46_no_effect.png::CompressedTexture2D::7604319791505941330::1763650084::1763
 Icon47.png::CompressedTexture2D::5901305407547909672::1763650084::1763650175::1::::<><>::
 Icon47_no_effect.png::CompressedTexture2D::6247291064435160635::1763650084::1763650175::1::::<><>::
 Icon48.png::CompressedTexture2D::8230984373021274155::1763650084::1763650175::1::::<><>::
-::res://assets/itens/equipments/weapons/maces/::1763650290
+::res://assets/itens/equipments/weapons/maces/::1763650292
 Icon1.png::CompressedTexture2D::463617375677130156::1763650289::1763650292::1::::<><>::
 Icon1_no_effect.png::CompressedTexture2D::2526678877558513317::1763650289::1763650292::1::::<><>::
 Icon2.png::CompressedTexture2D::7774814747957766585::1763650289::1763650292::1::::<><>::
@@ -669,9 +667,8 @@ Icon46_no_effect.png::CompressedTexture2D::541188707624614143::1763650290::17636
 Icon47.png::CompressedTexture2D::5893921315942251272::1763650290::1763650291::1::::<><>::
 Icon47_no_effect.png::CompressedTexture2D::773093870131356889::1763650290::1763650291::1::::<><>::
 Icon48.png::CompressedTexture2D::2551083587262230063::1763650290::1763650291::1::::<><>::
-::res://assets/itens/equipments/weapons/swords/::1763650175
-gladiators_longsword.png::CompressedTexture2D::1389316128998143293::1763393852::1763650175::1::::<><>::
-Icon1.png::CompressedTexture2D::6075786590526810216::1763650019::1763650175::1::::<><>::
+::res://assets/itens/equipments/weapons/swords/::1763650835
+gladiators_longsword.png::CompressedTexture2D::6075786590526810216::1763650019::1763650547::1::::<><>::
 Icon1_no_effect.png::CompressedTexture2D::4893697216334216659::1763650084::1763650174::1::::<><>::
 Icon2.png::CompressedTexture2D::3475987078330826679::1763650019::1763650174::1::::<><>::
 Icon2_no_effect.png::CompressedTexture2D::6941219918831352645::1763650019::1763650174::1::::<><>::
@@ -681,7 +678,6 @@ Icon4.png::CompressedTexture2D::2283875038313125376::1763650019::1763650175::1::
 Icon4_no_effect.png::CompressedTexture2D::8599906207103173946::1763650020::1763650175::1::::<><>::
 Icon5.png::CompressedTexture2D::6845230774682627633::1763650020::1763650175::1::::<><>::
 Icon6.png::CompressedTexture2D::3021410812356857903::1763650020::1763650175::1::::<><>::
-Icon6_no_effect.png::CompressedTexture2D::2116255703763495028::1763650020::1763650175::1::::<><>::
 Icon7.png::CompressedTexture2D::1362313266662130645::1763650020::1763650175::1::::<><>::
 Icon7_no_effect.png::CompressedTexture2D::8690892353013921898::1763650020::1763650175::1::::<><>::
 Icon8.png::CompressedTexture2D::1226848923555272976::1763650020::1763650175::1::::<><>::
@@ -694,7 +690,6 @@ Icon11.png::CompressedTexture2D::2896891415353238444::1763650020::1763650175::1:
 Icon11_no_effect.png::CompressedTexture2D::4621743370502510339::1763650020::1763650175::1::::<><>::
 Icon12.png::CompressedTexture2D::6099107846581947058::1763650020::1763650175::1::::<><>::
 Icon12_no_effect.png::CompressedTexture2D::8108502881328192091::1763650084::1763650175::1::::<><>::
-Icon13.png::CompressedTexture2D::60531545635880084::1763650020::1763650175::1::::<><>::
 Icon13_no_effect.png::CompressedTexture2D::6342812763776253329::1763650084::1763650174::1::::<><>::
 Icon14.png::CompressedTexture2D::1015743204219301170::1763650020::1763650174::1::::<><>::
 Icon14_no_effect.png::CompressedTexture2D::268677960114160142::1763650020::1763650174::1::::<><>::
@@ -730,7 +725,6 @@ Icon29_no_effect.png::CompressedTexture2D::4532914490419332507::1763650020::1763
 Icon30.png::CompressedTexture2D::9009184118917725819::1763650020::1763650174::1::::<><>::
 Icon30_no_effect.png::CompressedTexture2D::4233239051467884184::1763650020::1763650174::1::::<><>::
 Icon31.png::CompressedTexture2D::8173484386501809357::1763650020::1763650174::1::::<><>::
-Icon31_no_effect.png::CompressedTexture2D::1145980285256340260::1763650020::1763650174::1::::<><>::
 Icon32.png::CompressedTexture2D::4831828403104691657::1763650020::1763650174::1::::<><>::
 Icon32_no_effect.png::CompressedTexture2D::4481637802172286322::1763650084::1763650174::1::::<><>::
 Icon33.png::CompressedTexture2D::6804309312869991130::1763650020::1763650174::1::::<><>::
@@ -763,9 +757,9 @@ Icon47.png::CompressedTexture2D::5988985954929038185::1763650020::1763650175::1:
 Icon47_no_effect.png::CompressedTexture2D::2291483742299804013::1763650020::1763650175::1::::<><>::
 Icon48.png::CompressedTexture2D::7387959953108468434::1763650020::1763650175::1::::<><>::
 Icon48_no_effect.png::CompressedTexture2D::4939510788475987234::1763650020::1763650175::1::::<><>::
-iron_shortsword.png::CompressedTexture2D::4659150645343741610::1763393852::1763650175::1::::<><>::
-rusty_sword.png::CompressedTexture2D::7421020303073635972::1763393852::1763650175::1::::<><>::
-steel_longsword.png::CompressedTexture2D::8774837618760846908::1763393852::1763650175::1::::<><>::
+iron_shortsword.png::CompressedTexture2D::2116255703763495028::1763650020::1763650728::1::::<><>::
+rusty_sword.png::CompressedTexture2D::60531545635880084::1763650020::1763650758::1::::<><>::
+steel_longsword.png::CompressedTexture2D::1145980285256340260::1763650020::1763650835::1::::<><>::
 ::res://assets/itens/potion/::1763468903
 01.png::CompressedTexture2D::702392935352550679::1763393852::1763468902::1::::<><>::
 02.png::CompressedTexture2D::7149541652724329586::1763393852::1763468902::1::::<><>::
@@ -812,15 +806,15 @@ Background Bar2.png::CompressedTexture2D::3968904281661145080::1763393852::17634
 Background Bar.png::CompressedTexture2D::476634807271178702::1763393852::1763468902::1::::<><>::
 Background Static.png::CompressedTexture2D::4354744590488421035::1763393852::1763468902::1::::<><>::
 Foreground.png::CompressedTexture2D::7995816678707291855::1763393852::1763468902::1::::<><>::
-::res://scenes/::1763648319
-base_enemy.tscn::PackedScene::1592437894108702619::1763648319::0::1::::<><>::res://scripts/base_enemy.gd<>uid://b3bqaij1prm5h::::res://assets/progressbar/V1/Background Static.png<>uid://dl6h6x71p5tr8::::res://assets/progressbar/V1/Foreground.png<>uid://bwstjkly0iwia::::res://assets/progressbar/V1/Background Bar2.png<>uid://iutw4od6mkk8::::res://assets/font/Oxanium-Medium.ttf
-base_item.tscn::PackedScene::5528813352470604930::1763648319::0::1::::<><>::res://scripts/base_item.gd<>uid://t46mri5wpkqe::::res://assets/inventory/Backpack 10x6/Panel Green (2).png<>uid://iutw4od6mkk8::::res://assets/font/Oxanium-Medium.ttf
-main_scene.tscn::PackedScene::5272711550035179436::1763648319::0::1::::<><>::uid://ciir88k8isk6u::::res://assets/backgrounds/1.png<>res://scripts/main_scene.gd<>uid://dp4l60ef0vkwx::::res://assets/itens/potion/Potion 1.png<>uid://bufxp71go2hq7::::res://assets/backgrounds/EmptyPanel.png<>uid://wxnhpxtp6xfn::::res://scenes/base_enemy.tscn<>uid://bvbiyffex0vl6::::res://scenes/enemies/bandit_1.tscn<>uid://f3rv4yrfifht::::res://assets/font/Oxanium-Bold.ttf<>uid://c6l52gfn4g4ge::::res://scenes/enemies/goblin_1.tscn<>uid://c8m76amluo7mg::::res://scenes/enemies/slime_1.tscn<>uid://cgm2g3igfxnw1::::res://assets/backgrounds/Panel.png<>res://scripts/game_log.gd<>uid://c1y2ohdxrpjjy::::res://scenes/enemies/wolf_1.tscn<>uid://iutw4od6mkk8::::res://assets/font/Oxanium-Medium.ttf<>uid://ryyd4yrcsnio::::res://assets/icons/strength icon.png<>uid://cg724n8l7r5nq::::res://assets/icons/escape icon.png<>uid://dluvk35d70he5::::res://assets/backgrounds/Separator.png<>res://scripts/stats_container.gd<>uid://b1jc2c4vk8cxr::::res://assets/icons/options icon.png<>uid://b1d7dwxtii10e::::res://assets/backgrounds/Box.png<>uid://d02dugdsjp8q2::::res://assets/icons/gold_coin.png<>res://scripts/loot_container.gd<>uid://ci3pwam4erm3v::::res://assets/maps/map1.png<>uid://b3bqaij1prm5h::::res://assets/progressbar/V1/Background Static.png<>uid://dvid2uhtkf6xm::::res://assets/font/Oxanium-Regular.ttf<>uid://dl6h6x71p5tr8::::res://assets/progressbar/V1/Foreground.png<>uid://g15dueat3i2i::::res://assets/progressbar/V1/Background Bar.png<>uid://cc6yw0om5xoiv::::res://assets/icons/energy icon.png<>uid://cqgi215wq7mr8::::res://assets/icons/three stars icon.png<>uid://d1jqbg3r6jroa::::res://scenes/slot_possible_item.tscn<>uid://byv0ufsn4xaia::::res://assets/icons/paralysis icon.png<>uid://cls43brah2tkd::::res://assets/icons/attack icon.png<>uid://b1vffns8ngpn1::::res://assets/backgrounds/Box-1.png<>res://scripts/upgrades.gd<>uid://dqwxpm8e55dly::::res://assets/icons/agility icon.png<>res://scripts/derived_status.gd<>uid://dnkig6eqllbgc::::res://assets/icons/magic icon.png<>uid://cj0krfgq03g6m::::res://assets/icons/two stars icon.png<>uid://cih1pevuq4n6e::::res://assets/icons/bagpack icon.png<>uid://c7ottgyyv7t0b::::res://assets/buttons/S Button 3/ButtonHover.png<>uid://d2hiuho182mje::::res://assets/inventory/Backpack 10x6/Panel Green Empty.png<>uid://d3nu0on3alprl::::res://assets/icons/Wenrexa Money 3.png<>uid://cu3ee5mq046by::::res://assets/buttons/S Button 3/ButtonActive.png<>res://scripts/inventory.gd<>uid://bmwqrp1rpk85y::::res://assets/buttons/S Button 3/ButtonNormal.png<>uid://blbvtl8up3ubx::::res://scenes/slot.tscn<>uid://dwxxiwirf0jad::::res://assets/inventory/Backpack 10x6/Cell.png<>uid://c75roqyw5exar::::res://scenes/items/equipment/armor/leather_tunic.tscn<>res://scripts/equipment_manager.gd<>uid://dhmq1qc6fqw::::res://scenes/items/equipment/belts/leather_belt.tscn<>res://scripts/equipment_stats.gd<>uid://dhgrb6ivy00oe::::res://scenes/items/equipment/belts/simple_sash.tscn<>uid://c4drjt05jl1qo::::res://scenes/items/equipment/gloves/leather_gloves.tscn<>uid://cvwkxo8nx26w0::::res://scenes/items/equipment/helmet/leather_cap.tscn<>uid://yw8eklmqtxar::::res://scenes/items/equipment/necklace/simple_pendant.tscn<>uid://bvegrx3xg63oe::::res://scenes/items/equipment/rings/iron_ring.tscn<>uid://d13e0q3s6r1th::::res://scenes/items/equipment/shields/iron_kiteshield.tscn<>uid://2sjtfobfb40r::::res://scenes/items/equipment/shields/wooded_shield.tscn<>uid://cmi1vfp28ul4b::::res://scenes/items/equipment/weapons/gladiators_longsword.tscn<>uid://dvcd4q31beisf::::res://scenes/items/equipment/weapons/iron_shortsword.tscn<>uid://bpvbic3vb4jcm::::res://scenes/items/equipment/weapons/rusty_sword.tscn<>uid://l3q2cv0t7c02::::res://scenes/items/equipment/weapons/steel_longsword.tscn
+::res://scenes/::1763652187
+base_enemy.tscn::PackedScene::1592437894108702619::1763652187::0::1::::<><>::res://scripts/base_enemy.gd<>uid://b3bqaij1prm5h::::res://assets/progressbar/V1/Background Static.png<>uid://dl6h6x71p5tr8::::res://assets/progressbar/V1/Foreground.png<>uid://bwstjkly0iwia::::res://assets/progressbar/V1/Background Bar2.png<>uid://iutw4od6mkk8::::res://assets/font/Oxanium-Medium.ttf
+base_item.tscn::PackedScene::5528813352470604930::1763652187::0::1::::<><>::res://scripts/base_item.gd<>uid://t46mri5wpkqe::::res://assets/inventory/Backpack 10x6/Panel Green (2).png<>uid://iutw4od6mkk8::::res://assets/font/Oxanium-Medium.ttf
+main_scene.tscn::PackedScene::5272711550035179436::1763652187::0::1::::<><>::uid://ciir88k8isk6u::::res://assets/backgrounds/1.png<>res://scripts/main_scene.gd<>uid://dp4l60ef0vkwx::::res://assets/itens/potion/Potion 1.png<>uid://bufxp71go2hq7::::res://assets/backgrounds/EmptyPanel.png<>uid://wxnhpxtp6xfn::::res://scenes/base_enemy.tscn<>uid://bvbiyffex0vl6::::res://scenes/enemies/bandit_1.tscn<>uid://f3rv4yrfifht::::res://assets/font/Oxanium-Bold.ttf<>uid://c6l52gfn4g4ge::::res://scenes/enemies/goblin_1.tscn<>uid://c8m76amluo7mg::::res://scenes/enemies/slime_1.tscn<>uid://cgm2g3igfxnw1::::res://assets/backgrounds/Panel.png<>res://scripts/game_log.gd<>uid://c1y2ohdxrpjjy::::res://scenes/enemies/wolf_1.tscn<>uid://iutw4od6mkk8::::res://assets/font/Oxanium-Medium.ttf<>uid://ryyd4yrcsnio::::res://assets/icons/strength icon.png<>uid://cg724n8l7r5nq::::res://assets/icons/escape icon.png<>uid://dluvk35d70he5::::res://assets/backgrounds/Separator.png<>res://scripts/stats_container.gd<>uid://b1jc2c4vk8cxr::::res://assets/icons/options icon.png<>uid://b1d7dwxtii10e::::res://assets/backgrounds/Box.png<>uid://d02dugdsjp8q2::::res://assets/icons/gold_coin.png<>res://scripts/loot_container.gd<>uid://ci3pwam4erm3v::::res://assets/maps/map1.png<>uid://b3bqaij1prm5h::::res://assets/progressbar/V1/Background Static.png<>uid://dvid2uhtkf6xm::::res://assets/font/Oxanium-Regular.ttf<>uid://dl6h6x71p5tr8::::res://assets/progressbar/V1/Foreground.png<>uid://g15dueat3i2i::::res://assets/progressbar/V1/Background Bar.png<>uid://cc6yw0om5xoiv::::res://assets/icons/energy icon.png<>uid://cqgi215wq7mr8::::res://assets/icons/three stars icon.png<>uid://d1jqbg3r6jroa::::res://scenes/slot_possible_item.tscn<>uid://byv0ufsn4xaia::::res://assets/icons/paralysis icon.png<>uid://cls43brah2tkd::::res://assets/icons/attack icon.png<>uid://b1vffns8ngpn1::::res://assets/backgrounds/Box-1.png<>res://scripts/upgrades.gd<>uid://dqwxpm8e55dly::::res://assets/icons/agility icon.png<>res://scripts/derived_status.gd<>uid://dnkig6eqllbgc::::res://assets/icons/magic icon.png<>uid://cj0krfgq03g6m::::res://assets/icons/two stars icon.png<>uid://cih1pevuq4n6e::::res://assets/icons/bagpack icon.png<>uid://c7ottgyyv7t0b::::res://assets/buttons/S Button 3/ButtonHover.png<>uid://d2hiuho182mje::::res://assets/inventory/Backpack 10x6/Panel Green Empty.png<>uid://d3nu0on3alprl::::res://assets/icons/Wenrexa Money 3.png<>uid://cu3ee5mq046by::::res://assets/buttons/S Button 3/ButtonActive.png<>res://scripts/inventory.gd<>uid://bmwqrp1rpk85y::::res://assets/buttons/S Button 3/ButtonNormal.png<>uid://blbvtl8up3ubx::::res://scenes/slot.tscn<>uid://dwxxiwirf0jad::::res://assets/inventory/Backpack 10x6/Cell.png<>uid://c75roqyw5exar::::res://scenes/items/equipment/armor/leather_tunic.tscn<>res://scripts/equipment_manager.gd<>uid://dhmq1qc6fqw::::res://scenes/items/equipment/belts/leather_belt.tscn<>res://scripts/equipment_stats.gd<>uid://dhgrb6ivy00oe::::res://scenes/items/equipment/belts/simple_sash.tscn<>uid://c4drjt05jl1qo::::res://scenes/items/equipment/gloves/leather_gloves.tscn<>uid://cvwkxo8nx26w0::::res://scenes/items/equipment/helmet/leather_cap.tscn<>uid://yw8eklmqtxar::::res://scenes/items/equipment/necklace/simple_pendant.tscn<>uid://bvegrx3xg63oe::::res://scenes/items/equipment/rings/iron_ring.tscn<>uid://d13e0q3s6r1th::::res://scenes/items/equipment/shields/iron_kiteshield.tscn<>uid://2sjtfobfb40r::::res://scenes/items/equipment/shields/wooded_shield.tscn<>uid://cmi1vfp28ul4b::::res://scenes/items/equipment/weapons/gladiators_longsword.tscn<>uid://dvcd4q31beisf::::res://scenes/items/equipment/weapons/iron_shortsword.tscn<>uid://bpvbic3vb4jcm::::res://scenes/items/equipment/weapons/rusty_sword.tscn<>uid://l3q2cv0t7c02::::res://scenes/items/equipment/weapons/steel_longsword.tscn
 slime_1.tscn::PackedScene::6931490992256580683::1763393852::0::1::::<><>::uid://wxnhpxtp6xfn::::res://scenes/base_enemy.tscn
 slot.tscn::PackedScene::3161871958063080345::1763558072::0::1::::<><>::res://scripts/slot.gd<>uid://btrlbo8is4j4t::::res://assets/backgrounds/Cell.png
-slot_possible_item.tscn::PackedScene::9003725002341678456::1763648319::0::1::::<><>::uid://b1d7dwxtii10e::::res://assets/backgrounds/Box.png<>res://scripts/slot_possible_item.gd<>uid://t46mri5wpkqe::::res://assets/inventory/Backpack 10x6/Panel Green (2).png<>uid://iutw4od6mkk8::::res://assets/font/Oxanium-Medium.ttf
-::res://scenes/enemies/::1763648319
-bandit_1.tscn::PackedScene::3862979643395947617::1763648319::0::1::::<><>::uid://wxnhpxtp6xfn::::res://scenes/base_enemy.tscn<>uid://c75roqyw5exar::::res://scenes/items/equipment/armor/leather_tunic.tscn<>uid://dah1gv6e02emg::::res://assets/enemies/bandits/104.png<>uid://dhmq1qc6fqw::::res://scenes/items/equipment/belts/leather_belt.tscn
+slot_possible_item.tscn::PackedScene::9003725002341678456::1763652187::0::1::::<><>::uid://b1d7dwxtii10e::::res://assets/backgrounds/Box.png<>res://scripts/slot_possible_item.gd<>uid://t46mri5wpkqe::::res://assets/inventory/Backpack 10x6/Panel Green (2).png<>uid://iutw4od6mkk8::::res://assets/font/Oxanium-Medium.ttf
+::res://scenes/enemies/::1763650902
+bandit_1.tscn::PackedScene::3862979643395947617::1763650902::0::1::::<><>::uid://wxnhpxtp6xfn::::res://scenes/base_enemy.tscn<>uid://c75roqyw5exar::::res://scenes/items/equipment/armor/leather_tunic.tscn<>uid://dah1gv6e02emg::::res://assets/enemies/bandits/104.png<>uid://dhmq1qc6fqw::::res://scenes/items/equipment/belts/leather_belt.tscn
 goblin_1.tscn::PackedScene::6973273725172096420::1763646333::0::1::::<><>::uid://wxnhpxtp6xfn::::res://scenes/base_enemy.tscn<>uid://bpvbic3vb4jcm::::res://scenes/items/equipment/weapons/rusty_sword.tscn<>uid://s2bw8i2pc8kg::::res://assets/enemies/goblins/11.png<>uid://cvwkxo8nx26w0::::res://scenes/items/equipment/helmet/leather_cap.tscn
 slime_1.tscn::PackedScene::7115844062934323758::1763646333::0::1::::<><>::uid://wxnhpxtp6xfn::::res://scenes/base_enemy.tscn<>uid://2sjtfobfb40r::::res://scenes/items/equipment/shields/wooded_shield.tscn<>uid://cwodcs7x4h0xw::::res://assets/enemies/slimes/22.png
 wolf_1.tscn::PackedScene::6648961101358038806::1763646333::0::1::::<><>::uid://wxnhpxtp6xfn::::res://scenes/base_enemy.tscn<>uid://dhgrb6ivy00oe::::res://scenes/items/equipment/belts/simple_sash.tscn<>uid://c70o1y7ipqw57::::res://assets/enemies/wolfs/66.png
@@ -833,21 +827,21 @@ leather_belt.tscn::PackedScene::6640463007784674::1763647347::0::1::::<><>::uid:
 simple_sash.tscn::PackedScene::7664005839310341036::1763647347::0::1::::<><>::uid://ck1g0o4dx1ilm::::res://scenes/base_item.tscn<>uid://cfe45vi4pq01w::::res://assets/itens/equipments/belts/simple_sash.png
 ::res://scenes/items/equipment/gloves/::1763581477
 leather_gloves.tscn::PackedScene::6815560265112810366::1763581477::0::1::::<><>::uid://ck1g0o4dx1ilm::::res://scenes/base_item.tscn<>uid://bgcigtpfnqo64::::res://assets/itens/equipments/gloves/leather_gloves.png
-::res://scenes/items/equipment/helmet/::1763581427
-leather_cap.tscn::PackedScene::6292872424489616297::1763581427::0::1::::<><>::uid://ck1g0o4dx1ilm::::res://scenes/base_item.tscn<>uid://cegrkjbnwd1fd::::res://assets/itens/equipments/helm/leather_cap.png
+::res://scenes/items/equipment/helmet/::1763651068
+leather_cap.tscn::PackedScene::6292872424489616297::1763651068::0::1::::<><>::uid://ck1g0o4dx1ilm::::res://scenes/base_item.tscn<>uid://56qmy1rn5tqy::::res://assets/itens/equipments/helm/leather_cap.png
 ::res://scenes/items/equipment/necklace/::1763581518
 simple_pendant.tscn::PackedScene::1731959904632735045::1763581518::0::1::::<><>::uid://ck1g0o4dx1ilm::::res://scenes/base_item.tscn<>uid://bttfmt7a5rq26::::res://assets/itens/equipments/necklace/simple_pendant.png
 ::res://scenes/items/equipment/rings/::1763581527
 iron_ring.tscn::PackedScene::3869039823906863240::1763581527::0::1::::<><>::uid://ck1g0o4dx1ilm::::res://scenes/base_item.tscn<>uid://d31tt500lrpoy::::res://assets/itens/equipments/rings/iron_ring.png
-::res://scenes/items/equipment/shields/::1763581501
+::res://scenes/items/equipment/shields/::1763651029
 iron_kiteshield.tscn::PackedScene::9042262960088596013::1763581501::0::1::::<><>::uid://ck1g0o4dx1ilm::::res://scenes/base_item.tscn<>uid://caamqye5mhkvv::::res://assets/itens/equipments/shields/iron_kiteshield.png
-wooded_shield.tscn::PackedScene::1932838245115244879::1763581456::0::1::::<><>::uid://ck1g0o4dx1ilm::::res://scenes/base_item.tscn<>uid://bcdndkpbjjcmn::::res://assets/itens/equipments/shields/wooded_shield.png
-::res://scenes/items/equipment/weapons/::1763581510
-gladiators_longsword.tscn::PackedScene::5633238943619472087::1763581510::0::1::::<><>::uid://ck1g0o4dx1ilm::::res://scenes/base_item.tscn<>uid://t183lyj3vu8d::::res://assets/itens/equipments/weapons/gladiators_longsword.png
-iron_shortsword.tscn::PackedScene::8637591346798594553::1763581447::0::1::::<><>::uid://ck1g0o4dx1ilm::::res://scenes/base_item.tscn<>uid://b7m6sbftgeprm::::res://assets/itens/equipments/weapons/iron_shortsword.png
-rusty_sword.tscn::PackedScene::3482680423700702220::1763581407::0::1::::<><>::uid://ck1g0o4dx1ilm::::res://scenes/base_item.tscn<>uid://ddy2ec6bqa3qu::::res://assets/itens/equipments/weapons/rusty_sword.png
-steel_longsword.tscn::PackedScene::830899684101855493::1763581493::0::1::::<><>::uid://ck1g0o4dx1ilm::::res://scenes/base_item.tscn<>uid://dxauj8memiwgy::::res://assets/itens/equipments/weapons/steel_longsword.png
-::res://scripts/::1763588071
+wooded_shield.tscn::PackedScene::1932838245115244879::1763651029::0::1::::<><>::uid://ck1g0o4dx1ilm::::res://scenes/base_item.tscn<>uid://tkhbiaapsum4::::res://assets/itens/equipments/shields/wooded_shield.png
+::res://scenes/items/equipment/weapons/::1763650840
+gladiators_longsword.tscn::PackedScene::5633238943619472087::1763650593::0::1::::<><>::uid://ck1g0o4dx1ilm::::res://scenes/base_item.tscn<>uid://cstfk18sq385i::::res://assets/itens/equipments/weapons/swords/gladiators_longsword.png
+iron_shortsword.tscn::PackedScene::8637591346798594553::1763650733::0::1::::<><>::uid://ck1g0o4dx1ilm::::res://scenes/base_item.tscn<>uid://5feomeg01yhg::::res://assets/itens/equipments/weapons/swords/iron_shortsword.png
+rusty_sword.tscn::PackedScene::3482680423700702220::1763650777::0::1::::<><>::uid://ck1g0o4dx1ilm::::res://scenes/base_item.tscn<>uid://4k7fikeqjk3::::res://assets/itens/equipments/weapons/swords/rusty_sword.png
+steel_longsword.tscn::PackedScene::830899684101855493::1763650840::0::1::::<><>::uid://ck1g0o4dx1ilm::::res://scenes/base_item.tscn<>uid://qleel20dal4o::::res://assets/itens/equipments/weapons/swords/steel_longsword.png
+::res://scripts/::1763652068
 base_enemy.gd::GDScript::-1::1763587158::0::1::::BaseEnemy<>StaticBody2D<>::
 base_item.gd::GDScript::-1::1763563183::0::1::::BaseItem<>StaticBody2D<>::
 derived_status.gd::GDScript::-1::1763393852::0::1::::DerivedStats<>TextureRect<>::
@@ -857,14 +851,14 @@ game_log.gd::GDScript::-1::1763556632::0::1::::GameLog<>TextureRect<>::
 global_player.gd::GDScript::-1::1763585945::0::1::::GlobalPlayer<>Node<>::
 global_world.gd::GDScript::-1::1763393852::0::1::::GlobalWorld<>Node<>::
 inventory.gd::GDScript::-1::1763581560::0::1::::Inventory<>Node2D<>::
-loot_container.gd::GDScript::-1::1763588071::0::1::::LootContainer<>ScrollContainer<>::
+loot_container.gd::GDScript::-1::1763652068::0::1::::LootContainer<>ScrollContainer<>::
 main_scene.gd::GDScript::-1::1763577734::0::1::::MainScene<>Control<>::
 slot.gd::GDScript::-1::1763393852::0::1::::Slot<>ColorRect<>::
-slot_possible_item.gd::GDScript::-1::1763585309::0::1::::SlotPossibleLoot<>TextureRect<>::
+slot_possible_item.gd::GDScript::-1::1763651887::0::1::::SlotPossibleLoot<>TextureRect<>::
 stats_container.gd::GDScript::-1::1763393852::0::1::::StatsContainer<>TextureRect<>::
 upgrades.gd::GDScript::-1::1763393852::0::1::::Upgrades<>TextureRect<>::
-::res://scripts/json/::1763581530
+::res://scripts/json/::1763650902
 enemy_hp_levels.json::JSON::-1::1763393852::0::1::::<><>::
-equipment.json::JSON::-1::1763581530::0::1::::<><>::
+equipment.json::JSON::-1::1763650902::0::1::::<><>::
 gold_range.json::JSON::-1::1763563225::0::1::::<><>::
 player_exp.json::JSON::-1::1763393852::0::1::::<><>::
