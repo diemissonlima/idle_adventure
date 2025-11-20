@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dhgrb6ivy00oe"]
 
 [ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_n7rly"]
-[ext_resource type="Texture2D" uid="uid://fudahpxkc123" path="res://assets/itens/equipments/belts/simple_sash.png" id="2_r4r7o"]
+[ext_resource type="Texture2D" uid="uid://cfe45vi4pq01w" path="res://assets/itens/equipments/belts/simple_sash.png" id="2_ugogu"]
 
 [node name="SimpleSash" instance=ExtResource("1_n7rly")]
 item_name = "Simple Sash"
@@ -9,4 +9,4 @@ item_key = "simple_sash"
 item_rarity = "common"
 
 [node name="Sprite" parent="." index="1"]
-texture = ExtResource("2_r4r7o")
+texture = ExtResource("2_ugogu")

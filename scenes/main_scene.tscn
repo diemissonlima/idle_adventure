@@ -473,7 +473,6 @@ theme_override_constants/separation = 0
 alignment = 2
 
 [node name="LootContainer" type="ScrollContainer" parent="Container1/BackgroundLog" node_paths=PackedStringArray("gold_label", "loot_container") groups=["loot_container"]]
-visible = false
 custom_minimum_size = Vector2(113, 116)
 layout_mode = 1
 anchors_preset = 5

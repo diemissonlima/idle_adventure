@@ -14,8 +14,8 @@ func update_label() -> void:
 	var gold_range = World.get_gold_range(str(World.level))
 	
 	gold_label.text = (
-		str(World.format_number(gold_range[0])) + "g - " + 
-		str(World.format_number(gold_range[1])) + "g"
+		str(World.format_number(gold_range[0])) + " - " + 
+		str(World.format_number(gold_range[1]))
 	)
 
 

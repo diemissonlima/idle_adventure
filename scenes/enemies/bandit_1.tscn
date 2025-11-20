@@ -1,15 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://bvbiyffex0vl6"]
+[gd_scene load_steps=5 format=3 uid="uid://bvbiyffex0vl6"]
 
 [ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="1_4jhp0"]
 [ext_resource type="PackedScene" uid="uid://c75roqyw5exar" path="res://scenes/items/equipment/armor/leather_tunic.tscn" id="2_j660x"]
 [ext_resource type="Texture2D" uid="uid://dah1gv6e02emg" path="res://assets/enemies/bandits/104.png" id="2_sovtd"]
+[ext_resource type="PackedScene" uid="uid://dhmq1qc6fqw" path="res://scenes/items/equipment/belts/leather_belt.tscn" id="3_n5ei6"]
 
 [node name="Bandit1" instance=ExtResource("1_4jhp0")]
 enemy_name = "Bandit"
 enemy_type = 0
 enemy_race = 1
-drop_list = Array[PackedScene]([ExtResource("2_j660x")])
-drop_chances = Array[float]([0.1])
+drop_list = Array[PackedScene]([ExtResource("2_j660x"), ExtResource("3_n5ei6")])
+drop_chances = Array[float]([0.1, 0.1])
 
 [node name="Sprite" parent="." index="1"]
 offset_top = -39.0
