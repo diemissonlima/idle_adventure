@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bveytkjklpsu2"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_x2hai"]
+[ext_resource type="Texture2D" uid="uid://cdpuj65a8siro" path="res://assets/itens/equipments/gloves/iron_plate_gloves.png" id="2_r6m3g"]
+
+[node name="IronPlateGloves" instance=ExtResource("1_x2hai")]
+item_name = "Iron Plate Gloves"
+item_key = "iron_plate_gloves"
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_r6m3g")

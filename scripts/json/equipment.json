@@ -2,6 +2,7 @@
 	"rusty_sword": {
 		"name": "Rusty Sword",
 		"slot": "weapon",
+		"unique": 0,
 		"sockets": 0,
 		"img_path": "res://assets/itens/equipments/weapons/swords/rusty_sword.png",
 		"power_level": {
@@ -22,6 +23,7 @@
 	"leather_cap": {
 		"name": "Leather Cap",
 		"slot": "helmet",
+		"unique": 0,
 		"sockets": 0,
 		"img_path": "res://assets/itens/equipments/helm/leather_cap.png",
 		"power_level": {
@@ -49,6 +51,7 @@
 	"leather_tunic": {
 		"name": "Leather Tunic",
 		"slot": "armor",
+		"unique": 0,
 		"sockets": 0,
 		"img_path": "res://assets/itens/equipments/armor/leather_tunic.png",
 		"power_level": {
@@ -76,6 +79,7 @@
 	"iron_shortsword": {
 		"name": "Iron Shortsword",
 		"slot": "weapon",
+		"unique": 0,
 		"sockets": 0,
 		"img_path": "res://assets/itens/equipments/weapons/swords/iron_shortsword.png",
 		"power_level": {
@@ -103,6 +107,7 @@
 	"wooded_shield": {
 		"name": "Wooded Shield",
 		"slot": "shield",
+		"unique": 0,
 		"sockets": 0,
 		"img_path": "res://assets/itens/equipments/shields/wooded_shield.png",
 		"power_level": {
@@ -123,6 +128,7 @@
 	"leather_belt": {
 		"name":"Leather Belt",
 		"slot": "belt",
+		"unique": 0,
 		"sockets": 0,
 		"img_path": "res://assets/itens/equipments/belts/leather_belt.png",
 		"power_level": {
@@ -150,6 +156,7 @@
 	"leather_gloves": {
 		"name": "Leather Gloves",
 		"slot": "gloves",
+		"unique": 0,
 		"sockets": 0,
 		"img_path": "res://assets/itens/equipments/gloves/leather_gloves.png",
 		"power_level": {
@@ -177,6 +184,7 @@
 	"simple_sash": {
 		"name": "Simple Sash",
 		"slot": "belt",
+		"unique": 0,
 		"sockets": 0,
 		"img_path": "res://assets/itens/equipments/belts/simple_sash.png",
 		"power_level": {
@@ -197,6 +205,7 @@
 	"steel_longsword": {
 		"name": "Steel Longsword",
 		"slot": "weapon",
+		"unique": 0,
 		"sockets": 0,
 		"img_path": "res://assets/itens/equipments/weapons/swords/steel_longsword.png",
 		"power_level": {
@@ -224,6 +233,7 @@
 	"iron_kiteshield": {
 		"name": "Iron Kiteshield",
 		"slot": "shield",
+		"unique": 0,
 		"sockets": 0,
 		"img_path": "res://assets/itens/equipments/shields/iron_kiteshield.png",
 		"power_level": {
@@ -251,6 +261,7 @@
 	"gladiators_longsword": {
 		"name": "Gladiator's Longsword",
 		"slot": "weapon",
+		"unique": 0,
 		"sockets": 2,
 		"img_path": "res://assets/itens/equipments/weapons/swords/gladiators_longsword.png",
 		"power_level": {
@@ -278,6 +289,7 @@
 	"simple_pendant": {
 		"name": "Simple Pendant",
 		"slot": "necklace",
+		"unique": 0,
 		"sockets": 0,
 		"img_path": "res://assets/itens/equipments/necklace/simple_pendant.png",
 		"power_level": {
@@ -298,6 +310,7 @@
 	"iron_ring": {
 		"name": "Iron Ring",
 		"slot": "ring",
+		"unique": 0,
 		"sockets": 0,
 		"img_path": "res://assets/itens/equipments/rings/iron_ring.png",
 		"power_level": {
@@ -318,6 +331,7 @@
 	"chainmail_hauberk": {
 		"name": "Chainmail Hauberk",
 		"slot": "armor",
+		"unique": 0,
 		"sockets": 0,
 		"img_path": "res://assets/itens/equipments/armor/chainmail_hauberk.png",
 		"power_level": {
@@ -333,6 +347,350 @@
 			"rare": [120, 264],
 			"epic": [120, 312],
 			"legendary": [120, 360]
+		}
+	},
+	
+	"chainmail_boots": {
+		"name": "Chainmail Boots",
+		"slot": "boots",
+		"unique": 0,
+		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/boots/chainmail_boots.png",
+		"power_level": {
+			"common": [25, 30],
+			"uncommon": [30, 35],
+			"rare": [35, 40],
+			"epic": [40, 45],
+			"legendary": [45, 49]
+		},
+		"click_damage": {
+			"common": [5, 8],
+			"uncommon": [5, 11],
+			"rare": [5, 14],
+			"epic": [5, 17],
+			"legendary": [5, 20]
+		},
+		"dps_damage": {
+			"common": [100, 140],
+			"uncommon": [100, 180],
+			"rare": [100, 220],
+			"epic": [100, 260],
+			"legendary": [100, 300]
+		}
+	},
+	"bronze_buckler": {
+		"name": "Bronze Buckler",
+		"slot": "shield",
+		"unique": 0,
+		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/shields/bronze_buckler.png",
+		"power_level": {
+			"common": [25, 30],
+			"uncommon": [30, 35],
+			"rare": [35, 40],
+			"epic": [40, 45],
+			"legendary": [45, 49]
+		},
+		"dps_damage": {
+			"common": [200, 260],
+			"uncommon": [200, 320],
+			"rare": [200, 380],
+			"epic": [200, 440],
+			"legendary": [200, 500]
+		}
+	},
+	"studded_leather_belt": {
+		"name": "Studded Leather Belt",
+		"slot": "belt",
+		"unique": 0,
+		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/belts/studded_leather_belt.png",
+		"power_level": {
+			"common": [25, 30],
+			"uncommon": [30, 35],
+			"rare": [35, 40],
+			"epic": [40, 45],
+			"legendary": [45, 49]
+		},
+		"dps_damage": {
+			"common": [120, 156],
+			"uncommon": [120, 192],
+			"rare": [120, 228],
+			"epic": [120, 264],
+			"legendary": [120, 300]
+		}
+	},
+	"tower_shield": {
+		"name": "Tower Shield",
+		"slot": "shield",
+		"unique": 0,
+		"sockets": 1,
+		"img_path": "res://assets/itens/equipments/shields/tower_shield.png",
+		"power_level": {
+			"common": [25, 30],
+			"uncommon": [30, 35],
+			"rare": [35, 40],
+			"epic": [40, 45],
+			"legendary": [45, 50]
+		},
+		"click_damage": {
+			"common": [5, 6],
+			"uncommon": [5, 7],
+			"rare": [5, 8],
+			"epic": [5, 9],
+			"legendary": [5, 10]
+		},
+		"dps_damage": {
+			"common": [500, 700],
+			"uncommon": [500, 900],
+			"rare": [500, 1100],
+			"epic": [500, 1300],
+			"legendary": [500, 1500]
+		}
+	},
+	"slimey_belt": {
+		"name": "Slimey Belt",
+		"slot": "belt",
+		"unique": 1,
+		"sockets": 2,
+		"img_path": "res://assets/itens/equipments/belts/slimey_belt.png",
+		"power_level": {
+			"common": [50, 55],
+			"uncommon": [50, 60],
+			"rare": [50, 65],
+			"epic": [50, 70],
+			"legendary": [50, 75]
+		},
+		"click_damage": {
+			"common": [50, 90],
+			"uncommon": [50, 130],
+			"rare": [50, 170],
+			"epic": [50, 210],
+			"legendary": [50, 250]
+		},
+		"dps_damage": {
+			"common": [1500, 1900],
+			"uncommon": [1500, 2300],
+			"rare": [1500, 2700],
+			"epic": [1500, 4100],
+			"legendary": [1500, 4500]
+		}
+	},
+	"slimey_strawhat": {
+		"name": "Slimey Strawhat",
+		"slot": "helmet",
+		"unique": 1,
+		"sockets": 2,
+		"img_path": "res://assets/itens/equipments/helm/slimey_strawhat.png",
+		"power_level": {
+			"common": [25, 30],
+			"uncommon": [30, 35],
+			"rare": [35, 40],
+			"epic": [40, 45],
+			"legendary": [45, 50]
+		},
+		"dps_damage": {
+			"common": [1000, 1400],
+			"uncommon": [1000, 1800],
+			"rare": [1000, 2200],
+			"epic": [1000, 2600],
+			"legendary": [1000, 3000]
+		},
+		"gold_gain": {
+			"common": [10, 14],
+			"uncommon": [10, 18],
+			"rare": [10, 22],
+			"epic": [10, 26],
+			"legendary": [10, 30]
+		},
+		"magic_find": {
+			"common": [0.5, 0.7],
+			"uncommon": [0.5, 0.9],
+			"rare": [0.5, 1.1],
+			"epic": [0.5, 1.3],
+			"legendary": [0.5, 1.5]
+		}
+	},
+	"runic_blade": {
+		"name": "Runic Blade",
+		"slot": "weapon",
+		"unique": 0,
+		"sockets": 2,
+		"img_path": "res://assets/itens/equipments/weapons/swords/runic_blade.png",
+		"power_level": {
+			"common": [25, 30],
+			"uncommon": [30, 35],
+			"rare": [35, 40],
+			"epic": [40, 45],
+			"legendary": [45, 50]
+		},
+		"click_damage": {
+			"common": [80, 94],
+			"uncommon": [80, 108],
+			"rare": [80, 122],
+			"epic": [80, 136],
+			"legendary": [80, 150]
+		},
+		"dps_damage": {
+			"common": [1500, 2000],
+			"uncommon": [1500, 2500],
+			"rare": [1500, 3000],
+			"epic": [1500, 3500],
+			"legendary": [1500, 4000]
+		}
+	},
+	"might_belt": {
+		"name": "Might Belt",
+		"slot": "belt",
+		"unique": 0,
+		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/belts/might_belt.png",
+		"power_level": {
+			"common": [50, 55],
+			"uncommon": [55, 60],
+			"rare": [60, 65],
+			"epic": [65, 70],
+			"legendary": [70, 74]
+		},
+		"dps_damage": {
+			"common": [100, 240],
+			"uncommon": [100, 380],
+			"rare": [100, 520],
+			"epic": [100, 660],
+			"legendary": [100, 800]
+		}
+	},
+	"iron_helm": {
+		"name": "Iron Helm",
+		"slot": "helm",
+		"unique": 0,
+		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/helm/iron_helm.png",
+		"power_level": {
+			"common": [50, 55],
+			"uncommon": [55, 60],
+			"rare": [60, 65],
+			"epic": [65, 70],
+			"legendary": [70, 74]
+		},
+		"click_damage": {
+			"common": [10, 12],
+			"uncommon": [10, 14],
+			"rare": [10, 16],
+			"epic": [10, 18],
+			"legendary": [10, 20]
+		},
+		"gold_gain": {
+			"common": [5, 8],
+			"uncommon": [10, 11],
+			"rare": [10, 14],
+			"epic": [10, 17],
+			"legendary": [10, 20]
+		}
+	},
+	"iron_plate_gloves": {
+		"name": "Iron Plate Gloves",
+		"slot": "gloves",
+		"unique": 0,
+		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/gloves/iron_plate_gloves.png",
+		"power_level": {
+			"common": [50, 55],
+			"uncommon": [55, 60],
+			"rare": [60, 65],
+			"epic": [65, 70],
+			"legendary": [70, 74]
+		},
+		"dps_damage": {
+			"common": [500, 600],
+			"uncommon": [500, 700],
+			"rare": [500, 800],
+			"epic": [500, 900],
+			"legendary": [500, 1000]
+		},
+		"gold_gain": {
+			"common": [10, 14],
+			"uncommon": [10, 18],
+			"rare": [10, 22],
+			"epic": [10, 26],
+			"legendary": [10, 30]
+		}
+	},
+	"iron_plate_boots": {
+		"name": "Iron Plate Boots",
+		"slot": "boots",
+		"unique": 0,
+		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/boots/iron_plate_boots.png",
+		"power_level": {
+			"common": [50, 55],
+			"uncommon": [55, 60],
+			"rare": [60, 65],
+			"epic": [65, 70],
+			"legendary": [70, 74]
+		},
+		"click_damage": {
+			"common": [500, 600],
+			"uncommon": [500, 700],
+			"rare": [500, 800],
+			"epic": [500, 900],
+			"legendary": [500, 1000]
+		},
+		"magic_find": {
+			"common": [1, 2],
+			"uncommon": [1, 3],
+			"rare": [1, 4],
+			"epic": [1, 5],
+			"legendary": [1, 6]
+		}
+	},
+	"silver_locket": {
+		"name": "Silver Locket",
+		"slot": "necklace",
+		"unique": 0,
+		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/necklace/silver_locket.png",
+		"power_level": {
+			"common": [50, 55],
+			"uncommon": [55, 60],
+			"rare": [60, 65],
+			"epic": [65, 70],
+			"legendary": [70, 74]
+		},
+		"gold_gain": {
+			"common": [10, 12],
+			"uncommon": [10, 14],
+			"rare": [10, 16],
+			"epic": [10, 18],
+			"legendary": [10, 20]
+		}
+	},
+	"silver_ring": {
+		"name": "Silver Ring",
+		"slot": "ring",
+		"unique": 0,
+		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/rings/silver_ring.png",
+		"power_level": {
+			"common": [50, 55],
+			"uncommon": [55, 60],
+			"rare": [60, 65],
+			"epic": [65, 70],
+			"legendary": [70, 74]
+		},
+		"magic_find": {
+			"common": [2, 3],
+			"uncommon": [2, 4],
+			"rare": [2, 5],
+			"epic": [2, 6],
+			"legendary": [2, 7]
+		},
+		"gold_gain": {
+			"common": [9, 10],
+			"uncommon": [9, 11],
+			"rare": [9, 12],
+			"epic": [9, 13],
+			"legendary": [9, 15]
 		}
 	},
 	

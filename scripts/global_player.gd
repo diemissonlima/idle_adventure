@@ -274,12 +274,23 @@ func improve_upgrades(upgrade_name: String) -> void:
 
 
 func improve_scrap(value: float) -> void:
-	scrap_resource += value
+	var bonus_from_scrap_scavenger: float = permanent_bonus["scrap_scavenger"]["bonus"]
+	var bonus_from_magic_find: float = 0
+	var bonus_from_equipment: float = 0
+	var total_bonus: float = (
+		bonus_from_scrap_scavenger + 
+		bonus_from_magic_find + 
+		bonus_from_equipment
+	)
+	
+	var scrap_dropped: float = value + (value * (total_bonus / 100))
+	
+	scrap_resource += scrap_dropped
 	
 	get_tree().call_group("main_scene", "update_label")
 	get_tree().call_group(
 		"game_log", "add_message",
-		"You gained " + str(World.format_number(value)) + " scrap."
+		"You gained " + str(World.format_number(scrap_dropped)) + " scrap."
 		)
 
 

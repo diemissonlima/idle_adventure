@@ -1,15 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://bvbiyffex0vl6"]
+[gd_scene load_steps=6 format=3 uid="uid://bvbiyffex0vl6"]
 
 [ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="1_4jhp0"]
+[ext_resource type="PackedScene" uid="uid://bee7qx6i6f6m3" path="res://scenes/items/equipment/belts/might_belt.tscn" id="2_7qoce"]
 [ext_resource type="Texture2D" uid="uid://dah1gv6e02emg" path="res://assets/enemies/bandits/104.png" id="2_sovtd"]
-[ext_resource type="PackedScene" uid="uid://cfq8qj4km86n4" path="res://scenes/items/equipment/armor/chainmail_hauberk.tscn" id="3_h4vok"]
+[ext_resource type="PackedScene" uid="uid://u7w30ubep4m0" path="res://scenes/items/equipment/weapons/runic_blade.tscn" id="3_6t7q0"]
+[ext_resource type="PackedScene" uid="uid://cgg0q68yh33ql" path="res://scenes/items/equipment/helmet/iron_helm.tscn" id="4_4sbbv"]
 
 [node name="Bandit1" instance=ExtResource("1_4jhp0")]
 enemy_name = "Bandit"
 enemy_type = 0
 enemy_race = 1
-drop_list = Array[PackedScene]([ExtResource("3_h4vok")])
-drop_chances = Array[float]([1.0])
+drop_list = Array[PackedScene]([ExtResource("2_7qoce"), ExtResource("3_6t7q0"), ExtResource("4_4sbbv")])
 
 [node name="Sprite" parent="." index="1"]
 offset_top = -39.0

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpyo7kjiaxora"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_o57ak"]
+[ext_resource type="Texture2D" uid="uid://byktma6h12wqt" path="res://assets/itens/equipments/boots/chainmail_boots.png" id="2_2rjmy"]
+
+[node name="ChainmailBoots" instance=ExtResource("1_o57ak")]
+item_name = "Chainmail Boots"
+item_key = "chainmail_boots"
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_2rjmy")

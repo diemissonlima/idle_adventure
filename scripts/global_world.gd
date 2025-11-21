@@ -45,6 +45,9 @@ func load_json() -> void:
 						Player.level_dict = data
 					"res://scripts/json/equipment.json":
 						equipments = data
+	
+	#for j in equipments.keys():
+		#print(j)
 
 
 func format_number(value: float) -> String:

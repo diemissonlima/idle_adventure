@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://u7w30ubep4m0"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_8enda"]
+[ext_resource type="Texture2D" uid="uid://dv26yy00w1ws5" path="res://assets/itens/equipments/weapons/swords/runic_blade.png" id="2_e4s3n"]
+
+[node name="RunicBlade" instance=ExtResource("1_8enda")]
+item_name = "Runic Blade"
+item_key = "runic_blade"
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_e4s3n")

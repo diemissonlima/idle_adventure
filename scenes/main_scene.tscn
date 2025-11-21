@@ -1,4 +1,4 @@
-[gd_scene load_steps=99 format=3 uid="uid://chee12681ksau"]
+[gd_scene load_steps=111 format=3 uid="uid://chee12681ksau"]
 
 [ext_resource type="Texture2D" uid="uid://ciir88k8isk6u" path="res://assets/backgrounds/1.png" id="1_5hms3"]
 [ext_resource type="Script" path="res://scripts/main_scene.gd" id="1_7f1vr"]
@@ -58,9 +58,21 @@
 [ext_resource type="PackedScene" uid="uid://d13e0q3s6r1th" path="res://scenes/items/equipment/shields/iron_kiteshield.tscn" id="35_fnjlg"]
 [ext_resource type="PackedScene" uid="uid://2sjtfobfb40r" path="res://scenes/items/equipment/shields/wooded_shield.tscn" id="36_52qtn"]
 [ext_resource type="PackedScene" uid="uid://cmi1vfp28ul4b" path="res://scenes/items/equipment/weapons/gladiators_longsword.tscn" id="37_jany3"]
+[ext_resource type="PackedScene" uid="uid://cfq8qj4km86n4" path="res://scenes/items/equipment/armor/chainmail_hauberk.tscn" id="37_l6t6j"]
 [ext_resource type="PackedScene" uid="uid://dvcd4q31beisf" path="res://scenes/items/equipment/weapons/iron_shortsword.tscn" id="38_agvd0"]
 [ext_resource type="PackedScene" uid="uid://bpvbic3vb4jcm" path="res://scenes/items/equipment/weapons/rusty_sword.tscn" id="39_i8j4n"]
+[ext_resource type="PackedScene" uid="uid://bee7qx6i6f6m3" path="res://scenes/items/equipment/belts/might_belt.tscn" id="40_1dx3p"]
 [ext_resource type="PackedScene" uid="uid://l3q2cv0t7c02" path="res://scenes/items/equipment/weapons/steel_longsword.tscn" id="40_n06h2"]
+[ext_resource type="PackedScene" uid="uid://bmnuovrmn4rpx" path="res://scenes/items/equipment/belts/slimey_belt.tscn" id="42_8n0wl"]
+[ext_resource type="PackedScene" uid="uid://0anb2copds4o" path="res://scenes/items/equipment/belts/studded_leather_belt.tscn" id="43_hj88v"]
+[ext_resource type="PackedScene" uid="uid://dpyo7kjiaxora" path="res://scenes/items/equipment/boots/chainmail_boots.tscn" id="44_kb8cc"]
+[ext_resource type="PackedScene" uid="uid://cgy8ohjckcdvk" path="res://scenes/items/equipment/boots/iron_plate_boots.tscn" id="45_k1dkv"]
+[ext_resource type="PackedScene" uid="uid://bveytkjklpsu2" path="res://scenes/items/equipment/gloves/iron_plate_gloves.tscn" id="46_ctxb0"]
+[ext_resource type="PackedScene" uid="uid://cgg0q68yh33ql" path="res://scenes/items/equipment/helmet/iron_helm.tscn" id="48_7otnh"]
+[ext_resource type="PackedScene" uid="uid://3xqs38ervwsc" path="res://scenes/items/equipment/helmet/slimey_strawhat.tscn" id="50_2i6wn"]
+[ext_resource type="PackedScene" uid="uid://btpabowpxsrdj" path="res://scenes/items/equipment/shields/bronze_buckler.tscn" id="53_xoujm"]
+[ext_resource type="PackedScene" uid="uid://c05qwnlnylolo" path="res://scenes/items/equipment/shields/tower_shield.tscn" id="55_chdh8"]
+[ext_resource type="PackedScene" uid="uid://u7w30ubep4m0" path="res://scenes/items/equipment/weapons/runic_blade.tscn" id="59_ydkpq"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_qrr8g"]
 font = ExtResource("4_rkqi3")
@@ -1435,7 +1447,7 @@ slot_scene = ExtResource("26_cvly0")
 inventory_size = 160
 inventory_container = NodePath("BackgroundInventory/ScrollContainer/GridContainer")
 equipment_container = NodePath("BackgroundEquipment")
-item_list = Array[PackedScene]([ExtResource("28_cxrfu"), ExtResource("29_l7fe6"), ExtResource("30_sfkmi"), ExtResource("31_pj554"), ExtResource("32_w6c3g"), ExtResource("33_5kmub"), ExtResource("34_jsc5r"), ExtResource("35_fnjlg"), ExtResource("36_52qtn"), ExtResource("37_jany3"), ExtResource("38_agvd0"), ExtResource("39_i8j4n"), ExtResource("40_n06h2")])
+item_list = Array[PackedScene]([ExtResource("37_l6t6j"), ExtResource("28_cxrfu"), ExtResource("29_l7fe6"), ExtResource("40_1dx3p"), ExtResource("30_sfkmi"), ExtResource("42_8n0wl"), ExtResource("43_hj88v"), ExtResource("44_kb8cc"), ExtResource("45_k1dkv"), ExtResource("46_ctxb0"), ExtResource("31_pj554"), ExtResource("48_7otnh"), ExtResource("32_w6c3g"), ExtResource("50_2i6wn"), ExtResource("33_5kmub"), ExtResource("34_jsc5r"), ExtResource("53_xoujm"), ExtResource("35_fnjlg"), ExtResource("55_chdh8"), ExtResource("36_52qtn"), ExtResource("37_jany3"), ExtResource("38_agvd0"), ExtResource("59_ydkpq"), ExtResource("39_i8j4n"), ExtResource("40_n06h2")])
 
 [node name="BackgroundEquipment" type="TextureRect" parent="Container2/Inventory" node_paths=PackedStringArray("helmet_slot", "armor_slot", "boots_slot", "gloves_slot", "belt_slot", "ring_1_slot", "ring_2_slot", "shield_slot", "weapon_slot", "necklace_slot") groups=["equipment_manager"]]
 offset_left = 63.0

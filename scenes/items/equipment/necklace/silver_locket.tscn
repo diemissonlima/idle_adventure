@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://kl4noh34xrva"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_c2ceo"]
+[ext_resource type="Texture2D" uid="uid://cv0crau7g2khq" path="res://assets/itens/equipments/necklace/silver_locket.png" id="2_kpau6"]
+
+[node name="SilverLocket" instance=ExtResource("1_c2ceo")]
+item_name = "Silver Locket"
+item_key = "silver_locket"
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_kpau6")

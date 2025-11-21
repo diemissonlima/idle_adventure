@@ -105,6 +105,15 @@ func equip_item(item: StaticBody2D) -> void:
 			item.get_parent().remove_child(item)
 			belt_slot.add_child(item)
 		
+		"boots":
+			if boots_slot.get_child_count() == 1:
+				return
+			
+			equipment_data["boots"] = item.item_data
+			item.get_parent().color = Color("#262626")
+			item.get_parent().remove_child(item)
+			boots_slot.add_child(item)
+		
 		"necklace":
 			if necklace_slot.get_child_count() == 1:
 				return

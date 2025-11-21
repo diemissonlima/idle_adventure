@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c05qwnlnylolo"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_luwgi"]
+[ext_resource type="Texture2D" uid="uid://bguuo1i31swha" path="res://assets/itens/equipments/shields/tower_shield.png" id="2_ftxi6"]
+
+[node name="TowerShield" instance=ExtResource("1_luwgi")]
+item_name = "Tower Shield"
+item_key = "tower_shield"
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_ftxi6")

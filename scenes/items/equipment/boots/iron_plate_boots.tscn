@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgy8ohjckcdvk"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_hmcji"]
+[ext_resource type="Texture2D" uid="uid://gdvg4ncx8bos" path="res://assets/itens/equipments/boots/iron_plate_boots.png" id="2_ag5ve"]
+
+[node name="IronPlateBoots" instance=ExtResource("1_hmcji")]
+item_name = "Iron Plate Boots"
+item_key = "iron_plate_boots"
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_ag5ve")

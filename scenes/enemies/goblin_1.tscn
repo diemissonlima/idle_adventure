@@ -1,16 +1,16 @@
 [gd_scene load_steps=5 format=3 uid="uid://c6l52gfn4g4ge"]
 
 [ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="1_uqobd"]
-[ext_resource type="PackedScene" uid="uid://bpvbic3vb4jcm" path="res://scenes/items/equipment/weapons/rusty_sword.tscn" id="2_b2o0a"]
+[ext_resource type="PackedScene" uid="uid://bveytkjklpsu2" path="res://scenes/items/equipment/gloves/iron_plate_gloves.tscn" id="2_6eon1"]
 [ext_resource type="Texture2D" uid="uid://s2bw8i2pc8kg" path="res://assets/enemies/goblins/11.png" id="2_oyb6g"]
-[ext_resource type="PackedScene" uid="uid://cvwkxo8nx26w0" path="res://scenes/items/equipment/helmet/leather_cap.tscn" id="3_w3cth"]
+[ext_resource type="PackedScene" uid="uid://cgy8ohjckcdvk" path="res://scenes/items/equipment/boots/iron_plate_boots.tscn" id="3_xav6q"]
 
 [node name="Goblin1" instance=ExtResource("1_uqobd")]
 enemy_name = "Goblin"
 enemy_type = 0
 enemy_race = 0
-drop_list = Array[PackedScene]([ExtResource("2_b2o0a"), ExtResource("3_w3cth")])
-drop_chances = Array[float]([0.05, 0.05])
+drop_list = Array[PackedScene]([ExtResource("2_6eon1"), ExtResource("3_xav6q")])
+drop_chances = Array[float]([0.5, 0.5])
 
 [node name="Sprite" parent="." index="1"]
 texture = ExtResource("2_oyb6g")

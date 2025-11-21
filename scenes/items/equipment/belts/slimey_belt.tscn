@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmnuovrmn4rpx"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_thxg4"]
+[ext_resource type="Texture2D" uid="uid://c8ul1xabcib5m" path="res://assets/itens/equipments/belts/slimey_belt.png" id="2_j6vws"]
+
+[node name="SlimeyBelt" instance=ExtResource("1_thxg4")]
+item_name = "Slimey Belt"
+item_key = "slimey_belt"
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_j6vws")

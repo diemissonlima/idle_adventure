@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://3xqs38ervwsc"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_7pndu"]
+[ext_resource type="Texture2D" uid="uid://cwyfltj4bbc2d" path="res://assets/itens/equipments/helm/slimey_strawhat.png" id="2_t7nrs"]
+
+[node name="SlimeyStrawhat" instance=ExtResource("1_7pndu")]
+item_name = "Slimey Strawhat"
+item_key = "slimey_strawhat"
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_t7nrs")

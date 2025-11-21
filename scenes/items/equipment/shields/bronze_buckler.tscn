@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://btpabowpxsrdj"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_nv4nu"]
+[ext_resource type="Texture2D" uid="uid://bfwtiau5y08ln" path="res://assets/itens/equipments/shields/bronze_buckler.png" id="2_te40t"]
+
+[node name="BronzeBuckler" instance=ExtResource("1_nv4nu")]
+item_name = "Bronze Buckler"
+item_key = "bronze_buckler"
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_te40t")

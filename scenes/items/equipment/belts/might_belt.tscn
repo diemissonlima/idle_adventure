@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bee7qx6i6f6m3"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_gpx6x"]
+[ext_resource type="Texture2D" uid="uid://cliu27o35r14j" path="res://assets/itens/equipments/belts/might_belt.png" id="2_xxvvm"]
+
+[node name="MightBelt" instance=ExtResource("1_gpx6x")]
+item_name = "Might Belt"
+item_key = "might_belt"
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_xxvvm")
