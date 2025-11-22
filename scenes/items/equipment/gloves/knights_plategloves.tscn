@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnikxhlh11loy"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_p4uff"]
+[ext_resource type="Texture2D" uid="uid://rctxwwlmtw8h" path="res://assets/itens/equipments/gloves/knights_plategloves.png" id="2_jaiem"]
+
+[node name="KnightsPlategloves" instance=ExtResource("1_p4uff")]
+item_name = "Knight's Plategloves"
+item_key = "knights_plategloves"
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_jaiem")

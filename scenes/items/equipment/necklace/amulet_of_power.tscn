@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://2wggxtx8sglk"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_g5v62"]
+[ext_resource type="Texture2D" uid="uid://c8ajrnqedjlw7" path="res://assets/itens/equipments/necklace/amulet_of_power.png" id="2_1hb5u"]
+
+[node name="AmuletOfPower" instance=ExtResource("1_g5v62")]
+item_name = "Amulet of Power"
+item_key = "amulet_of_power"
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_1hb5u")

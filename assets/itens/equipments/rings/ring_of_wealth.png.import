@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://g8gfvx4kgsoo"
-path="res://.godot/imported/Icon14.png-d356357c1decccaa7e3d85457780ee09.ctex"
+uid="uid://bn81t8gk8hyeq"
+path="res://.godot/imported/ring_of_wealth.png-91fe207dc26a04a482ae1cb85fd8b91a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/itens/equipments/shields/Icon14.png"
-dest_files=["res://.godot/imported/Icon14.png-d356357c1decccaa7e3d85457780ee09.ctex"]
+source_file="res://assets/itens/equipments/rings/ring_of_wealth.png"
+dest_files=["res://.godot/imported/ring_of_wealth.png-91fe207dc26a04a482ae1cb85fd8b91a.ctex"]
 
 [params]
 

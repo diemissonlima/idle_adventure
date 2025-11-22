@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwvo2knkoq4hh"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_qvenc"]
+[ext_resource type="Texture2D" uid="uid://bn81t8gk8hyeq" path="res://assets/itens/equipments/rings/ring_of_wealth.png" id="2_ce4q1"]
+
+[node name="RingOfWealth" instance=ExtResource("1_qvenc")]
+item_name = "Ring of Wealth"
+item_key = "ring_of_wealth"
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_ce4q1")

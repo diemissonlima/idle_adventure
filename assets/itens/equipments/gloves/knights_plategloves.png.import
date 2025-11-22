@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bn81t8gk8hyeq"
-path="res://.godot/imported/Icon11.png-6e0f169830abf8e9bdb6a211b65530ea.ctex"
+uid="uid://rctxwwlmtw8h"
+path="res://.godot/imported/knights_plategloves.png-870a66b3aeac8bd62ee402791c2891d6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/itens/equipments/rings/Icon11.png"
-dest_files=["res://.godot/imported/Icon11.png-6e0f169830abf8e9bdb6a211b65530ea.ctex"]
+source_file="res://assets/itens/equipments/gloves/knights_plategloves.png"
+dest_files=["res://.godot/imported/knights_plategloves.png-870a66b3aeac8bd62ee402791c2891d6.ctex"]
 
 [params]
 

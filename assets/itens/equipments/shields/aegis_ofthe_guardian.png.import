@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://df0ehi4xlosv4"
-path="res://.godot/imported/Icon9.png-58d33e49501c8c5b7314e4213ed86dba.ctex"
+uid="uid://g8gfvx4kgsoo"
+path="res://.godot/imported/aegis_ofthe_guardian.png-ab639c5314b2ecf36f815b8987f11b44.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/itens/equipments/boots/Icon9.png"
-dest_files=["res://.godot/imported/Icon9.png-58d33e49501c8c5b7314e4213ed86dba.ctex"]
+source_file="res://assets/itens/equipments/shields/aegis_ofthe_guardian.png"
+dest_files=["res://.godot/imported/aegis_ofthe_guardian.png-ab639c5314b2ecf36f815b8987f11b44.ctex"]
 
 [params]
 

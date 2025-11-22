@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://ci3eislk8233o"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_u115l"]
+[ext_resource type="Texture2D" uid="uid://dp01o8q1swu8j" path="res://assets/itens/equipments/rings/silver_ring.png" id="2_m1olo"]
+
+[node name="SilverRing" instance=ExtResource("1_u115l")]
+item_name = "Silver Ring"
+item_key = "silver_ring"
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_m1olo")

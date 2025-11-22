@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rctxwwlmtw8h"
-path="res://.godot/imported/Icon13.png-1209a37b5fea3f865a2f027157b7df84.ctex"
+uid="uid://c8ajrnqedjlw7"
+path="res://.godot/imported/amulet_of_power.png-78a255cf587ff431862d7f736bebd921.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/itens/equipments/gloves/Icon13.png"
-dest_files=["res://.godot/imported/Icon13.png-1209a37b5fea3f865a2f027157b7df84.ctex"]
+source_file="res://assets/itens/equipments/necklace/amulet_of_power.png"
+dest_files=["res://.godot/imported/amulet_of_power.png-78a255cf587ff431862d7f736bebd921.ctex"]
 
 [params]
 

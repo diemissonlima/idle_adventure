@@ -6,6 +6,7 @@
 [node name="SlimeyStrawhat" instance=ExtResource("1_7pndu")]
 item_name = "Slimey Strawhat"
 item_key = "slimey_strawhat"
+item_unique = true
 
 [node name="Sprite" parent="." index="1"]
 texture = ExtResource("2_t7nrs")

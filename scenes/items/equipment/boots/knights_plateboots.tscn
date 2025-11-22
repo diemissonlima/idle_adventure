@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://5p6q0xfovc0v"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_0iyrn"]
+[ext_resource type="Texture2D" uid="uid://df0ehi4xlosv4" path="res://assets/itens/equipments/boots/knights_plateboots.png" id="2_q1b5y"]
+
+[node name="KnightsPlateboots" instance=ExtResource("1_0iyrn")]
+item_name = "Knight's Plateboots"
+item_key = "knights_plateboots"
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_q1b5y")

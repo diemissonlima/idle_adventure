@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8ajrnqedjlw7"
-path="res://.godot/imported/Icon1.png-61240d4d4d8611dd3070f21e29718f7a.ctex"
+uid="uid://df0ehi4xlosv4"
+path="res://.godot/imported/knights_plateboots.png-8ce8c88bf4d252abd7c854e8920eae25.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/itens/equipments/necklace/Icon1.png"
-dest_files=["res://.godot/imported/Icon1.png-61240d4d4d8611dd3070f21e29718f7a.ctex"]
+source_file="res://assets/itens/equipments/boots/knights_plateboots.png"
+dest_files=["res://.godot/imported/knights_plateboots.png-8ce8c88bf4d252abd7c854e8920eae25.ctex"]
 
 [params]
 
