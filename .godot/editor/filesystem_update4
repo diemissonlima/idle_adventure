@@ -1,8 +1,10 @@
-res://scripts/json/equipment.json
 res://scenes/main_scene.tscn
 res://scenes/base_enemy.tscn
 res://scenes/base_item.tscn
-res://scenes/items/equipment/necklace/amulet_of_power.tscn
-res://scenes/items/equipment/belts/slimey_belt.tscn
-res://scenes/items/equipment/helmet/slimey_strawhat.tscn
 res://scenes/items/equipment/boots/knights_plateboots.tscn
+res://scenes/enemies/slime_1.tscn
+res://scenes/enemies/wolf_1.tscn
+res://scenes/enemies/bandit_1.tscn
+res://scenes/enemies/goblin_1.tscn
+res://scenes/enemies/frostmane_wolf.tscn
+res://scenes/enemies/forestroot_skirmisher.tscn
