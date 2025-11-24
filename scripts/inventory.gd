@@ -17,7 +17,7 @@ var slot_target: ColorRect
 func _ready() -> void:
 	populate_inventory_slot()
 	connect_slot_signal()
-	populate_inventory()
+	# populate_inventory()
 
 
 func _process(_delta: float) -> void:

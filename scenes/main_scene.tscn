@@ -1,27 +1,35 @@
-[gd_scene load_steps=111 format=3 uid="uid://chee12681ksau"]
+[gd_scene load_steps=119 format=3 uid="uid://chee12681ksau"]
 
 [ext_resource type="Texture2D" uid="uid://ciir88k8isk6u" path="res://assets/backgrounds/1.png" id="1_5hms3"]
 [ext_resource type="Script" path="res://scripts/main_scene.gd" id="1_7f1vr"]
 [ext_resource type="Texture2D" uid="uid://dp4l60ef0vkwx" path="res://assets/itens/potion/Potion 1.png" id="2_2av4a"]
 [ext_resource type="Texture2D" uid="uid://bufxp71go2hq7" path="res://assets/backgrounds/EmptyPanel.png" id="2_27dyn"]
 [ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="2_f20an"]
-[ext_resource type="PackedScene" uid="uid://bvbiyffex0vl6" path="res://scenes/enemies/roadwarden_merc.tscn" id="3_4md8k"]
+[ext_resource type="PackedScene" uid="uid://bvbiyffex0vl6" path="res://scenes/enemies/1-100/roadwarden_merc.tscn" id="3_4md8k"]
+[ext_resource type="PackedScene" uid="uid://ovl3phgs6qjq" path="res://scenes/enemies/1-100/barkhorn_brute.tscn" id="3_467it"]
 [ext_resource type="FontFile" uid="uid://f3rv4yrfifht" path="res://assets/font/Oxanium-Bold.ttf" id="4_rkqi3"]
-[ext_resource type="PackedScene" uid="uid://c6l52gfn4g4ge" path="res://scenes/enemies/forestroot_skirmisher.tscn" id="4_tdakd"]
-[ext_resource type="PackedScene" uid="uid://c8m76amluo7mg" path="res://scenes/enemies/bubble_slime.tscn" id="5_s0o4w"]
+[ext_resource type="PackedScene" uid="uid://c6l52gfn4g4ge" path="res://scenes/enemies/1-100/forestroot_skirmisher.tscn" id="4_tdakd"]
+[ext_resource type="PackedScene" uid="uid://c8m76amluo7mg" path="res://scenes/enemies/1-100/bubble_slime.tscn" id="5_s0o4w"]
 [ext_resource type="Texture2D" uid="uid://cgm2g3igfxnw1" path="res://assets/backgrounds/Panel.png" id="5_vfv32"]
 [ext_resource type="Script" path="res://scripts/game_log.gd" id="6_f6268"]
-[ext_resource type="PackedScene" uid="uid://c1y2ohdxrpjjy" path="res://scenes/enemies/frostmane_wolf.tscn" id="6_maxp7"]
+[ext_resource type="PackedScene" uid="uid://c1y2ohdxrpjjy" path="res://scenes/enemies/1-100/frostmane_wolf.tscn" id="6_maxp7"]
 [ext_resource type="FontFile" uid="uid://iutw4od6mkk8" path="res://assets/font/Oxanium-Medium.ttf" id="6_r50xv"]
+[ext_resource type="PackedScene" uid="uid://sryoqqbcbjkx" path="res://scenes/enemies/1-100/fungal_gazer.tscn" id="7_jg2o1"]
+[ext_resource type="PackedScene" uid="uid://bk0nr5fpecda5" path="res://scenes/enemies/1-100/goldenwing_hawk.tscn" id="8_i7xs2"]
 [ext_resource type="Texture2D" uid="uid://ryyd4yrcsnio" path="res://assets/icons/strength icon.png" id="8_ygyk3"]
 [ext_resource type="Texture2D" uid="uid://cg724n8l7r5nq" path="res://assets/icons/escape icon.png" id="9_aj0nw"]
+[ext_resource type="PackedScene" uid="uid://kq7v83feibw8" path="res://scenes/enemies/1-100/leafsky_raptor.tscn" id="9_pgd7r"]
 [ext_resource type="Texture2D" uid="uid://dluvk35d70he5" path="res://assets/backgrounds/Separator.png" id="10_68jdv"]
 [ext_resource type="Script" path="res://scripts/stats_container.gd" id="10_kyq4a"]
 [ext_resource type="Texture2D" uid="uid://b1jc2c4vk8cxr" path="res://assets/icons/options icon.png" id="10_ud07j"]
+[ext_resource type="PackedScene" uid="uid://cj1xwrjf6phei" path="res://scenes/enemies/1-100/mystshade_adept.tscn" id="10_xhuua"]
 [ext_resource type="Texture2D" uid="uid://b1d7dwxtii10e" path="res://assets/backgrounds/Box.png" id="11_7htbn"]
 [ext_resource type="Texture2D" uid="uid://d02dugdsjp8q2" path="res://assets/icons/gold_coin.png" id="12_4my6k"]
 [ext_resource type="Script" path="res://scripts/loot_container.gd" id="12_7i184"]
+[ext_resource type="PackedScene" uid="uid://cmxuhklrfq10y" path="res://scenes/enemies/1-100/rotwood_ooze.tscn" id="12_pi6q7"]
+[ext_resource type="PackedScene" uid="uid://baww8lobmcasr" path="res://scenes/enemies/1-100/verdant_guardian.tscn" id="13_7fwp5"]
 [ext_resource type="Texture2D" uid="uid://ci3pwam4erm3v" path="res://assets/maps/map1.png" id="13_o5jv0"]
+[ext_resource type="PackedScene" uid="uid://byipi1u7gxgvp" path="res://scenes/enemies/1-100/wildgrove_howler.tscn" id="14_am2fb"]
 [ext_resource type="Texture2D" uid="uid://b3bqaij1prm5h" path="res://assets/progressbar/V1/Background Static.png" id="14_ce5mp"]
 [ext_resource type="FontFile" uid="uid://dvid2uhtkf6xm" path="res://assets/font/Oxanium-Regular.ttf" id="14_cn0d2"]
 [ext_resource type="Texture2D" uid="uid://dl6h6x71p5tr8" path="res://assets/progressbar/V1/Foreground.png" id="15_s5ieg"]
@@ -302,7 +310,7 @@ click_damage_level_label = NodePath("Container3/VBoxContainer/ImproveClick/Label
 dps_damage_cost_label = NodePath("Container3/VBoxContainer/ImproveDPS/LabelCost")
 dps_damage_level_label = NodePath("Container3/VBoxContainer/ImproveDPS/LabelLevel")
 enemy_scene = ExtResource("2_f20an")
-enemy_list = Array[PackedScene]([ExtResource("3_4md8k"), ExtResource("4_tdakd"), ExtResource("5_s0o4w"), ExtResource("6_maxp7")])
+enemy_list = Array[PackedScene]([ExtResource("3_467it"), ExtResource("5_s0o4w"), ExtResource("4_tdakd"), ExtResource("6_maxp7"), ExtResource("7_jg2o1"), ExtResource("8_i7xs2"), ExtResource("9_pgd7r"), ExtResource("10_xhuua"), ExtResource("3_4md8k"), ExtResource("12_pi6q7"), ExtResource("13_7fwp5"), ExtResource("14_am2fb")])
 
 [node name="Player" type="Node" parent="."]
 

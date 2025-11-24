@@ -1,0 +1,16 @@
+[gd_scene load_steps=6 format=3 uid="uid://baww8lobmcasr"]
+
+[ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="1_cly8b"]
+[ext_resource type="PackedScene" uid="uid://u7w30ubep4m0" path="res://scenes/items/equipment/weapons/runic_blade.tscn" id="2_ivlru"]
+[ext_resource type="Texture2D" uid="uid://c1x06k88iui58" path="res://assets/enemies/1-100/verdant_guardian.png" id="2_lh7fd"]
+[ext_resource type="PackedScene" uid="uid://c05qwnlnylolo" path="res://scenes/items/equipment/shields/tower_shield.tscn" id="3_uurwr"]
+[ext_resource type="PackedScene" uid="uid://cfq8qj4km86n4" path="res://scenes/items/equipment/armor/chainmail_hauberk.tscn" id="4_whlt5"]
+
+[node name="VerdantGuardian" instance=ExtResource("1_cly8b")]
+enemy_name = "Verdant Guardian"
+enemy_type = 1
+drop_list = Array[PackedScene]([ExtResource("2_ivlru"), ExtResource("3_uurwr"), ExtResource("4_whlt5")])
+drop_chances = Array[float]([0.4, 0.35, 0.25])
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_lh7fd")

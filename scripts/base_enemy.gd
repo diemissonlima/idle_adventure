@@ -11,9 +11,9 @@ class_name BaseEnemy
 @export var health: float
 @export_enum("Normal", "Elite", "Boss") var enemy_type
 @export_enum(
-	"goblin", "bandit", "slime", "wolf"
+	"goblin", "bandit", "slime", "beast"
 ) var enemy_race
-
+ 
 @export var drop_list: Array[PackedScene]
 @export var drop_chances: Array[float]
 

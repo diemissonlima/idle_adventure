@@ -1,17 +1,17 @@
 [gd_scene load_steps=6 format=3 uid="uid://bvbiyffex0vl6"]
 
 [ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="1_4jhp0"]
-[ext_resource type="PackedScene" uid="uid://bee7qx6i6f6m3" path="res://scenes/items/equipment/belts/might_belt.tscn" id="2_7qoce"]
-[ext_resource type="PackedScene" uid="uid://u7w30ubep4m0" path="res://scenes/items/equipment/weapons/runic_blade.tscn" id="3_6t7q0"]
-[ext_resource type="PackedScene" uid="uid://cgg0q68yh33ql" path="res://scenes/items/equipment/helmet/iron_helm.tscn" id="4_4sbbv"]
+[ext_resource type="PackedScene" uid="uid://l3q2cv0t7c02" path="res://scenes/items/equipment/weapons/steel_longsword.tscn" id="2_wmldm"]
+[ext_resource type="PackedScene" uid="uid://d13e0q3s6r1th" path="res://scenes/items/equipment/shields/iron_kiteshield.tscn" id="3_45tb1"]
+[ext_resource type="PackedScene" uid="uid://yw8eklmqtxar" path="res://scenes/items/equipment/necklace/simple_pendant.tscn" id="4_ro80b"]
 [ext_resource type="Texture2D" uid="uid://cokr86fffo8md" path="res://assets/enemies/1-100/roadwarden_merc.png" id="5_3g28o"]
 
 [node name="RoadwardenMerc" instance=ExtResource("1_4jhp0")]
 enemy_name = "Roadwarden Merc"
 enemy_type = 0
 enemy_race = 1
-drop_list = Array[PackedScene]([ExtResource("2_7qoce"), ExtResource("3_6t7q0"), ExtResource("4_4sbbv")])
-drop_chances = Array[float]([0.05, 0.05, 0.05])
+drop_list = Array[PackedScene]([ExtResource("2_wmldm"), ExtResource("3_45tb1"), ExtResource("4_ro80b")])
+drop_chances = Array[float]([0.4, 0.35, 0.25])
 
 [node name="Sprite" parent="." index="1"]
 offset_top = -39.0

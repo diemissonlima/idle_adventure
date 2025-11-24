@@ -1,6 +1,8 @@
 extends Node
 class_name GlobalPlayer
 
+# o shield aegis the guardian ta dando erro ao dropar
+
 # stats level player
 var level: int = 1
 var strength: int = 0
@@ -13,7 +15,7 @@ var avg_power_level: int = 0
 
 # status de dano
 var dps_damage: float = 0.0#150000000
-var click_damage: float = 150000000
+var click_damage: float = 1.0#150000000
 var gold_resource: float = 0.0#16330000000000000000000
 var scrap_resource: float = 0.0
 

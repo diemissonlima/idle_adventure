@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://sryoqqbcbjkx"]
+
+[ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="1_figwq"]
+[ext_resource type="Texture2D" uid="uid://2ppok6nxjtqy" path="res://assets/enemies/1-100/fungal_gazer.png" id="2_wiyvs"]
+[ext_resource type="PackedScene" uid="uid://ckvkc3i2lxtfn" path="res://scenes/items/equipment/shields/aegis_of_the_guardian.tscn" id="2_ylk0n"]
+[ext_resource type="PackedScene" uid="uid://2wggxtx8sglk" path="res://scenes/items/equipment/necklace/amulet_of_power.tscn" id="3_xj3qv"]
+
+[node name="FungalGazer" instance=ExtResource("1_figwq")]
+enemy_name = "Fungal Gazer"
+enemy_type = 0
+enemy_race = 0
+drop_list = Array[PackedScene]([ExtResource("2_ylk0n"), ExtResource("3_xj3qv")])
+drop_chances = Array[float]([0.55, 0.45])
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_wiyvs")

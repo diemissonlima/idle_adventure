@@ -1,0 +1,15 @@
+[gd_scene load_steps=5 format=3 uid="uid://cmxuhklrfq10y"]
+
+[ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="1_b4g7o"]
+[ext_resource type="PackedScene" uid="uid://bveytkjklpsu2" path="res://scenes/items/equipment/gloves/iron_plate_gloves.tscn" id="2_rgxan"]
+[ext_resource type="Texture2D" uid="uid://dgoxkeyj5ypn2" path="res://assets/enemies/1-100/rotwood_ooze.png" id="2_u2ih5"]
+[ext_resource type="PackedScene" uid="uid://5p6q0xfovc0v" path="res://scenes/items/equipment/boots/knights_plateboots.tscn" id="3_tg04o"]
+
+[node name="RotwoodOoze" instance=ExtResource("1_b4g7o")]
+enemy_name = "Rotwood Ooze"
+enemy_type = 2
+drop_list = Array[PackedScene]([ExtResource("2_rgxan"), ExtResource("3_tg04o"), ExtResource("2_rgxan")])
+drop_chances = Array[float]([0.4, 0.35, 0.25])
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_u2ih5")

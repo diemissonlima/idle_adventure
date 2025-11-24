@@ -1,0 +1,16 @@
+[gd_scene load_steps=6 format=3 uid="uid://cj1xwrjf6phei"]
+
+[ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="1_s1at0"]
+[ext_resource type="Texture2D" uid="uid://b368c411qsfd8" path="res://assets/enemies/1-100/mystshade_adept.png" id="2_kl2dg"]
+[ext_resource type="PackedScene" uid="uid://bee7qx6i6f6m3" path="res://scenes/items/equipment/belts/might_belt.tscn" id="2_xb4oa"]
+[ext_resource type="PackedScene" uid="uid://cgg0q68yh33ql" path="res://scenes/items/equipment/helmet/iron_helm.tscn" id="3_fcnj0"]
+[ext_resource type="PackedScene" uid="uid://bwvo2knkoq4hh" path="res://scenes/items/equipment/rings/ring_of_wealth.tscn" id="4_ew4qx"]
+
+[node name="MystshadeAdept" instance=ExtResource("1_s1at0")]
+enemy_name = "Mystshade Adept"
+enemy_type = 0
+drop_list = Array[PackedScene]([ExtResource("2_xb4oa"), ExtResource("3_fcnj0"), ExtResource("4_ew4qx")])
+drop_chances = Array[float]([0.45, 0.35, 0.2])
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_kl2dg")

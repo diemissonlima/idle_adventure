@@ -1,0 +1,17 @@
+[gd_scene load_steps=6 format=3 uid="uid://c6l52gfn4g4ge"]
+
+[ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="1_uqobd"]
+[ext_resource type="PackedScene" uid="uid://bpvbic3vb4jcm" path="res://scenes/items/equipment/weapons/rusty_sword.tscn" id="2_24vig"]
+[ext_resource type="PackedScene" uid="uid://cvwkxo8nx26w0" path="res://scenes/items/equipment/helmet/leather_cap.tscn" id="3_i4fom"]
+[ext_resource type="PackedScene" uid="uid://dhgrb6ivy00oe" path="res://scenes/items/equipment/belts/simple_sash.tscn" id="4_d3248"]
+[ext_resource type="Texture2D" uid="uid://qwg6mxcrevr6" path="res://assets/enemies/1-100/forestroot_skirmisher.png" id="4_wj232"]
+
+[node name="ForestrootSkirmisher" instance=ExtResource("1_uqobd")]
+enemy_name = "Forestroot Skirmisher"
+enemy_type = 0
+enemy_race = 0
+drop_list = Array[PackedScene]([ExtResource("2_24vig"), ExtResource("3_i4fom"), ExtResource("4_d3248")])
+drop_chances = Array[float]([0.5, 0.3, 0.2])
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("4_wj232")
