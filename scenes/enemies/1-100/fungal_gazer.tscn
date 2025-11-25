@@ -10,7 +10,7 @@ enemy_name = "Fungal Gazer"
 enemy_type = 0
 enemy_race = 0
 drop_list = Array[PackedScene]([ExtResource("2_ylk0n"), ExtResource("3_xj3qv")])
-drop_chances = Array[float]([0.55, 0.45])
+drop_chances = Array[float]([0.15, 0.1])
 
 [node name="Sprite" parent="." index="1"]
 texture = ExtResource("2_wiyvs")

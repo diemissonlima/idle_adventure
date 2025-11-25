@@ -9,7 +9,7 @@
 enemy_name = "Leafsky Raptor"
 enemy_type = 1
 drop_list = Array[PackedScene]([ExtResource("2_gh7kc"), ExtResource("3_w6om0")])
-drop_chances = Array[float]([0.6, 0.4])
+drop_chances = Array[float]([0.15, 0.1])
 
 [node name="Sprite" parent="." index="1"]
 texture = ExtResource("2_3ba08")

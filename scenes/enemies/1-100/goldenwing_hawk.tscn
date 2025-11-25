@@ -9,7 +9,7 @@
 enemy_name = "Goldenwing Hawk"
 enemy_type = 0
 drop_list = Array[PackedScene]([ExtResource("2_1mjbd"), ExtResource("3_l16yy")])
-drop_chances = Array[float]([0.55, 0.45])
+drop_chances = Array[float]([0.15, 0.1])
 
 [node name="Sprite" parent="." index="1"]
 texture = ExtResource("2_506rf")

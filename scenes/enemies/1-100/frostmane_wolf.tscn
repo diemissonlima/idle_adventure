@@ -10,7 +10,7 @@ enemy_name = "Frostmane Wolf"
 enemy_type = 0
 enemy_race = 3
 drop_list = Array[PackedScene]([ExtResource("2_f7ww0"), ExtResource("3_5i5c6")])
-drop_chances = Array[float]([0.6, 0.4])
+drop_chances = Array[float]([0.15, 0.1])
 
 [node name="Sprite" parent="." index="1"]
 offset_top = -41.0
