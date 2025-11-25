@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bj7lqj3ya5nbc"
-path="res://.godot/imported/Icon5.png-fed8e06f82117b25e4da179fc40202d2.ctex"
+uid="uid://bmf2glw7xirjc"
+path="res://.godot/imported/royal_helm.png-d7b965ece9f3bcac2706f3251c548239.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/itens/equipments/necklace/Icon5.png"
-dest_files=["res://.godot/imported/Icon5.png-fed8e06f82117b25e4da179fc40202d2.ctex"]
+source_file="res://assets/itens/equipments/helm/royal_helm.png"
+dest_files=["res://.godot/imported/royal_helm.png-d7b965ece9f3bcac2706f3251c548239.ctex"]
 
 [params]
 

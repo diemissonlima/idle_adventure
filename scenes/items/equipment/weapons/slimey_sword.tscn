@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dagr7wxvuwljb"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_2bdic"]
+[ext_resource type="Texture2D" uid="uid://c85avthybsltr" path="res://assets/itens/equipments/weapons/swords/slimey_sword.png" id="2_gk1w3"]
+
+[node name="SlimeySword" instance=ExtResource("1_2bdic")]
+item_name = "Slimey Sword"
+item_key = "slimey_sword"
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_gk1w3")

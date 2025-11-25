@@ -1,15 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://kq7v83feibw8"]
+[gd_scene load_steps=6 format=3 uid="uid://kq7v83feibw8"]
 
 [ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="1_1rsej"]
 [ext_resource type="Texture2D" uid="uid://bnu6fgym3qmbr" path="res://assets/enemies/1-100/leafsky_raptor.png" id="2_3ba08"]
-[ext_resource type="PackedScene" uid="uid://ci3eislk8233o" path="res://scenes/items/equipment/rings/silver_ring.tscn" id="2_gh7kc"]
-[ext_resource type="PackedScene" uid="uid://kl4noh34xrva" path="res://scenes/items/equipment/necklace/silver_locket.tscn" id="3_w6om0"]
+[ext_resource type="PackedScene" uid="uid://c05qwnlnylolo" path="res://scenes/items/equipment/shields/tower_shield.tscn" id="2_l0s53"]
+[ext_resource type="PackedScene" uid="uid://3xqs38ervwsc" path="res://scenes/items/equipment/helmet/slimey_strawhat.tscn" id="3_grkow"]
+[ext_resource type="PackedScene" uid="uid://u7w30ubep4m0" path="res://scenes/items/equipment/weapons/runic_blade.tscn" id="4_vxb16"]
 
 [node name="LeafskyRaptor" instance=ExtResource("1_1rsej")]
 enemy_name = "Leafsky Raptor"
 enemy_type = 1
-drop_list = Array[PackedScene]([ExtResource("2_gh7kc"), ExtResource("3_w6om0")])
-drop_chances = Array[float]([0.15, 0.1])
+drop_list = Array[PackedScene]([ExtResource("2_l0s53"), ExtResource("3_grkow"), ExtResource("4_vxb16")])
+drop_chances = Array[float]([0.12, 0.09, 0.06])
 
 [node name="Sprite" parent="." index="1"]
 texture = ExtResource("2_3ba08")

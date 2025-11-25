@@ -1,15 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://bk0nr5fpecda5"]
+[gd_scene load_steps=6 format=3 uid="uid://bk0nr5fpecda5"]
 
 [ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="1_u6tka"]
 [ext_resource type="PackedScene" uid="uid://bvegrx3xg63oe" path="res://scenes/items/equipment/rings/iron_ring.tscn" id="2_1mjbd"]
 [ext_resource type="Texture2D" uid="uid://bm6wlq2n3n3yo" path="res://assets/enemies/1-100/goldenwing_hawk.png" id="2_506rf"]
-[ext_resource type="PackedScene" uid="uid://bveytkjklpsu2" path="res://scenes/items/equipment/gloves/iron_plate_gloves.tscn" id="3_l16yy"]
+[ext_resource type="PackedScene" uid="uid://dpyo7kjiaxora" path="res://scenes/items/equipment/boots/chainmail_boots.tscn" id="3_ywfci"]
+[ext_resource type="PackedScene" uid="uid://0anb2copds4o" path="res://scenes/items/equipment/belts/studded_leather_belt.tscn" id="4_enyee"]
 
 [node name="GoldenwingHawk" instance=ExtResource("1_u6tka")]
 enemy_name = "Goldenwing Hawk"
 enemy_type = 0
-drop_list = Array[PackedScene]([ExtResource("2_1mjbd"), ExtResource("3_l16yy")])
-drop_chances = Array[float]([0.15, 0.1])
+drop_list = Array[PackedScene]([ExtResource("2_1mjbd"), ExtResource("3_ywfci"), ExtResource("4_enyee")])
+drop_chances = Array[float]([0.12, 0.09, 0.06])
 
 [node name="Sprite" parent="." index="1"]
 texture = ExtResource("2_506rf")

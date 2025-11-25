@@ -12,6 +12,7 @@ var click_damage_level: int = 0
 var gold_range: Dictionary
 var enemy_hp_level: Dictionary
 var equipments: Dictionary
+var enemies_list: Dictionary
 
 
 func _ready() -> void:
@@ -23,7 +24,8 @@ func load_json() -> void:
 		"res://scripts/json/gold_range.json",
 		"res://scripts/json/enemy_hp_levels.json",
 		"res://scripts/json/player_exp.json",
-		"res://scripts/json/equipment.json"
+		"res://scripts/json/equipment.json",
+		"res://scripts/json/enemies_list.json"
 	]
 	
 	for path in path_list:
@@ -45,6 +47,8 @@ func load_json() -> void:
 						Player.level_dict = data
 					"res://scripts/json/equipment.json":
 						equipments = data
+					"res://scripts/json/enemies_list.json":
+						enemies_list = data
 	
 	#for j in equipments.keys():
 		#print(j)

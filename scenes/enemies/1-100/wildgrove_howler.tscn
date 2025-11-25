@@ -1,16 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://byipi1u7gxgvp"]
+[gd_scene load_steps=5 format=3 uid="uid://byipi1u7gxgvp"]
 
 [ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="1_g6e7o"]
 [ext_resource type="Texture2D" uid="uid://d02s8y5kd6lqt" path="res://assets/enemies/1-100/wildgrove_howler.png" id="2_d3mcx"]
-[ext_resource type="PackedScene" uid="uid://dvcd4q31beisf" path="res://scenes/items/equipment/weapons/iron_shortsword.tscn" id="2_t83ya"]
-[ext_resource type="PackedScene" uid="uid://2sjtfobfb40r" path="res://scenes/items/equipment/shields/wooded_shield.tscn" id="3_ox1s6"]
-[ext_resource type="PackedScene" uid="uid://0anb2copds4o" path="res://scenes/items/equipment/belts/studded_leather_belt.tscn" id="4_7h2jm"]
+[ext_resource type="PackedScene" uid="uid://5p6q0xfovc0v" path="res://scenes/items/equipment/boots/knights_plateboots.tscn" id="2_d7ncw"]
+[ext_resource type="PackedScene" uid="uid://jgyty0i2y13w" path="res://scenes/items/equipment/necklace/hunters_medallion.tscn" id="3_ulsm2"]
 
 [node name="WildgroveHowler" instance=ExtResource("1_g6e7o")]
 enemy_name = "Wildgrove Howler"
 enemy_type = 0
-drop_list = Array[PackedScene]([ExtResource("2_t83ya"), ExtResource("3_ox1s6"), ExtResource("4_7h2jm")])
-drop_chances = Array[float]([0.12, 0.08, 0.05])
+drop_list = Array[PackedScene]([ExtResource("2_d7ncw"), ExtResource("3_ulsm2")])
+drop_chances = Array[float]([0.1, 0.05])
 
 [node name="Sprite" parent="." index="1"]
 texture = ExtResource("2_d3mcx")

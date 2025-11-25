@@ -1,13 +1,14 @@
-res://scenes/enemies/1-100
+res://scenes/items/equipment/weapons
 res://scenes
+res://scenes/items/equipment/rings
+res://scenes/items/equipment/helmet
+res://scenes/items/equipment/necklace
+C:/Users/Diemisson Lima/Documents/GitHub/idle_adventure/scripts/json
+res://scenes/enemies/1-100
 res://scenes/items/equipment/boots
 res://scenes/items/equipment/gloves
-res://scenes/items/equipment/rings
-res://scenes/items/equipment/necklace
 res://scenes/items/equipment/shields
 res://scenes/items/equipment/belts
-res://scenes/items/equipment/helmet
-res://scenes/items/equipment/weapons
 res://scenes/items/equipment/armor
 res://scripts
 res://scenes/enemies

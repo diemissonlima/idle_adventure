@@ -429,33 +429,6 @@
 			"legendary": [500, 1500]
 		}
 	},
-	"slimey_belt": {
-		"name": "Slimey Belt",
-		"slot": "belt",
-		"sockets": 2,
-		"img_path": "res://assets/itens/equipments/belts/slimey_belt.png",
-		"power_level": {
-			"common": [50, 55],
-			"uncommon": [50, 60],
-			"rare": [50, 65],
-			"epic": [50, 70],
-			"legendary": [50, 75]
-		},
-		"click_damage": {
-			"common": [50, 90],
-			"uncommon": [50, 130],
-			"rare": [50, 170],
-			"epic": [50, 210],
-			"legendary": [50, 250]
-		},
-		"dps_damage": {
-			"common": [1500, 1900],
-			"uncommon": [1500, 2300],
-			"rare": [1500, 2700],
-			"epic": [1500, 4100],
-			"legendary": [1500, 4500]
-		}
-	},
 	"slimey_strawhat": {
 		"name": "Slimey Strawhat",
 		"slot": "helmet",
@@ -638,7 +611,6 @@
 			"legendary": [10, 20]
 		}
 	},
-	
 	"silver_ring": {
 		"name": "Silver Ring",
 		"slot": "ring",
@@ -664,6 +636,33 @@
 			"rare": [9, 12],
 			"epic": [9, 13],
 			"legendary": [9, 15]
+		}
+	},
+	"slimey_belt": {
+		"name": "Slimey Belt",
+		"slot": "belt",
+		"sockets": 2,
+		"img_path": "res://assets/itens/equipments/belts/slimey_belt.png",
+		"power_level": {
+			"common": [50, 55],
+			"uncommon": [50, 60],
+			"rare": [50, 65],
+			"epic": [50, 70],
+			"legendary": [50, 75]
+		},
+		"click_damage": {
+			"common": [50, 90],
+			"uncommon": [50, 130],
+			"rare": [50, 170],
+			"epic": [50, 210],
+			"legendary": [50, 250]
+		},
+		"dps_damage": {
+			"common": [1500, 1900],
+			"uncommon": [1500, 2300],
+			"rare": [1500, 2700],
+			"epic": [1500, 4100],
+			"legendary": [1500, 4500]
 		}
 	},
 	"aegis_ofthe_guardian": {
@@ -740,33 +739,6 @@
 			"legendary": [15, 30]
 		}
 	},
-	"slimy_ring": {
-		"name": "Slimy Ring",
-		"slot": "ring",
-		"sockets": 2,
-		"img_path": "res://assets/itens/equipments/rings/slimy_ring.png",
-		"power_level": {
-			"common": [75, 80],
-			"uncommon": [80, 85],
-			"rare": [85, 90],
-			"epic": [90, 95],
-			"legendary": [95, 100]
-		},
-		"gold_gain": {
-			"common": [20, 26],
-			"uncommon": [20, 32],
-			"rare": [20, 38],
-			"epic": [20, 44],
-			"legendary": [20, 50]
-		},
-		"magic_find": {
-			"common": [3.0, 3.4],
-			"uncommon": [3.0, 3.8],
-			"rare": [3.0, 4.2],
-			"epic": [3.0, 4.6],
-			"legendary": [3.0, 5.0]
-		}
-	},
 	"knights_plategloves": {
 		"name": "Knight's Plategloves",
 		"slot": "gloves",
@@ -805,6 +777,148 @@
 			"rare": [1500, 2100],
 			"epic": [1500, 2300],
 			"legendary": [1500, 2500]
+		}
+	},
+	"hunters_medallion": {
+		"name": "Hunter's Medallion",
+		"slot": "necklace",
+		"sockets": 0,
+		"img_path": "res://assets/itens/equipments/necklace/hunters_medallion.png",
+		"power_level": {
+			"common": [75, 80],
+			"uncommon": [80, 85],
+			"rare": [85, 90],
+			"epic": [90, 95],
+			"legendary": [95, 99]
+		},
+		"click_damage": {
+			"common": [150, 210],
+			"uncommon": [150, 270],
+			"rare": [150, 330],
+			"epic": [150, 390],
+			"legendary": [150, 450]
+		},
+		"gold_gain": {
+			"common": [10, 13],
+			"uncommon": [10, 16],
+			"rare": [10, 19],
+			"epic": [10, 22],
+			"legendary": [10, 25]
+		}
+	},
+	"slimy_ring": {
+		"name": "Slimy Ring",
+		"slot": "ring",
+		"sockets": 2,
+		"img_path": "res://assets/itens/equipments/rings/slimy_ring.png",
+		"power_level": {
+			"common": [75, 80],
+			"uncommon": [80, 85],
+			"rare": [85, 90],
+			"epic": [90, 95],
+			"legendary": [95, 100]
+		},
+		"gold_gain": {
+			"common": [20, 26],
+			"uncommon": [20, 32],
+			"rare": [20, 38],
+			"epic": [20, 44],
+			"legendary": [20, 50]
+		},
+		"magic_find": {
+			"common": [3.0, 3.4],
+			"uncommon": [3.0, 3.8],
+			"rare": [3.0, 4.2],
+			"epic": [3.0, 4.6],
+			"legendary": [3.0, 5.0]
+		}
+	},
+	"royal_helm": {
+		"name": "Royal Helm",
+		"slot": "helm",
+		"sockets": 2,
+		"img_path": "res://assets/itens/equipments/helm/royal_helm.png",
+		"power_level": {
+			"common": [75, 80],
+			"uncommon": [80, 85],
+			"rare": [85, 90],
+			"epic": [90, 95],
+			"legendary": [95, 100]
+		},
+		"gold_gain": {
+			"common": [30, 34],
+			"uncommon": [30, 38],
+			"rare": [30, 42],
+			"epic": [30, 46],
+			"legendary": [30, 50]
+		},
+		"magic_find": {
+			"common": [1.5, 2.4],
+			"uncommon": [1.5, 3.3],
+			"rare": [1.5, 4.2],
+			"epic": [1.5, 5.1],
+			"legendary": [1.5, 6.0]
+		}
+	},
+	"seal_of_the_king": {
+		"name": "Seal of The King",
+		"slot": "ring",
+		"sockets": 1,
+		"img_path": "res://assets/itens/equipments/rings/seal_of_the_king.png",
+		"power_level": {
+			"common": [75, 80],
+			"uncommon": [80, 85],
+			"rare": [85, 90],
+			"epic": [90, 95],
+			"legendary": [95, 100]
+		},
+		"gold_gain": {
+			"common": [25, 30],
+			"uncommon": [25, 35],
+			"rare": [25, 40],
+			"epic": [25, 45],
+			"legendary": [25, 50]
+		},
+		"magic_find": {
+			"common": [1.5, 2.4],
+			"uncommon": [1.5, 3.3],
+			"rare": [1.5, 4.2],
+			"epic": [1.5, 5.1],
+			"legendary": [1.5, 6.0]
+		}
+	},
+	"slimey_sword": {
+		"name": "Slimey Sword",
+		"slot": "weapon",
+		"sockets": 2,
+		"img_path": "res://assets/itens/equipments/weapons/swords/slimey_sword.png",
+		"power_level": {
+			"common": [75, 85],
+			"uncommon": [85, 90],
+			"rare": [90, 95],
+			"epic": [95, 105],
+			"legendary": [105, 125]
+		},
+		"click_damage": {
+			"common": [400, 520],
+			"uncommon": [400, 640],
+			"rare": [400, 760],
+			"epic": [400, 880],
+			"legendary": [400, 1000]
+		},
+		"dps_damage": {
+			"common": [2000, 3100],
+			"uncommon": [2000, 4200],
+			"rare": [2000, 5300],
+			"epic": [2000, 6400],
+			"legendary": [2000, 7500]
+		},
+		"gold_gain": {
+			"common": [20, 26],
+			"uncommon": [20, 32],
+			"rare": [20, 38],
+			"epic": [20, 44],
+			"legendary": [20, 50]
 		}
 	},
 }

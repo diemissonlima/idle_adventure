@@ -1,16 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://c1y2ohdxrpjjy"]
+[gd_scene load_steps=7 format=3 uid="uid://c1y2ohdxrpjjy"]
 
 [ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="1_bslo2"]
-[ext_resource type="PackedScene" uid="uid://c4drjt05jl1qo" path="res://scenes/items/equipment/gloves/leather_gloves.tscn" id="2_f7ww0"]
+[ext_resource type="PackedScene" uid="uid://cvwkxo8nx26w0" path="res://scenes/items/equipment/helmet/leather_cap.tscn" id="2_w7o6w"]
 [ext_resource type="PackedScene" uid="uid://dhmq1qc6fqw" path="res://scenes/items/equipment/belts/leather_belt.tscn" id="3_5i5c6"]
 [ext_resource type="Texture2D" uid="uid://cwjt6tnbil7b7" path="res://assets/enemies/1-100/frostmane_wolf.png" id="3_d6qpq"]
+[ext_resource type="PackedScene" uid="uid://dvcd4q31beisf" path="res://scenes/items/equipment/weapons/iron_shortsword.tscn" id="3_l3ogo"]
+[ext_resource type="PackedScene" uid="uid://dhgrb6ivy00oe" path="res://scenes/items/equipment/belts/simple_sash.tscn" id="5_5gjgp"]
 
 [node name="FrostmaneWolf" instance=ExtResource("1_bslo2")]
 enemy_name = "Frostmane Wolf"
 enemy_type = 0
 enemy_race = 3
-drop_list = Array[PackedScene]([ExtResource("2_f7ww0"), ExtResource("3_5i5c6")])
-drop_chances = Array[float]([0.15, 0.1])
+drop_list = Array[PackedScene]([ExtResource("2_w7o6w"), ExtResource("3_l3ogo"), ExtResource("3_5i5c6"), ExtResource("5_5gjgp")])
+drop_chances = Array[float]([0.15, 0.12, 0.09, 0.06])
 
 [node name="Sprite" parent="." index="1"]
 offset_top = -41.0

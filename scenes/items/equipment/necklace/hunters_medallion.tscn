@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://jgyty0i2y13w"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_w1h0d"]
+[ext_resource type="Texture2D" uid="uid://bj7lqj3ya5nbc" path="res://assets/itens/equipments/necklace/hunters_medallion.png" id="2_pxoph"]
+
+[node name="HuntersMedallion" instance=ExtResource("1_w1h0d")]
+item_name = "Hunter's Medallion"
+item_key = "hunters_medallion"
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_pxoph")

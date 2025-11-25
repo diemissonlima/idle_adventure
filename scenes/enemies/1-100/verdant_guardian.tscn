@@ -1,16 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://baww8lobmcasr"]
+[gd_scene load_steps=7 format=3 uid="uid://baww8lobmcasr"]
 
 [ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="1_cly8b"]
-[ext_resource type="PackedScene" uid="uid://u7w30ubep4m0" path="res://scenes/items/equipment/weapons/runic_blade.tscn" id="2_ivlru"]
+[ext_resource type="PackedScene" uid="uid://bmnuovrmn4rpx" path="res://scenes/items/equipment/belts/slimey_belt.tscn" id="2_7hbmh"]
 [ext_resource type="Texture2D" uid="uid://c1x06k88iui58" path="res://assets/enemies/1-100/verdant_guardian.png" id="2_lh7fd"]
-[ext_resource type="PackedScene" uid="uid://c05qwnlnylolo" path="res://scenes/items/equipment/shields/tower_shield.tscn" id="3_uurwr"]
-[ext_resource type="PackedScene" uid="uid://cfq8qj4km86n4" path="res://scenes/items/equipment/armor/chainmail_hauberk.tscn" id="4_whlt5"]
+[ext_resource type="PackedScene" uid="uid://ckvkc3i2lxtfn" path="res://scenes/items/equipment/shields/aegis_of_the_guardian.tscn" id="3_xxyfj"]
+[ext_resource type="PackedScene" uid="uid://2wggxtx8sglk" path="res://scenes/items/equipment/necklace/amulet_of_power.tscn" id="4_i02tr"]
+[ext_resource type="PackedScene" uid="uid://bwvo2knkoq4hh" path="res://scenes/items/equipment/rings/ring_of_wealth.tscn" id="5_vprkv"]
 
 [node name="VerdantGuardian" instance=ExtResource("1_cly8b")]
 enemy_name = "Verdant Guardian"
 enemy_type = 1
-drop_list = Array[PackedScene]([ExtResource("2_ivlru"), ExtResource("3_uurwr"), ExtResource("4_whlt5")])
-drop_chances = Array[float]([0.12, 0.08, 0.05])
+drop_list = Array[PackedScene]([ExtResource("2_7hbmh"), ExtResource("3_xxyfj"), ExtResource("4_i02tr"), ExtResource("5_vprkv")])
+drop_chances = Array[float]([0.15, 0.12, 0.09, 0.06])
 
 [node name="Sprite" parent="." index="1"]
 texture = ExtResource("2_lh7fd")

@@ -2,6 +2,7 @@ extends Control
 class_name MainScene
 
 @export_category("Objetos")
+@export var spawm_position: Marker2D
 @export var attack_timer: Timer
 
 @export_category("Objetos - Actions")
@@ -35,10 +36,24 @@ func _process(_delta: float) -> void:
 
 
 func spawn_new_enemy() -> void:
-	var random_enemy = enemy_list[randi() % enemy_list.size()]
-	var enemy_instance = random_enemy.instantiate()#enemy_scene.instantiate()
+	var enemy_path = get_enemy_path(World.level)
+	var enemy_scene = load(enemy_path)
+	var enemy_instance = enemy_scene.instantiate()
 	
-	$Container1/Battlefield/Marker2D.add_child(enemy_instance)
+	spawm_position.add_child(enemy_instance)
+
+
+func get_enemy_path(level: int) -> String:
+	var max_level: int = 0
+	
+	for key in World.enemies_list.keys():
+		var max_stage = int(key)
+		if level <= max_stage:
+			max_level = max_stage
+			break
+		
+	var enemies = World.enemies_list[str(max_level)]
+	return enemies[randi() % enemies.size()]
 
 
 func update_label() -> void:

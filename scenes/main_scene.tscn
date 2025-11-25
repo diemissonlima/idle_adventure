@@ -292,7 +292,7 @@ font_size = 4
 font_color = Color(0, 1, 0, 1)
 outline_color = Color(0, 0, 0, 1)
 
-[node name="MainScene" type="Control" node_paths=PackedStringArray("attack_timer", "click_attack_label", "dps_attack_label", "gold_resource_label", "scrap_resource_label", "click_damage_cost_label", "click_damage_level_label", "dps_damage_cost_label", "dps_damage_level_label") groups=["main_scene"]]
+[node name="MainScene" type="Control" node_paths=PackedStringArray("spawm_position", "attack_timer", "click_attack_label", "dps_attack_label", "gold_resource_label", "scrap_resource_label", "click_damage_cost_label", "click_damage_level_label", "dps_damage_cost_label", "dps_damage_level_label") groups=["main_scene"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -300,6 +300,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7f1vr")
+spawm_position = NodePath("Container1/Battlefield/Marker2D")
 attack_timer = NodePath("AttackTimer")
 click_attack_label = NodePath("Container3/VBoxContainer/Info/IconClick/Label")
 dps_attack_label = NodePath("Container3/VBoxContainer/Info/IconDPS/Label")

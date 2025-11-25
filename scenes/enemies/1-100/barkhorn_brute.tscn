@@ -1,17 +1,17 @@
 [gd_scene load_steps=6 format=3 uid="uid://ovl3phgs6qjq"]
 
 [ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="1_lf006"]
-[ext_resource type="PackedScene" uid="uid://c75roqyw5exar" path="res://scenes/items/equipment/armor/leather_tunic.tscn" id="2_q37sh"]
 [ext_resource type="Texture2D" uid="uid://xrpu0tn73ebf" path="res://assets/enemies/1-100/barkhorn_brute.png" id="2_sv6kh"]
-[ext_resource type="PackedScene" uid="uid://dpyo7kjiaxora" path="res://scenes/items/equipment/boots/chainmail_boots.tscn" id="3_b7nlq"]
+[ext_resource type="PackedScene" uid="uid://yw8eklmqtxar" path="res://scenes/items/equipment/necklace/simple_pendant.tscn" id="2_wcxxw"]
+[ext_resource type="PackedScene" uid="uid://cfq8qj4km86n4" path="res://scenes/items/equipment/armor/chainmail_hauberk.tscn" id="3_ij2mw"]
 [ext_resource type="PackedScene" uid="uid://btpabowpxsrdj" path="res://scenes/items/equipment/shields/bronze_buckler.tscn" id="4_mrrhv"]
 
 [node name="BarkhornBrute" instance=ExtResource("1_lf006")]
 enemy_name = "Barkhorn Brute"
 enemy_type = 0
 enemy_race = 3
-drop_list = Array[PackedScene]([ExtResource("2_q37sh"), ExtResource("3_b7nlq"), ExtResource("4_mrrhv")])
-drop_chances = Array[float]([0.12, 0.08, 0.05])
+drop_list = Array[PackedScene]([ExtResource("2_wcxxw"), ExtResource("3_ij2mw"), ExtResource("4_mrrhv")])
+drop_chances = Array[float]([0.12, 0.9, 0.06])
 
 [node name="Sprite" parent="." index="1"]
 texture = ExtResource("2_sv6kh")

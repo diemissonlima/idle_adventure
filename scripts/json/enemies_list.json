@@ -1,0 +1,30 @@
+{
+	"24": [
+		"res://scenes/enemies/1-100/bubble_slime.tscn",
+		"res://scenes/enemies/1-100/frostmane_wolf.tscn"
+	],
+	"25": [
+		"res://scenes/enemies/1-100/forestroot_skirmisher.tscn"
+	],
+	"49": [
+		"res://scenes/enemies/1-100/barkhorn_brute.tscn",
+		"res://scenes/enemies/1-100/goldenwing_hawk.tscn"
+	],
+	"50": [
+		"res://scenes/enemies/1-100/leafsky_raptor.tscn"
+	],
+	"74": [
+		"res://scenes/enemies/1-100/fungal_gazer.tscn",
+		"res://scenes/enemies/1-100/roadwarden_merc.tscn"
+	],
+	"75": [
+		"res://assets/enemies/1-100/verdant_guardian.tscn"
+	],
+	"99": [
+		"res://scenes/enemies/1-100/mystshade_adept.tscn",
+		"rres://scenes/enemies/1-100/wildgrove_howler.tscn"
+	],
+	"100": [
+		"res://scenes/enemies/1-100/rotwood_ooze.tscn"
+	]
+}

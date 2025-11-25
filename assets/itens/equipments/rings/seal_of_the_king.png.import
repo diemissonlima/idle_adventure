@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmf2glw7xirjc"
-path="res://.godot/imported/Icon18.png-ff1a895cbaa1f95c1cb7523200a601f7.ctex"
+uid="uid://cbxb3lhwmme8f"
+path="res://.godot/imported/seal_of_the_king.png-7b3912b7614fe81118e01d1301b7d81e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/itens/equipments/helm/Icon18.png"
-dest_files=["res://.godot/imported/Icon18.png-ff1a895cbaa1f95c1cb7523200a601f7.ctex"]
+source_file="res://assets/itens/equipments/rings/seal_of_the_king.png"
+dest_files=["res://.godot/imported/seal_of_the_king.png-7b3912b7614fe81118e01d1301b7d81e.ctex"]
 
 [params]
 

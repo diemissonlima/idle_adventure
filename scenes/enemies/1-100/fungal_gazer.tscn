@@ -1,16 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://sryoqqbcbjkx"]
+[gd_scene load_steps=6 format=3 uid="uid://sryoqqbcbjkx"]
 
 [ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="1_figwq"]
+[ext_resource type="PackedScene" uid="uid://bee7qx6i6f6m3" path="res://scenes/items/equipment/belts/might_belt.tscn" id="2_7dkmm"]
 [ext_resource type="Texture2D" uid="uid://2ppok6nxjtqy" path="res://assets/enemies/1-100/fungal_gazer.png" id="2_wiyvs"]
-[ext_resource type="PackedScene" uid="uid://ckvkc3i2lxtfn" path="res://scenes/items/equipment/shields/aegis_of_the_guardian.tscn" id="2_ylk0n"]
-[ext_resource type="PackedScene" uid="uid://2wggxtx8sglk" path="res://scenes/items/equipment/necklace/amulet_of_power.tscn" id="3_xj3qv"]
+[ext_resource type="PackedScene" uid="uid://bveytkjklpsu2" path="res://scenes/items/equipment/gloves/iron_plate_gloves.tscn" id="3_204qn"]
+[ext_resource type="PackedScene" uid="uid://kl4noh34xrva" path="res://scenes/items/equipment/necklace/silver_locket.tscn" id="4_mhhl3"]
 
 [node name="FungalGazer" instance=ExtResource("1_figwq")]
 enemy_name = "Fungal Gazer"
 enemy_type = 0
 enemy_race = 0
-drop_list = Array[PackedScene]([ExtResource("2_ylk0n"), ExtResource("3_xj3qv")])
-drop_chances = Array[float]([0.15, 0.1])
+drop_list = Array[PackedScene]([ExtResource("2_7dkmm"), ExtResource("3_204qn"), ExtResource("4_mhhl3")])
+drop_chances = Array[float]([0.12, 0.09, 0.06])
 
 [node name="Sprite" parent="." index="1"]
 texture = ExtResource("2_wiyvs")

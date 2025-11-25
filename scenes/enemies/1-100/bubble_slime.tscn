@@ -1,17 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://c8m76amluo7mg"]
+[gd_scene load_steps=7 format=3 uid="uid://c8m76amluo7mg"]
 
 [ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="1_s5puk"]
-[ext_resource type="PackedScene" uid="uid://bmnuovrmn4rpx" path="res://scenes/items/equipment/belts/slimey_belt.tscn" id="2_pp041"]
-[ext_resource type="PackedScene" uid="uid://3xqs38ervwsc" path="res://scenes/items/equipment/helmet/slimey_strawhat.tscn" id="3_865kv"]
+[ext_resource type="PackedScene" uid="uid://bpvbic3vb4jcm" path="res://scenes/items/equipment/weapons/rusty_sword.tscn" id="2_mrtvy"]
 [ext_resource type="Texture2D" uid="uid://dof5fwascfvss" path="res://assets/enemies/1-100/bubble_slime.png" id="3_cs18u"]
-[ext_resource type="PackedScene" uid="uid://t7jw4xwxqfwp" path="res://scenes/items/equipment/rings/slimy_ring.tscn" id="4_b45rv"]
+[ext_resource type="PackedScene" uid="uid://c75roqyw5exar" path="res://scenes/items/equipment/armor/leather_tunic.tscn" id="3_kvj8y"]
+[ext_resource type="PackedScene" uid="uid://c4drjt05jl1qo" path="res://scenes/items/equipment/gloves/leather_gloves.tscn" id="4_tdwyn"]
+[ext_resource type="PackedScene" uid="uid://2sjtfobfb40r" path="res://scenes/items/equipment/shields/wooded_shield.tscn" id="5_jwtuu"]
 
 [node name="BubbleSlime" instance=ExtResource("1_s5puk")]
 enemy_name = "Bubble Slime"
 enemy_type = 0
 enemy_race = 2
-drop_list = Array[PackedScene]([ExtResource("2_pp041"), ExtResource("3_865kv"), ExtResource("4_b45rv")])
-drop_chances = Array[float]([0.12, 0.08, 0.05])
+drop_list = Array[PackedScene]([ExtResource("2_mrtvy"), ExtResource("3_kvj8y"), ExtResource("4_tdwyn"), ExtResource("5_jwtuu")])
+drop_chances = Array[float]([0.15, 0.12, 0.09, 0.6])
 
 [node name="Sprite" parent="." index="1"]
 offset_top = -35.0

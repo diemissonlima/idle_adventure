@@ -1,15 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://cmxuhklrfq10y"]
+[gd_scene load_steps=7 format=3 uid="uid://cmxuhklrfq10y"]
 
 [ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="1_b4g7o"]
-[ext_resource type="PackedScene" uid="uid://bveytkjklpsu2" path="res://scenes/items/equipment/gloves/iron_plate_gloves.tscn" id="2_rgxan"]
+[ext_resource type="PackedScene" uid="uid://t7jw4xwxqfwp" path="res://scenes/items/equipment/rings/slimy_ring.tscn" id="2_do5in"]
 [ext_resource type="Texture2D" uid="uid://dgoxkeyj5ypn2" path="res://assets/enemies/1-100/rotwood_ooze.png" id="2_u2ih5"]
-[ext_resource type="PackedScene" uid="uid://5p6q0xfovc0v" path="res://scenes/items/equipment/boots/knights_plateboots.tscn" id="3_tg04o"]
+[ext_resource type="PackedScene" uid="uid://uf4gkwth63yl" path="res://scenes/items/equipment/helmet/royal_helm.tscn" id="3_3d3rf"]
+[ext_resource type="PackedScene" uid="uid://cbof6w3nq1hn0" path="res://scenes/items/equipment/rings/seal_of_the_king.tscn" id="4_du3nk"]
+[ext_resource type="PackedScene" uid="uid://dagr7wxvuwljb" path="res://scenes/items/equipment/weapons/slimey_sword.tscn" id="5_atnwg"]
 
 [node name="RotwoodOoze" instance=ExtResource("1_b4g7o")]
 enemy_name = "Rotwood Ooze"
 enemy_type = 2
-drop_list = Array[PackedScene]([ExtResource("2_rgxan"), ExtResource("3_tg04o"), ExtResource("2_rgxan")])
-drop_chances = Array[float]([0.12, 0.08, 0.05])
+drop_list = Array[PackedScene]([ExtResource("2_do5in"), ExtResource("3_3d3rf"), ExtResource("4_du3nk"), ExtResource("5_atnwg")])
+drop_chances = Array[float]([0.05, 0.03, 0.02, 0.005])
 
 [node name="Sprite" parent="." index="1"]
 texture = ExtResource("2_u2ih5")

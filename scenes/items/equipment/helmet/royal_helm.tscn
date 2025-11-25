@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://uf4gkwth63yl"]
+
+[ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_uyg68"]
+[ext_resource type="Texture2D" uid="uid://bmf2glw7xirjc" path="res://assets/itens/equipments/helm/royal_helm.png" id="2_s3voo"]
+
+[node name="Royal Helm" instance=ExtResource("1_uyg68")]
+item_name = "Royal Helm"
+item_key = "royal_helm"
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("2_s3voo")
