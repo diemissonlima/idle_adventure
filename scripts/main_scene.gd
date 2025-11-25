@@ -93,3 +93,13 @@ func _on_battlefield_mouse_entered() -> void:
 
 func _on_battlefield_mouse_exited() -> void:
 	can_click = false
+
+
+func _on_btn_reset_level_pressed() -> void:
+	attack_timer.stop()
+	
+	spawm_position.get_child(0).queue_free()
+	World.level = 1
+	spawn_new_enemy()
+	
+	attack_timer.start()

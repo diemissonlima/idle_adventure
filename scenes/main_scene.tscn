@@ -474,6 +474,36 @@ grow_vertical = 2
 text = "View Loot"
 label_settings = SubResource("LabelSettings_oe63t")
 
+[node name="BtnResetLevel" type="TextureButton" parent="Container1/BackgroundLog"]
+custom_minimum_size = Vector2(36, 10)
+layout_mode = 2
+offset_left = 86.0
+offset_top = 4.0
+offset_right = 128.0
+offset_bottom = 14.0
+grow_vertical = 0
+texture_normal = ExtResource("24_5fp80")
+texture_pressed = ExtResource("25_2ihlf")
+texture_hover = ExtResource("26_83xn1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Container1/BackgroundLog/BtnResetLevel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -2.5
+offset_right = 13.0
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Reset Level"
+label_settings = SubResource("LabelSettings_oe63t")
+
 [node name="LogContainer" type="ScrollContainer" parent="Container1/BackgroundLog"]
 custom_minimum_size = Vector2(113, 126)
 layout_mode = 1
@@ -3468,6 +3498,7 @@ label_settings = SubResource("LabelSettings_ytyb8")
 [connection signal="mouse_exited" from="Container1/Battlefield" to="." method="_on_battlefield_mouse_exited"]
 [connection signal="pressed" from="Container1/BackgroundLog/BtnViewLog" to="Container1/BackgroundLog" method="_on_btn_view_log_pressed"]
 [connection signal="pressed" from="Container1/BackgroundLog/BtnViewLoot" to="Container1/BackgroundLog" method="_on_btn_view_loot_pressed"]
+[connection signal="pressed" from="Container1/BackgroundLog/BtnResetLevel" to="." method="_on_btn_reset_level_pressed"]
 [connection signal="mouse_entered" from="Container1/BackgroundLog/LogContainer" to="Container1/BackgroundLog" method="_on_log_container_mouse_entered"]
 [connection signal="mouse_exited" from="Container1/BackgroundLog/LogContainer" to="Container1/BackgroundLog" method="_on_log_container_mouse_exited"]
 [connection signal="pressed" from="Container2/Hero/ResetAttributes" to="Container2" method="_on_reset_attributes_pressed"]
