@@ -1,11 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://ckvkc3i2lxtfn"]
 
 [ext_resource type="PackedScene" uid="uid://ck1g0o4dx1ilm" path="res://scenes/base_item.tscn" id="1_j8vg5"]
-[ext_resource type="Texture2D" uid="uid://g8gfvx4kgsoo" path="res://assets/itens/equipments/shields/aegis_ofthe_guardian.png" id="2_f3de6"]
+[ext_resource type="Texture2D" uid="uid://g8gfvx4kgsoo" path="res://assets/itens/equipments/shields/aegis_of_the_guardian.png" id="2_f3de6"]
 
 [node name="AegisOfTheGuardian" instance=ExtResource("1_j8vg5")]
 item_name = "Aegis of The Guardian"
-item_key = "aegis_ofthe_guardian"
+item_key = "aegis_of_the_guardian"
 
 [node name="Sprite" parent="." index="1"]
 texture = ExtResource("2_f3de6")

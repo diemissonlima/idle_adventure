@@ -41,3 +41,11 @@ func update_item_info(item_data: Dictionary) -> void:
 			str(item_data["click_damage"]["common"][0]) + " - " + 
 			str(item_data["click_damage"]["legendary"][1])
 		)
+	
+	if item_data.has("magic_find"):
+		click_damage_label.visible = true
+		click_damage_label.text = (
+			"Magic Find: " + 
+			str(item_data["magic_find"]["common"][0]) + "% - " + 
+			str(item_data["magic_find"]["legendary"][1]) + "%"
+		)

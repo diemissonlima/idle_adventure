@@ -12,7 +12,7 @@ enemy_name = "Bubble Slime"
 enemy_type = 0
 enemy_race = 2
 drop_list = Array[PackedScene]([ExtResource("2_mrtvy"), ExtResource("3_kvj8y"), ExtResource("4_tdwyn"), ExtResource("5_jwtuu")])
-drop_chances = Array[float]([0.15, 0.12, 0.09, 0.6])
+drop_chances = Array[float]([0.15, 0.12, 0.09, 0.06])
 
 [node name="Sprite" parent="." index="1"]
 offset_top = -35.0

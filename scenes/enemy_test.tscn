@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://bg3hv8t4bww52"]
+
+[ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="1_mb7t5"]
+[ext_resource type="PackedScene" uid="uid://ckvkc3i2lxtfn" path="res://scenes/items/equipment/shields/aegis_of_the_guardian.tscn" id="2_ofgai"]
+[ext_resource type="Texture2D" uid="uid://2ppok6nxjtqy" path="res://assets/enemies/1-100/fungal_gazer.png" id="3_1mi6j"]
+
+[node name="EnemyTest" instance=ExtResource("1_mb7t5")]
+enemy_name = "Enemy Test"
+enemy_type = 0
+enemy_race = 0
+drop_list = Array[PackedScene]([ExtResource("2_ofgai")])
+drop_chances = Array[float]([1.0])
+
+[node name="Sprite" parent="." index="1"]
+texture = ExtResource("3_1mi6j")

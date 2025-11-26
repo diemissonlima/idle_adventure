@@ -665,11 +665,11 @@
 			"legendary": [1500, 4500]
 		}
 	},
-	"aegis_ofthe_guardian": {
+	"aegis_of_the_guardian": {
 		"name": "Aegis of The Guardian",
 		"slot": "shield",
 		"sockets": 2,
-		"img_path": "res://assets/itens/equipments/shields/aegis_ofthe_guardian.png",
+		"img_path": "res://assets/itens/equipments/shields/aegis_of_the_guardian.png",
 		"power_level": {
 			"common": [50, 55],
 			"uncommon": [55, 60],

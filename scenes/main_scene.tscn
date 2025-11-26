@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://scripts/main_scene.gd" id="1_7f1vr"]
 [ext_resource type="Texture2D" uid="uid://dp4l60ef0vkwx" path="res://assets/itens/potion/Potion 1.png" id="2_2av4a"]
 [ext_resource type="Texture2D" uid="uid://bufxp71go2hq7" path="res://assets/backgrounds/EmptyPanel.png" id="2_27dyn"]
-[ext_resource type="PackedScene" uid="uid://wxnhpxtp6xfn" path="res://scenes/base_enemy.tscn" id="2_f20an"]
+[ext_resource type="PackedScene" uid="uid://bg3hv8t4bww52" path="res://scenes/enemy_test.tscn" id="2_q45ok"]
 [ext_resource type="PackedScene" uid="uid://bvbiyffex0vl6" path="res://scenes/enemies/1-100/roadwarden_merc.tscn" id="3_4md8k"]
 [ext_resource type="PackedScene" uid="uid://ovl3phgs6qjq" path="res://scenes/enemies/1-100/barkhorn_brute.tscn" id="3_467it"]
 [ext_resource type="FontFile" uid="uid://f3rv4yrfifht" path="res://assets/font/Oxanium-Bold.ttf" id="4_rkqi3"]
@@ -310,7 +310,7 @@ click_damage_cost_label = NodePath("Container3/VBoxContainer/ImproveClick/LabelC
 click_damage_level_label = NodePath("Container3/VBoxContainer/ImproveClick/LabelLevel")
 dps_damage_cost_label = NodePath("Container3/VBoxContainer/ImproveDPS/LabelCost")
 dps_damage_level_label = NodePath("Container3/VBoxContainer/ImproveDPS/LabelLevel")
-enemy_scene = ExtResource("2_f20an")
+enemy_test = ExtResource("2_q45ok")
 enemy_list = Array[PackedScene]([ExtResource("3_467it"), ExtResource("5_s0o4w"), ExtResource("4_tdakd"), ExtResource("6_maxp7"), ExtResource("7_jg2o1"), ExtResource("8_i7xs2"), ExtResource("9_pgd7r"), ExtResource("10_xhuua"), ExtResource("3_4md8k"), ExtResource("12_pi6q7"), ExtResource("13_7fwp5"), ExtResource("14_am2fb")])
 
 [node name="Player" type="Node" parent="."]

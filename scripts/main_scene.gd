@@ -18,7 +18,7 @@ class_name MainScene
 @export var dps_damage_level_label: Label
 
 @export_category("Variaveis")
-@export var enemy_scene: PackedScene
+@export var enemy_test: PackedScene
 @export var enemy_list: Array[PackedScene]
 
 var can_click: bool = false
@@ -36,6 +36,8 @@ func _process(_delta: float) -> void:
 
 
 func spawn_new_enemy() -> void:
+	# var enemy_instance = enemy_test.instantiate()
+	
 	var enemy_path = get_enemy_path(World.level)
 	var enemy_scene = load(enemy_path)
 	var enemy_instance = enemy_scene.instantiate()
